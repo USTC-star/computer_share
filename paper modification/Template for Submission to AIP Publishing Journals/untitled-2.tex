@@ -1,0 +1,12 @@
+\documentclass{article}
+\usepackage[T1]{fontenc}
+
+% Make comma active and define its behavior
+\catcode`,=\active
+\protected\def,{\@ifnextchar\space{\,}{\,}}
+
+\begin{document}
+This is a sentence, with custom spacing (notice the space after comma).
+
+This is a sentence,without space (still adds thin space).
+\end{document}
