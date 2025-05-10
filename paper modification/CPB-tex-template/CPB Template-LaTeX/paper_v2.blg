@@ -1,0 +1,53 @@
+This is BibTeX, Version 0.99d (TeX Live 2025)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: paper_v2.aux
+The style file: iopart-num.bst
+Database file #1: aipsamp_ADE.bib
+Repeated entry---line 288 of file aipsamp_ADE.bib
+ : @article{ginzburg1996radiation
+ :                               ,
+I'm skipping whatever remains of this entry
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Warning--empty journal in gorozhanin1997waves
+You've used 38 entries,
+            3033 wiz_defined-function locations,
+            856 strings with 11433 characters,
+and the built_in function-call counts, 31291 in all, are:
+= -- 3394
+> -- 463
+< -- 0
++ -- 262
+- -- 191
+* -- 1983
+:= -- 3741
+add.period$ -- 0
+call.type$ -- 38
+change.case$ -- 2
+chr.to.int$ -- 0
+cite$ -- 39
+duplicate$ -- 2828
+empty$ -- 3010
+format.name$ -- 145
+if$ -- 7018
+int.to.chr$ -- 0
+int.to.str$ -- 38
+missing$ -- 410
+newline$ -- 124
+num.names$ -- 38
+pop$ -- 839
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 369
+stack$ -- 0
+substring$ -- 4644
+swap$ -- 866
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 1
+while$ -- 497
+width$ -- 40
+write$ -- 310
+(There was 1 error message)
