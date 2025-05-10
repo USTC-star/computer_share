@@ -1,0 +1,109 @@
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.5.1)  10 MAY 2025 11:44
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**paper_v2.tex
+(./paper_v2.tex
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-04-14>
+(./cpbtex3.cls
+Document Class: cpbtex3 2014/11/12 v1.0 LaTeX Template for Chinese Physics B
+(d:/Program Files (x86)/texlive/2025/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2024/06/29 v1.4n Standard LaTeX document class
+(d:/Program Files (x86)/texlive/2025/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2024/06/29 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count268
+\c@section=\count269
+\c@subsection=\count270
+\c@subsubsection=\count271
+\c@paragraph=\count272
+\c@subparagraph=\count273
+\c@figure=\count274
+\c@table=\count275
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen146
+)
+(d:/Program Files (x86)/texlive/2025/texmf-dist/tex/xelatex/xecjk/xeCJK.sty
+(d:/Program Files (x86)/texlive/2025/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2025-04-14 L3 programming layer (loader) 
+
+(d:/Program Files (x86)/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-x
+etex.def
+File: l3backend-xetex.def 2025-04-14 L3 backend support: XeTeX
+\g__graphics_track_int=\count276
+\g__pdfannot_backend_int=\count277
+\g__pdfannot_backend_link_int=\count278
+))
+Package: xeCJK 2022/08/05 v3.9.1 Typesetting CJK scripts with XeLaTeX
+
+(d:/Program Files (x86)/texlive/2025/texmf-dist/tex/latex/ctex/ctexhook.sty
+Package: ctexhook 2022/07/14 v2.5.10 Document and package hooks (CTEX)
+)
+(d:/Program Files (x86)/texlive/2025/texmf-dist/tex/latex/l3packages/xtemplate/
+xtemplate.sty
+Package: xtemplate 2024-08-16 L3 Experimental prototype document functions
+)
+\l__xeCJK_tmp_int=\count279
+\l__xeCJK_tmp_box=\box53
+\l__xeCJK_tmp_dim=\dimen147
+\l__xeCJK_tmp_skip=\skip51
+\g__xeCJK_space_factor_int=\count280
+\l__xeCJK_begin_int=\count281
+\l__xeCJK_end_int=\count282
+\c__xeCJK_CJK_class_int=\XeTeXcharclass1
+\c__xeCJK_FullLeft_class_int=\XeTeXcharclass2
+\c__xeCJK_FullRight_class_int=\XeTeXcharclass3
+\c__xeCJK_HalfLeft_class_int=\XeTeXcharclass4
+\c__xeCJK_HalfRight_class_int=\XeTeXcharclass5
+\c__xeCJK_NormalSpace_class_int=\XeTeXcharclass6
+\c__xeCJK_CM_class_int=\XeTeXcharclass7
+\c__xeCJK_HangulJamo_class_int=\XeTeXcharclass8
+\l__xeCJK_last_skip=\skip52
+\c__xeCJK_none_node=\count283
+\g__xeCJK_node_int=\count284
+\c__xeCJK_CJK_node_dim=\dimen148
+\c__xeCJK_CJK-space_node_dim=\dimen149
+\c__xeCJK_default_node_dim=\dimen150
+\c__xeCJK_CJK-widow_node_dim=\dimen151
+\c__xeCJK_normalspace_node_dim=\dimen152
+\c__xeCJK_default-space_node_skip=\skip53
+\l__xeCJK_ccglue_skip=\skip54
+\l__xeCJK_ecglue_skip=\skip55
+\l__xeCJK_punct_kern_skip=\skip56
+\l__xeCJK_indent_box=\box54
+\l__xeCJK_last_penalty_int=\count285
+\l__xeCJK_last_bound_dim=\dimen153
+\l__xeCJK_last_kern_dim=\dimen154
+\l__xeCJK_widow_penalty_int=\count286
+
+LaTeX template Info: Declaring template type 'xeCJK/punctuation' taking 0
+(template)           argument(s) on line 2396.
+
+\l__xeCJK_fixed_punct_width_dim=\dimen155
+\l__xeCJK_mixed_punct_width_dim=\dimen156
+\l__xeCJK_middle_punct_width_dim=\dimen157
+\l__xeCJK_fixed_margin_width_dim=\dimen158
+\l__xeCJK_mixed_margin_width_dim=\dimen159
+\l__xeCJK_middle_margin_width_dim=\dimen160
+\l__xeCJK_bound_punct_width_dim=\dimen161
+\l__xeCJK_bound_margin_width_dim=\dimen162
+\l__xeCJK_margin_minimum_dim=\dimen163
+\l__xeCJK_kerning_total_width_dim=\dimen164
+\l__xeCJK_same_align_margin_dim=\dimen165
+\l__xeCJK_different_align_margin_dim=\dimen166
+\l__xeCJK_kerning_margin_width_dim=\dimen167
+\l__xeCJK_kerning_margin_minimum_dim=\dimen168
+\l__xeCJK_bound_dim=\dimen169
+\l__xeCJK_reverse_bound_dim=\dimen170
+\l__xeCJK_margin_dim=\dimen171
+\l__xeCJK_minimum_bound_dim=\dimen172
+\l__xeCJK_kerning_margin_dim=\dimen173
+\g__xeCJK_family_int=\count287
+\l__xeCJK_fam_int=\count288
+\g__xeCJK_fam_allocation_int=\count289
+\l__xeCJK_verb_case_int=\count290
+\l__xeCJK_verb_exspace_skip=\skip57
+
+(d:/Program Files (x86)/texlive/2025/texmf-dist/tex/latex/fontspec/fontsp

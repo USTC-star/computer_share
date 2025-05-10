@@ -2,17 +2,35 @@
 % This is a template designed for Chin. Phys. B (Dated 12 November 2014)
 % Only one step to compile: PDFTeXify
 %=================================================================================================%
-\documentclass{cpbtex}
+\documentclass{cpbtex3}
 \usepackage{graphicx}% Include figure files
 \usepackage{dcolumn}% Align table columns on decimal point
 \usepackage{bm}% bold math
+\usepackage{authblk}
 %\usepackage[backend=biber]{biblatex}
 %\usepackage[mathlines]{lineno}% Enable numbering of text and display math
 %\linenumbers\relax % Commence numbering lines
+\usepackage{titlesec}      % For customizing section titles
+% ===== 1. Small font for affiliations =====
+\renewcommand{\Affilfont}{\small} % Set affiliation font size to small
+
+% ===== 2. Bold abstract title =====
+\usepackage{abstract} % Required to modify abstract title formatting
+\renewcommand{\abstitlestyle}[1]{{\centering\bfseries #1\par}} % Bold + centered
+
+% ===== 3. Automatically bold ALL titles (section/subsection/abstract) =====
+\titleformat*{\section}{\bfseries}     % Bold sections
+\titleformat*{\subsection}{\bfseries}  % Bold subsections
+\titleformat*{\subsubsection}{\bfseries} % Bold subsubsections
+
 
 \graphicspath{{Figure/}}
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
+\usepackage{fontspec}
+\setCJKmainfont{SimSun}[AutoFakeBold=true]  % Use SimSun or other available Chinese font
+%\setmainfont{Times New Roman}  % Main English font
+
+%\usepackage[utf8]{inputenc}
+%\usepackage[T1]{fontenc}
 \usepackage{mathptmx}
 \usepackage{etoolbox}
 \usepackage{microtype} 
@@ -23,17 +41,26 @@
 \graphicspath{{Figure/}}
 
 \begin{document}
-\begin{CJK*}{GBK}{song}
 
-\title{Analysis Anomalous Doppler Effect from quantum theory to classical dynamic simulation}
+
+\title{Analysis of the Anomalous Doppler Effect from Quantum Theory to Classical Dynamics Simulations}
 
 % Title should be concise; avoid abbreviations if possible; and not begin with `A', `An', `The', or `Study on'.
 
-\author{First Author$^{1}$, \ Second Author$^{2}$, $\ldots$, \ and \ Last Author$^{2,3,}$\thanks{Corresponding author. E-mail:~xxx@xxx.edu}\\
-$^{1}${First affiliation}\\  % The line break was forced via \\
-$^{2}${Second affiliation}\\ % The line break was forced via \\
-$^{3}${Third affiliation}}   % The line break was forced via \\
+%\author{Xinhang Xu (徐新航)$^{1}$, \ Jian Liu (刘健)$^{2}$,  \ Wandong Liu (刘万东)$^{1}$, \ and   \ Jinlin Xie (谢锦林)$^{1},$ \thanks{Corresponding author. E-mail:jlxie@ustc.edu.cn}\\
+%%\author{Xinhang Xu (徐新航)$^{1}$, Second Author$^{2}$, $\ldots$, and Last Author$^{2,3,}$\thanks{Corresponding author. E-mail: xxx@xxx.edu}\\
+%$^{1}${Department of plasma physics and fusion engineering, University of Science and Technology of China    
+% Hefei  230026 , China}\\  % The line break was forced via \\
+%$^{2}${Weihai Institute for Interdisciplinary Research, Shandong University, Weihai 264209, China} % The line break was forced via \\
 
+\author{
+Xinhang Xu (徐新航)$^{1}$, 
+Jinlin Xie (谢锦林)$^{1}$\thanks{Corresponding author. E-mail: jlxie@ustc.edu.cn}，
+Jian Liu (刘健)$^{2}$, 
+and Wandong Liu (刘万东)$^{1}$\\
+$^{1}$Department of Plasma Physics and Fusion Engineering, University of Science and Technology of China, Hefei 230026, China \\
+$^{2}$Weihai Institute for Interdisciplinary Research, Shandong University, Weihai 264209, China
+}
 % 1. For Chinese authors, the name in Chinese characters should also be given. For example, Gang Liu(����), Xiao-Ming Li(������)
 % 2. Please ensure that every author approves the submission of the manuscript
 % 3. Abbreviations should not be used in the affiliations
@@ -41,8 +68,8 @@ $^{3}${Third affiliation}}   % The line break was forced via \\
 \date{\today}
 \maketitle
 
-\begin{abstract}
-A quantum model incorporating angular momentum conservation is developed to analyze the Normal and Anomalous Doppler Effects, demonstrating that the resonance condition is strongly dependent on the angular momentum of the wave. The resonance condition associated with wave angular momentum is examined numerically, and the energy exchange ratio between parallel and gyrokinetic components during electron–electromagnetic wave resonance is simulated, showing strong agreement with quantum theoretical predictions.
+\begin{\bm{abstract}}
+A quantum model incorporating angular momentum conservation is developed to analyze the Normal and Anomalous Doppler Effects, demonstrating that the resonance condition is strongly influenced by the angular momentum of the wave. The resonance condition involving wave angular momentum is examined numerically, and the energy exchange ratio between the electron’s parallel and gyrokinetic motion during resonance with the electromagnetic wave is simulated, exhibiting strong agreement with quantum theoretical predictions.
 \end{abstract}
 
 \textbf{Keywords: Anomalous Doppler Effect, Resonant condition, Angular monmentum Conservation } %no more than four sets of keywords should be provided
@@ -51,22 +78,22 @@ A quantum model incorporating angular momentum conservation is developed to anal
 
 
 \section{Introduction}
-The Anomalous Doppler Effect (ADE)\cite{tamm1959general,frank1960optics,ginzburg1960certain,shustin1971transformation}, in which the observed frequency shift behaves contrary to the conventional Doppler Effect under specific conditions, was first theoretically predicted by Soviet physicist Vitaly L. Ginzburg\cite{ginzburg1946radiation}. This phenomenon occurs when a moving system’s velocity exceeds the phase velocity of light in the medium, it transfers its kinetic energy to its internal energy while emitting radiation. A notable example, discussed by Frank in his 1958 Nobel lecture\cite{frank1960optics}, demonstrates that radiation emission does not result from atomic transitions from a higher (excited) state to a lower state, as is typical, but rather occurs inversely--from a lower state to a higher state--where the energy is supplied by the system’s translational kinetic energy. This intriguing theoretical prediction has attracted significant attention and has motivated extensive research\cite{nezlin1976negative,santini1984anomalous,kho1988slow,wang2016multi,guo2018control,liu2018role,shi2018superlight,filatov2021role}.
+The Anomalous Doppler Effect (ADE) \cite{tamm1959general,frank1960optics,ginzburg1960certain,shustin1971transformation}, in which the observed frequency shift behaves contrary to the conventional Doppler Effect under specific conditions, was first theoretically predicted by Soviet physicist Vitaly L. Ginzburg \cite{ginzburg1946radiation}. This phenomenon arises when a system moves with a velocity exceeding the phase velocity of light in the medium, transferring its translational kinetic energy into internal energy while emitting radiation. A notable example, discussed by Frank in his 1958 Nobel lecture \cite{frank1960optics}, shows that radiation emission does not occur through the typical transition from an excited state to a lower energy state. Instead, it proceeds from a lower to a higher energy state, powered by the system's translational kinetic energy. This counterintuitive prediction has attracted considerable attention and has inspired extensive research \cite{nezlin1976negative,santini1984anomalous,kho1988slow,wang2016multi,guo2018control,liu2018role,shi2018superlight,filatov2021role}.
 
-In 1967, Artsimovich\cite{artsimovich1967thermal}observed discrepancies in tokamak experiments: measurements of electron temperature derived from diamagnetic signals stronger than derived from electrical conductivity measurement. This anomaly, unrecognized at the time, may represent the first experimental observation of ADE. It was not until 1968 that B. B. Kadomtsev\cite{kadomtsev1968electric}[16]  identified the that cause as ADE, wherein electron’s longitudinal velocity scatter to transverse velocity under resonant ADE conditions. This process amplifies the diamagnetic effect beyond contributions from thermal motion alone. After that, more phenomena related to ADE are observed, such as electron beam scattering in magnetic field vacuum tube[4], wave radiation\cite{spong2018first,liu2019intense,gorozhanin1997waves} and runaway electron instability in tokamaks \cite{sajjad2007runaway,castejon2003particle}. Applications based on ADE have also emerged in various areas, such as high-power microwave generation and runaway electron suppression in tokamaks\cite{guo2018control,zhang2024self}.
+In 1967, Artsimovich \cite{artsimovich1967thermal} reported discrepancies in tokamak experiments: the electron temperature estimated from diamagnetic signals was significantly higher than that derived from electrical conductivity measurements. Although unrecognized at the time, this anomaly may represent the first experimental observation of ADE. In 1968, B. B. Kadomtsev \cite{kadomtsev1968electric} identified ADE as the underlying mechanism, in which electrons undergo velocity scattering from the longitudinal to the transverse direction under resonant conditions. This process enhances the diamagnetic effect beyond what would be expected from thermal motion alone. Subsequently, a range of ADE-related phenomena have been observed, including electron beam scattering in magnetic field vacuum tubes \cite{frank1960optics}, wave radiation \cite{spong2018first,liu2019intense,gorozhanin1997waves}, and runaway electron instabilities in tokamaks \cite{sajjad2007runaway,castejon2003particle}. Practical applications based on ADE have also emerged, such as high-power microwave generation and runaway electron suppression in tokamaks \cite{guo2018control,zhang2024self}.
 
-The physics of the Anomalous Doppler Effect (ADE) was previously explained based on the quantum analysis provided by Frank and Ginzburg\cite{frank1960optics,ginzburg1979nonlinear}. In this paper, building on Ginzburg’s quantum analysis and incorporating angular momentum conservation, we present a more detailed analysis of ADE, offering further insights into the relationship between  wave angular momentum and ADE. Despite the simplicity of the model, to the best of our knowledge, the analysis of angular momentum conservation during the ADE process has not been presented or mentioned before. 
+The physics of ADE was originally explained using quantum analysis by Frank and Ginzburg \cite{frank1960optics,ginzburg1979nonlinear}. In this paper, we build on Ginzburg’s quantum framework by incorporating angular momentum conservation to provide a more detailed analysis of ADE. This approach offers new insights into the relationship between wave angular momentum and ADE. Despite the model's simplicity, to the best of our knowledge, the conservation of angular momentum in the context of ADE has not been previously analyzed or discussed.
 
- Additionally, a numerical simulation of a single particle resonating with an electromagnetic (EM) wave in the presence of uniform static electric and magnetic fields is conducted based on classical dynamical equations. This simulation demonstrates the relationship between the wave’s angular momentum and the resonance condition. The energy transfer ratio from the electron's kinetic energy to its gyrokinetic energy during the resonance with the EM wave is computed numerically, and the results show strong agreement with the formula derived from quantum analysis.
+Furthermore, we conduct numerical simulations of a single electron resonating with an electromagnetic (EM) wave in uniform static electric and magnetic fields, using classical dynamical equations. These simulations reveal the relationship between wave angular momentum and the resonance condition. The energy transfer ratio from the electron’s translational kinetic energy to its gyrokinetic energy during resonance is also computed, and the results are found to be in strong agreement with quantum theoretical predictions.
 
-The remainder of this paper is organized as follows. Section~\ref{Quantum}~ ~~presents the quantum analysis based on angular momentum conservation. Section III describes the numerical setup and methodology, including illustrations of the temporal evolution of velocity and kinetic energy. Section IV discusses the energy transfer ratio and polarization characteristics. Finally, Section V provides a brief discussion and conclusion.
+The remainder of this paper is organized as follows: Section~\ref{Quantum}~~~ presents the quantum analysis incorporating angular momentum conservation. Section III details the numerical setup and methodology, including the time evolution of velocity and kinetic energy. Section IV discusses the energy transfer ratio and polarization characteristics. Finally, Section V provides a brief discussion and conclusion.
 
 \section{Quantum analysis of ADE}\label{Quantum}
 %We begin with the quantum theory proposed by V.L. Ginzburg\cite{ginzburg2005radiation}based on the energy-momentum conservation, and then incorporate  angular momentum conservation to illustrate the relationship of wave’s angular momentum and Landau level n under the resonant condition $\omega = \vec{k}\cdot \vec{v}+m \omega_{ce}$, where $\omega$ is wave’s angular frequency, $\vec{k}$ represents the wave vector,  $\vec{v}$ means the velocity of electron and $ \omega_{ce}$ is the electron cyclotron angular frequency in static magnetic field, $ m =0,±1,±2,…  $is the quantum number of the Landau levels\cite{coppi1976slide}.
 
 When a charged particle moves through a medium at a speed greater than the phase velocity of light in that medium, it induces polarization in the surrounding molecules. As these molecules return to their equilibrium state, they emit electromagnetic radiation. The constructive interference of these emissions produces the characteristic Cherenkov radiation, forming a cone-shaped wavefront as shown in Fig.~\ref{fig:cherenkov}. The direction of Cherenkov radiation is constrained to the Cherenkov radiation angle $\theta_0 = \arccos\left(\frac{c'}{v}\right)$
 ,where $ c'$ is the speed of light in the medium and v is the velocity of the charged particles.
-\begin{figure}
+\begin{figure}[ht]
 \centering
 \includegraphics[width=0.4\textwidth]{Figure1.eps}% Here is how to import EPS art
 \caption{\label{fig:cherenkov}Schematic diagram of Cherenkov Radiation. The black points stand for the snapshot of the electron at different times, the read dash circle refers to the current radiation surface from the previous electron.}
@@ -472,5 +499,5 @@ which agrees with the quantum result as \eqref{eq:13}.
 %\subsection*{5. References}
 \bibliography{aipsamp_ADE}
 
-\end{CJK*}  %% end the Chinese environment
+%\end{CJK*}  %% end the Chinese environment
 \end{document}  %%% end document 

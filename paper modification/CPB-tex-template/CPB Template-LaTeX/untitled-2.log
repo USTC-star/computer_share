@@ -1,9 +1,9 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.5.1)  9 MAY 2025 15:59
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.5.1)  9 MAY 2025 13:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**cpbtemplate.tex
-(./cpbtemplate.tex
+**untitled-2.tex
+(./untitled-2.tex
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-04-14>
 (./cpbtex.cls
@@ -447,233 +447,15 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip70
 ))
+(d:/Program Files (x86)/texlive/2025/texmf-dist/tex/latex/ctex/ctex.sty
+(d:/Program Files (x86)/texlive/2025/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2025-04-14 L3 programming layer (loader) 
+
 (d:/Program Files (x86)/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-x
 etex.def
 File: l3backend-xetex.def 2025-04-14 L3 backend support: XeTeX
 \g__graphics_track_int=\count320
 \g__pdfannot_backend_int=\count321
 \g__pdfannot_backend_link_int=\count322
-) (./cpbtemplate.aux)
-\openout1 = `cpbtemplate.aux'.
-
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-
-(d:/Program Files (x86)/texlive/2025/texmf-dist/tex/latex/graphics/color.sty
-Package: color 2024/06/23 v1.3e Standard LaTeX Color (DPC)
-
-(d:/Program Files (x86)/texlive/2025/texmf-dist/tex/latex/graphics-cfg/color.cf
-g
-File: color.cfg 2016/01/02 v1.6 sample color configuration
-)
-Package color Info: Driver file: xetex.def on input line 149.
-
-(d:/Program Files (x86)/texlive/2025/texmf-dist/tex/latex/graphics/mathcolor.lt
-x))
-Package hyperref Info: Link coloring ON on input line 7.
- (./cpbtemplate.out) (./cpbtemplate.out)
-\@outlinefile=\write3
-\openout3 = `cpbtemplate.out'.
-
-
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
-
-
-(d:/Program Files (x86)/texlive/2025/texmf-dist/tex/latex/cjk/texinput/standard
-.bdg
-File: standard.bdg 2021/10/16 4.8.5
-)
-(d:/Program Files (x86)/texlive/2025/texmf-dist/tex/latex/cjk/texinput/extended
-.enc
-File: extended.enc 2021/10/16 4.8.5
-)
-(d:/Program Files (x86)/texlive/2025/texmf-dist/tex/latex/cjk/texinput/extended
-.chr
-File: extended.chr 2021/10/16 4.8.5
-)
-Invalid UTF-8 byte or sequence at line 19 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 19 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 19 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 19 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 19 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 19 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 19 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 19 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 19 replaced by U+FFFD.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 25.
-
-
-(d:/Program Files (x86)/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 25.
-
-
-(d:/Program Files (x86)/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 25
-.
-
-(d:/Program Files (x86)/texlive/2025/texmf-dist/tex/latex/jknapltx/ursfs.fd
-File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
-)
-Overfull \hbox (7.33809pt too wide) in paragraph at lines 40--40
-[]\TU/lmr/bx/n/14.4 First-level heading (e.g., Theoretical method or Experiment
-al setup) 
- []
-
-
-
-[1
-
-]
-
-[2]
-Invalid UTF-8 byte or sequence at line 106 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 106 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 106 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 106 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 106 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 106 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 106 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 106 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 106 replaced by U+FFFD.
-
-Missing character: There is no � (U+FFFD) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no � (U+FFFD) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no � (U+FFFD) in font [lmroman10-regular]:mapping=t
-ex-text;!
-LaTeX Font Info:    Trying to load font information for C19+song on input line 
-106.
-
-(d:/Program Files (x86)/texlive/2025/texmf-dist/tex/latex/cjk/texinput/GB/c19so
-ng.fd
-File: c19song.fd 2021/10/16 4.8.5
-)
-Missing character: There is no � (U+FFFD) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no � (U+FFFD) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no � (U+FFFD) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no � (U+FFFD) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no � (U+FFFD) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no � (U+FFFD) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Invalid UTF-8 byte or sequence at line 139 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 139 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 139 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 139 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 139 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 139 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 139 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 139 replaced by U+FFFD.
-File: e1.eps Graphic file (type eps)
-<e1.eps>
-
-
-[3]
-Invalid UTF-8 byte or sequence at line 153 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 153 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 153 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 153 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 153 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 153 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 153 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 153 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 153 replaced by U+FFFD.
-File: e2.eps Graphic file (type eps)
-<e2.eps>
-
-
-[4]
-
-[5
+))
+Package: ctex 2022/07/14 v2.5.10 Chinese adapter in LaT
