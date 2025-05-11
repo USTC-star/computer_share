@@ -85,12 +85,15 @@ Zhang Q, Zhang Y, Tang Q and Tang X~Z 2024 {\em arXiv preprint
 \bibitem{ginzburg1979nonlinear}
 Ginzburg N 1979 {\em Radiophysics and Quantum Electronics\/} {\bf 22} 323--330
 
-\bibitem{ginzburg2005radiation}
-Ginzburg V 2005 {\em Acoustical Physics\/} {\bf 51} 11--23
-
 \bibitem{coppi1976slide}
 Coppi B, Pegoraro F, Pozzoli R and Rewoldt G 1976 {\em Nuclear Fusion\/} {\bf
   16} 309
+
+\bibitem{dendy1987classical}
+Dendy R 1987 {\em The Physics of fluids\/} {\bf 30} 2438--2441
+
+\bibitem{ginzburg2005radiation}
+Ginzburg V 2005 {\em Acoustical Physics\/} {\bf 51} 11--23
 
 \bibitem{frolov1986excitation}
 Frolov V and Ginzburg V 1986 {\em Physics Letters A\/} {\bf 116} 423--426
@@ -104,6 +107,10 @@ Arnaut H and Barbosa G 2000 {\em Physical review letters\/} {\bf 85} 286
 \bibitem{kiang2008angular}
 Kiang D and Young K 2008 {\em American Journal of Physics\/} {\bf 76}
   1012--1014
+
+\bibitem{wei2024spin}
+Wei E, Lan Z, Chen M~L, Chen Y~P and Sun S 2024 {\em IEEE Journal on Multiscale
+  and Multiphysics Computational Techniques\/}
 
 \bibitem{liu2004particle}
 Liu H, He X, Chen S and Zhang W 2004 {\em arXiv preprint physics/0411183\/}

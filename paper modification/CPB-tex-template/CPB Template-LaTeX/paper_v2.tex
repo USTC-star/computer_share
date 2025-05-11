@@ -82,11 +82,20 @@ The Anomalous Doppler Effect (ADE) \cite{tamm1959general,frank1960optics,ginzbur
 
 In 1967, Artsimovich \cite{artsimovich1967thermal} reported discrepancies in tokamak experiments: the electron temperature estimated from diamagnetic signals was significantly higher than that derived from electrical conductivity measurements. Although unrecognized at the time, this anomaly may represent the first experimental observation of ADE. In 1968, B. B. Kadomtsev \cite{kadomtsev1968electric} identified ADE as the underlying mechanism, in which electrons undergo velocity scattering from the longitudinal to the transverse direction under resonant conditions. This process enhances the diamagnetic effect beyond what would be expected from thermal motion alone. Subsequently, a range of ADE-related phenomena have been observed, including electron beam scattering in magnetic field vacuum tubes \cite{frank1960optics}, wave radiation \cite{spong2018first,liu2019intense,gorozhanin1997waves}, and runaway electron instabilities in tokamaks \cite{sajjad2007runaway,castejon2003particle}. Practical applications based on ADE have also emerged, such as high-power microwave generation and runaway electron suppression in tokamaks \cite{guo2018control,zhang2024self}.
 
-The physics of ADE was originally explained using quantum analysis by Frank and Ginzburg \cite{frank1960optics,ginzburg1979nonlinear}. In this paper, we build on Ginzburg’s quantum framework by incorporating angular momentum conservation to provide a more detailed analysis of ADE. This approach offers new insights into the relationship between wave angular momentum and ADE. Despite the model's simplicity, to the best of our knowledge, the conservation of angular momentum in the context of ADE has not been previously analyzed or discussed.
+The physics of the Anomalous Doppler Effect (ADE) was first elucidated through quantum analysis by Frank and Ginzburg \cite{frank1960optics,ginzburg1979nonlinear}. In this work, we extend Ginzburg's quantum framework by incorporating  the conservation of angular momentum to provide a more rigorous analysis of ADE. This approach yields new insights into the relationship between wave angular momentum and ADE under resonant conditions, which it is referred to Anomalous Doppler Resonance (ADR). For an electron moving in a magnetic field and interacting with an external electromagnetic (EM) wave, the general resonance condition is given by:
+\(
+    \omega = m\omega_{ce} + \vec{k} \cdot \vec{v},
+\)
+where $\vec{k}$ is the wave vector, $\omega_{ce}$ is the electron cyclotron frequency (here $\omega_{ce}>0$ ), $\vec{v}$ is the electron velocity, and $\omega$ is the wave angular frequency, $m = 0, \pm1, \pm2, \pm3, \ldots$ represent the Landau level\cite{coppi1976slide}. Specially,  for plane EM waves, we find that resonance is restricted to the fundamental harmonics ($m = \pm1$) due to spin angular momentum conservation, reducing the condition to
+\(
+    \omega = \pm\omega_{ce} + \vec{k} \cdot \vec{v}.
+\)
+where the negative sign refers to ADR condition while the positive sign refers to Normal Doppler Resonance (NDR) condition. This represents a significant constraint compared to previous theoretical treatments\cite{dendy1987classical} which suggested possible resonance at all harmonic orders ($m = \pm1, \pm2, \dots$).
+Despite the  simplicity of the  model, our analysis demonstrates that angular momentum conservation plays a crucial role in EM wave-electron resonance - an aspect that, to the best of our knowledge, has not been previously addressed in the literature.
 
-Furthermore, we conduct numerical simulations of a single electron resonating with an electromagnetic (EM) wave in uniform static electric and magnetic fields, using classical dynamical equations. These simulations reveal the relationship between wave angular momentum and the resonance condition. The energy transfer ratio from the electron’s translational kinetic energy to its gyrokinetic energy during resonance is also computed, and the results are found to be in strong agreement with quantum theoretical predictions.
+Furthermore, we perform numerical simulations of a single electron interacting resonantly with an EM wave in the presence of uniform static electric and magnetic fields, using classical equations of motion.These simulations elucidate the relationship between wave angular momentum and the resonance mechanism. Additionally, we compute the energy transfer ratio from the electron’s translational kinetic energy to its gyrokinetic energy during resonance, and the results show strong agreement with predictions from quantum theory.
 
-The remainder of this paper is organized as follows: Section~\ref{Quantum}~~~ presents the quantum analysis incorporating angular momentum conservation. Section III details the numerical setup and methodology, including the time evolution of velocity and kinetic energy. Section IV discusses the energy transfer ratio and polarization characteristics. Finally, Section V provides a brief discussion and conclusion.
+The remainder of this paper is organized as follows. Section~\ref{Quantum}~~~ develops the quantum theoretical framework incorporating angular momentum conservation. Section~\ref{sec:level3}~~~ presents our numerical approach, detailing the simulation setup, analyzing the time evolution of electron velocity and kinetic energy, investigating the resonant conditions with wave angular momentum, and examining the energy transfer ratio and polarization characteristics. Section~\ref{sec:Discussion}~~~ provides a comprehensive discussion of the key findings and their physical implications. Finally, Section~\ref{sec:Conclusion}~~~ summarizes the principal conclusions and outlines potential directions for future research.
 
 \section{Quantum analysis of ADE}\label{Quantum}
 %We begin with the quantum theory proposed by V.L. Ginzburg\cite{ginzburg2005radiation}based on the energy-momentum conservation, and then incorporate  angular momentum conservation to illustrate the relationship of wave’s angular momentum and Landau level n under the resonant condition $\omega = \vec{k}\cdot \vec{v}+m \omega_{ce}$, where $\omega$ is wave’s angular frequency, $\vec{k}$ represents the wave vector,  $\vec{v}$ means the velocity of electron and $ \omega_{ce}$ is the electron cyclotron angular frequency in static magnetic field, $ m =0,±1,±2,…  $is the quantum number of the Landau levels\cite{coppi1976slide}.
@@ -129,7 +138,7 @@ Here, \(\omega / k = c'\), and \(\Delta U_{21} = U_2 - U_1\). When the system's 
 \end{enumerate}
 In previous paper, the change of internal energy is given as $\Delta U = m\hbar\omega_{ce}$, where $m = 0, \pm1, \pm2, \pm3, \ldots$ represent the Landau level, as given by V.\,L. Ginzburg~\cite{ginzburg2005radiation}, Coppi~\cite{coppi1976slide}, Frolov~\cite{frolov1986excitation}, Frank~\cite{frank1960optics}, Tamm~\cite{tamm1959general} and Nezlin~\cite{nezlin1976negative}. The above content revisits the foundational work of V.\,L. Ginzburg~\cite{ginzburg2005radiation}. In the present paper, it is further demonstrated that $m$ actually represents the quantum number associated with the angular momentum of the emitted photon.
 
-Let's consider the process in which an electron cyclotron system under a uniform magnetic field emits a photon, as shown in Fig.~3. The moving electron has the velocity $v_z$ along the background magnetic field and the $v_\perp$ cyclotron velocity. The kinetic energy along $z$ is $T = \gamma m_e c^2 - m_e c^2$, where $\gamma$ refers to the Lorentz factor. The internal energy represents as $U = \frac{1}{2} \gamma m_e v_\perp^2$. 
+Let's consider the process in which an electron cyclotron system under a uniform magnetic field emits a photon along z axis, as shown in Fig.~\ref{fig:Schematic}. The moving electron has the velocity $v_z$ along the background magnetic field and the $v_\perp$ cyclotron velocity. The kinetic energy along $z$ is $T = \gamma m_e c^2 - m_e c^2$, where $\gamma$ refers to the Lorentz factor. The internal energy represents as $U = \frac{1}{2} \gamma m_e v_\perp^2$. 
 
 Assume the angular momentum of the system before and after emitting a photon is $L_1$ and $L_2$, respectively. The angular momentum of photon is $m\hbar$. According to the angular momentum conservation, we have
 \begin{equation}
@@ -151,7 +160,7 @@ With the term $\Psi_0$ representing the normalized coefficient, $\mathbf{A}$ is 
 
 The $z$-component of the orbital angular momentum operator can be expressed in spherical coordinates as:
 \begin{equation}
-\hat{L}_z = -i\hbar\frac{\partial}{\partial\phi} \Psi \label{eq:Lz}
+\hat{L}_z = -i\hbar\frac{\partial}{\partial\phi}  \label{eq:Lz}
 \end{equation}
 Combining Eq.~(\ref{eq:psi}) with Eq.~(\ref{eq:Lz}), we have 
 \begin{equation}
@@ -166,7 +175,7 @@ With \( p_\phi = \gamma m_e v_\perp \), \( A_\phi = \dfrac{r B_0}{2} \), and \( 
 L_z = \frac{1}{2} \cdot \frac{\gamma m_0 v_\perp^2}{\omega_{ce}} = \frac{U}{\omega_{ce}},
 \end{equation}
 where \(\omega_{ce} = \dfrac{eB}{m_0 \gamma} = \dfrac{\omega_0}{\gamma}\) and \(U = \dfrac{1}{2} \gamma m_0 v_\perp^2\).
-Here, \( m_0 \) is the electron rest mass, \( \gamma \) is the Lorentz factor, and \( \omega_0 \) is the electron cyclotron frequency in the rest frame (\( \omega_0 > 0 \)). The conservation of angular momentum in the \( z \)-direction is expressed as
+Here, \( m_0 \) is the electron rest mass, \( \gamma \) is the Lorentz factor, and \( \omega_0 \) is the electron cyclotron frequency in the rest frame (\( here we choose \omega_0 > 0 \)). The conservation of angular momentum in the \( z \)-direction is expressed as
 \[
 L_{z2} + m\hbar = L_{z1}.
 \]
@@ -180,37 +189,47 @@ Here, \( m \) is the quantum number of the photon's angular momentum in the \( z
 \end{equation}
 According to the Eq.~(\ref{eq:DeltaU00})  and Eq.~(\ref{eq:DeltaU21}), the change in electron energy  could be presented as 
 \begin{equation}
-\hbar \vec{k} \cdot \vec{v} = \hbar \omega - m \hbar \omega_{ce}
+\hbar \vec{k} \cdot \vec{v} = \hbar \omega - m \hbar \omega_{ce} \label{eq:EnergyResonant}
 \end{equation}
-This result is consistent with previous findings~\cite{tamm1959general, frank1960optics, nezlin1976negative, coppi1976slide, frolov1986excitation, ginzburg1996radiation}. Here, \( \hbar \vec{k} \cdot \vec{v} \) represents the loss of kinetic energy \( \Delta T_{12} \), \( \hbar \omega \) represents the energy of the photon, and \( -m \hbar \omega_{ce} \) represents the change in the electron gyrokinetic energy \( \Delta U_{21} \) (the internal energy change). The ratio between the internal energy change \( \Delta U_{21} \) and the kinetic energy change \( \Delta T_{12} \) can be expressed as
+This result is consistent with previous findings~\cite{tamm1959general, frank1960optics, nezlin1976negative, coppi1976slide, frolov1986excitation, ginzburg1996radiation}. Here, \( \hbar \vec{k} \cdot \vec{v} \) represents the loss of kinetic energy \( \Delta T_{12} \), \( \hbar \omega \) represents the energy of the photon, and \( -m \hbar \omega_{ce} \) represents the change in the electron gyrokinetic energy \( \Delta U_{21} \) (the internal energy change). The ratio between the internal energy change \( \Delta U_{21} \) and the kinetic energy change \( \Delta T_{21} \) can be expressed as
 \begin{equation}
 \frac{\Delta U_{21}}{\Delta T_{21}} = \frac{m \hbar \omega_{ce}}{\hbar \vec{k} \cdot \vec{v}}  \label{eq:DU21DT21}
 \end{equation}
  This results is a critical criterion to compare with the classical dynamic simulation in the section 2. It is also proved based on classical theory in the Appendix.
-After simpifying the Eq.~(\ref{eq:DU21DT21}), we finally have the classical wave-particle resonant condition 
+After simpifying the Eq.~(\ref{eq:EnergyResonant}), we finally have the classical wave-particle resonant condition 
 \begin{equation}
 \omega = k_z v_z + m \omega_{ce}
 \end{equation}
 The variable \( m \) represents the quantum number associated with the angular momentum of the photon. Since a photon possesses both orbital angular momentum (\( l\hbar\), where \(l = 0,\pm1,\pm2,\pm3,... \)) and intrinsic spin angular momentum (\( s\hbar \), where \( s = \pm 1 \))~\cite{arnaut2000orbital}, the total angular momentum can be expressed as \( m\hbar = l\hbar + s\hbar \). 
 
-If we consider a plane wave, only the spin angular momentum contributes in this context (i.e., \( l = 0 \)). Therefore, there are two possible scenarios regarding the sign of \( m \), corresponding to the two possible spin states of the photon: \( m = +1 \) or \( m = -1 \).
+For photons carrying only spin angular momentum, two distinct quantum states are possible, characterized by the spin quantum number $m$:
 
 \begin{enumerate}
-\item  	For $m>0$, where $\Delta U_{21}<0$, the internal energy of the cyclotron electron decreases after emitting a photon. If the angular momentum quantum number $m =1$, the emitted photon exhibits right-hand circular polarization. This process is known as the NDE.
-\item    	For $m<0, \Delta U_{21}>0$, the cyclotron electron gains internal energy after emitting a photon. The emission photo will have left-hand circular polarization if the angular momentum quantum number $m = -1$\footnote{The difference between the definition of left- and right-hand polarization for \( m \) and the conventional definition~\cite{kiang2008angular} arises from the choice of \( \omega_0 > 0 \) used here, where \( m > 0 \) corresponds to the same sense of rotation as the electron's right-hand motion, which corresponds to right-hand polarization for \( \vec{k} \parallel \vec{B}_0 \).
-}. This process is known as the ADE. 
+\item For $m=+1$ ($\Delta U_{21}<0$), the cyclotron electron loses internal energy upon photon emission. The emitted photon displays right-hand circular polarization . This process is known as the NDE. 
+
+\item For $m=-1$ ($\Delta U_{21}>0$), the cyclotron electron gains internal energy through photon emission. The emitted photon exhibits left-hand circular polarization \footnote{The difference between our definition of circular polarization and the standard definition~\cite{kiang2008angular} stems from our choice of $\omega_0 > 0$. Here, $m > 0$ corresponds to the same rotational sense as the electron's natural right-hand gyration, which yields right-hand polarization when $\vec{k} \parallel \vec{B}_0$.}. This process corresponds to the ADE.
 \end{enumerate}
 
 
-While ADE and NDE describe spontaneous emission phenomena that occur without external field intervention, in our simulation model an external electromagnetic (E.M) waves is introduced as resonant fields interacting with electrons in static magnetic and electric fields. This approach provides a framework for analysing ADE under resonant conditions, referred to here as Anomalous Doppler Resonance (ADR). Under such resonance, both emission and absorption processes can occur, depending on the phase relationship between the electron’s perpendicular velocity and the electric field of the E.M wave. A detailed analysis is provided in the Appendix.
+%above describe spontaneous emission phenomenon of ADE and NDE without external field intervention . In our simulation model , an external plane EM field is introduced as resonant field interacting with electrons . the plane EM wave actually play a role as induced wave, where gyro-electron may absorb or stimulated em wave. from quantum from, the plane em wave actually is the ocean of photon which only contains spin angular momentum. so we should get the same resonant condition as derived from quantum field , where the righ hand polarization wave corresponds to $m = 1$ \cite{wei2024spin} and could only resonant under condition $\omega=\omega_c{e}+\vec{k}\cdot\vec{v}$,which is corresponds to NDR, while left-hand polarization corresponds to $m=-1$ and could only resonant with electron under $\omega=-\omega_{ce}+\vec{k}\cdot\vec{v}$,which is correspond to ADR
+The above discussion described spontaneous emission phenomena of ADE and NDE without external field intervention. In our simulation model, we introduce an external plane electromagnetic (EM) wave that serves as a resonant field interacting with electrons. This plane EM wave acts as an inducing field, enabling gyro-electron to undergo stimulated absorption or emission processes. 
+From a quantum perspective,  the plane EM wave can be regarded as an ocean of photons that carry only spin angular momentum. Consequently, the same resonance conditions as those derived from quantum field theory are recovered:
+
+\begin{itemize}
+    \item Right-hand circularly polarized  waves correspond to $m = +1$ states \cite{wei2024spin}, resonating only when $\omega = \omega_{ce} + \vec{k}\cdot\vec{v}$ (NDR condition)
+    
+    \item Left-hand circularly polarized  waves correspond to $m = -1$ states, resonating only when $\omega = -\omega_{ce} + \vec{k}\cdot\vec{v}$ (ADR condition)
+\end{itemize}
+
+This exact correspondence between our classical simulation framework and quantum field theoretic predictions validates our modeling approach while providing physical insight into the angular momentum selection rules governing these resonant interactions.
 
 
-Depsite nonlinear analyses of electron interactions with E.M waves—excluding static electric fields—have been presented in numerous studies \cite{liu2004particle,qian1999exact,weyssow1990motion,gogoberidze2005origin,roberts1964motion,bourdier2000dynamics,nusinovich1999theory,nusinovich1995theory,qian2000relativistic}, fewer investigations have considered the influence of a static electric field during resonance with E.M waves. Due to the complexity of the nonlinear processes involved, analytical solutions are nearly impossible to obtain, making numerical simulations essential in this context.
+Although nonlinear analyses of electron interactions with electromagnetic waves have been extensively studied \cite{liu2004particle,qian1999exact,weyssow1990motion,gogoberidze2005origin,roberts1964motion,bourdier2000dynamics,nusinovich1999theory,nusinovich1995theory,qian2000relativistic}, the specific role of static electric fields in these interactions has received comparatively less attention. In our approach, the uniform electric field serves a crucial function by systematically scanning the electron velocity, thereby enabling investigation across the full spectrum of resonance conditions. The inherent complexity of these nonlinear processes precludes analytical solutions, necessitating the use of numerical simulation methods to obtain meaningful physical insights.
 
-\section{Classical dynamic simulation of ADR}\label{sec:level2}
-The ADE process has been analyzed based on quantum theory, demonstrating that the angular momentum of the emitting photon determines the resonance condition. Specifically, only angular momentum with  $m < 0 $ corresponds to the ADE process, while $m >0 $ corresponds to the NDE process. These characteristics will be tested through the interaction of E.M wave and the electron during ADR and Normal Doppler Resonance (NDR), and the energy transfer ratio can also be verified through numerical simulations.
+\section{Classical dynamic simulation of ADR}\label{sec:level3}
+The ADE process has been analyzed based on quantum theory, demonstrating that the angular momentum of the emitting photon determines the resonance condition.  These characteristics will be tested through the interaction of EM wave and the electron during ADR and NDR, and the energy transfer ratio can also be verified through numerical simulations.
 \subsection{Numerical simulation setup}
-To analyze the resonant process from the perspective of classical dynamics and to provide a direct comparison between quantum and classical dynamic results, the following scenario is considered: A uniform magnetic field \( \vec{B}_0 \) is applied along the \( z \)-direction. An electrostatic field \( \vec{E}_0 \), oriented in the opposite direction to \( \vec{B}_0 \) (as illustrated in Fig.~4), is used to accelerate the electron. 
+To analyze the resonant process from the perspective of classical dynamics and to provide a direct comparison between quantum and classical dynamic results, the following scenario is considered: A uniform magnetic field \( \vec{B}_0 \) is applied along the \( z \)-direction. An electrostatic field \( \vec{E}_0 \), oriented in the opposite direction to \( \vec{B}_0 \) (as illustrated in Fig.~\ref{fig:Setup}), is used to accelerate the electron. 
 \begin{figure}
 \centering
 \includegraphics[width=0.4\textwidth]{Figure4.eps}% Here is how to import EPS art
@@ -227,24 +246,24 @@ where
 \vec{E}_R = \frac{1}{2} E_0 (\vec{e}_x + i\vec{e}_y) \exp[i(\vec{k} \cdot \vec{r} - \omega t)],
 \vec{E}_L = \frac{1}{2} E_0 (\vec{e}_x - i\vec{e}_y) \exp[i(\vec{k} \cdot \vec{r} - \omega t)].
 \)
-If the wavevector \( \vec{k} \) lies in the \( y \)-\( z \) plane with a crossing angle \( \theta_k \) relative to the \( z \)-axis, then the new coordinate unit vectors for the wave field expression should be rotated accordingly to align with the direction of \( \vec{k} \). The transformed basis vectors are:
-\begin{equation}
-\begin{pmatrix}
-\vec{e}_x' \\
-\vec{e}_y'
-\end{pmatrix}
-=
-\begin{pmatrix}
-1 & 0 & 0 \\
-0 & \cos\theta_k & \sin\theta_k
-\end{pmatrix}
-\cdot
-\begin{pmatrix}
-\vec{e}_x \\
-\vec{e}_y \\
-\vec{e}_z
-\end{pmatrix}
-\end{equation}
+%If the wavevector \( \vec{k} \) lies in the \( y \)-\( z \) plane with a crossing angle \( \theta_k \) relative to the \( z \)-axis, then the new coordinate unit vectors for the wave field expression should be rotated accordingly to align with the direction of \( \vec{k} \). The transformed basis vectors are:
+%\begin{equation}
+%\begin{pmatrix}
+%\vec{e}_x' \\
+%\vec{e}_y'
+%\end{pmatrix}
+%=
+%\begin{pmatrix}
+%1 & 0 & 0 \\
+%0 & \cos\theta_k & \sin\theta_k
+%\end{pmatrix}
+%\cdot
+%\begin{pmatrix}
+%\vec{e}_x \\
+%\vec{e}_y \\
+%\vec{e}_z
+%\end{pmatrix}
+%\end{equation}
 The magnetic field of E.M wave is
 \begin{equation}
 \vec{B}_w = \frac{\vec{k} \times \vec{E}_w}{\omega}
@@ -259,16 +278,16 @@ The six-dimensional phase space of an electron, described by its position $\bm{r
 \end{aligned}
 \end{equation}
 
-To simulate the evolution of $\bm{r}$ and $\bm{p}$, the above system is discretized using the Volume-Preserving Algorithm. Let $k$ denote the iteration step and $\text{Cay}(\bm{A})$ represent the Cayley transform of matrix $\bm{A}$:
+To simulate the evolution of $\bm{r}$ and $\bm{p}$, the above system is discretized using the Volume-Preserving Algorithm. Let $j$ denote the iteration step and $\text{Cay}(\bm{A})$ represent the Cayley transform of matrix $\bm{A}$:
 
 \begin{equation}
 \left\{
 \begin{aligned}
-\bm{r}^*_{k+\frac{1}{2}} &= \bm{r}^*_k + \frac{\Delta t^*}{2 \gamma_k} \bm{p}^*_k, \\
-\bm{p}^{*-} &= \bm{p}^*_k + \frac{\Delta t^*}{2} \bm{E}^*_{k+\frac{1}{2}}, \\
+\bm{r}^*_{j+\frac{1}{2}} &= \bm{r}^*_j + \frac{\Delta t^*}{2 \gamma_j} \bm{p}^*_j, \\
+\bm{p}^{*-} &= \bm{p}^*_j + \frac{\Delta t^*}{2} \bm{E}^*_{j+\frac{1}{2}}, \\
 \bm{p}^{*+} &= \text{Cay} \left( \frac{\Delta t^* \hat{\bm{B}}^*}{2 \gamma^{*-}} \right) \bm{p}^{*-}, \\
-\bm{p}^*_{k+1} &= \bm{p}^{*+} + \frac{\Delta t^*}{2} \bm{E}^*_{k+\frac{1}{2}}, \\
-\bm{r}^*_{k+1} &= \bm{r}^*_{k+\frac{1}{2}} + \frac{\Delta t^*}{2 \gamma_{k+1}} \bm{p}^*_{k+1},
+\bm{p}^*_{j+1} &= \bm{p}^{*+} + \frac{\Delta t^*}{2} \bm{E}^*_{j+\frac{1}{2}}, \\
+\bm{r}^*_{j+1} &= \bm{r}^*_{j+\frac{1}{2}} + \frac{\Delta t^*}{2 \gamma_{j+1}} \bm{p}^*_{j+1},
 \end{aligned}
 \right.
 \end{equation}
@@ -290,7 +309,7 @@ to ensure the accuracy of the simulation.
 
 \vspace{1em}
 
-The evolution of the electron’s motion is shown in fig. 5. As the electron accelerates from stationary in the electrostatic field (fig. 5(b)), the resonant frequencies increase simultaneously (Fig.~5(a)). The change of parallel velocity caused by electromagnetic wave can be quantified as \( \Delta v = v_z - v_{zE0} \) as shown in Fig.~5(c), where \( v_z \) represents the parallel velocity under the given scenario, while \( v_{zE0} \) denotes the parallel velocity resulting solely from the electrostatic field, which can be calculated using a theoretical equation as
+The evolution of the electron’s motion is shown in Fig.~\ref{fig:kinetic_evolution}. As the electron accelerates from stationary in the electrostatic field (Fig.~\ref{fig:kinetic_evolution}(b)), the resonant frequencies increase simultaneously (Fig.~\ref{fig:kinetic_evolution}(a)). The change of parallel velocity caused by electromagnetic wave can be quantified as \( \Delta v = v_z - v_{zE0} \) as shown in Fig.~\ref{fig:kinetic_evolution}(c), where \( v_z \) represents the parallel velocity under the given scenario, while \( v_{zE0} \) denotes the parallel velocity resulting solely from the electrostatic field, which can be calculated using a theoretical equation as
 
 \begin{equation}
 v_{zE0} = \frac{e E_0 t}{m_0 \sqrt{1 + \left( \frac{e E_0 t}{m_0 c} \right)^2 }}
@@ -298,7 +317,7 @@ v_{zE0} = \frac{e E_0 t}{m_0 \sqrt{1 + \left( \frac{e E_0 t}{m_0 c} \right)^2 }}
 
 \vspace{1em}
 
-The cyclotron velocity is shown in fig. 5(d). The work done by electromagnetic wave is shown in fig. 5(e), which can be calculated by integrating the power with time as 
+The cyclotron velocity is shown in Fig.~\ref{fig:kinetic_evolution}(d). The work done by electromagnetic wave is shown in fig. 5(e), which can be calculated by integrating the power with time as 
 \(
 E_{\parallel \text{emw}} = \int P_{\parallel \text{emw}} dt ,
 \)
@@ -306,7 +325,7 @@ and
 \(
 P_{\parallel \text{emw}} = -e \vec{v}_\perp \times \vec{B}_{\perp \text{emw}} \cdot v_z.
 \)
-Since all discrete data points are available from the simulation, it is not difficult to integrate all the discrete data over time. Fig. 5(f) shows the gyro-kinetic energy evolution with time, where 
+Since all discrete data points are available from the simulation, it is not difficult to integrate all the discrete data over time. Fig.~\ref{fig:kinetic_evolution}(f) shows the gyro-kinetic energy evolution with time, where 
 \(
 E_\perp = \frac{1}{2} m_e v_\perp^2.
 \)
@@ -315,7 +334,7 @@ E_\perp = \frac{1}{2} m_e v_\perp^2.
 \centering
 \includegraphics[width=0.8\textwidth]{Figure5.pdf}% Here is how to import EPS art
 \caption{\label{fig:NumSim}Kinetic evolution of electrons in a magnetic field with an electromagnetic wave during acceleration. 
-    (a) Frequencies of ADE, NDE, and source wave frequency. $\theta_k$ refers to the angle between $\vec{k}$ and the $z$ axis, here $\theta_k = 0$. 
+    (a) Frequencies of ADE, NDE, and source wave frequency. 
     (b) The parallel velocity $v_z$ in the case with and without the electromagnetic wave. 
     (c) The change of parallel velocity caused by the electromagnetic wave. 
     (d) The cyclotron velocity $v_\perp$. 
@@ -327,58 +346,65 @@ E_\perp = \frac{1}{2} m_e v_\perp^2.
 
 \subsection{Validation of energy transfer ratio  }
 
-As shown in Fig.~5(a), around \( 23\tau_{ce} \), the normal Doppler frequency matches that of the induced wave, leading to a rapid increase in the cyclotron velocity \( v_{\perp} \) (Fig.~5(b)). Simultaneously, the change in parallel velocity induced by the electromagnetic wave also increases. This phenomenon can be interpreted as the electron cyclotron system absorbing a photon during the Normal Doppler Effect, resulting in an increase in both parallel kinetic energy and cyclotron energy. The change in parallel kinetic energy caused by the electromagnetic wave is shown in Fig.~5(e), where \( \Delta T_{21} = \Delta E_{||\text{emw}} \approx 5.4 \times 10^{-5} \, \text{eV} \). The increase in cyclotron energy is shown in Fig.~5(e), where \( \Delta U_{21} = \Delta E_{\perp} \approx 10.7 \times 10^{-5} \, \text{eV} \). The energy transfer ratio between internal energy and kinetic energy during resonance is given by \( \frac{\Delta U_{21}}{\Delta T_{21}} \approx 1.98 \). According to quantum theory, the energy ratio is given by Eq.~(13). Here \( m = 1 \) for NDE and \( k = 10^5 \, \text{m}^{-1} \) along the \( z \)-axis, the resonant velocity \( v_z \approx 19 \times 10^3 \, \text{m/s} \) and \( \omega_{ce} \approx 3.51 \times 10^9 \, \text{s}^{-1} \). Finally, \( n_p = 1.85 \), which is in close agreement with the simulation results.
+As shown in Fig.~\ref{fig:kinetic_evolution}(a), around \( 23\tau_{ce} \), the normal doppler frequency matches that of the induced wave, leading to a rapid increase in the cyclotron velocity \( v_{\perp} \) (Fig.~5(b)). Simultaneously, the change in parallel velocity induced by the electromagnetic wave also increases. This phenomenon can be interpreted as the electron cyclotron system absorbing a photon during the NDR, resulting in an increase in both parallel kinetic energy and gyro-kinetic energy(internal energy). The change in parallel kinetic energy caused by the electromagnetic wave is shown in Fig.~\ref{fig:kinetic_evolution}(e), where \( \Delta T_{21} = \Delta E_{||\text{emw}} \approx 5.4 \times 10^{-5} \, \text{eV} \). The increase in gyro-kinetic energy is shown in Fig.~\ref{fig:kinetic_evolution}(e), where \( \Delta U_{21} = \Delta E_{\perp} \approx 10.7 \times 10^{-5} \, \text{eV} \). The energy transfer ratio between internal energy and parallel kinetic energy during resonance is given by \( \frac{\Delta U_{21}}{\Delta T_{21}} \approx 1.98 \). According to quantum theory, the energy ratio is given by Eq.~(13). Here \( m = 1 \) for NDE and \( k = 10^5 \, \text{m}^{-1} \) along the \( z \)-axis, the resonant velocity \( v_z \approx 19 \times 10^3 \, \text{m/s} \) and \( \omega_{ce} \approx 3.51 \times 10^9 \, \text{s}^{-1} \). Finally, \( n_p = 1.85 \), which is in close agreement with the simulation results.
 
-The Anomalous Doppler Effect begins to emerge when the time reaches \( 113 \tau_{ce} \), where \( \omega_{\text{ADE}} = \omega \) as shown in Fig.~5(a). At this point, the parallel velocity begins to scatter into the perpendicular direction, evident from the decrease in \( \Delta v_z \) and the increase in \( v_{\perp} \) as seen in Fig.~5(c) and Fig.~5(d). During the resonant period, the changes in parallel kinetic and gyro-kinetic energies caused by the electromagnetic wave are calculated as \( \Delta T_{21} = \Delta E_{||\text{emw}} \approx -96.2 \times 10^{-5} \, \text{eV} \) and \( \Delta E_{\perp} \approx 39.3 \times 10^{-5} \, \text{eV} \). The energy transfer ratio is \( \frac{\Delta U_{21}}{\Delta T_{21}} \approx -0.408 \). According to quantum theory, the change ratio of \( \Delta U_{21}/\Delta T_{21} = -\hbar \omega_{ce}/\hbar \vec{k} \cdot \vec{v} = -0.3908 \), where \( \omega_{ce} \approx 3.51 \times 10^9 \, \text{s}^{-1} \), and \( k = 10^5 \, \text{m}^{-1} \), \( v_z = 90 \, \text{km/s} \). The quantum theory results are in good agreement with the numerical calculations. The energy change ratio is also derived in the Appendix, based on classical theory.
+The Anomalous Doppler Effect begins to emerge when the time reaches \( 113 \tau_{ce} \), where \( \omega_{\text{ADE}} = \omega \) as shown in Fig.~\ref{fig:kinetic_evolution}(a). At this point, the parallel velocity begins to scatter into the perpendicular direction, evident from the decrease in \( \Delta v_z \) and the increase in \( v_{\perp} \) as seen in Fig.~\ref{fig:kinetic_evolution}(c) and Fig.~\ref{fig:kinetic_evolution}(d). During the resonant period, the changes in parallel kinetic and gyro-kinetic energies caused by the electromagnetic wave are calculated as \( \Delta T_{21} = \Delta E_{||\text{emw}} \approx -96.2 \times 10^{-5} \, \text{eV} \) and \( \Delta E_{\perp} \approx 39.3 \times 10^{-5} \, \text{eV} \). The energy transfer ratio is \( \frac{\Delta U_{21}}{\Delta T_{21}} \approx -0.408 \). According to quantum theory, the change ratio of \( \Delta U_{21}/\Delta T_{21} = -\hbar \omega_{ce}/\hbar \vec{k} \cdot \vec{v} = -0.3908 \), where \( \omega_{ce} \approx 3.51 \times 10^9 \, \text{s}^{-1} \), and \( k = 10^5 \, \text{m}^{-1} \), \( v_z = 90 \, \text{km/s} \). The quantum theory results are in good agreement with the numerical calculations. The energy change ratio is also derived in the Appendix, based on classical theory.
 \subsection{Validation of the relationship with wave angular momentum. }
 \begin{figure}[ht]
 \centering
 \includegraphics[width=0.5\textwidth]{Figure6.eps}% Here is how to import EPS art
 \caption{Velocity evolution caused by induced wave with linear, right-circular and left-circular polarization. (a) The cyclotron velocity $v_\perp$ .(b) The change of parallel velocity caused by the electromagnetic wave.}
-    \label{fig:6}
+    \label{fig:AngularMomentum}
 \end{figure}
 
-Fig.~6(a--b) illustrate the velocity evolution under linear polarization of \( E_l \), right-circular polarization \( E_R \) (\( m = -1 \)), and left-circular polarization \( E_L \) (\( m = 1 \)). The work done on the electron by the electromagnetic wave, \( E_{\text{emw}} \), as depicted in Fig.~6(c), consists of the parallel direction, \( E_{\parallel\text{emw}} \), as previously described, and the gyro-kinetic energy \( E_{\perp\text{emw}} \). The latter is calculated as
+Fig.~\ref{fig:AngularMomentum}(a--b) illustrate the velocity evolution under linear polarization of \( E_l \), right-circular polarization \( E_R \) (\( m = -1 \)), and left-circular polarization \( E_L \) (\( m = 1 \)). The work done on the electron by the electromagnetic wave, \( E_{\text{emw}} \), as depicted in Fig.~\ref{fig:AngularMomentum}(c), consists of the parallel direction, \( E_{\parallel\text{emw}} \), as previously described, and the gyro-kinetic energy \( E_{\perp\text{emw}} \). The latter is calculated as
 \(
 E_{\perp\text{emw}} = \int \vec{F}_{\perp} \cdot \vec{v}_{\perp} \, dt,
 \)
 where \( \vec{F}_{\perp} \) is determined from the electric and magnetic field forces, and \( \vec{v}_{\perp} \) represents the cyclotron velocity. All these parameters can be readily obtained from numerical results and integrated discretely.
 
-The three types of polarization waves are investigated under the same scenario as before. As a result, the right-hand circularly polarized wave (\( m = 1 \)) causes a velocity change only at around \( 23\tau_{ce} \), while the left-hand circularly polarized wave (\( m = -1 \)) causes a velocity change only at around \( 113\tau_{ce} \). This indicates that the right-circularly polarized wave is responsible for the Normal Doppler Effect (NDE), while the left-hand circularly polarized wave is responsible for the Anomalous Doppler Effect (ADE), which agrees well with the quantum analysis.
+The three types of polarization waves are investigated under the same scenario as before. As a result, the right-hand circularly polarized wave (\( m = 1 \)) causes a velocity change only at around \( 23\tau_{ce} \), while the left-hand circularly polarized wave (\( m = -1 \)) causes a velocity change only at around \( 113\tau_{ce} \). This indicates that the right-circularly polarized wave is responsible for the NDE, while the left-hand circularly polarized wave is responsible for the ADE, which agrees well with the quantum analysis.
 
-The process can be understood as follows: For an electromagnetic wave with right-hand polarization propagating along the magnetic field, the electron in the magnetic field undergoes right-hand circular motion. When its parallel velocity satisfies the condition
+%The process can be understood as follows: For an electromagnetic wave with right-hand polarization propagating along the magnetic field, the electron in the magnetic field undergoes right-hand circular motion. When its parallel velocity satisfies the condition
+%\(
+%\omega - \vec{k} \cdot \vec{v} = \omega_{ce},
+%\)
+%known as the Normal Doppler Resonance (NDR) condition, the electron, in its co-moving cyclotron frame, perceives the wave frequency as equal to its rotational frequency. Consequently, the electron resonates and absorbs the electromagnetic wave, as indicated in Fig.~\ref{fig:AngularMomentum}(c) at \( 23\tau_{ce} \). According to the conservation of angular momentum and parallel momentum, both the cyclotron velocity and parallel velocity increase, as the electromagnetic wave carries positive angular momentum (in the same direction as the cyclotron electron's angular momentum) and parallel momentum, which correspond to \( \hbar \) and \( \hbar k \) in quantum physics.
+%
+%For a left-circularly polarized electromagnetic wave, the resonance and scattering process occurs when the electron velocity satisfies the condition
+%\(
+%\omega - \vec{k} \cdot \vec{v} = -\omega_{ce},
+%\)
+%known as the ADR. In the frame of the cyclotron electron, the electromagnetic wave has the same frequency and rotational direction as the electron, since the electron's velocity exceeds the wave phase velocity. Because the electromagnetic wave performs negative work on the electron, as shown in Fig.~\ref{fig:AngularMomentum}(c) at \( 113\tau_{ce} \), where \( E_{\text{emw}} \) is negative for a left-hand polarization wave, this is equivalent to the electron emitting an electromagnetic wave with the same properties as the induced wave. Since the emitted wave has left-hand circular polarization and positive momentum---corresponding to \( -\hbar \) and \( \hbar k \) in quantum physics---the cyclotron velocity increases while the parallel velocity decreases, to conserve angular momentum and momentum.
+%
+%For the left-circularly polarized wave, where the angular momentum \( m = -1 \), resonance occurs only at
+%\(
+%\omega = \vec{k} \cdot \vec{v} - \omega_{ce},
+%\)
+%as shown in Fig.~\ref{fig:7}. This behavior differs from previous results, where resonance for a plane electromagnetic wave could occur at any integer \( m \) satisfying
+%\(
+%\vec{k} \cdot \vec{v} + m\omega_{ce} - \omega = 0,
+%\)
+%as shown in Eq.~(36) and Eq.~(37) of Ref.~\cite{dendy1987classical}, but agrees well with angular momentum conservation analysis.
+For a left-circularly polarized (LCP) electromagnetic wave, The angular momentum selection rule ($m = -1$) restricts resonance to only occur when:
 \(
-\omega - \vec{k} \cdot \vec{v} = \omega_{ce},
+    \omega = \vec{k} \cdot \vec{v} - \omega_{ce},
 \)
-known as the Normal Doppler Resonance (NDR) condition, the electron, in its co-moving cyclotron frame, perceives the wave frequency as equal to its rotational frequency. Consequently, the electron resonates and absorbs the electromagnetic wave, as indicated in Fig.~6(c) at \( 23\tau_{ce} \). According to the conservation of angular momentum and parallel momentum, both the cyclotron velocity and parallel velocity increase, as the electromagnetic wave carries positive angular momentum (in the same direction as the cyclotron electron's angular momentum) and parallel momentum, which correspond to \( \hbar \) and \( \hbar k \) in quantum physics.
+as confirmed numerically in Fig.~\ref{fig:7}. This represents a significant departure from previous classical treatments \cite{dendy1987classical} (Eqs. 36-37) that permitted resonance at arbitrary integer harmonics $m$, while being fully consistent with quantum angular momentum conservation principles.
 
-For a left-circularly polarized electromagnetic wave, the resonance and scattering process occurs when the electron velocity satisfies the condition
-\(
-\omega - \vec{k} \cdot \vec{v} = -\omega_{ce},
-\)
-known as the Anomalous Doppler Resonance (ADR). In the frame of the cyclotron electron, the electromagnetic wave has the same frequency and rotational direction as the electron, since the electron's velocity exceeds the wave phase velocity. Because the electromagnetic wave performs negative work on the electron, as shown in Fig.~6(c) at \( 113\tau_{ce} \), where \( E_{\text{emw}} \) is negative for a left-hand polarization wave, this is equivalent to the electron emitting an electromagnetic wave with the same properties as the induced wave. Since the emitted wave has left-hand circular polarization and positive momentum---corresponding to \( -\hbar \) and \( \hbar k \) in quantum physics---the cyclotron velocity increases while the parallel velocity decreases, to conserve angular momentum and momentum.
 
-For the left-circularly polarized wave, where the angular momentum \( m = -1 \), resonance occurs only at
-\(
-\omega = \vec{k} \cdot \vec{v} - \omega_{ce},
-\)
-as shown in Fig.~7. This behavior differs from previous results, where resonance for a plane electromagnetic wave could occur at any integer \( m \) satisfying
-\(
-\vec{k} \cdot \vec{v} + m\omega_{ce} - \omega = 0,
-\)
-as shown in Eq.~(36) and Eq.~(37) of Ref.~[40], but agrees well with angular momentum conservation analysis.
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=0.8\textwidth]{Figure7.eps}% Here is how to import EPS art
-\caption{\label{fig:7}(a)Frequency of $\omega = \vec{k} \cdot \vec{v} + m\omega_{ce}$ under different $m$ values and induced wave frequencies.(b)Perpendicular velocity evolution under the left-circularly polarized wave, where $m = -1$.}
+\caption{\label{fig:7}(a) Frequency of $\omega = \vec{k} \cdot \vec{v} + m\omega_{ce}$ under different $m$ values and induced wave frequencies.(b)Perpendicular velocity evolution under the left-circularly polarized wave, where $m = -1$.}
 \end{figure}
 
 
 
 
 
-\section{Discussion }
+\section{Discussion }\label{sec:Discussion}
 Based on the momentum and angular momentum conservation analysis, we analyze the case where $\vec{k}$ is oriented opposite to $v_{\parallel}$(or $\vec{B_0}$). In this case, if a cyclotron electron emits a photon with left-hand circular polarization and momentum $-\hbar\vec{k}$, where the angular momentum carried by photon is $\hbar$, then after the emission, the change in internal energy is $\Delta U = -\hbar\omega_{ce}<0$, and the change in translational kinetic energy $\Delta T = \hbar k v_{\parallel}>0$. However, if the emitting photon have right-circular polarization and momentum $-\hbar\vec{k}$, the change of internal energy becomes $\Delta U = \hbar\omega_{ce}>0$, while the translational kinetic energy still is $\Delta T = \hbar k v_{\parallel}>0$. This would violate the conservation of energy, as it is not possible for an electron to emit a photon while simultaneously increasing its total energy. Consequently, for a plane electromagnetic wave, only the left-circularly polarized component can resonate with an electron moving opposite to $v_{\parallel}$ (or $\vec{B_0}$). 
 %Based on momentum and angular momentum conservation analysis, we examine the case where $\vec{k}$ is oriented opposite to $\vec{v}_{\parallel}$ (or $\vec{B_0}$). 
 %\begin{itemize}
@@ -413,7 +439,7 @@ Therefore, for a plane electromagnetic wave, only the left-circularly polarized 
 
 
 
-\section{Conclusion}
+\section{Conclusion}\label{sec:Conclusion}
 This paper presents a simple yet useful method to analyze the resonant process of NDE and ADE. The quantum method, combined with an angular momentum conservation analysis, illustrates that the parameter $m$ in the resonant condition $\omega = \vec{k} \cdot \vec{v} + m\omega_{ce}$ is directly related to the angular momentum of the resonant wave. Numerical simulations based on the VPA method are also provided, confirming the correctness of the quantum results regarding both the angular momentum relationship between $m$ and the energy transfer ratio.
 
 %\addcontentsline{toc}{chapter}{Appendix A: Appendix section heading}

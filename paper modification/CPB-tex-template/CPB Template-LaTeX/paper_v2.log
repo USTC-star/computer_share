@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.5.1)  10 MAY 2025 15:18
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.5.1)  11 MAY 2025 15:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -872,9 +872,9 @@ LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
 
 ]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 94.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 86.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 94.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 86.
 File: Figure/Figure1.eps Graphic file (type eps)
 <Figure/Figure1.eps>
 File: Figure/Figure2.eps Graphic file (type eps)
@@ -915,7 +915,7 @@ File: Figure/Figure7.eps Graphic file (type eps)
 [10]
 
 LaTeX Font Warning: Font shape `TU/ptm/m/it' undefined
-(Font)              using `TU/ptm/m/n' instead on input line 411.
+(Font)              using `TU/ptm/m/n' instead on input line 437.
 
 
 
@@ -926,7 +926,7 @@ File: Figure/Figure8.eps Graphic file (type eps)
 
 [12]
 
-LaTeX Warning: Reference `eq:13' on page 13 undefined on input line 494.
+LaTeX Warning: Reference `eq:13' on page 13 undefined on input line 520.
 
 (./paper_v2.bbl
 
@@ -946,16 +946,19 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `paper_v2.out' has not changed.
 (rerunfilecheck)             Checksum: 765602A93D63C33BD884E494EA65E0F8;1681.
  ) 
 Here is how much of TeX's memory you used:
- 18609 strings out of 470248
- 374925 string characters out of 5478738
- 822590 words of memory out of 5000000
- 44965 multiletter control sequences out of 15000+600000
+ 18595 strings out of 470248
+ 373790 string characters out of 5478738
+ 823652 words of memory out of 5000000
+ 44951 multiletter control sequences out of 15000+600000
  662656 words of font info for 156 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 89i,11n,106p,1394b,494s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 89i,11n,106p,1486b,494s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on paper_v2.pdf (15 pages).
