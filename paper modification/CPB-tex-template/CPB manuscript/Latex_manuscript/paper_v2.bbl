@@ -1,0 +1,152 @@
+\providecommand{\newblock}{}
+\begin{thebibliography}{10}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{{\tt #1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\providecommand{\eprint}[2][]{\url{#2}}
+% Bibliography created with iopart-num v2.1
+% /biblio/bibtex/contrib/iopart-num
+
+\bibitem{tamm1959general}
+Tamm I~E 1959 {\em Nobel Lectures\/} {\bf 18} 122--133
+
+\bibitem{frank1960optics}
+Frank I 1960 {\em Science\/} {\bf 131} 702--712
+
+\bibitem{ginzburg1960certain}
+Ginzburg V~L 1960 {\em Soviet Physics Uspekhi\/} {\bf 2} 874
+
+\bibitem{shustin1971transformation}
+Shustin E, POPOVICH P and Kharchenko I 1971 {\em SOVIET PHYSICS JETP\/} {\bf
+  32}
+
+\bibitem{ginzburg1946radiation}
+Ginzburg V and Frank I 1946 {\em Journ. of Experimental and Theoretical Physics
+  (JETP) V\/} {\bf 16} 15--26
+
+\bibitem{nezlin1976negative}
+Nezlin M~V 1976 {\em Soviet Physics Uspekhi\/} {\bf 19} 946
+
+\bibitem{santini1984anomalous}
+Santini F, Barbato E, De~Marco F, Podda S and Tuccillo A 1984 {\em Physical
+  review letters\/} {\bf 52} 1300
+
+\bibitem{kho1988slow}
+Kho T and Lin A 1988 {\em Physical Review A\/} {\bf 38} 2883
+
+\bibitem{wang2016multi}
+Wang Y, Qin H and Liu J 2016 {\em Physics of Plasmas\/} {\bf 23}
+
+\bibitem{guo2018control}
+Guo Z, McDevitt C~J and Tang X~Z 2018 {\em Physics of Plasmas\/} {\bf 25}
+
+\bibitem{liu2018role}
+Liu C, Hirvijoki E, Fu G~Y, Brennan D~P, Bhattacharjee A and Paz-Soldan C 2018
+  {\em Physical Review Letters\/} {\bf 120} 265001
+
+\bibitem{shi2018superlight}
+Shi X, Lin X, Kaminer I, Gao F, Yang Z, Joannopoulos J~D, Solja{\v{c}}i{\'c} M
+  and Zhang B 2018 {\em Nature Physics\/} {\bf 14} 1001--1005
+
+\bibitem{filatov2021role}
+Filatov L and Melnikov V 2021 {\em Geomagnetism and Aeronomy\/} {\bf 61}
+  1183--1188
+
+\bibitem{artsimovich1967thermal}
+Artsimovich L, Bobrovskii G, Mirnov S, Razumova K and Strelkov V 1967 {\em
+  Soviet Atomic Energy\/} {\bf 22} 325--331
+
+\bibitem{kadomtsev1968electric}
+Kadomtsev B and Pogutse O 1968 {\em Sov. Phys. JETP\/} {\bf 26} 1146--1150
+
+\bibitem{spong2018first}
+Spong D~A, Heidbrink W, Paz-Soldan C, Du X, Thome K, Van~Zeeland M, Collins C,
+  Lvovskiy A, Moyer R, Austin M {\em et~al.\/} 2018 {\em Physical Review
+  Letters\/} {\bf 120} 155002
+
+\bibitem{liu2019intense}
+Liu Y, Zhou T, Hu Y, Liu C, Zhou R, Zhang T, Zhao H, Zhu Z, Liu X and Ling B
+  2019 {\em Nuclear Fusion\/} {\bf 59} 106024
+
+\bibitem{gorozhanin1997waves}
+Gorozhanin D, Ivanov B, Khoruzhiy V, Onishchenko I and Miroshnichenko V 1997
+
+\bibitem{sajjad2007runaway}
+Sajjad S {\em et~al.\/} 2007 {\em Chinese Physics Letters\/} {\bf 24} 3195
+
+\bibitem{castejon2003particle}
+Castejon F and Eguilior S 2003 Particle dynamics under quasi-linear interaction
+  with electromagnetic waves Tech. rep. Centro de Investigaciones Energeticas
+
+\bibitem{zhang2024self}
+Zhang Q, Zhang Y, Tang Q and Tang X~Z 2024 {\em arXiv preprint
+  arXiv:2409.15830\/}
+
+\bibitem{ginzburg1979nonlinear}
+Ginzburg N 1979 {\em Radiophysics and Quantum Electronics\/} {\bf 22} 323--330
+
+\bibitem{coppi1976slide}
+Coppi B, Pegoraro F, Pozzoli R and Rewoldt G 1976 {\em Nuclear Fusion\/} {\bf
+  16} 309
+
+\bibitem{dendy1987classical}
+Dendy R 1987 {\em The Physics of fluids\/} {\bf 30} 2438--2441
+
+\bibitem{ginzburg2005radiation}
+Ginzburg V 2005 {\em Acoustical Physics\/} {\bf 51} 11--23
+
+\bibitem{frolov1986excitation}
+Frolov V and Ginzburg V 1986 {\em Physics Letters A\/} {\bf 116} 423--426
+
+\bibitem{ginzburg1996radiation}
+Ginzburg V~L 1996 {\em Physics-Uspekhi\/} {\bf 39} 973
+
+\bibitem{arnaut2000orbital}
+Arnaut H and Barbosa G 2000 {\em Physical review letters\/} {\bf 85} 286
+
+\bibitem{kiang2008angular}
+Kiang D and Young K 2008 {\em American Journal of Physics\/} {\bf 76}
+  1012--1014
+
+\bibitem{wei2024spin}
+Wei E, Lan Z, Chen M~L, Chen Y~P and Sun S 2024 {\em IEEE Journal on Multiscale
+  and Multiphysics Computational Techniques\/}
+
+\bibitem{liu2004particle}
+Liu H, He X, Chen S and Zhang W 2004 {\em arXiv preprint physics/0411183\/}
+
+\bibitem{qian1999exact}
+Qian B~L 1999 {\em IEEE transactions on plasma science\/} {\bf 27} 1578--1581
+
+\bibitem{weyssow1990motion}
+Weyssow B 1990 {\em Journal of plasma physics\/} {\bf 43} 119--139
+
+\bibitem{gogoberidze2005origin}
+Gogoberidze G and Machabeli G 2005 {\em Monthly Notices of the Royal
+  Astronomical Society\/} {\bf 364} 1363--1366
+
+\bibitem{roberts1964motion}
+Roberts C~S and Buchsbaum S 1964 {\em Physical Review\/} {\bf 135} A381
+
+\bibitem{bourdier2000dynamics}
+Bourdier A and Gond S 2000 {\em Physical Review E\/} {\bf 62} 4189
+
+\bibitem{nusinovich1999theory}
+Nusinovich G~S, Korol M and Jerby E 1999 {\em Physical Review E\/} {\bf 59}
+  2311
+
+\bibitem{nusinovich1995theory}
+Nusinovich G~S, Latham P and Dumbrajs O 1995 {\em Physical Review E\/} {\bf 52}
+  998
+
+\bibitem{qian2000relativistic}
+Qian B~L 2000 {\em Physics of Plasmas\/} {\bf 7} 537--543
+
+\bibitem{zhang2015volume}
+Zhang R, Liu J, Qin H, Wang Y, He Y and Sun Y 2015 {\em Physics of Plasmas\/}
+  {\bf 22}
+
+\bibitem{liu2016collisionless}
+Liu J, Wang Y and Qin H 2016 {\em Nuclear Fusion\/} {\bf 56} 064002
+
+\end{thebibliography}

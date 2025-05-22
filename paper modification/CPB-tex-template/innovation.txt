@@ -1,0 +1,27 @@
+this paper analysis the interaction process between test particle electron
+and electromagnetic(EM) wave 
+Core Innovations:
+1.Angular Momentum Conservation Framework.To the best of 
+our knowelege, the is the first paper explicit incorporation
+of angular momentum conservation in the quantum analysis
+of anomalous doppler resonance.
+2.Polarization-Dependent Resonance. Based on angular momentum
+conservation, this paper demonstrated why the left hand polarization waves
+drive anomalous doppler resonance for electron in magnetic field while
+right hand polarization waves drive  normal doppler resonance.
+3.Energy transfer ratio. The parallel kinetic energy and gyro-kinetic
+energy change ratio of electron during resonant with EM wave is derivated and 
+verified from numerical simulation, which maybe cricuial to plasma heating and 
+current drive.
+
+
+
+This paper analyzes the interaction process between test particle electron and electromagnetic (EM) waves.
+
+Core Innovations:
+
+1.Angular Momentum Conservation Framework: To the best of our knowledge, this is the first paper to explicitly incorporate angular momentum conservation into the quantum analysis of anomalous Doppler resonance.
+
+2.Polarization-Dependent Resonance: Based on angular momentum conservation, this paper demonstrates why left-hand polarized waves drive anomalous Doppler resonance for electrons in a magnetic field, while right-hand polarized waves drive normal Doppler resonance.
+
+3.Energy Transfer Ratio: The ratio of parallel kinetic energy to gyro-kinetic energy change for electrons during resonance with EM waves is derived and verified through numerical simulation. This ratio may be crucial for understanding plasma heating and current drive.
