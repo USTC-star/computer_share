@@ -1,53 +1,360 @@
 This is BibTeX, Version 0.99d (TeX Live 2025)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: paper_v2.aux
-The style file: iopart-num.bst
-Database file #1: aipsamp_ADE.bib
-Repeated entry---line 288 of file aipsamp_ADE.bib
- : @article{ginzburg1996radiation
- :                               ,
-I'm skipping whatever remains of this entry
-Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-Warning--empty journal in gorozhanin1997waves
+The style file: cpb-num.bst
+function is an unknown function---line 1279 of file cpb-num.bst
+format.names.ed is an unknown function---line 1279 of file cpb-num.bst
+function is an unknown function---line 1371 of file cpb-num.bst
+format.authors is an unknown function---line 1371 of file cpb-num.bst
+Curse you, wizard, before you recurse me:
+function format.names is illegal in its own definition
+---line 1373 of file cpb-num.bst
+function is an unknown function---line 1393 of file cpb-num.bst
+get.bbl.editor is an unknown function---line 1393 of file cpb-num.bst
+function is an unknown function---line 1399 of file cpb-num.bst
+format.editors is an unknown function---line 1399 of file cpb-num.bst
+Curse you, wizard, before you recurse me:
+function format.names is illegal in its own definition
+---line 1401 of file cpb-num.bst
+get.bbl.editor is an unknown function---line 1419 of file cpb-num.bst
+function is an unknown function---line 1435 of file cpb-num.bst
+format.editors.inline is an unknown function---line 1435 of file cpb-num.bst
+Curse you, wizard, before you recurse me:
+function format.names is illegal in its own definition
+---line 1437 of file cpb-num.bst
+function is an unknown function---line 1457 of file cpb-num.bst
+format.isbn is an unknown function---line 1457 of file cpb-num.bst
+function is an unknown function---line 1475 of file cpb-num.bst
+format.issn is an unknown function---line 1475 of file cpb-num.bst
+function is an unknown function---line 1493 of file cpb-num.bst
+format.note is an unknown function---line 1493 of file cpb-num.bst
+function is an unknown function---line 1531 of file cpb-num.bst
+format.title is an unknown function---line 1531 of file cpb-num.bst
+function is an unknown function---line 1545 of file cpb-num.bst
+output.bibitem is an unknown function---line 1545 of file cpb-num.bst
+function is an unknown function---line 1565 of file cpb-num.bst
+n.dashify is an unknown function---line 1565 of file cpb-num.bst
+function is an unknown function---line 1617 of file cpb-num.bst
+word.in is an unknown function---line 1617 of file cpb-num.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+function is an unknown function---line 1625 of file cpb-num.bst
+format.date is an unknown function---line 1625 of file cpb-num.bst
+function is an unknown function---line 1681 of file cpb-num.bst
+format.btitle is an unknown function---line 1681 of file cpb-num.bst
+function is an unknown function---line 1697 of file cpb-num.bst
+either.or.check is an unknown function---line 1697 of file cpb-num.bst
+function is an unknown function---line 1709 of file cpb-num.bst
+format.bvolume is an unknown function---line 1709 of file cpb-num.bst
+either.or.check is an unknown function---line 1779 of file cpb-num.bst
+function is an unknown function---line 1789 of file cpb-num.bst
+format.number.series is an unknown function---line 1789 of file cpb-num.bst
+function is an unknown function---line 1857 of file cpb-num.bst
+is.num is an unknown function---line 1857 of file cpb-num.bst
+function is an unknown function---line 1869 of file cpb-num.bst
+extract.num is an unknown function---line 1869 of file cpb-num.bst
+is.num is an unknown function---line 1881 of file cpb-num.bst
+function is an unknown function---line 1905 of file cpb-num.bst
+convert.edition is an unknown function---line 1905 of file cpb-num.bst
+extract.num is an unknown function---line 1907 of file cpb-num.bst
+is.num is an unknown function---line 1929 of file cpb-num.bst
+function is an unknown function---line 1963 of file cpb-num.bst
+format.edition is an unknown function---line 1963 of file cpb-num.bst
+convert.edition is an unknown function---line 1969 of file cpb-num.bst
+integers is an unknown function---line 1989 of file cpb-num.bst
+multiresult is an unknown function---line 1989 of file cpb-num.bst
+function is an unknown function---line 1991 of file cpb-num.bst
+multi.page.check is an unknown function---line 1991 of file cpb-num.bst
+multiresult is an unknown function---line 1995 of file cpb-num.bst
+multiresult is an unknown function---line 1997 of file cpb-num.bst
+multiresult is an unknown function---line 2015 of file cpb-num.bst
+multiresult is an unknown function---line 2025 of file cpb-num.bst
+function is an unknown function---line 2029 of file cpb-num.bst
+format.pages is an unknown function---line 2029 of file cpb-num.bst
+multi.page.check is an unknown function---line 2033 of file cpb-num.bst
+n.dashify is an unknown function---line 2039 of file cpb-num.bst
+function is an unknown function---line 2067 of file cpb-num.bst
+format.journal.pages is an unknown function---line 2067 of file cpb-num.bst
+Reallocated singl_function (elt_size=4) to 150 items from 100.
+function is an unknown function---line 2073 of file cpb-num.bst
+format.journal.eid is an unknown function---line 2073 of file cpb-num.bst
+function is an unknown function---line 2113 of file cpb-num.bst
+format.vol.num.pages is an unknown function---line 2113 of file cpb-num.bst
+format.journal.pages is an unknown function---line 2113 of file cpb-num.bst
+function is an unknown function---line 2119 of file cpb-num.bst
+format.chapter.pages is an unknown function---line 2119 of file cpb-num.bst
+format.pages is an unknown function---line 2123 of file cpb-num.bst
+format.pages is an unknown function---line 2147 of file cpb-num.bst
+function is an unknown function---line 2159 of file cpb-num.bst
+format.booktitle is an unknown function---line 2159 of file cpb-num.bst
+function is an unknown function---line 2201 of file cpb-num.bst
+empty.misc.check is an unknown function---line 2201 of file cpb-num.bst
+function is an unknown function---line 2217 of file cpb-num.bst
+format.thesis.type is an unknown function---line 2217 of file cpb-num.bst
+function is an unknown function---line 2233 of file cpb-num.bst
+format.tr.number is an unknown function---line 2233 of file cpb-num.bst
+function is an unknown function---line 2257 of file cpb-num.bst
+format.article.crossref is an unknown function---line 2257 of file cpb-num.bst
+word.in is an unknown function---line 2269 of file cpb-num.bst
+word.in is an unknown function---line 2275 of file cpb-num.bst
+function is an unknown function---line 2283 of file cpb-num.bst
+format.crossref.editor is an unknown function---line 2283 of file cpb-num.bst
+function is an unknown function---line 2349 of file cpb-num.bst
+format.book.crossref is an unknown function---line 2349 of file cpb-num.bst
+word.in is an unknown function---line 2355 of file cpb-num.bst
+format.crossref.editor is an unknown function---line 2397 of file cpb-num.bst
+function is an unknown function---line 2405 of file cpb-num.bst
+format.incoll.inproc.crossref is an unknown function---line 2405 of file cpb-num.bst
+format.booktitle is an unknown function---line 2417 of file cpb-num.bst
+word.in is an unknown function---line 2425 of file cpb-num.bst
+word.in is an unknown function---line 2431 of file cpb-num.bst
+word.in is an unknown function---line 2437 of file cpb-num.bst
+format.crossref.editor is an unknown function---line 2437 of file cpb-num.bst
+function is an unknown function---line 2445 of file cpb-num.bst
+format.org.or.pub is an unknown function---line 2445 of file cpb-num.bst
+function is an unknown function---line 2487 of file cpb-num.bst
+Reallocated singl_function (elt_size=4) to 200 items from 150.
+format.publisher.address is an unknown function---line 2487 of file cpb-num.bst
+format.org.or.pub is an unknown function---line 2489 of file cpb-num.bst
+function is an unknown function---line 2495 of file cpb-num.bst
+format.organization.address is an unknown function---line 2495 of file cpb-num.bst
+format.org.or.pub is an unknown function---line 2497 of file cpb-num.bst
+function is an unknown function---line 2507 of file cpb-num.bst
+article is an unknown function---line 2507 of file cpb-num.bst
+output.bibitem is an unknown function---line 2507 of file cpb-num.bst
+format.authors is an unknown function---line 2507 of file cpb-num.bst
+format.date is an unknown function---line 2507 of file cpb-num.bst
+format.vol.num.pages is an unknown function---line 2507 of file cpb-num.bst
+format.article.crossref is an unknown function---line 2507 of file cpb-num.bst
+format.journal.pages is an unknown function---line 2507 of file cpb-num.bst
+format.note is an unknown function---line 2507 of file cpb-num.bst
+function is an unknown function---line 2511 of file cpb-num.bst
+book is an unknown function---line 2511 of file cpb-num.bst
+output.bibitem is an unknown function---line 2513 of file cpb-num.bst
+format.editors is an unknown function---line 2517 of file cpb-num.bst
+format.authors is an unknown function---line 2521 of file cpb-num.bst
+either.or.check is an unknown function---line 2525 of file cpb-num.bst
+format.date is an unknown function---line 2535 of file cpb-num.bst
+format.btitle is an unknown function---line 2539 of file cpb-num.bst
+format.edition is an unknown function---line 2541 of file cpb-num.bst
+format.bvolume is an unknown function---line 2545 of file cpb-num.bst
+format.number.series is an unknown function---line 2547 of file cpb-num.bst
+format.publisher.address is an unknown function---line 2549 of file cpb-num.bst
+format.book.crossref is an unknown function---line 2555 of file cpb-num.bst
+format.isbn is an unknown function---line 2563 of file cpb-num.bst
+format.note is an unknown function---line 2565 of file cpb-num.bst
+function is an unknown function---line 2575 of file cpb-num.bst
+booklet is an unknown function---line 2575 of file cpb-num.bst
+output.bibitem is an unknown function---line 2577 of file cpb-num.bst
+format.authors is an unknown function---line 2579 of file cpb-num.bst
+format.date is an unknown function---line 2581 of file cpb-num.bst
+format.title is an unknown function---line 2585 of file cpb-num.bst
+format.isbn is an unknown function---line 2591 of file cpb-num.bst
+format.note is an unknown function---line 2593 of file cpb-num.bst
+function is an unknown function---line 2605 of file cpb-num.bst
+inbook is an unknown function---line 2605 of file cpb-num.bst
+output.bibitem is an unknown function---line 2607 of file cpb-num.bst
+format.editors is an unknown function---line 2611 of file cpb-num.bst
+format.authors is an unknown function---line 2615 of file cpb-num.bst
+either.or.check is an unknown function---line 2619 of file cpb-num.bst
+format.date is an unknown function---line 2629 of file cpb-num.bst
+format.btitle is an unknown function---line 2633 of file cpb-num.bst
+format.bvolume is an unknown function---line 2639 of file cpb-num.bst
+format.publisher.address is an unknown function---line 2641 of file cpb-num.bst
+format.chapter.pages is an unknown function---line 2645 of file cpb-num.bst
+format.number.series is an unknown function---line 2647 of file cpb-num.bst
+format.chapter.pages is an unknown function---line 2653 of file cpb-num.bst
+format.book.crossref is an unknown function---line 2655 of file cpb-num.bst
+format.edition is an unknown function---line 2661 of file cpb-num.bst
+format.isbn is an unknown function---line 2665 of file cpb-num.bst
+format.note is an unknown function---line 2671 of file cpb-num.bst
+function is an unknown function---line 2683 of file cpb-num.bst
+incollection is an unknown function---line 2683 of file cpb-num.bst
+output.bibitem is an unknown function---line 2685 of file cpb-num.bst
+format.authors is an unknown function---line 2687 of file cpb-num.bst
+format.date is an unknown function---line 2689 of file cpb-num.bst
+format.title is an unknown function---line 2693 of file cpb-num.bst
+format.booktitle is an unknown function---line 2703 of file cpb-num.bst
+format.bvolume is an unknown function---line 2705 of file cpb-num.bst
+format.number.series is an unknown function---line 2707 of file cpb-num.bst
+format.editors.inline is an unknown function---line 2709 of file cpb-num.bst
+format.publisher.address is an unknown function---line 2713 of file cpb-num.bst
+format.chapter.pages is an unknown function---line 2719 of file cpb-num.bst
+format.edition is an unknown function---line 2721 of file cpb-num.bst
+format.isbn is an unknown function---line 2723 of file cpb-num.bst
+format.incoll.inproc.crossref is an unknown function---line 2727 of file cpb-num.bst
+format.chapter.pages is an unknown function---line 2729 of file cpb-num.bst
+format.note is an unknown function---line 2735 of file cpb-num.bst
+function is an unknown function---line 2745 of file cpb-num.bst
+inproceedings is an unknown function---line 2745 of file cpb-num.bst
+output.bibitem is an unknown function---line 2747 of file cpb-num.bst
+format.authors is an unknown function---line 2749 of file cpb-num.bst
+format.date is an unknown function---line 2751 of file cpb-num.bst
+format.title is an unknown function---line 2755 of file cpb-num.bst
+format.booktitle is an unknown function---line 2767 of file cpb-num.bst
+format.bvolume is an unknown function---line 2769 of file cpb-num.bst
+format.number.series is an unknown function---line 2771 of file cpb-num.bst
+format.editors.inline is an unknown function---line 2773 of file cpb-num.bst
+format.organization.address is an unknown function---line 2779 of file cpb-num.bst
+format.publisher.address is an unknown function---line 2783 of file cpb-num.bst
+format.pages is an unknown function---line 2793 of file cpb-num.bst
+format.isbn is an unknown function---line 2795 of file cpb-num.bst
+format.issn is an unknown function---line 2797 of file cpb-num.bst
+format.incoll.inproc.crossref is an unknown function---line 2801 of file cpb-num.bst
+format.pages is an unknown function---line 2803 of file cpb-num.bst
+format.note is an unknown function---line 2809 of file cpb-num.bst
+function is an unknown function---line 2819 of file cpb-num.bst
+conference is an unknown function---line 2819 of file cpb-num.bst
+inproceedings is an unknown function---line 2819 of file cpb-num.bst
+function is an unknown function---line 2821 of file cpb-num.bst
+manual is an unknown function---line 2821 of file cpb-num.bst
+output.bibitem is an unknown function---line 2823 of file cpb-num.bst
+format.authors is an unknown function---line 2841 of file cpb-num.bst
+format.date is an unknown function---line 2845 of file cpb-num.bst
+format.btitle is an unknown function---line 2849 of file cpb-num.bst
+format.edition is an unknown function---line 2877 of file cpb-num.bst
+format.note is an unknown function---line 2879 of file cpb-num.bst
+function is an unknown function---line 2891 of file cpb-num.bst
+mastersthesis is an unknown function---line 2891 of file cpb-num.bst
+output.bibitem is an unknown function---line 2893 of file cpb-num.bst
+format.authors is an unknown function---line 2895 of file cpb-num.bst
+format.date is an unknown function---line 2897 of file cpb-num.bst
+format.btitle is an unknown function---line 2901 of file cpb-num.bst
+format.thesis.type is an unknown function---line 2905 of file cpb-num.bst
+format.note is an unknown function---line 2911 of file cpb-num.bst
+function is an unknown function---line 2923 of file cpb-num.bst
+misc is an unknown function---line 2923 of file cpb-num.bst
+output.bibitem is an unknown function---line 2925 of file cpb-num.bst
+format.authors is an unknown function---line 2927 of file cpb-num.bst
+format.date is an unknown function---line 2929 of file cpb-num.bst
+format.title is an unknown function---line 2931 of file cpb-num.bst
+format.note is an unknown function---line 2935 of file cpb-num.bst
+empty.misc.check is an unknown function---line 2943 of file cpb-num.bst
+function is an unknown function---line 2947 of file cpb-num.bst
+phdthesis is an unknown function---line 2947 of file cpb-num.bst
+Reallocated singl_function (elt_size=4) to 250 items from 200.
+output.bibitem is an unknown function---line 2949 of file cpb-num.bst
+format.authors is an unknown function---line 2951 of file cpb-num.bst
+format.date is an unknown function---line 2953 of file cpb-num.bst
+format.btitle is an unknown function---line 2957 of file cpb-num.bst
+format.thesis.type is an unknown function---line 2961 of file cpb-num.bst
+format.note is an unknown function---line 2967 of file cpb-num.bst
+function is an unknown function---line 2979 of file cpb-num.bst
+proceedings is an unknown function---line 2979 of file cpb-num.bst
+output.bibitem is an unknown function---line 2981 of file cpb-num.bst
+format.editors is an unknown function---line 2989 of file cpb-num.bst
+format.date is an unknown function---line 2993 of file cpb-num.bst
+format.btitle is an unknown function---line 2997 of file cpb-num.bst
+format.bvolume is an unknown function---line 2999 of file cpb-num.bst
+format.number.series is an unknown function---line 3001 of file cpb-num.bst
+format.publisher.address is an unknown function---line 3011 of file cpb-num.bst
+format.organization.address is an unknown function---line 3023 of file cpb-num.bst
+format.publisher.address is an unknown function---line 3029 of file cpb-num.bst
+format.isbn is an unknown function---line 3039 of file cpb-num.bst
+format.issn is an unknown function---line 3041 of file cpb-num.bst
+format.note is an unknown function---line 3043 of file cpb-num.bst
+function is an unknown function---line 3055 of file cpb-num.bst
+techreport is an unknown function---line 3055 of file cpb-num.bst
+output.bibitem is an unknown function---line 3057 of file cpb-num.bst
+format.authors is an unknown function---line 3059 of file cpb-num.bst
+format.date is an unknown function---line 3061 of file cpb-num.bst
+format.title is an unknown function---line 3065 of file cpb-num.bst
+format.tr.number is an unknown function---line 3069 of file cpb-num.bst
+format.note is an unknown function---line 3075 of file cpb-num.bst
+function is an unknown function---line 3087 of file cpb-num.bst
+unpublished is an unknown function---line 3087 of file cpb-num.bst
+output.bibitem is an unknown function---line 3089 of file cpb-num.bst
+format.authors is an unknown function---line 3091 of file cpb-num.bst
+format.date is an unknown function---line 3093 of file cpb-num.bst
+format.title is an unknown function---line 3097 of file cpb-num.bst
+format.note is an unknown function---line 3099 of file cpb-num.bst
+function is an unknown function---line 3111 of file cpb-num.bst
+default.type is an unknown function---line 3111 of file cpb-num.bst
+misc is an unknown function---line 3111 of file cpb-num.bst
+read is an unknown function---line 3113 of file cpb-num.bst
+strings is an unknown function---line 3115 of file cpb-num.bst
+longest.label is an unknown function---line 3115 of file cpb-num.bst
+integers is an unknown function---line 3117 of file cpb-num.bst
+number.label is an unknown function---line 3117 of file cpb-num.bst
+longest.label.width is an unknown function---line 3117 of file cpb-num.bst
+function is an unknown function---line 3119 of file cpb-num.bst
+initialize.longest.label is an unknown function---line 3119 of file cpb-num.bst
+longest.label is an unknown function---line 3121 of file cpb-num.bst
+number.label is an unknown function---line 3123 of file cpb-num.bst
+longest.label.width is an unknown function---line 3125 of file cpb-num.bst
+function is an unknown function---line 3129 of file cpb-num.bst
+longest.label.pass is an unknown function---line 3129 of file cpb-num.bst
+number.label is an unknown function---line 3131 of file cpb-num.bst
+number.label is an unknown function---line 3133 of file cpb-num.bst
+number.label is an unknown function---line 3133 of file cpb-num.bst
+longest.label.width is an unknown function---line 3135 of file cpb-num.bst
+longest.label is an unknown function---line 3137 of file cpb-num.bst
+longest.label.width is an unknown function---line 3139 of file cpb-num.bst
+execute is an unknown function---line 3149 of file cpb-num.bst
+initialize.longest.label is an unknown function---line 3149 of file cpb-num.bst
+iterate is an unknown function---line 3151 of file cpb-num.bst
+longest.label.pass is an unknown function---line 3151 of file cpb-num.bst
+function is an unknown function---line 3153 of file cpb-num.bst
+begin.bib is an unknown function---line 3153 of file cpb-num.bst
+longest.label is an unknown function---line 3167 of file cpb-num.bst
+execute is an unknown function---line 3197 of file cpb-num.bst
+begin.bib is an unknown function---line 3197 of file cpb-num.bst
+execute is an unknown function---line 3199 of file cpb-num.bst
+iterate is an unknown function---line 3201 of file cpb-num.bst
+function is an unknown function---line 3203 of file cpb-num.bst
+end.bib is an unknown function---line 3203 of file cpb-num.bst
+execute is an unknown function---line 3211 of file cpb-num.bst
+end.bib is an unknown function---line 3211 of file cpb-num.bst
+Illegal end of style file in command: function---line 3218 of file cpb-num.bst
+ : 
+ : 
+(Error may have been on previous line)
+Illegal end of style file in command: function---line 3218 of file cpb-num.bst
+ : 
+ : 
+(Error may have been on previous line)
+Illegal end of style file in command: function---line 3218 of file cpb-num.bst
+ : 
+ : 
+(Error may have been on previous line)
 You've used 41 entries,
-            3033 wiz_defined-function locations,
-            872 strings with 11938 characters,
-and the built_in function-call counts, 33449 in all, are:
-= -- 3611
-> -- 499
+            2774 wiz_defined-function locations,
+            704 strings with 4569 characters,
+and the built_in function-call counts, 0 in all, are:
+= -- 0
+> -- 0
 < -- 0
-+ -- 282
-- -- 206
-* -- 2113
-:= -- 4010
++ -- 0
+- -- 0
+* -- 0
+:= -- 0
 add.period$ -- 0
-call.type$ -- 41
-change.case$ -- 2
+call.type$ -- 0
+change.case$ -- 0
 chr.to.int$ -- 0
-cite$ -- 42
-duplicate$ -- 3024
-empty$ -- 3223
-format.name$ -- 156
-if$ -- 7495
+cite$ -- 0
+duplicate$ -- 0
+empty$ -- 0
+format.name$ -- 0
+if$ -- 0
 int.to.chr$ -- 0
-int.to.str$ -- 41
-missing$ -- 441
-newline$ -- 133
-num.names$ -- 41
-pop$ -- 907
-preamble$ -- 1
+int.to.str$ -- 0
+missing$ -- 0
+newline$ -- 0
+num.names$ -- 0
+pop$ -- 0
+preamble$ -- 0
 purify$ -- 0
 quote$ -- 0
-skip$ -- 398
+skip$ -- 0
 stack$ -- 0
-substring$ -- 4940
-swap$ -- 930
+substring$ -- 0
+swap$ -- 0
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 1
-while$ -- 536
-width$ -- 43
-write$ -- 333
-(There was 1 error message)
+warning$ -- 0
+while$ -- 0
+width$ -- 0
+write$ -- 0
+(There were 295 error messages)

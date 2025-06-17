@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.5.1)  11 MAY 2025 21:14
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.5.1)  12 JUN 2025 05:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -867,14 +867,117 @@ LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
 (Font)              using `TU/ptm/m/n' instead on input line 71.
 
 
+LaTeX Warning: Citation `tamm1959general' on page 1 undefined on input line 81.
+
+
+
+LaTeX Warning: Citation `frank1960optics' on page 1 undefined on input line 81.
+
+
+
+LaTeX Warning: Citation `ginzburg1960certain' on page 1 undefined on input line
+ 81.
+
+
+LaTeX Warning: Citation `shustin1971transformation' on page 1 undefined on inpu
+t line 81.
+
+
+LaTeX Warning: Citation `ginzburg1946radiation' on page 1 undefined on input li
+ne 81.
+
+
+LaTeX Warning: Citation `frank1960optics' on page 1 undefined on input line 81.
+
+
+
+LaTeX Warning: Citation `nezlin1976negative' on page 1 undefined on input line 
+81.
+
+
+LaTeX Warning: Citation `santini1984anomalous' on page 1 undefined on input lin
+e 81.
+
+
+LaTeX Warning: Citation `kho1988slow' on page 1 undefined on input line 81.
+
+
+LaTeX Warning: Citation `wang2016multi' on page 1 undefined on input line 81.
+
+
+LaTeX Warning: Citation `guo2018control' on page 1 undefined on input line 81.
+
+
+LaTeX Warning: Citation `liu2018role' on page 1 undefined on input line 81.
+
+
+LaTeX Warning: Citation `shi2018superlight' on page 1 undefined on input line 8
+1.
+
+
+LaTeX Warning: Citation `filatov2021role' on page 1 undefined on input line 81.
+
+
+
+LaTeX Warning: Citation `artsimovich1967thermal' on page 1 undefined on input l
+ine 83.
+
+
+LaTeX Warning: Citation `kadomtsev1968electric' on page 1 undefined on input li
+ne 83.
+
+
+LaTeX Warning: Citation `frank1960optics' on page 1 undefined on input line 83.
+
+
+
+LaTeX Warning: Citation `spong2018first' on page 1 undefined on input line 83.
+
+
+LaTeX Warning: Citation `liu2019intense' on page 1 undefined on input line 83.
+
+
+LaTeX Warning: Citation `gorozhanin1997waves' on page 1 undefined on input line
+ 83.
+
+
+LaTeX Warning: Citation `sajjad2007runaway' on page 1 undefined on input line 8
+3.
+
+
+LaTeX Warning: Citation `castejon2003particle' on page 1 undefined on input lin
+e 83.
+
+
+LaTeX Warning: Citation `guo2018control' on page 1 undefined on input line 83.
+
+
+LaTeX Warning: Citation `zhang2024self' on page 1 undefined on input line 83.
+
+
 
 [1
 
 ]
+
+LaTeX Warning: Citation `frank1960optics' on page 2 undefined on input line 85.
+
+
+
+LaTeX Warning: Citation `ginzburg1979nonlinear' on page 2 undefined on input li
+ne 85.
+
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 86.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 86.
+
+LaTeX Warning: Citation `coppi1976slide' on page 2 undefined on input line 89.
+
+
+LaTeX Warning: Citation `dendy1987classical' on page 2 undefined on input line 
+93.
+
 File: Figure/Figure1.eps Graphic file (type eps)
 <Figure/Figure1.eps>
 File: Figure/Figure2.eps Graphic file (type eps)
@@ -884,20 +987,132 @@ File: Figure/Figure2.eps Graphic file (type eps)
 [2]
 
 [3]
+
+LaTeX Warning: Citation `ginzburg2005radiation' on page 4 undefined on input li
+ne 139.
+
+
+LaTeX Warning: Citation `coppi1976slide' on page 4 undefined on input line 139.
+
+
+
+LaTeX Warning: Citation `frolov1986excitation' on page 4 undefined on input lin
+e 139.
+
+
+LaTeX Warning: Citation `frank1960optics' on page 4 undefined on input line 139
+.
+
+
+LaTeX Warning: Citation `tamm1959general' on page 4 undefined on input line 139
+.
+
+
+LaTeX Warning: Citation `nezlin1976negative' on page 4 undefined on input line 
+139.
+
+
+LaTeX Warning: Citation `ginzburg2005radiation' on page 4 undefined on input li
+ne 139.
+
 File: Figure/Figure3.eps Graphic file (type eps)
 <Figure/Figure3.eps>
 
 
 [4]
 
+LaTeX Warning: Citation `tamm1959general' on page 5 undefined on input line 194
+.
+
+
+LaTeX Warning: Citation `frank1960optics' on page 5 undefined on input line 194
+.
+
+
+LaTeX Warning: Citation `nezlin1976negative' on page 5 undefined on input line 
+194.
+
+
+LaTeX Warning: Citation `coppi1976slide' on page 5 undefined on input line 194.
+
+
+
+LaTeX Warning: Citation `frolov1986excitation' on page 5 undefined on input lin
+e 194.
+
+
+LaTeX Warning: Citation `ginzburg1996radiation' on page 5 undefined on input li
+ne 194.
+
+
+LaTeX Warning: Citation `arnaut2000orbital' on page 5 undefined on input line 2
+03.
+
+
+
 [5]
+
+LaTeX Warning: Citation `kiang2008angular' on page 6 undefined on input line 21
+0.
+
+
+LaTeX Warning: Citation `wei2024spin' on page 6 undefined on input line 219.
+
+
+LaTeX Warning: Citation `liu2004particle' on page 6 undefined on input line 227
+.
+
+
+LaTeX Warning: Citation `qian1999exact' on page 6 undefined on input line 227.
+
+
+LaTeX Warning: Citation `weyssow1990motion' on page 6 undefined on input line 2
+27.
+
+
+LaTeX Warning: Citation `gogoberidze2005origin' on page 6 undefined on input li
+ne 227.
+
+
+LaTeX Warning: Citation `roberts1964motion' on page 6 undefined on input line 2
+27.
+
+
+LaTeX Warning: Citation `bourdier2000dynamics' on page 6 undefined on input lin
+e 227.
+
+
+LaTeX Warning: Citation `nusinovich1999theory' on page 6 undefined on input lin
+e 227.
+
+
+LaTeX Warning: Citation `nusinovich1995theory' on page 6 undefined on input lin
+e 227.
+
+
+LaTeX Warning: Citation `qian2000relativistic' on page 6 undefined on input lin
+e 227.
+
 File: Figure/Figure4.eps Graphic file (type eps)
 <Figure/Figure4.eps>
 
 
 [6]
 
+LaTeX Warning: Citation `zhang2015volume' on page 7 undefined on input line 281
+.
+
+
+LaTeX Warning: Citation `liu2016collisionless' on page 7 undefined on input lin
+e 281.
+
+
+
 [7]
+
+LaTeX Warning: Citation `zhang2015volume' on page 8 undefined on input line 294
+.
+
 File: Figure/Figure5.pdf Graphic file (type pdf)
 <use Figure/Figure5.pdf>
 
@@ -908,29 +1123,33 @@ File: Figure/Figure6.eps Graphic file (type eps)
 
 
 [9]
+
+LaTeX Warning: Citation `dendy1987classical' on page 10 undefined on input line
+ 393.
+
 File: Figure/Figure7.eps Graphic file (type eps)
 <Figure/Figure7.eps>
 
 
 [10]
 
+LaTeX Warning: Citation `guo2018control' on page 11 undefined on input line 452
+.
+
+
+LaTeX Warning: Citation `zhang2024self' on page 11 undefined on input line 452.
+
+
+
+
 [11]
 
 [12]
 File: Figure/Figure8.eps Graphic file (type eps)
 <Figure/Figure8.eps>
- (./paper_v2.bbl
+ (./paper_v2.bbl)
 
-LaTeX Font Warning: Font shape `TU/ptm/m/it' undefined
-(Font)              using `TU/ptm/m/n' instead on input line 11.
-
-
-
-[13]
-
-[14])
-
-[15] (./paper_v2.aux)
+[13] (./paper_v2.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2022/08/05>
@@ -940,24 +1159,18 @@ L3 programming layer <2022/08/05>
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were undefined references.
 
-
-Package rerunfilecheck Warning: File `paper_v2.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `paper_v2.out':
-(rerunfilecheck)             Before: 765602A93D63C33BD884E494EA65E0F8;1681
-(rerunfilecheck)             After:  ED8267FBF5E63A93D83515AFF78842B6;1821.
+Package rerunfilecheck Info: File `paper_v2.out' has not changed.
+(rerunfilecheck)             Checksum: ED8267FBF5E63A93D83515AFF78842B6;1821.
  ) 
 Here is how much of TeX's memory you used:
- 18595 strings out of 470248
- 373805 string characters out of 5478738
- 823698 words of memory out of 5000000
- 44951 multiletter control sequences out of 15000+600000
- 662656 words of font info for 156 fonts, out of 8000000 for 9000
+ 18605 strings out of 470248
+ 374550 string characters out of 5478738
+ 822208 words of memory out of 5000000
+ 44959 multiletter control sequences out of 15000+600000
+ 662664 words of font info for 157 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 89i,11n,106p,1486b,488s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 89i,11n,106p,1486b,443s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on paper_v2.pdf (15 pages).
+Output written on paper_v2.pdf (13 pages).

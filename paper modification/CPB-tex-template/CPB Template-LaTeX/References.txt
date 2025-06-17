@@ -1,0 +1,46 @@
+\begin{thebibliography}{99}\footnotesize
+\itemsep=-3pt plus.2pt minus.2pt
+\bibitem{tamm1959general} Tamm I E 1959 {\em Nobel Lectures} {\bf 18} 122
+\bibitem{frank1960optics} Frank I M 1960 {\em Science} {\bf 131} 702
+\bibitem{kiang2008angular} Kiang D and Young K 2008 {\em Am. J. Phys.} {\bf 76} 1012
+\bibitem{ginzburg1960certain} Ginzburg V L 1960 {\em Sov. Phys. Usp.} {\bf 2} 874
+\bibitem{shustin1971transformation} Shustin E G, Popovich P and Kharchenko I F 1971 {\em Sov. Phys. JETP} {\bf 32} 1
+\bibitem{ginzburg1946radiation} Ginzburg V L and Frank I M 1946 {\em J. Exp. Theor. Phys.} {\bf 16} 15
+\bibitem{nezlin1976negative} Nezlin M V 1976 {\em Sov. Phys. Usp.} {\bf 19} 946
+\bibitem{santini1984anomalous} Santini F, Barbato E and De Marco F 1984 {\em Phys. Rev. Lett.} {\bf 52} 1300
+\bibitem{kho1988slow} Kho T H and Lin A T 1988 {\em Phys. Rev. A} {\bf 38} 2883
+\bibitem{liu2016collisionless} Liu J, Wang Y and Qin H 2016 {\em Nucl. Fusion} {\bf 56} 064002
+\bibitem{wang2016multi} Wang Y, Qin H and Liu J 2016 {\em Phys. Plasmas} {\bf 23} 1
+\bibitem{guo2018control} Guo Z, McDevitt C J and Tang X Z 2018 {\em Phys. Plasmas} {\bf 25} 1
+\bibitem{liu2018role} Liu C, Hirvijoki E and Fu G Y 2018 {\em Phys. Rev. Lett.} {\bf 120} 265001
+\bibitem{shi2018superlight} Shi X, Lin X and Kaminer I 2018 {\em Nat. Phys.} {\bf 14} 1001
+\bibitem{filatov2021role} Filatov L V and Melnikov V F 2021 {\em Geomagn. Aeron.} {\bf 61} 1183
+\bibitem{artsimovich1967thermal} Artsimovich L A, Bobrovskii G A and Mirnov S V 1967 {\em Sov. At. Energy} {\bf 22} 325
+\bibitem{kadomtsev1968electric} Kadomtsev B B and Pogutse O P 1968 {\em Sov. Phys. JETP} {\bf 26} 1146
+\bibitem{spong2018first} Spong D A, Heidbrink W W and Paz-Soldan C 2018 {\em Phys. Rev. Lett.} {\bf 120} 155002
+\bibitem{liu2019intense} Liu Y, Zhou T and Hu Y 2019 {\em Nucl. Fusion} {\bf 59} 106024
+\bibitem{gorozhanin1997waves} Gorozhanin D V, Ivanov B I and Khoruzhiy V M 1997 {\em Plasma Phys. Rep.} {\bf 23} 1
+\bibitem{sajjad2007runaway} Sajjad S 2007 {\em Chin. Phys. Lett.} {\bf 24} 3195
+% Non-journal entries (unchanged as per request)
+\bibitem{castejon2003particle} Castejon F, Eguilior S 2003 \textit{Particle Dynamics under Quasi-linear Interaction with Electromagnetic Waves} (Madrid: Centro de Investigaciones Energeticas) p. 1 % Book
+\bibitem{benford2007high} Benford J, Swegle J A, Schamiloglu E 2007 \textit{High Power Microwaves} (Boca Raton: CRC Press) p. 1 % Book
+\bibitem{zhang2024self} Zhang Q, Zhang Y, Tang Q, Tang X Z 2024 arXiv:2409.15830 [physics.plasm-ph] % arXiv
+\bibitem{ginzburg1979nonlinear} Ginzburg N S 1979 {\em Radiophys. Quantum Electron.} {\bf 22} 323
+\bibitem{ginzburg1996radiation} Ginzburg V L 1996 {\em Phys. Usp.} {\bf 39} 973
+\bibitem{ginzburg2005radiation} Ginzburg V L 2005 {\em Acoust. Phys.} {\bf 51} 11
+\bibitem{coppi1976slide} Coppi B, Pegoraro F, Pozzoli R, Rewoldt G 1976 {\em Nucl. Fusion} {\bf 16} 309
+\bibitem{frolov1986excitation} Frolov V P, Ginzburg V L 1986 {\em Phys. Lett. A} {\bf 116} 423
+\bibitem{arnaut2000orbital} Arnaut H H, Barbosa G A 2000 {\em Phys. Rev. Lett.} {\bf 85} 286
+\bibitem{liu2004particle} Liu H, He X T, Chen S G, Zhang W Y 2004 arXiv:physics/0411183 [physics.plasm-ph] % arXiv
+\bibitem{qian1999exact} Qian B L 1999 {\em IEEE Trans. Plasma Sci.} {\bf 27} 1578
+\bibitem{weyssow1990motion} Weyssow B 1990 {\em J. Plasma Phys.} {\bf 43} 119
+\bibitem{gogoberidze2005origin} Gogoberidze G, Machabeli G Z 2005 {\em Mon. Not. R. Astron. Soc.} {\bf 364} 1363
+\bibitem{roberts1964motion} Roberts C S, Buchsbaum S J 1964 {\em Phys. Rev.} {\bf 135} A381
+\bibitem{bourdier2000dynamics} Bourdier A, Gond S 2000 {\em Phys. Rev. E} {\bf 62} 4189
+\bibitem{nusinovich1999theory} Nusinovich G S, Korol M, Jerby E 1999 {\em Phys. Rev. E} {\bf 59} 2311
+\bibitem{nusinovich1995theory} Nusinovich G S, Latham P E, Dumbrajs O 1995 {\em Phys. Rev. E} {\bf 52} 998
+\bibitem{qian2000relativistic} Qian B L 2000 {\em Phys. Plasmas} {\bf 7} 537
+\bibitem{zhang2015volume} Zhang R, Liu J, Qin H, Wang Y, He Y, Sun Y 2015 {\em Phys. Plasmas} {\bf 22} 040704
+\bibitem{wei2024spin} Wei E I, Lan Z, Chen M L N, Chen Y P, Sun S 2024 {\em IEEE J. Multiscale Multiphys. Comput. Tech.} {\bf 9} 1
+\bibitem{dendy1987classical} Dendy R O 1987 {\em Phys. Fluids} {\bf 30} 2438
+\end{thebibliography}

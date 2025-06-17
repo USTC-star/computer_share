@@ -37,8 +37,8 @@
 \usepackage{caption}
 \usepackage{hyperref}
 \captionsetup[figure]{labelfont=bf, name=Fig., labelsep=period}
-\bibliographystyle{iopart-num} 
-\graphicspath{{Figure/}}
+\bibliographystyle{cpb-num} 
+
 
 \begin{document}
 
@@ -303,7 +303,7 @@ B_y^* & -B_x^* & 0
 \end{equation}
 To illustrate the system evolution, the parameters are set as following: background magnetic field \( B_0 = 0.02\,T \), wave angular frequency \( \omega_s = 1.5 \omega_0 \) where \( \omega_0 = (e B_0)/m_0 \), wavevector \( \vec{k} = 10^5/\mathrm{m} \), the electric field component of the electromagnetic wave \( E_w = 9\,\mathrm{V/m} \). The propagation of induced wave with linear polarization is parallel to z axis, and the electrostatic field is \( E_0 = -2.5\,\mathrm{V} \). The time resolution is always chosen to satisfy 
 \(
-\Delta t = \min \left( \frac{2\pi}{50(\vec{k} \cdot \vec{v})}, \frac{2\pi}{50\omega_0}, \frac{2\pi}{(50\omega_0)} \right)
+\Delta t = \min \left( \frac{2\pi}{50(\vec{k} \cdot \vec{v})}, \frac{2\pi}{50\omega_0}, \frac{2\pi}{(50\omega_s)} \right)
 \)
 to ensure the accuracy of the simulation.
 
@@ -534,9 +534,6 @@ According to the resonant condition $\omega=k\,v_{||}+m\,\omega_{ce}$, substitut
 \end{equation}
 
 which agrees with the quantum result as Eq.~\ref{eq:DU21DT21}.
-
-
-
 
 %\subsection*{5. References}
 \bibliography{aipsamp_ADE}
