@@ -1,0 +1,7 @@
+1.The origianl numerical setup for simulation in old paper is 
+B0 = 2e-4 T;
+E0 = 2.5 V/m;
+omega/Omega_ce = 1;
+n = 4 to 50 ;
+
+The relationship should consider the background E filed in abscissa 
