@@ -1,0 +1,47 @@
+% !TeX encoding = UTF-8
+% !TeX program = xelatex
+% !TeX spellcheck = en_US
+
+\documentclass[degree=doctor]{ustcthesis}
+%\usepackage[numbers, sort]{natbib} % 保证参考文献不会出现乱序
+\usepackage[justification=centering]{caption}
+\usepackage{multirow}
+\usepackage{rotating}
+\usepackage{booktabs}
+\setcounter{secnumdepth}{2}
+% degree      = doctor | master | bachelor
+% degree-type = academic | professional
+% language    = chinese | english
+% fontset     = windows | mac | ubuntu | fandol
+% 加载宏包、全部的配置
+\input{ustcsetup.tex}
+\begin{document}
+\maketitle
+\copyrightpage
+%%
+\frontmatter
+\input{chapters/abstract.tex}
+\tableofcontents
+ \listoffigures
+\listoftables
+\input{chapters/notation.tex}
+
+\mainmatter
+\input{chapters/chap-intro.tex}
+\input{chapters/chap-ECEI.tex}
+\input{chapters/chap-nonth.tex}
+\input{chapters/chap-emiss.tex}
+\input{chapters/chap-nume.tex}
+\input{chapters/chap-simul.tex}
+\input{chapters/chap-summ.tex}
+\bibliography{bib/ustc4}  % 参考文献使用 BibTeX 编译
+%\printbibliography       % 参考文献使用 BibLaTeX 编译
+
+\appendix
+\input{chapters/complementary.tex}
+
+\backmatter
+\input{chapters/acknowledgements.tex}
+\input{chapters/publications.tex}
+
+\end{document}
