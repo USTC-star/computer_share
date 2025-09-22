@@ -526,10 +526,10 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "output/",
+      "plot": "../Structure from Kicad/",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "Wilkinson PD.step",
       "svg": "",
       "vrml": ""
     },

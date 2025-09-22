@@ -1,0 +1,13 @@
+{
+   "Author": "PinJung",
+   "Comment": "",
+   "Last Problem Type": "High Frequency",
+   "Last Solver Type": "HF Frequency Domain",
+   "Last Solver Type Abb": "f",
+   "Mesh Cells": "27,954",
+   "Mesh Type": "Tetrahedral",
+   "Modeler Unique ID": "5:wpd_simulation_v1.cst?3852026bbf3884227aa90ddf664994fc?57805:numberofparameters=3:port=1>mode=1>zre=50>zim=0?port=2>mode=1>zre=50>zim=0?port=3>mode=1>zre=50>zim=0::wilkinson pd-odb.ldb.sab>af55efe925831122264c60c30a2fe410>79359:h_wpd?sub_t?t_pec",
+   "ProjectVersion": "'# MWS Version: Version 2024.0 - Sep 01 2023 - ACIS 33.0.1 -",
+   "Results": "Frequency Domain: S-Parameter",
+   "Version": "3"
+}

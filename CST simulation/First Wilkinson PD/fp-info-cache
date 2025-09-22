@@ -1,4 +1,4 @@
-26638127083359175
+26634610375616589
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -94772,20 +94772,6 @@ Shielding Cabinet
 0
 48
 1
-RF_WPD
-Pad for termination
-
-
-0
-1
-1
-RF_WPD
-WPD_2Ring_3500
-
-
-0
-7
-7
 RF_WiFi
 USR-C322
 https://www.usriot.com/download/WIFI/USR-C322-Hardware-Manual_V1.2.01.pdf

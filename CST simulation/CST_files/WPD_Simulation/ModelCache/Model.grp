@@ -1,0 +1,27 @@
+20110628
+<GROUP>Diagnostic Report
+<GROUPTYPE>4
+<GROUP>Excluded from Bounding Box
+<GROUPTYPE>1
+<GROUP>Excluded from Simulation
+<GROUPTYPE>0
+<GROUP>Wilkinson PD-odb(PCB1)/Layers:01_F.MASK
+<GROUPTYPE>2
+<GROUP>Wilkinson PD-odb(PCB1)/Layers:02_F.CU
+<GROUPTYPE>2
+<ENTITY>Wilkinson PD-odb(PCB1)/Nets/NET-(U1-PORT3):02_F.CU
+<TYPE>SOLID
+<GROUP>Wilkinson PD-odb(PCB1)/Layers:03_DIELECTRIC_1
+<GROUPTYPE>2
+<ENTITY>Wilkinson PD-odb(PCB1)/Substrates:03_DIELECTRIC_1
+<TYPE>SOLID
+<GROUP>Wilkinson PD-odb(PCB1)/Layers:05_B.MASK
+<GROUPTYPE>2
+<GROUP>meshgroup1
+<GROUPTYPE>3
+<ENTITY>Wilkinson PD-odb(PCB1)/Nets/NET-(U1-PORT3):02_F.CU
+<TYPE>SOLID
+<GROUP>meshgroup2
+<GROUPTYPE>3
+<ENTITY>Wilkinson PD-odb(PCB1)/Substrates:03_DIELECTRIC_1
+<TYPE>SOLID

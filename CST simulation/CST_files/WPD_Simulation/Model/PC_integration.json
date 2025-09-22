@@ -1,0 +1,39 @@
+{
+   "execution": {
+      "classname": "SMAPowerByEmagHPCFrameReduced",
+      "libname": "SMAPowerByEmagUI"
+   },
+   "inputVariables": [
+      {
+         "name": "copper_thickness",
+         "type": "float",
+         "value": 1.38
+      },
+      {
+         "name": "sub_t",
+         "type": "float",
+         "value": 20.0
+      },
+      {
+         "name": "port_width",
+         "type": "float",
+         "value": 0.0
+      },
+      {
+         "name": "pec_thickness",
+         "type": "float",
+         "value": 0.5
+      },
+      {
+         "name": "h_wpd",
+         "type": "float",
+         "value": 1.38
+      },
+      {
+         "name": "t_pec",
+         "type": "float",
+         "value": 1.0
+      }
+   ],
+   "outputVariables": []
+}

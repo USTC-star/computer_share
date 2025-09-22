@@ -1,0 +1,801 @@
+// Number 3D OBJECTS:
+// ^^^^^^^^^^^^^^^^^^
+5
+
+// Obj3D_ID, MediaCode (0=Iso3D,1=LossyIso3D,2=PEC,3=Aniso3D,4=LossyAniso3D,5=SurfaceImp)
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+0 0
+>> Material name:
+Vacuum
+
+1 0
+>> Material name:
+Rogers RO4350B LoPro (loss free)
+
+2 0
+>> Material name:
+air_0
+
+3 5
+>> Material name:
+Copper (pure)
+
+4 2
+
+// Number 2D OBJECTS:
+// ^^^^^^^^^^^^^^^^^^
+269
+
+// Obj2D_ID, BCCode (0=Reg,1=PEC,2=PMC,3=RHO,4=OHM,5=PORT,6=OPEN,7=EXPANDEDOPEN,8=PERIODIC,9=TANGENTIAL,10=NORMAL):
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+0 0
+
+1 5
+1
+
+2 5
+2
+
+3 5
+3
+
+4 0
+
+5 0
+
+6 1
+
+7 1
+
+8 0
+
+9 0
+
+10 0
+
+11 0
+
+12 1
+
+13 1
+
+14 0
+
+15 0
+
+16 0
+
+17 0
+
+18 0
+
+19 0
+
+20 1
+
+21 1
+
+22 0
+
+23 0
+
+24 0
+
+25 0
+
+26 1
+
+27 6
+
+28 1
+
+29 7
+
+30 7
+
+31 7
+
+32 6
+
+33 1
+
+34 3
+Copper (pure)
+
+35 0
+
+36 3
+Copper (pure)
+
+37 0
+
+38 3
+Copper (pure)
+
+39 3
+Copper (pure)
+
+40 3
+Copper (pure)
+
+41 3
+Copper (pure)
+
+42 0
+
+43 3
+Copper (pure)
+
+44 3
+Copper (pure)
+
+45 3
+Copper (pure)
+
+46 3
+Copper (pure)
+
+47 3
+Copper (pure)
+
+48 3
+Copper (pure)
+
+49 3
+Copper (pure)
+
+50 3
+Copper (pure)
+
+51 3
+Copper (pure)
+
+52 3
+Copper (pure)
+
+53 3
+Copper (pure)
+
+54 3
+Copper (pure)
+
+55 3
+Copper (pure)
+
+56 3
+Copper (pure)
+
+57 3
+Copper (pure)
+
+58 3
+Copper (pure)
+
+59 3
+Copper (pure)
+
+60 3
+Copper (pure)
+
+61 3
+Copper (pure)
+
+62 3
+Copper (pure)
+
+63 3
+Copper (pure)
+
+64 3
+Copper (pure)
+
+65 3
+Copper (pure)
+
+66 3
+Copper (pure)
+
+67 3
+Copper (pure)
+
+68 3
+Copper (pure)
+
+69 3
+Copper (pure)
+
+70 3
+Copper (pure)
+
+71 3
+Copper (pure)
+
+72 3
+Copper (pure)
+
+73 3
+Copper (pure)
+
+74 3
+Copper (pure)
+
+75 3
+Copper (pure)
+
+76 3
+Copper (pure)
+
+77 3
+Copper (pure)
+
+78 3
+Copper (pure)
+
+79 3
+Copper (pure)
+
+80 3
+Copper (pure)
+
+81 3
+Copper (pure)
+
+82 3
+Copper (pure)
+
+83 3
+Copper (pure)
+
+84 3
+Copper (pure)
+
+85 3
+Copper (pure)
+
+86 3
+Copper (pure)
+
+87 3
+Copper (pure)
+
+88 3
+Copper (pure)
+
+89 3
+Copper (pure)
+
+90 3
+Copper (pure)
+
+91 3
+Copper (pure)
+
+92 3
+Copper (pure)
+
+93 3
+Copper (pure)
+
+94 3
+Copper (pure)
+
+95 3
+Copper (pure)
+
+96 3
+Copper (pure)
+
+97 3
+Copper (pure)
+
+98 3
+Copper (pure)
+
+99 3
+Copper (pure)
+
+100 3
+Copper (pure)
+
+101 3
+Copper (pure)
+
+102 3
+Copper (pure)
+
+103 3
+Copper (pure)
+
+104 3
+Copper (pure)
+
+105 3
+Copper (pure)
+
+106 3
+Copper (pure)
+
+107 3
+Copper (pure)
+
+108 3
+Copper (pure)
+
+109 3
+Copper (pure)
+
+110 3
+Copper (pure)
+
+111 3
+Copper (pure)
+
+112 3
+Copper (pure)
+
+113 3
+Copper (pure)
+
+114 3
+Copper (pure)
+
+115 3
+Copper (pure)
+
+116 3
+Copper (pure)
+
+117 3
+Copper (pure)
+
+118 3
+Copper (pure)
+
+119 3
+Copper (pure)
+
+120 3
+Copper (pure)
+
+121 3
+Copper (pure)
+
+122 3
+Copper (pure)
+
+123 3
+Copper (pure)
+
+124 3
+Copper (pure)
+
+125 3
+Copper (pure)
+
+126 3
+Copper (pure)
+
+127 3
+Copper (pure)
+
+128 3
+Copper (pure)
+
+129 3
+Copper (pure)
+
+130 3
+Copper (pure)
+
+131 3
+Copper (pure)
+
+132 3
+Copper (pure)
+
+133 3
+Copper (pure)
+
+134 3
+Copper (pure)
+
+135 3
+Copper (pure)
+
+136 3
+Copper (pure)
+
+137 3
+Copper (pure)
+
+138 3
+Copper (pure)
+
+139 3
+Copper (pure)
+
+140 3
+Copper (pure)
+
+141 3
+Copper (pure)
+
+142 3
+Copper (pure)
+
+143 3
+Copper (pure)
+
+144 3
+Copper (pure)
+
+145 3
+Copper (pure)
+
+146 3
+Copper (pure)
+
+147 3
+Copper (pure)
+
+148 3
+Copper (pure)
+
+149 3
+Copper (pure)
+
+150 3
+Copper (pure)
+
+151 3
+Copper (pure)
+
+152 3
+Copper (pure)
+
+153 3
+Copper (pure)
+
+154 3
+Copper (pure)
+
+155 3
+Copper (pure)
+
+156 3
+Copper (pure)
+
+157 3
+Copper (pure)
+
+158 3
+Copper (pure)
+
+159 3
+Copper (pure)
+
+160 3
+Copper (pure)
+
+161 3
+Copper (pure)
+
+162 3
+Copper (pure)
+
+163 3
+Copper (pure)
+
+164 3
+Copper (pure)
+
+165 3
+Copper (pure)
+
+166 3
+Copper (pure)
+
+167 3
+Copper (pure)
+
+168 3
+Copper (pure)
+
+169 3
+Copper (pure)
+
+170 3
+Copper (pure)
+
+171 3
+Copper (pure)
+
+172 3
+Copper (pure)
+
+173 3
+Copper (pure)
+
+174 3
+Copper (pure)
+
+175 3
+Copper (pure)
+
+176 3
+Copper (pure)
+
+177 3
+Copper (pure)
+
+178 3
+Copper (pure)
+
+179 3
+Copper (pure)
+
+180 3
+Copper (pure)
+
+181 3
+Copper (pure)
+
+182 3
+Copper (pure)
+
+183 3
+Copper (pure)
+
+184 3
+Copper (pure)
+
+185 3
+Copper (pure)
+
+186 3
+Copper (pure)
+
+187 3
+Copper (pure)
+
+188 3
+Copper (pure)
+
+189 3
+Copper (pure)
+
+190 3
+Copper (pure)
+
+191 3
+Copper (pure)
+
+192 3
+Copper (pure)
+
+193 3
+Copper (pure)
+
+194 3
+Copper (pure)
+
+195 3
+Copper (pure)
+
+196 3
+Copper (pure)
+
+197 3
+Copper (pure)
+
+198 3
+Copper (pure)
+
+199 3
+Copper (pure)
+
+200 3
+Copper (pure)
+
+201 3
+Copper (pure)
+
+202 3
+Copper (pure)
+
+203 3
+Copper (pure)
+
+204 3
+Copper (pure)
+
+205 3
+Copper (pure)
+
+206 3
+Copper (pure)
+
+207 3
+Copper (pure)
+
+208 3
+Copper (pure)
+
+209 3
+Copper (pure)
+
+210 3
+Copper (pure)
+
+211 3
+Copper (pure)
+
+212 3
+Copper (pure)
+
+213 3
+Copper (pure)
+
+214 3
+Copper (pure)
+
+215 3
+Copper (pure)
+
+216 3
+Copper (pure)
+
+217 3
+Copper (pure)
+
+218 3
+Copper (pure)
+
+219 3
+Copper (pure)
+
+220 3
+Copper (pure)
+
+221 3
+Copper (pure)
+
+222 3
+Copper (pure)
+
+223 3
+Copper (pure)
+
+224 3
+Copper (pure)
+
+225 3
+Copper (pure)
+
+226 3
+Copper (pure)
+
+227 3
+Copper (pure)
+
+228 3
+Copper (pure)
+
+229 3
+Copper (pure)
+
+230 3
+Copper (pure)
+
+231 3
+Copper (pure)
+
+232 3
+Copper (pure)
+
+233 3
+Copper (pure)
+
+234 3
+Copper (pure)
+
+235 3
+Copper (pure)
+
+236 3
+Copper (pure)
+
+237 3
+Copper (pure)
+
+238 3
+Copper (pure)
+
+239 3
+Copper (pure)
+
+240 3
+Copper (pure)
+
+241 3
+Copper (pure)
+
+242 3
+Copper (pure)
+
+243 3
+Copper (pure)
+
+244 3
+Copper (pure)
+
+245 3
+Copper (pure)
+
+246 3
+Copper (pure)
+
+247 3
+Copper (pure)
+
+248 3
+Copper (pure)
+
+249 3
+Copper (pure)
+
+250 3
+Copper (pure)
+
+251 3
+Copper (pure)
+
+252 3
+Copper (pure)
+
+253 3
+Copper (pure)
+
+254 0
+
+255 0
+
+256 1
+
+257 1
+
+258 1
+
+259 0
+
+260 0
+
+261 3
+Wilkinson PD-odb(PCB1)/Copper
+
+262 0
+
+263 0
+
+264 1
+
+265 1
+
+266 1
+
+267 0
+
+268 1
+
+// Number 1D OBJECTS:
+// ^^^^^^^^^^^^^^^^^^
+3
+
+// Obj1D_ID, BCCode (0=Reg,1=PEC,2=PMC,3=PORT,4=Lumped):
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+0 0
+1 4
+Folder1:R1
+2 4
+Folder1:R2
+

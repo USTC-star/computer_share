@@ -1,0 +1,6 @@
+FeatureKeywords:string:block:type:saved:MWSSCHEM, modeler:construction_info:object_names, la:macromodel, la:macromodel:nmaxthreads:8, la:macromodel:nmaxthreads:4, DELETERESULTS:M0P0, DELETERESULTS:PARAMETRIC, modeler:variables:rebuild, modeler:variables:fastrebuild, modeler:boolean:add, modeler:history:header_not_parsed, modeler:load:fastloading, meshloading:problem_class_only, meshline:hex:check_after_loading:default, meshline:hex:handling_legacy:no, mesh::background::boolean, acisinterface:removebboxcache:modeler:applytransform, modeler:hidfile:diagnostics, modeler:load:fullloadingduetofastfailure, DELETERESULTS:M000, modeler:picking:GetPickpointCoordinates, modeler:model:anchorpoints, modeler:variables:fullrebuild, modeler:hidfile:no_shape, modeler:hidfile:unique_ids
+pcbconverter/InitialFreePhysicalInMB:int:19398
+pcbconverter/MaxResidentSizeInMB:int:26
+pcbconverter/MaxResidentSizeMiB:int:13
+pcbconverter/MinFreePhysicalInMB:int:19386
+---

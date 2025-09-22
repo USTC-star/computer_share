@@ -1,0 +1,35 @@
+{
+    "parameters": [
+        {
+            "expr": "1.38",
+            "name": "copper_thickness",
+            "value": "1.38"
+        },
+        {
+            "expr": "20",
+            "name": "sub_t",
+            "value": "20"
+        },
+        {
+            "expr": "0",
+            "name": "port_width",
+            "value": "0"
+        },
+        {
+            "expr": "0.5",
+            "name": "pec_thickness",
+            "value": "0.5"
+        },
+        {
+            "expr": "1.38",
+            "name": "h_wpd",
+            "value": "1.38"
+        },
+        {
+            "expr": "1",
+            "name": "t_pec",
+            "value": "1"
+        }
+    ],
+    "version": 1
+}
