@@ -30,7 +30,7 @@
         <Image IconPosition="TopRight" FileName="../3D/Model.dib" Scale="AutoFit">
             <Size Height="256" Width="256"/>
         </Image>
-        <Pos X="87.5" Y="-12.5"/>
+        <Pos X="87.5" Y="-37.5"/>
         <ToolTip>CST MICROWAVE STUDIO schematic block MWSSCHEM1</ToolTip>
     </Block>
 </SchematicTopology>

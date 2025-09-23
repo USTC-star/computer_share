@@ -406,7 +406,6 @@ Solid.Delete "Wilkinson PD-odb(PCB1)/Nets/NET-(U1-PORT3):solid1"
 127
 [end]block_index
 [start]command
-
 '@ define port: 1
  (undo)
 [end]command
@@ -440,7 +439,6 @@ Port.Delete "1"
 131
 [end]block_index
 [start]command
-
 '@ define port: 2
  (undo)
 [end]command
@@ -474,7 +472,6 @@ Port.Delete "2"
 133
 [end]block_index
 [start]command
-
 '@ define port: 3
  (undo)
 [end]command
@@ -523,7 +520,6 @@ Port.Delete "3"
 137
 [end]block_index
 [start]command
-
 '@ define lumped element: Folder1:R2
  (undo)
 [end]command
@@ -572,12 +568,209 @@ LumpedElement.Delete "Folder1:R2"
 140
 [end]block_index
 [start]command
-
 '@ define lumped element: Folder1:R1
  (undo)
 [end]command
 [start]content
 LumpedElement.Delete "Folder1:R1"
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+144
+[end]block_index
+[start]command
+[end]command
+[start]content
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+145
+[end]block_index
+[start]command
+[end]command
+[start]content
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+146
+[end]block_index
+[start]command
+'@ define lumped element: Folder1:R1
+ (undo)
+[end]command
+[start]content
+LumpedElement.Delete "Folder1:R1"
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+161
+[end]block_index
+[start]command
+[end]command
+[start]content
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+162
+[end]block_index
+[start]command
+[end]command
+[start]content
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+163
+[end]block_index
+[start]command
+'@ define lumped element: Folder1:R2
+ (undo)
+[end]command
+[start]content
+LumpedElement.Delete "Folder1:R2"
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+170
+[end]block_index
+[start]command
+[end]command
+[start]content
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+171
+[end]block_index
+[start]command
+
+'@ define port: 1
+ (undo)
+[end]command
+[start]content
+Port.Delete "1"
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+172
+[end]block_index
+[start]command
+[end]command
+[start]content
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+173
+[end]block_index
+[start]command
+
+'@ define port: 2
+ (undo)
+[end]command
+[start]content
+Port.Delete "2"
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+174
+[end]block_index
+[start]command
+[end]command
+[start]content
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+175
+[end]block_index
+[start]command
+
+'@ define port: 3
+ (undo)
+[end]command
+[start]content
+Port.Delete "3"
 [end]content
 [start]recover_picks
 1
@@ -608,6 +801,22 @@ LumpedElement.Delete "Folder1:R1"
 '[UNIQUE_ID]port$port3|8b73241e-62cb-48d1-a245-b2f900de7cc5[/UNIQUE_ID]
 
 [end]133
+[start]156
+'[UNIQUE_ID]port$port1|dcb3d355-4c9c-496d-b481-1828f67966bd[/UNIQUE_ID]
+
+[end]156
+[start]171
+'[UNIQUE_ID]port$port1|df822a82-00b3-4189-831f-43c240003062[/UNIQUE_ID]
+
+[end]171
+[start]173
+'[UNIQUE_ID]port$port2|ec888d13-ebee-4a28-bd60-6b819808603c[/UNIQUE_ID]
+
+[end]173
+[start]175
+'[UNIQUE_ID]port$port3|bb843ab5-8312-4c50-a3ca-09b003e94aa7[/UNIQUE_ID]
+
+[end]175
 [end]unique_ids
 [start]PortAndLumpedLabelState
 [start]ShowLabels

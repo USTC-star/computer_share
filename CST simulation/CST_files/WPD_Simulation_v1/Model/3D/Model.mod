@@ -1678,7 +1678,7 @@ With Extrude
      .Component "Wilkinson PD-odb(PCB1)/Nets/NET-(U1-PORT3)" 
      .Material "PEC" 
      .Mode "Picks" 
-     .Height "-t_pec" 
+     .Height "t_pec" 
      .Twist "0.0" 
      .Taper "0.0" 
      .UsePicksForHeight "False" 
@@ -2140,5 +2140,485 @@ With IESolver
      .SetMemSettingCMA "Auto" 
      .CalculateModalWeightingCoefficientsCMA "True" 
      .DetectThinDielectrics "True" 
+End With
+
+'@ delete lumped element: Folder1:R1
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+LumpedElement.Delete "Folder1:R1"
+
+'@ pick mid point
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+Pick.PickMidpointFromId "Wilkinson PD-odb(PCB1)/Nets/NET-(U1-PORT3):wpd", "425"
+
+'@ pick mid point
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+Pick.PickMidpointFromId "Wilkinson PD-odb(PCB1)/Nets/NET-(U1-PORT3):wpd", "275"
+
+'@ define lumped element: Folder1:R1
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+With LumpedElement
+     .Reset 
+     .SetName "R1" 
+     .Folder "Folder1" 
+     .SetType "RLCSerial"
+     .SetR "200"
+     .SetL "0"
+     .SetC "0"
+     .SetGs "0"
+     .SetI0 "1e-14"
+     .SetT "300"
+     .SetMonitor "True"
+     .SetRadius "0.0"
+     .CircuitFileName ""
+     .CircuitId "1"
+     .UseCopyOnly "True"
+     .UseRelativePath "False"
+     .SetP1 "True", "0.69", "-9.4191877456578", "-940.80000002356" 
+     .SetP2 "True", "0.69", "9.4808122934396", "-940.80000002356" 
+     .SetInvert "True" 
+     .Wire "" 
+     .Position "end1" 
+     .Create
+End With
+
+'@ set 3d mesh adaptation properties
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+With MeshAdaption3D
+    .SetType "HighFrequencyTet" 
+    .SetAdaptionStrategy "ExpertSystem" 
+    .MinPasses "8" 
+    .MaxPasses "16" 
+    .ClearStopCriteria 
+    .MaxDeltaS "0.02" 
+    .NumberOfDeltaSChecks "1" 
+    .EnableInnerSParameterAdaptation "True" 
+    .PropagationConstantAccuracy "0.005" 
+    .NumberOfPropConstChecks "2" 
+    .EnablePortPropagationConstantAdaptation "True" 
+    .RemoveAllUserDefinedStopCriteria 
+    .AddStopCriterion "All S-Parameters", "0.02", "1", "True" 
+    .AddStopCriterion "Reflection S-Parameters", "0.02", "1", "False" 
+    .AddStopCriterion "Transmission S-Parameters", "0.02", "1", "False" 
+    .AddStopCriterion "Portmode kz/k0", "0.005", "2", "True" 
+    .AddStopCriterion "All Probes", "0.05", "2", "False" 
+    .AddSParameterStopCriterion "True", "", "", "0.02", "1", "False" 
+    .MinimumAcceptedCellGrowth "0.5" 
+    .RefThetaFactor "" 
+    .SetMinimumMeshCellGrowth "5" 
+    .ErrorEstimatorType "Automatic" 
+    .RefinementType "Automatic" 
+    .SnapToGeometry "True" 
+    .SubsequentChecksOnlyOnce "False" 
+    .WavelengthBasedRefinement "True" 
+    .EnableLinearGrowthLimitation "True" 
+    .SetLinearGrowthLimitation "" 
+    .SingularEdgeRefinement "2" 
+    .DDMRefinementType "Automatic" 
+End With
+
+'@ change material and color: Wilkinson PD-odb(PCB1)/Substrates:03_DIELECTRIC_1 to: Rogers RO4350B LoPro (loss free)
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+Solid.ChangeMaterial "Wilkinson PD-odb(PCB1)/Substrates:03_DIELECTRIC_1", "Rogers RO4350B LoPro (loss free)" 
+Solid.SetUseIndividualColor "Wilkinson PD-odb(PCB1)/Substrates:03_DIELECTRIC_1", 0
+
+'@ change material and color: Wilkinson PD-odb(PCB1)/Nets/NET-(U1-PORT3):02_F.CU to: Copper (pure)
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+Solid.ChangeMaterial "Wilkinson PD-odb(PCB1)/Nets/NET-(U1-PORT3):02_F.CU", "Copper (pure)" 
+Solid.SetUseIndividualColor "Wilkinson PD-odb(PCB1)/Nets/NET-(U1-PORT3):02_F.CU", 0
+
+'@ clear picks
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+Pick.ClearAllPicks
+
+'@ set 3d mesh adaptation properties
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+With MeshAdaption3D
+    .SetType "HighFrequencyTet" 
+    .SetAdaptionStrategy "ExpertSystem" 
+    .MinPasses "10" 
+    .MaxPasses "26" 
+    .ClearStopCriteria 
+    .MaxDeltaS "0.02" 
+    .NumberOfDeltaSChecks "1" 
+    .EnableInnerSParameterAdaptation "True" 
+    .PropagationConstantAccuracy "0.005" 
+    .NumberOfPropConstChecks "2" 
+    .EnablePortPropagationConstantAdaptation "True" 
+    .RemoveAllUserDefinedStopCriteria 
+    .AddStopCriterion "All S-Parameters", "0.02", "1", "True" 
+    .AddStopCriterion "Reflection S-Parameters", "0.02", "1", "False" 
+    .AddStopCriterion "Transmission S-Parameters", "0.02", "1", "False" 
+    .AddStopCriterion "Portmode kz/k0", "0.005", "2", "True" 
+    .AddStopCriterion "All Probes", "0.05", "2", "False" 
+    .AddSParameterStopCriterion "True", "", "", "0.02", "1", "False" 
+    .MinimumAcceptedCellGrowth "0.5" 
+    .RefThetaFactor "" 
+    .SetMinimumMeshCellGrowth "5" 
+    .ErrorEstimatorType "Automatic" 
+    .RefinementType "Automatic" 
+    .SnapToGeometry "True" 
+    .SubsequentChecksOnlyOnce "False" 
+    .WavelengthBasedRefinement "True" 
+    .EnableLinearGrowthLimitation "True" 
+    .SetLinearGrowthLimitation "" 
+    .SingularEdgeRefinement "2" 
+    .DDMRefinementType "Automatic" 
+End With
+
+'@ delete port: port1
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+Port.Delete "1"
+
+'@ delete port: port2
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+Port.Delete "2"
+
+'@ delete port: port3
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+Port.Delete "3"
+
+'@ pick face
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+Pick.PickFaceFromId "Wilkinson PD-odb(PCB1)/Nets/NET-(U1-PORT3):wpd", "18"
+
+'@ define port: 1
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+With Port 
+     .Reset 
+     .PortNumber "1" 
+     .Label ""
+     .Folder ""
+     .NumberOfModes "1"
+     .AdjustPolarization "False"
+     .PolarizationAngle "0.0"
+     .ReferencePlaneDistance "0"
+     .TextSize "50"
+     .TextMaxLimit "0"
+     .Coordinates "Picks"
+     .Orientation "positive"
+     .PortOnBound "False"
+     .ClipPickedPortToBound "False"
+     .Xrange "5769.800000092", "5769.800000092"
+     .Yrange "-3076.030858265", "-3032.2307680204"
+     .Zrange "0", "1.38"
+     .XrangeAdd "0.0", "0.0"
+     .YrangeAdd "40", "40"
+     .ZrangeAdd "22", "10"
+     .SingleEnded "False"
+     .WaveguideMonitor "False"
+     .Create 
+End With
+
+'@ clear picks
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+Pick.ClearAllPicks
+
+'@ pick end point
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+Pick.PickEndpointFromId "Wilkinson PD-odb(PCB1)/Nets/NET-(U1-PORT3):wpd", "480"
+
+'@ pick end point
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+Pick.PickEndpointFromId "Wilkinson PD-odb(PCB1)/Nets/NET-(U1-PORT3):02_F.CU", "251"
+
+'@ delete lumped element: Folder1:R2
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+LumpedElement.Delete "Folder1:R2"
+
+'@ pick end point
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+Pick.PickEndpointFromId "Wilkinson PD-odb(PCB1)/Nets/NET-(U1-PORT3):wpd", "213"
+
+'@ pick end point
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+Pick.PickEndpointFromId "Wilkinson PD-odb(PCB1)/Nets/NET-(U1-PORT3):wpd", "255"
+
+'@ define lumped element: Folder1:R2
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+With LumpedElement
+     .Reset 
+     .SetName "R2" 
+     .Folder "Folder1" 
+     .SetType "RLCSerial"
+     .SetR "100"
+     .SetL "0"
+     .SetC "0"
+     .SetGs "0"
+     .SetI0 "1e-14"
+     .SetT "300"
+     .SetMonitor "True"
+     .SetRadius "0.0"
+     .CircuitFileName ""
+     .CircuitId "1"
+     .UseCopyOnly "True"
+     .UseRelativePath "False"
+     .SetP1 "True", "6397.4000008806", "-3044.7000002975", "1.38" 
+     .SetP2 "True", "6397.4000008806", "-3063.4999996419", "1.38" 
+     .SetInvert "False" 
+     .Wire "" 
+     .Position "end1" 
+     .Create
+End With
+
+'@ clear picks
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+Pick.ClearAllPicks
+
+'@ define material: Rogers RO4350B LoPro (loss free)
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+With Material 
+     .Reset 
+     .Name "Rogers RO4350B LoPro (loss free)"
+     .Folder ""
+     .Rho "0.0"
+     .ThermalType "Normal"
+     .ThermalConductivity "0.62"
+     .SpecificHeat "0", "J/K/kg"
+     .DynamicViscosity "0"
+     .UseEmissivity "True"
+     .Emissivity "0"
+     .MetabolicRate "0.0"
+     .VoxelConvection "0.0"
+     .BloodFlow "0"
+     .Absorptance "0"
+     .MechanicsType "Unused"
+     .IntrinsicCarrierDensity "0"
+     .FrqType "all"
+     .Type "Normal"
+     .MaterialUnit "Frequency", "GHz"
+     .MaterialUnit "Geometry", "mm"
+     .MaterialUnit "Time", "s"
+     .Epsilon "3.44"
+     .Mu "1.0"
+     .Sigma "0.0"
+     .TanD "0.0"
+     .TanDFreq "0.0"
+     .TanDGiven "False"
+     .TanDModel "ConstTanD"
+     .SetConstTanDStrategyEps "AutomaticOrder"
+     .ConstTanDModelOrderEps "3"
+     .DjordjevicSarkarUpperFreqEps "0"
+     .SetElParametricConductivity "False"
+     .ReferenceCoordSystem "Global"
+     .CoordSystemType "Cartesian"
+     .SigmaM "0.0"
+     .TanDM "0.0"
+     .TanDMFreq "0.0"
+     .TanDMGiven "False"
+     .TanDMModel "ConstTanD"
+     .SetConstTanDStrategyMu "AutomaticOrder"
+     .ConstTanDModelOrderMu "3"
+     .DjordjevicSarkarUpperFreqMu "0"
+     .SetMagParametricConductivity "False"
+     .DispModelEps  "None"
+     .DispModelMu "None"
+     .DispersiveFittingSchemeEps "1st Order"
+     .DispersiveFittingSchemeMu "1st Order"
+     .UseGeneralDispersionEps "False"
+     .UseGeneralDispersionMu "False"
+     .NLAnisotropy "False"
+     .NLAStackingFactor "1"
+     .NLADirectionX "1"
+     .NLADirectionY "0"
+     .NLADirectionZ "0"
+     .Colour "0.75", "0.95", "0.85" 
+     .Wireframe "False" 
+     .Reflection "False" 
+     .Allowoutline "True" 
+     .Transparentoutline "False" 
+     .Transparency "0" 
+     .Create
+End With
+
+'@ define material colour: Rogers RO4350B LoPro (loss free)
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+With Material 
+     .Name "Rogers RO4350B LoPro (loss free)"
+     .Folder ""
+     .Colour "0.75", "0.95", "0.85" 
+     .Wireframe "False" 
+     .Reflection "False" 
+     .Allowoutline "True" 
+     .Transparentoutline "False" 
+     .Transparency "0" 
+     .ChangeColour 
+End With
+
+'@ change material and color: Wilkinson PD-odb(PCB1)/Nets/NET-(U1-PORT3):PEC to: PEC
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+Solid.SetUseIndividualColor "Wilkinson PD-odb(PCB1)/Nets/NET-(U1-PORT3):PEC", 1
+Solid.ChangeIndividualColor "Wilkinson PD-odb(PCB1)/Nets/NET-(U1-PORT3):PEC", "255", "255", "0"
+
+'@ clear picks
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+Pick.ClearAllPicks
+
+'@ delete port: port1
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+Port.Delete "1"
+
+'@ pick face
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+Pick.PickFaceFromId "Wilkinson PD-odb(PCB1)/Nets/NET-(U1-PORT3):wpd", "18"
+
+'@ define port: 1
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+With Port 
+     .Reset 
+     .PortNumber "1" 
+     .Label ""
+     .Folder ""
+     .NumberOfModes "1"
+     .AdjustPolarization "False"
+     .PolarizationAngle "0.0"
+     .ReferencePlaneDistance "0"
+     .TextSize "50"
+     .TextMaxLimit "0"
+     .Coordinates "Picks"
+     .Orientation "positive"
+     .PortOnBound "False"
+     .ClipPickedPortToBound "False"
+     .Xrange "5769.800000092", "5769.800000092"
+     .Yrange "-3076.030858265", "-3032.2307680204"
+     .Zrange "0", "1.38"
+     .XrangeAdd "0.0", "0.0"
+     .YrangeAdd "6.12*20", "6.12*20"
+     .ZrangeAdd "20", "6.12*20"
+     .SingleEnded "False"
+     .WaveguideMonitor "False"
+     .Create 
+End With
+
+'@ pick face
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+Pick.PickFaceFromId "Wilkinson PD-odb(PCB1)/Nets/NET-(U1-PORT3):wpd", "4"
+
+'@ define port: 2
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+With Port 
+     .Reset 
+     .PortNumber "2" 
+     .Label ""
+     .Folder ""
+     .NumberOfModes "1"
+     .AdjustPolarization "False"
+     .PolarizationAngle "0.0"
+     .ReferencePlaneDistance "0"
+     .TextSize "50"
+     .TextMaxLimit "0"
+     .Coordinates "Picks"
+     .Orientation "positive"
+     .PortOnBound "False"
+     .ClipPickedPortToBound "False"
+     .Xrange "7079.800000092", "7079.800000092"
+     .Yrange "-2892.4747216644", "-2848.6746790568"
+     .Zrange "0", "1.38"
+     .XrangeAdd "0.0", "0.0"
+     .YrangeAdd "6.12*20", "6.12*20"
+     .ZrangeAdd "20", "6.12*20"
+     .SingleEnded "False"
+     .WaveguideMonitor "False"
+     .Create 
+End With
+
+'@ pick face
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+Pick.PickFaceFromId "Wilkinson PD-odb(PCB1)/Nets/NET-(U1-PORT3):wpd", "244"
+
+'@ define port: 3
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+With Port 
+     .Reset 
+     .PortNumber "3" 
+     .Label ""
+     .Folder ""
+     .NumberOfModes "1"
+     .AdjustPolarization "False"
+     .PolarizationAngle "0.0"
+     .ReferencePlaneDistance "0"
+     .TextSize "50"
+     .TextMaxLimit "0"
+     .Coordinates "Picks"
+     .Orientation "positive"
+     .PortOnBound "False"
+     .ClipPickedPortToBound "False"
+     .Xrange "7079.800000092", "7079.800000092"
+     .Yrange "-3259.5253208826", "-3215.725278275"
+     .Zrange "0", "1.38"
+     .XrangeAdd "0.0", "0.0"
+     .YrangeAdd "6.12*20", "6.12*20"
+     .ZrangeAdd "20", "6.12*20"
+     .SingleEnded "False"
+     .WaveguideMonitor "False"
+     .Create 
+End With
+
+'@ set 3d mesh adaptation properties
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+With MeshAdaption3D
+    .SetType "HighFrequencyTet" 
+    .SetAdaptionStrategy "ExpertSystem" 
+    .MinPasses "10" 
+    .MaxPasses "26" 
+    .ClearStopCriteria 
+    .MaxDeltaS "0.02" 
+    .NumberOfDeltaSChecks "1" 
+    .EnableInnerSParameterAdaptation "True" 
+    .PropagationConstantAccuracy "0.005" 
+    .NumberOfPropConstChecks "2" 
+    .EnablePortPropagationConstantAdaptation "True" 
+    .RemoveAllUserDefinedStopCriteria 
+    .AddStopCriterion "All S-Parameters", "0.02", "1", "True" 
+    .AddStopCriterion "Reflection S-Parameters", "0.02", "1", "False" 
+    .AddStopCriterion "Transmission S-Parameters", "0.02", "1", "False" 
+    .AddStopCriterion "Portmode kz/k0", "0.005", "2", "True" 
+    .AddStopCriterion "All Probes", "0.05", "2", "False" 
+    .AddSParameterStopCriterion "True", "", "", "0.02", "1", "False" 
+    .MinimumAcceptedCellGrowth "0.5" 
+    .RefThetaFactor "" 
+    .SetMinimumMeshCellGrowth "5" 
+    .ErrorEstimatorType "Automatic" 
+    .RefinementType "Automatic" 
+    .SnapToGeometry "True" 
+    .SubsequentChecksOnlyOnce "False" 
+    .WavelengthBasedRefinement "True" 
+    .EnableLinearGrowthLimitation "True" 
+    .SetLinearGrowthLimitation "" 
+    .SingularEdgeRefinement "2" 
+    .DDMRefinementType "Automatic" 
 End With
 

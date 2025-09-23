@@ -1,0 +1,126 @@
+// Number 3D OBJECTS:
+// ^^^^^^^^^^^^^^^^^^
+5
+
+// Obj3D_ID, MediaCode (0=Iso3D,1=LossyIso3D,2=PEC,3=Aniso3D,4=LossyAniso3D,5=SurfaceImp)
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+0 0
+>> Material name:
+Vacuum
+
+1 0
+>> Material name:
+Rogers RO4350B (loss free)
+
+2 0
+>> Material name:
+air_0
+
+3 5
+>> Material name:
+Copper (pure)
+
+4 2
+
+// Number 2D OBJECTS:
+// ^^^^^^^^^^^^^^^^^^
+40
+
+// Obj2D_ID, BCCode (0=Reg,1=PEC,2=PMC,3=RHO,4=OHM,5=PORT,6=OPEN,7=EXPANDEDOPEN,8=PERIODIC,9=TANGENTIAL,10=NORMAL):
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+0 0
+
+1 5
+1
+
+2 5
+2
+
+3 0
+
+4 0
+
+5 0
+
+6 0
+
+7 0
+
+8 0
+
+9 0
+
+10 0
+
+11 0
+
+12 1
+
+13 1
+
+14 1
+
+15 1
+
+16 1
+
+17 7
+
+18 7
+
+19 1
+
+20 1
+
+21 1
+
+22 1
+
+23 1
+
+24 3
+Copper (pure)
+
+25 3
+Copper (pure)
+
+26 0
+
+27 3
+Copper (pure)
+
+28 3
+Copper (pure)
+
+29 0
+
+30 3
+Copper (pure)
+
+31 0
+
+32 0
+
+33 1
+
+34 3
+Copper (pure)
+
+35 0
+
+36 0
+
+37 0
+
+38 1
+
+39 1
+
+// Number 1D OBJECTS:
+// ^^^^^^^^^^^^^^^^^^
+1
+
+// Obj1D_ID, BCCode (0=Reg,1=PEC,2=PMC,3=PORT,4=Lumped):
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+0 0
+

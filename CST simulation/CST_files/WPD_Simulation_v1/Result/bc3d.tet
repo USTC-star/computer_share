@@ -24,7 +24,7 @@ Copper (pure)
 
 // Number 2D OBJECTS:
 // ^^^^^^^^^^^^^^^^^^
-269
+258
 
 // Obj2D_ID, BCCode (0=Reg,1=PEC,2=PMC,3=RHO,4=OHM,5=PORT,6=OPEN,7=EXPANDEDOPEN,8=PERIODIC,9=TANGENTIAL,10=NORMAL):
 // ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -43,9 +43,9 @@ Copper (pure)
 
 5 0
 
-6 1
+6 0
 
-7 1
+7 0
 
 8 0
 
@@ -55,9 +55,9 @@ Copper (pure)
 
 11 0
 
-12 1
+12 0
 
-13 1
+13 0
 
 14 0
 
@@ -65,49 +65,54 @@ Copper (pure)
 
 16 0
 
-17 0
+17 1
 
-18 0
+18 7
 
-19 0
+19 1
 
-20 1
+20 7
 
-21 1
+21 7
 
-22 0
+22 6
 
-23 0
+23 1
 
-24 0
+24 1
 
-25 0
+25 1
 
 26 1
 
-27 6
+27 1
 
-28 1
+28 3
+Copper (pure)
 
-29 7
+29 0
 
-30 7
+30 3
+Copper (pure)
 
-31 7
+31 0
 
-32 6
+32 3
+Copper (pure)
 
-33 1
+33 3
+Copper (pure)
 
 34 3
 Copper (pure)
 
-35 0
-
-36 3
+35 3
 Copper (pure)
 
-37 0
+36 0
+
+37 3
+Copper (pure)
 
 38 3
 Copper (pure)
@@ -121,7 +126,8 @@ Copper (pure)
 41 3
 Copper (pure)
 
-42 0
+42 3
+Copper (pure)
 
 43 3
 Copper (pure)
@@ -738,54 +744,26 @@ Copper (pure)
 247 3
 Copper (pure)
 
-248 3
-Copper (pure)
+248 0
 
-249 3
-Copper (pure)
+249 0
 
 250 3
 Copper (pure)
 
-251 3
-Copper (pure)
+251 0
 
-252 3
-Copper (pure)
+252 0
 
-253 3
-Copper (pure)
+253 0
 
-254 0
+254 1
 
 255 0
 
-256 1
+256 0
 
 257 1
-
-258 1
-
-259 0
-
-260 0
-
-261 3
-Wilkinson PD-odb(PCB1)/Copper
-
-262 0
-
-263 0
-
-264 1
-
-265 1
-
-266 1
-
-267 0
-
-268 1
 
 // Number 1D OBJECTS:
 // ^^^^^^^^^^^^^^^^^^

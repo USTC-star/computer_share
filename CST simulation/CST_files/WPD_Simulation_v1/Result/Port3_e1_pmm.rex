@@ -40,19 +40,19 @@
       <PortModeInfoFile filename="Port3_Info1(#0003).mmd"/>
       <FieldResultFile filename="Port3_e1(#0003).sct" type="sct" meshname="Port3.slim"/>
     </Frame>
-    <Frame index="4" characteristic="2.855">
+    <Frame index="4" characteristic="2.8400000000000003">
       <PortModeInfoFile filename="Port3_Info1(#0004).mmd"/>
       <FieldResultFile filename="Port3_e1(#0004).sct" type="sct" meshname="Port3.slim"/>
     </Frame>
-    <Frame index="5" characteristic="3.9440000000000004">
+    <Frame index="5" characteristic="3.8540000000000001">
       <PortModeInfoFile filename="Port3_Info1(#0005).mmd"/>
       <FieldResultFile filename="Port3_e1(#0005).sct" type="sct" meshname="Port3.slim"/>
     </Frame>
-    <Frame index="6" characteristic="2.3900000000000001">
+    <Frame index="6" characteristic="2.504">
       <PortModeInfoFile filename="Port3_Info1(#0006).mmd"/>
       <FieldResultFile filename="Port3_e1(#0006).sct" type="sct" meshname="Port3.slim"/>
     </Frame>
-    <Frame index="7" characteristic="4.7960000000000003">
+    <Frame index="7" characteristic="4.7300000000000004">
       <PortModeInfoFile filename="Port3_Info1(#0007).mmd"/>
       <FieldResultFile filename="Port3_e1(#0007).sct" type="sct" meshname="Port3.slim"/>
     </Frame>

@@ -3,7 +3,7 @@
   <MetaGeometryFile filename="model.gex" lod="1"/>
   <SimulationProperties fieldname="loss (f=3.5) [1]" frequency="3.5" encoded_unit="&amp;U:W^1.:m^-3" quantity="loss_density" fieldtype="Power Loss Density" fieldscaling="RMS" dB_Amplitude="10"/>
   <ResultDataType vector="0" complex="0" timedomain="0" frequencymap="0"/>
-  <SimulationDomain min="4926.73926 -3405.51196 -20" max="7922.86084 -2736.21997 864.440918"/>
+  <SimulationDomain min="4926.73926 -3405.51196 -21" max="7922.86084 -2726.27466 966.840881"/>
   <PlotSettings Plot="4" ignore_symmetry="0" deformation="0" enforce_culling="0" integer_values="0" combine="CombineNone" default_arrow_type="ARROWS" default_scaling="NONE"/>
   <Source type="SOLVER"/>
   <SpecialMaterials>
