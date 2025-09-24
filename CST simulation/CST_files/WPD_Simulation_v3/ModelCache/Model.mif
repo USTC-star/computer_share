@@ -5,7 +5,7 @@
 [PCB_IMPORT_NEW: True]
 [DISABLE_FAST_LOAD: False]
 [WCS: 5632.0500000026568 -3291.9999999280708 1.3700000000000003 0 0 1 1 0 0]
-[BBOX:4788.9890944908457 7615.9799055144686 -3791.9999999280708 -2791.9999999280708 -963.06090551181103 22.370000000000001]
+[BBOX:5632.0500000026568 6772.9190000026574 -3791.9999999280708 -2791.9999999280708 -120 22.370000000000001]
 [BBOX_STRUCTURE:5632.0500000026568 6772.9190000026574 -3791.9999999280708 -2791.9999999280708 -120 22.370000000000001]
 [UNITS]
      .SetUnit "Length", "mil"
@@ -21,7 +21,7 @@
      .SetResultUnit "frequency", "frequency", "" 
 [ENDUNITS]
 [FREQUENCYRANGE]
-Solver.FrequencyRange "2", "5" 
+Solver.FrequencyRange "9", "12" 
 [ENDFREQUENCYRANGE]
 [BACKGROUND]
      .XminSpace "0.0" 
@@ -33,17 +33,16 @@ Solver.FrequencyRange "2", "5"
      .ApplyInAllDirections "False" 
 [ENDBACKGROUND]
 [BOUNDARY]
-     .Xmin "expanded open"
-     .Xmax "expanded open"
+     .Xmin "electric"
+     .Xmax "electric"
      .Ymin "electric"
      .Ymax "electric"
-     .Zmin "expanded open"
+     .Zmin "electric"
      .Zmax "electric"
      .Xsymmetry "none"
      .Ysymmetry "none"
      .Zsymmetry "none"
      .ApplyInAllDirections "False"
-     .OpenAddSpaceFactor "0.5"
      .ThermalBoundary "Xmin", "isothermal"
      .ThermalBoundary "Xmax", "isothermal"
      .ThermalBoundary "Ymin", "isothermal"
@@ -779,7 +778,7 @@ Solver.FrequencyRange "2", "5"
      .Transparency "0" 
      .Create
 [ENDMATERIAL]
-[LUMPED: R2]
+[LUMPED: Folder1:R2]
      .SetType "RLCSerial"
      .SetR "100"
      .SetL "0"
@@ -793,13 +792,13 @@ Solver.FrequencyRange "2", "5"
      .CircuitId "1"
      .UseCopyOnly "True"
      .UseRelativePath "False"
-     .SetP1 "True", "494.26500015347", "-9.4499998973356", "-1.37" 
-     .SetP2 "True", "494.26500015347", "9.4499998973361", "-1.37" 
+     .SetP1 "True", "511.38250007592", "-9.4499998973356", "-1.37" 
+     .SetP2 "True", "511.37000044466", "9.4516458013331", "-1.37" 
      .SetInvert "False" 
      .Wire "" 
      .Position "end1" 
 [ENDLUMPED]
-[LUMPED: R1]
+[LUMPED: Folder1:R1]
      .SetType "RLCSerial"
      .SetR "200"
      .SetL "0"
@@ -856,30 +855,6 @@ Solver.FrequencyRange "2", "5"
      .Orientation "zmax"
      .PortOnBound "False"
      .ClipPickedPortToBound "False"
-     .Xrange "0", "281.90000083786845"
-     .Yrange "0", "141.37"
-     .Zrange "0", "0"
-     .XrangeAdd "0.0", "0.0"
-     .YrangeAdd "0.0", "0.0"
-     .ZrangeAdd "0.0", "0.0"
-     .SingleEnded "False"
-     .WaveguideMonitor "False"
-     .ReferenceWCS "140.950000419", "70.685", "0", "0", "0", "1", "0", "1", "0"
-(TRANSFORM) "0", "1", "0", "0", "0", "1", "1", "0", "0"| "1140.8689999947", "99.868999687364", "-121.37"(ENDTRANSFORM)
-[ENDWAVEGUIDE]
-[WAVEGUIDE: 3]
-     .Label ""
-     .Folder ""
-     .NumberOfModes "1"
-     .AdjustPolarization "False"
-     .PolarizationAngle "0"
-     .ReferencePlaneDistance "0"
-     .TextSize "50"
-     .TextMaxLimit "0"
-     .Coordinates "Free"
-     .Orientation "zmax"
-     .PortOnBound "False"
-     .ClipPickedPortToBound "False"
      .Xrange "0", "281.90000083786799"
      .Yrange "0", "141.37"
      .Zrange "0", "0"
@@ -890,4 +865,28 @@ Solver.FrequencyRange "2", "5"
      .WaveguideMonitor "False"
      .ReferenceWCS "140.950000419", "70.685", "0", "0", "0", "1", "0", "1", "0"
 (TRANSFORM) "0", "1", "0", "0", "0", "1", "1", "0", "0"| "1140.8689999947", "-381.76900052523", "-121.37"(ENDTRANSFORM)
+[ENDWAVEGUIDE]
+[WAVEGUIDE: 3]
+     .Label ""
+     .Folder ""
+     .NumberOfModes "1"
+     .AdjustPolarization "False"
+     .PolarizationAngle "0"
+     .ReferencePlaneDistance "0"
+     .TextSize "50"
+     .TextMaxLimit "1"
+     .Coordinates "Free"
+     .Orientation "zmax"
+     .PortOnBound "False"
+     .ClipPickedPortToBound "False"
+     .Xrange "0", "281.90000083786845"
+     .Yrange "0", "141.37"
+     .Zrange "0", "0"
+     .XrangeAdd "0.0", "0.0"
+     .YrangeAdd "0.0", "0.0"
+     .ZrangeAdd "0.0", "0.0"
+     .SingleEnded "False"
+     .WaveguideMonitor "False"
+     .ReferenceWCS "140.950000419", "70.685", "0", "0", "0", "1", "0", "1", "0"
+(TRANSFORM) "0", "1", "0", "0", "0", "1", "1", "0", "0"| "1140.8689999947", "99.868999687364", "-121.37"(ENDTRANSFORM)
 [ENDWAVEGUIDE]
