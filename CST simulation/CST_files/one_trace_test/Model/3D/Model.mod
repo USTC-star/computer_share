@@ -1047,3 +1047,132 @@ With Material
      .ChangeColour 
 End With
 
+'@ define material: Rogers RO4003C (lossy)
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+With Material
+     .Reset
+     .Name "Rogers RO4003C (lossy)"
+     .Folder ""
+     .FrqType "all"
+     .Type "Normal"
+     .SetMaterialUnit "GHz", "mm"
+     .Epsilon "3.55"
+     .Mu "1.0"
+     .Kappa "0.0"
+     .TanD "0.0027"
+     .TanDFreq "10.0"
+     .TanDGiven "True"
+     .TanDModel "ConstTanD"
+     .KappaM "0.0"
+     .TanDM "0.0"
+     .TanDMFreq "0.0"
+     .TanDMGiven "False"
+     .TanDMModel "ConstKappa"
+     .DispModelEps "None"
+     .DispModelMu "None"
+     .DispersiveFittingSchemeEps "General 1st"
+     .DispersiveFittingSchemeMu "General 1st"
+     .UseGeneralDispersionEps "False"
+     .UseGeneralDispersionMu "False"
+     .Rho "0.0"
+     .ThermalType "Normal"
+     .ThermalConductivity "0.71"
+     .SetActiveMaterial "all"
+     .Colour "0.94", "0.82", "0.76"
+     .Wireframe "False"
+     .Transparency "0"
+     .Create
+End With
+
+'@ delete material: Rogers RO4003C (lossy)
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+Material.Delete "Rogers RO4003C (lossy)"
+
+'@ define material: Rogers RO4350B (lossy)
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+With Material
+     .Reset
+     .Name "Rogers RO4350B (lossy)"
+     .Folder ""
+     .FrqType "all"
+     .Type "Normal"
+     .SetMaterialUnit "GHz", "mm"
+     .Epsilon "3.66"
+     .Mu "1.0"
+     .Kappa "0.0"
+     .TanD "0.0037"
+     .TanDFreq "10.0"
+     .TanDGiven "True"
+     .TanDModel "ConstTanD"
+     .KappaM "0.0"
+     .TanDM "0.0"
+     .TanDMFreq "0.0"
+     .TanDMGiven "False"
+     .TanDMModel "ConstKappa"
+     .DispModelEps "None"
+     .DispModelMu "None"
+     .DispersiveFittingSchemeEps "General 1st"
+     .DispersiveFittingSchemeMu "General 1st"
+     .UseGeneralDispersionEps "False"
+     .UseGeneralDispersionMu "False"
+     .Rho "0.0"
+     .ThermalType "Normal"
+     .ThermalConductivity "0.69"
+     .SetActiveMaterial "all"
+     .Colour "0.94", "0.82", "0.76"
+     .Wireframe "False"
+     .Transparency "0"
+     .Create
+End With
+
+'@ change material: component1:Substrate to: Rogers RO4350B (lossy)
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+Solid.ChangeMaterial "component1:Substrate", "Rogers RO4350B (lossy)"
+
+'@ delete material: Rogers RO4350B (loss free)
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+Material.Delete "Rogers RO4350B (loss free)"
+
+'@ define material: Rogers RO4350B (lossy)
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+With Material
+     .Reset
+     .Name "Rogers RO4350B (lossy)"
+     .Folder ""
+     .FrqType "all"
+     .Type "Normal"
+     .SetMaterialUnit "GHz", "mm"
+     .Epsilon "3.66"
+     .Mu "1.0"
+     .Kappa "0.0"
+     .TanD "0.0037"
+     .TanDFreq "10.0"
+     .TanDGiven "True"
+     .TanDModel "ConstTanD"
+     .KappaM "0.0"
+     .TanDM "0.0"
+     .TanDMFreq "0.0"
+     .TanDMGiven "False"
+     .TanDMModel "ConstKappa"
+     .DispModelEps "None"
+     .DispModelMu "None"
+     .DispersiveFittingSchemeEps "General 1st"
+     .DispersiveFittingSchemeMu "General 1st"
+     .UseGeneralDispersionEps "False"
+     .UseGeneralDispersionMu "False"
+     .Rho "0.0"
+     .ThermalType "Normal"
+     .ThermalConductivity "0.69"
+     .SetActiveMaterial "all"
+     .Colour "0.94", "0.82", "0.76"
+     .Wireframe "False"
+     .Transparency "0"
+     .Create
+End With
+

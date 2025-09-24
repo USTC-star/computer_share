@@ -703,156 +703,6 @@ result=s:0
 treepath=s:Excitation Signals\default
 files=s:signal_default.sig
 
-type=s:XYSIGNAL
-subtype=s:user
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:persistent
-result=s:0
-treepath=s:1D Results\Materials\Wilkinson PD-odb(PCB1)\FR4\Dispersive\Eps' (Fit)
-files=s:Wilkinson PD-odb(PCB1)\FR4_eps_re.sig
-
-type=s:XYSIGNAL
-subtype=s:user
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:persistent
-result=s:0
-treepath=s:1D Results\Materials\Wilkinson PD-odb(PCB1)\FR4\Dispersive\Eps'' (Fit)
-files=s:Wilkinson PD-odb(PCB1)\FR4_eps_im.sig
-
-type=s:XYSIGNAL
-subtype=s:user
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:persistent
-result=s:0
-treepath=s:1D Results\Materials\Wilkinson PD-odb(PCB1)\FR4\Dispersive\Eps TangD (Fit)
-files=s:Wilkinson PD-odb(PCB1)\FR4_eps_tgd.sig
-
-type=s:XYSIGNAL
-subtype=s:user
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:persistent
-result=s:0
-treepath=s:1D Results\Materials\Copper (pure)\Surface Impedance\Z' (Fit)
-files=s:Copper (pure)_Z_re.sig
-
-type=s:XYSIGNAL
-subtype=s:user
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:persistent
-result=s:0
-treepath=s:1D Results\Materials\Copper (pure)\Surface Impedance\Z'' (Fit)
-files=s:Copper (pure)_Z_im.sig
-
-type=s:XYSIGNAL
-subtype=s:user
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:persistent
-result=s:0
-treepath=s:1D Results\Materials\Copper (pure)\Surface Impedance\Z' (Theory)
-files=s:Copper (pure)_Z_datalist_re.sig
-
-type=s:XYSIGNAL
-subtype=s:user
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:persistent
-result=s:0
-treepath=s:1D Results\Materials\Copper (pure)\Surface Impedance\Z'' (Theory)
-files=s:Copper (pure)_Z_datalist_im.sig
-
-type=s:XYSIGNAL
-subtype=s:user
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:persistent
-result=s:0
-treepath=s:1D Results\Materials\Wilkinson PD-odb(PCB1)\Copper\Surface Impedance\Z' (Fit)
-files=s:Wilkinson PD-odb(PCB1)\Copper_Z_re.sig
-
-type=s:XYSIGNAL
-subtype=s:user
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:persistent
-result=s:0
-treepath=s:1D Results\Materials\Wilkinson PD-odb(PCB1)\Copper\Surface Impedance\Z'' (Fit)
-files=s:Wilkinson PD-odb(PCB1)\Copper_Z_im.sig
-
-type=s:XYSIGNAL
-subtype=s:user
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:persistent
-result=s:0
-treepath=s:1D Results\Materials\Wilkinson PD-odb(PCB1)\Copper\Surface Impedance\Z' (Theory)
-files=s:Wilkinson PD-odb(PCB1)\Copper_Z_datalist_re.sig
-
-type=s:XYSIGNAL
-subtype=s:user
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:persistent
-result=s:0
-treepath=s:1D Results\Materials\Wilkinson PD-odb(PCB1)\Copper\Surface Impedance\Z'' (Theory)
-files=s:Wilkinson PD-odb(PCB1)\Copper_Z_datalist_im.sig
-
-type=s:XYSIGNAL
-subtype=s:user
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:persistent
-result=s:0
-treepath=s:1D Results\Materials\Wilkinson PD-odb(PCB1)\VIAS_MATERIAL\Surface Impedance\Z' (Fit)
-files=s:Wilkinson PD-odb(PCB1)\VIAS_MATERIAL_Z_re.sig
-
-type=s:XYSIGNAL
-subtype=s:user
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:persistent
-result=s:0
-treepath=s:1D Results\Materials\Wilkinson PD-odb(PCB1)\VIAS_MATERIAL\Surface Impedance\Z'' (Fit)
-files=s:Wilkinson PD-odb(PCB1)\VIAS_MATERIAL_Z_im.sig
-
-type=s:XYSIGNAL
-subtype=s:user
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:persistent
-result=s:0
-treepath=s:1D Results\Materials\Wilkinson PD-odb(PCB1)\VIAS_MATERIAL\Surface Impedance\Z' (Theory)
-files=s:Wilkinson PD-odb(PCB1)\VIAS_MATERIAL_Z_datalist_re.sig
-
-type=s:XYSIGNAL
-subtype=s:user
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:persistent
-result=s:0
-treepath=s:1D Results\Materials\Wilkinson PD-odb(PCB1)\VIAS_MATERIAL\Surface Impedance\Z'' (Theory)
-files=s:Wilkinson PD-odb(PCB1)\VIAS_MATERIAL_Z_datalist_im.sig
-
 type=s:MESH_FEEDBACK
 problemclass=s::8:1000
 visibility=s:visible
@@ -3896,4 +3746,154 @@ result=s:1
 parametric=s:P
 treepath=s:1D Results\Port Information\Port Modes_pmi\3(1)
 files=s:Gamma_3(1)_pmi.sig
+
+type=s:XYSIGNAL
+subtype=s:user
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:persistent
+result=s:0
+treepath=s:1D Results\Materials\Wilkinson PD-odb(PCB1)\FR4\Dispersive\Eps' (Fit)
+files=s:Wilkinson PD-odb(PCB1)\FR4_eps_re.sig
+
+type=s:XYSIGNAL
+subtype=s:user
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:persistent
+result=s:0
+treepath=s:1D Results\Materials\Wilkinson PD-odb(PCB1)\FR4\Dispersive\Eps'' (Fit)
+files=s:Wilkinson PD-odb(PCB1)\FR4_eps_im.sig
+
+type=s:XYSIGNAL
+subtype=s:user
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:persistent
+result=s:0
+treepath=s:1D Results\Materials\Wilkinson PD-odb(PCB1)\FR4\Dispersive\Eps TangD (Fit)
+files=s:Wilkinson PD-odb(PCB1)\FR4_eps_tgd.sig
+
+type=s:XYSIGNAL
+subtype=s:user
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:persistent
+result=s:0
+treepath=s:1D Results\Materials\Copper (pure)\Surface Impedance\Z' (Fit)
+files=s:Copper (pure)_Z_re.sig
+
+type=s:XYSIGNAL
+subtype=s:user
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:persistent
+result=s:0
+treepath=s:1D Results\Materials\Copper (pure)\Surface Impedance\Z'' (Fit)
+files=s:Copper (pure)_Z_im.sig
+
+type=s:XYSIGNAL
+subtype=s:user
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:persistent
+result=s:0
+treepath=s:1D Results\Materials\Copper (pure)\Surface Impedance\Z' (Theory)
+files=s:Copper (pure)_Z_datalist_re.sig
+
+type=s:XYSIGNAL
+subtype=s:user
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:persistent
+result=s:0
+treepath=s:1D Results\Materials\Copper (pure)\Surface Impedance\Z'' (Theory)
+files=s:Copper (pure)_Z_datalist_im.sig
+
+type=s:XYSIGNAL
+subtype=s:user
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:persistent
+result=s:0
+treepath=s:1D Results\Materials\Wilkinson PD-odb(PCB1)\Copper\Surface Impedance\Z' (Fit)
+files=s:Wilkinson PD-odb(PCB1)\Copper_Z_re.sig
+
+type=s:XYSIGNAL
+subtype=s:user
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:persistent
+result=s:0
+treepath=s:1D Results\Materials\Wilkinson PD-odb(PCB1)\Copper\Surface Impedance\Z'' (Fit)
+files=s:Wilkinson PD-odb(PCB1)\Copper_Z_im.sig
+
+type=s:XYSIGNAL
+subtype=s:user
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:persistent
+result=s:0
+treepath=s:1D Results\Materials\Wilkinson PD-odb(PCB1)\Copper\Surface Impedance\Z' (Theory)
+files=s:Wilkinson PD-odb(PCB1)\Copper_Z_datalist_re.sig
+
+type=s:XYSIGNAL
+subtype=s:user
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:persistent
+result=s:0
+treepath=s:1D Results\Materials\Wilkinson PD-odb(PCB1)\Copper\Surface Impedance\Z'' (Theory)
+files=s:Wilkinson PD-odb(PCB1)\Copper_Z_datalist_im.sig
+
+type=s:XYSIGNAL
+subtype=s:user
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:persistent
+result=s:0
+treepath=s:1D Results\Materials\Wilkinson PD-odb(PCB1)\VIAS_MATERIAL\Surface Impedance\Z' (Fit)
+files=s:Wilkinson PD-odb(PCB1)\VIAS_MATERIAL_Z_re.sig
+
+type=s:XYSIGNAL
+subtype=s:user
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:persistent
+result=s:0
+treepath=s:1D Results\Materials\Wilkinson PD-odb(PCB1)\VIAS_MATERIAL\Surface Impedance\Z'' (Fit)
+files=s:Wilkinson PD-odb(PCB1)\VIAS_MATERIAL_Z_im.sig
+
+type=s:XYSIGNAL
+subtype=s:user
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:persistent
+result=s:0
+treepath=s:1D Results\Materials\Wilkinson PD-odb(PCB1)\VIAS_MATERIAL\Surface Impedance\Z' (Theory)
+files=s:Wilkinson PD-odb(PCB1)\VIAS_MATERIAL_Z_datalist_re.sig
+
+type=s:XYSIGNAL
+subtype=s:user
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:persistent
+result=s:0
+treepath=s:1D Results\Materials\Wilkinson PD-odb(PCB1)\VIAS_MATERIAL\Surface Impedance\Z'' (Theory)
+files=s:Wilkinson PD-odb(PCB1)\VIAS_MATERIAL_Z_datalist_im.sig
 

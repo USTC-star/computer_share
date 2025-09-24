@@ -1,0 +1,320 @@
+// Number 3D OBJECTS:
+// ^^^^^^^^^^^^^^^^^^
+5
+
+// Obj3D_ID, MediaCode (0=Iso3D,1=LossyIso3D,2=PEC,3=Aniso3D,4=LossyAniso3D,5=SurfaceImp)
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+0 0
+>> Material name:
+Vacuum
+
+1 1
+>> Material name:
+Rogers RO4350B (lossy)
+
+2 0
+>> Material name:
+air_0
+
+3 5
+>> Material name:
+Copper (pure)
+
+4 2
+
+// Number 2D OBJECTS:
+// ^^^^^^^^^^^^^^^^^^
+105
+
+// Obj2D_ID, BCCode (0=Reg,1=PEC,2=PMC,3=RHO,4=OHM,5=PORT,6=OPEN,7=EXPANDEDOPEN,8=PERIODIC,9=TANGENTIAL,10=NORMAL):
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+0 0
+
+1 5
+1
+
+2 5
+2
+
+3 0
+
+4 0
+
+5 0
+
+6 0
+
+7 0
+
+8 0
+
+9 0
+
+10 0
+
+11 1
+
+12 1
+
+13 1
+
+14 1
+
+15 7
+
+16 7
+
+17 7
+
+18 1
+
+19 1
+
+20 1
+
+21 1
+
+22 1
+
+23 3
+Copper (pure)
+
+24 3
+Copper (pure)
+
+25 3
+Copper (pure)
+
+26 3
+Copper (pure)
+
+27 3
+Copper (pure)
+
+28 3
+Copper (pure)
+
+29 3
+Copper (pure)
+
+30 3
+Copper (pure)
+
+31 3
+Copper (pure)
+
+32 3
+Copper (pure)
+
+33 3
+Copper (pure)
+
+34 3
+Copper (pure)
+
+35 3
+Copper (pure)
+
+36 3
+Copper (pure)
+
+37 3
+Copper (pure)
+
+38 3
+Copper (pure)
+
+39 3
+Copper (pure)
+
+40 3
+Copper (pure)
+
+41 3
+Copper (pure)
+
+42 3
+Copper (pure)
+
+43 3
+Copper (pure)
+
+44 3
+Copper (pure)
+
+45 3
+Copper (pure)
+
+46 3
+Copper (pure)
+
+47 3
+Copper (pure)
+
+48 3
+Copper (pure)
+
+49 3
+Copper (pure)
+
+50 3
+Copper (pure)
+
+51 3
+Copper (pure)
+
+52 3
+Copper (pure)
+
+53 3
+Copper (pure)
+
+54 3
+Copper (pure)
+
+55 3
+Copper (pure)
+
+56 3
+Copper (pure)
+
+57 3
+Copper (pure)
+
+58 3
+Copper (pure)
+
+59 3
+Copper (pure)
+
+60 3
+Copper (pure)
+
+61 3
+Copper (pure)
+
+62 3
+Copper (pure)
+
+63 3
+Copper (pure)
+
+64 3
+Copper (pure)
+
+65 0
+
+66 3
+Copper (pure)
+
+67 3
+Copper (pure)
+
+68 3
+Copper (pure)
+
+69 3
+Copper (pure)
+
+70 3
+Copper (pure)
+
+71 3
+Copper (pure)
+
+72 3
+Copper (pure)
+
+73 3
+Copper (pure)
+
+74 3
+Copper (pure)
+
+75 3
+Copper (pure)
+
+76 3
+Copper (pure)
+
+77 3
+Copper (pure)
+
+78 3
+Copper (pure)
+
+79 0
+
+80 3
+Copper (pure)
+
+81 3
+Copper (pure)
+
+82 3
+Copper (pure)
+
+83 3
+Copper (pure)
+
+84 3
+Copper (pure)
+
+85 3
+Copper (pure)
+
+86 3
+Copper (pure)
+
+87 3
+Copper (pure)
+
+88 3
+Copper (pure)
+
+89 3
+Copper (pure)
+
+90 3
+Copper (pure)
+
+91 3
+Copper (pure)
+
+92 3
+Copper (pure)
+
+93 3
+Copper (pure)
+
+94 0
+
+95 0
+
+96 3
+Copper (pure)
+
+97 1
+
+98 1
+
+99 0
+
+100 0
+
+101 0
+
+102 0
+
+103 0
+
+104 1
+
+// Number 1D OBJECTS:
+// ^^^^^^^^^^^^^^^^^^
+1
+
+// Obj1D_ID, BCCode (0=Reg,1=PEC,2=PMC,3=PORT,4=Lumped):
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+0 0
+

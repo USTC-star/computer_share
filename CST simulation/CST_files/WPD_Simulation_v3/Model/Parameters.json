@@ -1,0 +1,30 @@
+{
+    "parameters": [
+        {
+            "expr": "1.37",
+            "name": "trace_t",
+            "value": "1.37"
+        },
+        {
+            "expr": "1140.869",
+            "name": "length",
+            "value": "1140.869"
+        },
+        {
+            "expr": "500*2",
+            "name": "width",
+            "value": "1000"
+        },
+        {
+            "expr": "20",
+            "name": "sub_t",
+            "value": "20"
+        },
+        {
+            "expr": "1",
+            "name": "pec_t",
+            "value": "1"
+        }
+    ],
+    "version": 1
+}

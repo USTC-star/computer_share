@@ -314,7 +314,7 @@
 	(footprint "RF_WPD:Pad for termination"
 		(layer "F.Cu")
 		(uuid "375e0dc6-871b-45df-9275-736e0fd61e4d")
-		(at 169 86.7336)
+		(at 171.5 89.7336)
 		(property "Reference" "U2"
 			(at 0 -0.5 0)
 			(unlocked yes)
@@ -476,7 +476,7 @@
 	(footprint "RF_WPD:Pad for termination"
 		(layer "F.Cu")
 		(uuid "84e1e693-11de-4609-8a11-93daf549f54e")
-		(at 169 80.5)
+		(at 171.5 77.5)
 		(property "Reference" "U3"
 			(at 0 -0.5 0)
 			(unlocked yes)
@@ -555,48 +555,48 @@
 		(embedded_fonts no)
 	)
 	(gr_line
-		(start 164.48024 82.7024)
-		(end 166.4716 80.5)
-		(stroke
-			(width 1.06426)
-			(type solid)
-		)
-		(layer "F.Cu")
-		(net 2)
-		(uuid "5c33dc43-7cd0-4e81-9969-92248ab6d07c")
-	)
-	(gr_line
-		(start 166.4716 86.7336)
-		(end 169 86.7336)
-		(stroke
-			(width 1.06426)
-			(type solid)
-		)
-		(layer "F.Cu")
-		(net 1)
-		(uuid "6670b89e-c818-4378-992a-d7e2f56bee8c")
-	)
-	(gr_line
-		(start 166.4716 80.5)
-		(end 169 80.5)
-		(stroke
-			(width 1.06426)
-			(type solid)
-		)
-		(layer "F.Cu")
-		(net 2)
-		(uuid "6b4c9e4d-f729-435f-b501-0bc7bc03dfec")
-	)
-	(gr_line
 		(start 164.48024 84.5312)
-		(end 166.4716 86.7336)
+		(end 167.5 89.7336)
 		(stroke
 			(width 1.06426)
 			(type solid)
 		)
 		(layer "F.Cu")
 		(net 1)
-		(uuid "8bbeb47f-3c9a-4a3a-95aa-0dfb295aff4a")
+		(uuid "557a3f6d-b076-4cd7-a99d-5e2783ec98bd")
+	)
+	(gr_line
+		(start 164.48024 82.7024)
+		(end 167.5 77.5)
+		(stroke
+			(width 1.06426)
+			(type solid)
+		)
+		(layer "F.Cu")
+		(net 2)
+		(uuid "96c36a85-d9be-4808-826a-a5d6649ecb80")
+	)
+	(gr_line
+		(start 167.5 89.7336)
+		(end 171.5 89.7336)
+		(stroke
+			(width 1.06426)
+			(type solid)
+		)
+		(layer "F.Cu")
+		(net 1)
+		(uuid "b6b57ee7-4b3d-49a1-9119-b5e52bc48871")
+	)
+	(gr_line
+		(start 167.5 77.5)
+		(end 171.5 77.5)
+		(stroke
+			(width 1.06426)
+			(type solid)
+		)
+		(layer "F.Cu")
+		(net 2)
+		(uuid "fd0c0a27-3109-4b70-8402-416a644a0e6f")
 	)
 	(segment
 		(start 143.5862 83.6168)
@@ -605,6 +605,14 @@
 		(layer "F.Cu")
 		(net 3)
 		(uuid "8aa0db8d-cf70-458d-a5cf-f16dc9dcc2a8")
+	)
+	(group ""
+		(uuid "25f75b6e-4599-4e37-ae64-b1d57c65c14c")
+		(members "557a3f6d-b076-4cd7-a99d-5e2783ec98bd" "b6b57ee7-4b3d-49a1-9119-b5e52bc48871")
+	)
+	(group ""
+		(uuid "c7c506ec-a155-4705-864e-7f61e223ff98")
+		(members "96c36a85-d9be-4808-826a-a5d6649ecb80" "fd0c0a27-3109-4b70-8402-416a644a0e6f")
 	)
 	(embedded_fonts no)
 )

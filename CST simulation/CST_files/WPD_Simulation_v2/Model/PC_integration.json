@@ -1,0 +1,29 @@
+{
+   "execution": {
+      "classname": "SMAPowerByEmagHPCFrameReduced",
+      "libname": "SMAPowerByEmagUI"
+   },
+   "inputVariables": [
+      {
+         "name": "length",
+         "type": "float",
+         "value": 1042.443
+      },
+      {
+         "name": "width",
+         "type": "string",
+         "value": "400*2"
+      },
+      {
+         "name": "sub_t",
+         "type": "float",
+         "value": 20.0
+      },
+      {
+         "name": "PEC_t",
+         "type": "float",
+         "value": 1.0
+      }
+   ],
+   "outputVariables": []
+}

@@ -1,0 +1,25 @@
+{
+    "parameters": [
+        {
+            "expr": "1042.443",
+            "name": "length",
+            "value": "1042.443"
+        },
+        {
+            "expr": "400*2",
+            "name": "width",
+            "value": "800"
+        },
+        {
+            "expr": "20",
+            "name": "sub_t",
+            "value": "20"
+        },
+        {
+            "expr": "1",
+            "name": "PEC_t",
+            "value": "1"
+        }
+    ],
+    "version": 1
+}

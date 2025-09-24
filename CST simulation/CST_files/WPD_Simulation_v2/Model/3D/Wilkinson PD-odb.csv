@@ -1,0 +1,5 @@
+refdes;partname;type;Datasheet;Description;Value
+U1;RF_WPD_Pad_for_termination; ; ; ; ~
+U2;RF_WPD_Pad_for_termination; ; ; ; ~
+U3;RF_WPD_Pad_for_termination; ; ; ; ~
+WPD1;RF_WPD_WPD_2Ring_3500_RO4350B; ; ; Wilkinson Power Divider, 2 Ring; ~
