@@ -3,14 +3,13 @@
   <MetaGeometryFile filename="model.gex" lod="1"/>
   <SimulationProperties fieldname="surface current (f=2) [2]" frequency="2" encoded_unit="&amp;U:A^1.:m^-1" quantity="surf_current" fieldtype="Surface current" fieldscaling="PEAK" dB_Amplitude="20"/>
   <ResultDataType vector="1" complex="1" timedomain="0" frequencymap="0"/>
-  <SimulationDomain min="4926.73926 -3405.51196 -20" max="7922.86084 -2736.21997 864.440918"/>
+  <SimulationDomain min="4926.73926 -3405.51196 -21" max="7922.86084 -2726.27466 966.840881"/>
   <PlotSettings Plot="2" ignore_symmetry="0" deformation="0" enforce_culling="0" integer_values="0" combine="CombineNone" default_arrow_type="ARROWS" default_scaling="NONE"/>
   <Source type="SOLVER"/>
   <SpecialMaterials>
     <Background type="NORMAL"/>
     <Material name="Copper (pure)" type="FIELDFREE"/>
     <Material name="PEC" type="FIELDFREE"/>
-    <Material name="Wilkinson PD-odb(PCB1)/Copper" type="FIELDFREE"/>
   </SpecialMaterials>
   <AuxGeometryFile/>
   <AuxResultFile/>

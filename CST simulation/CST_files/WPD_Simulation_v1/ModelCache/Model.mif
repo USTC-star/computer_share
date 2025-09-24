@@ -5,8 +5,8 @@
 [PCB_IMPORT_NEW: True]
 [DISABLE_FAST_LOAD: False]
 [WCS: 5769.8000000920465 -3054.1308131426936 0.68999999999999984 -1 0 0 0 -0 1]
-[BBOX:4926.7390945802354 7922.8609056038576 -3405.512000592717 -2736.219999407283 -20 864.44090551181102]
-[BBOX_STRUCTURE:5769.8000000920465 7079.8000000920465 -3405.512000592717 -2736.219999407283 -20 21.379999999999999]
+[BBOX:4926.7390945802345 7922.8609056038576 -3405.512000592717 -2726.2746790567985 -21 966.840905511811]
+[BBOX_STRUCTURE:5769.8000000920456 7079.8000000920465 -3405.512000592717 -2726.2746790567985 -21 123.78]
 [UNITS]
      .SetUnit "Length", "mil"
      .SetUnit "Temperature", "degC"
@@ -327,7 +327,7 @@ Solver.FrequencyRange "2", "5"
      .MaterialUnit "Frequency", "GHz"
      .MaterialUnit "Geometry", "mm"
      .MaterialUnit "Time", "s"
-     .Epsilon "3.48"
+     .Epsilon "3.44"
      .Mu "1.0"
      .Sigma "0.0"
      .TanD "0.0"
@@ -779,26 +779,6 @@ Solver.FrequencyRange "2", "5"
      .Transparency "0" 
      .Create
 [ENDMATERIAL]
-[LUMPED: Folder1:R2]
-     .SetType "RLCSerial"
-     .SetR "100"
-     .SetL "0"
-     .SetC "0"
-     .SetGs "0"
-     .SetI0 "1e-14"
-     .SetT "300"
-     .SetMonitor "True"
-     .SetRadius "0.0"
-     .CircuitFileName ""
-     .CircuitId "1"
-     .UseCopyOnly "True"
-     .UseRelativePath "False"
-     .SetP1 "True", "0.69", "9.5308135399268", "-645.06818692044" 
-     .SetP2 "True", "0.69", "-9.4691871939272", "-645.06818332401" 
-     .SetInvert "False" 
-     .Wire "" 
-     .Position "end1" 
-[ENDLUMPED]
 [LUMPED: Folder1:R1]
      .SetType "RLCSerial"
      .SetR "200"
@@ -813,8 +793,28 @@ Solver.FrequencyRange "2", "5"
      .CircuitId "1"
      .UseCopyOnly "True"
      .UseRelativePath "False"
-     .SetP1 "True", "0.69", "9.4808122934396", "-940.80000002356" 
-     .SetP2 "True", "0.69", "-9.4191877456578", "-940.80000002356" 
+     .SetP1 "True", "0.69", "-9.4191877456578", "-940.80000002356" 
+     .SetP2 "True", "0.69", "9.4808122934396", "-940.80000002356" 
+     .SetInvert "True" 
+     .Wire "" 
+     .Position "end1" 
+[ENDLUMPED]
+[LUMPED: Folder1:R2]
+     .SetType "RLCSerial"
+     .SetR "100"
+     .SetL "0"
+     .SetC "0"
+     .SetGs "0"
+     .SetI0 "1e-14"
+     .SetT "300"
+     .SetMonitor "True"
+     .SetRadius "0.0"
+     .CircuitFileName ""
+     .CircuitId "1"
+     .UseCopyOnly "True"
+     .UseRelativePath "False"
+     .SetP1 "True", "0.69", "9.4308128451703", "-627.60000078855" 
+     .SetP2 "True", "0.69", "-9.3691864991706", "-627.60000078855" 
      .SetInvert "False" 
      .Wire "" 
      .Position "end1" 
@@ -832,16 +832,16 @@ Solver.FrequencyRange "2", "5"
      .Orientation "zmin"
      .PortOnBound "False"
      .ClipPickedPortToBound "False"
-     .Xrange "0", "107.80009024463743"
-     .Yrange "0", "41.379999999999995"
+     .Xrange "0", "288.60009024463761"
+     .Yrange "0", "143.78"
      .Zrange "0", "0"
      .XrangeAdd "0.0", "0.0"
      .YrangeAdd "0.0", "0.0"
      .ZrangeAdd "0.0", "0.0"
      .SingleEnded "False"
      .WaveguideMonitor "False"
-     .ReferenceWCS "53.9000451223", "20.69", "0", "0", "0", "-1", "0", "1", "0"
-(TRANSFORM) "0", "1", "0", "1", "0", "0", "0", "0", "-1"| "-20.69", "-53.900045122318", "9.0949470177293e-13"(ENDTRANSFORM)
+     .ReferenceWCS "144.300045122", "71.89", "0", "0", "0", "-1", "0", "1", "0"
+(TRANSFORM) "0", "1", "0", "1", "0", "0", "0", "0", "-1"| "-20.69", "-144.30004512232", "9.0949470177293e-13"(ENDTRANSFORM)
 [ENDWAVEGUIDE]
 [WAVEGUIDE: 2]
      .Label ""
@@ -856,16 +856,16 @@ Solver.FrequencyRange "2", "5"
      .Orientation "zmax"
      .PortOnBound "False"
      .ClipPickedPortToBound "False"
-     .Xrange "0", "107.80004260756596"
-     .Yrange "0", "41.379999999999995"
+     .Xrange "0", "288.60004260756614"
+     .Yrange "0", "143.78"
      .Zrange "0", "0"
      .XrangeAdd "0.0", "0.0"
      .YrangeAdd "0.0", "0.0"
      .ZrangeAdd "0.0", "0.0"
      .SingleEnded "False"
      .WaveguideMonitor "False"
-     .ReferenceWCS "53.9000213038", "20.69", "0", "0", "0", "1", "0", "1", "0"
-(TRANSFORM) "0", "1", "0", "1", "0", "0", "0", "0", "-1"| "-20.69", "-237.3945077399", "-1310"(ENDTRANSFORM)
+     .ReferenceWCS "144.300021304", "71.89", "0", "0", "0", "1", "0", "1", "0"
+(TRANSFORM) "0", "1", "0", "1", "0", "0", "0", "0", "-1"| "-20.69", "39.256091478329", "-1310"(ENDTRANSFORM)
 [ENDWAVEGUIDE]
 [WAVEGUIDE: 3]
      .Label ""
@@ -880,16 +880,16 @@ Solver.FrequencyRange "2", "5"
      .Orientation "zmax"
      .PortOnBound "False"
      .ClipPickedPortToBound "False"
-     .Xrange "0", "107.80004260756596"
-     .Yrange "0", "41.379999999999995"
+     .Xrange "0", "288.60004260756614"
+     .Yrange "0", "143.78"
      .Zrange "0", "0"
      .XrangeAdd "0.0", "0.0"
      .YrangeAdd "0.0", "0.0"
      .ZrangeAdd "0.0", "0.0"
      .SingleEnded "False"
      .WaveguideMonitor "False"
-     .ReferenceWCS "53.9000213038", "20.69", "0", "0", "0", "1", "0", "1", "0"
-(TRANSFORM) "0", "1", "0", "1", "0", "0", "0", "0", "-1"| "-20.69", "129.65609147833", "-1310"(ENDTRANSFORM)
+     .ReferenceWCS "144.300021304", "71.89", "0", "0", "0", "1", "0", "1", "0"
+(TRANSFORM) "0", "1", "0", "1", "0", "0", "0", "0", "-1"| "-20.69", "-327.7945077399", "-1310"(ENDTRANSFORM)
 [ENDWAVEGUIDE]
 [GROUPS]
 Group.Add "meshgroup1", "mesh"

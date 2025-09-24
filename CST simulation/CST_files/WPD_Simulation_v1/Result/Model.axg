@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CSTAuxiliaryGeometry version="20170928" creator="modeler">
   <Objects>
-    <Object name="Lumped Elements\Folder1:R2" id="1">
-      <FatArrow position="6414.86816 -3054.1001 1.38" direction="-3.59643036e-06 -19 0" dimension="10 10 10" material="$WireMaterial$" text="Folder1:R2" short="R2"/>
+    <Object name="Lumped Elements\Folder1:R1" id="1">
+      <FatArrow position="6710.6001 -3054.1001 1.38" direction="-0 -18.8999996 -0" dimension="10 10 10" material="$WireMaterial$" text="Folder1:R1" short="R1"/>
     </Object>
-    <Object name="Lumped Elements\Folder1:R1" id="0">
-      <FatArrow position="6710.6001 -3054.1001 1.38" direction="0 -18.8999996 0" dimension="10 10 10" material="$WireMaterial$" text="Folder1:R1" short="R1"/>
+    <Object name="Lumped Elements\Folder1:R2" id="0">
+      <FatArrow position="6397.3999 -3054.1001 1.38" direction="0 -18.7999992 0" dimension="10 10 10" material="$WireMaterial$" text="Folder1:R2" short="R2"/>
     </Object>
     <Object name="Ports\port1" id="8">
-      <LineSet points="5769.7998 -3108.03076 -20 5769.7998 -3000.23071 -20 5769.7998 -3000.23071 21.3799992 5769.7998 -3108.03076 21.3799992 5769.7998 -3108.03076 -20" stripped="1" material="$PortMaterial$" text="1" short="1"/>
+      <LineSet points="5769.7998 -3198.43091 -20 5769.7998 -2909.83081 -20 5769.7998 -2909.83081 123.779999 5769.7998 -3198.43091 123.779999 5769.7998 -3198.43091 -20" stripped="1" material="$PortMaterial$" text="1" short="1"/>
     </Object>
     <Object name="Ports\port2" id="9">
-      <LineSet points="7079.7998 -3291.52539 -20 7079.7998 -3183.72534 -20 7079.7998 -3183.72534 21.3799992 7079.7998 -3291.52539 21.3799992 7079.7998 -3291.52539 -20" stripped="1" material="$PortMaterial$" text="2" short="2"/>
+      <LineSet points="7079.7998 -3014.87476 -20 7079.7998 -2726.27466 -20 7079.7998 -2726.27466 123.779999 7079.7998 -3014.87476 123.779999 7079.7998 -3014.87476 -20" stripped="1" material="$PortMaterial$" text="2" short="2"/>
     </Object>
     <Object name="Ports\port3" id="10">
-      <LineSet points="7079.7998 -2924.47461 -20 7079.7998 -2816.67456 -20 7079.7998 -2816.67456 21.3799992 7079.7998 -2924.47461 21.3799992 7079.7998 -2924.47461 -20" stripped="1" material="$PortMaterial$" text="3" short="3"/>
+      <LineSet points="7079.7998 -3381.92529 -20 7079.7998 -3093.3252 -20 7079.7998 -3093.3252 123.779999 7079.7998 -3381.92529 123.779999 7079.7998 -3381.92529 -20" stripped="1" material="$PortMaterial$" text="3" short="3"/>
     </Object>
   </Objects>
   <Materials/>

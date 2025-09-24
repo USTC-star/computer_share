@@ -1,0 +1,40 @@
+----------------------------------------------------------------------
+  Total number of passes   :	1
+  Mesh adaptation pass     :	1
+  Simulation point         :	5 GHz
+----------------------------------------------------------------------
+  Solver time w/o ref.     :	0 s
+  Mesh refinement time     :	2 s
+  Number of mesh cells     :	1124
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+  Total number of passes   :	2
+  Mesh adaptation pass     :	2
+  Simulation point         :	5 GHz
+----------------------------------------------------------------------
+  Solver time w/o ref.     :	0 s
+  Mesh refinement time     :	0 s
+  Number of mesh cells     :	2067
+  Delta calculation        
+  All S-Parameters         :	0.0438416
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+  Total number of passes   :	3
+  Mesh adaptation pass     :	3
+  Simulation point         :	5 GHz
+----------------------------------------------------------------------
+  Solver time w/o ref.     :	0 s
+  Mesh refinement time     :	0 s
+  Number of mesh cells     :	3288
+  Delta calculation        
+  All S-Parameters         :	0.00763525
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+  Total solver time        :	8 s
+
+  Desired accuracy limit reached, mesh adaptation stopped.
+----------------------------------------------------------------------
+
