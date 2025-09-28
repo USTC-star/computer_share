@@ -8,6 +8,7 @@
 \usepackage{multirow}
 \usepackage{rotating}
 \usepackage{booktabs}
+\usepackage{pdfpages}
 \setcounter{secnumdepth}{2}
 % degree      = doctor | master | bachelor
 % degree-type = academic | professional
@@ -17,8 +18,12 @@
 \input{ustcsetup.tex}
 \begin{document}
 \maketitle
-\copyrightpage
+%\copyrightpage
+\includepdf[pages=1,fitpaper=true]{PDF_中国科学技术大学学位论文原创性声明.pdf}
+\frontmatter
+\includepdf[pages=1,fitpaper=true]{论文创新性说明.pdf}
 %%
+
 \frontmatter
 \input{chapters/abstract.tex}
 \tableofcontents
