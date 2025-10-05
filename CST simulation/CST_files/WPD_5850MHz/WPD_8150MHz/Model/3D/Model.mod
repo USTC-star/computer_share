@@ -1,0 +1,1499 @@
+'# MWS Version: Version 2024.0 - Sep 01 2023 - ACIS 33.0.1 -
+
+'# length = mil
+'# frequency = GHz
+'# time = ns
+'# frequency range: fmin = 7.3 fmax = 9
+'# created = '[VERSION]2024.0|33.0.1|20230901[/VERSION]
+
+
+'@ use template: Planar Filter_4.cfg
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+'set the units
+With Units
+    .SetUnit "Length", "mil"
+    .SetUnit "Frequency", "GHz"
+    .SetUnit "Voltage", "V"
+    .SetUnit "Resistance", "Ohm"
+    .SetUnit "Inductance", "nH"
+    .SetUnit "Temperature",  "degC"
+    .SetUnit "Time", "ns"
+    .SetUnit "Current", "A"
+    .SetUnit "Conductance", "S"
+    .SetUnit "Capacitance", "pF"
+End With
+
+ThermalSolver.AmbientTemperature "0"
+
+'----------------------------------------------------------------------------
+
+'set the frequency range
+Solver.FrequencyRange "5", "6.7"
+
+'----------------------------------------------------------------------------
+
+With Background
+     .Type "Normal"
+     .Epsilon "1.0"
+     .Mu "1.0"
+     .XminSpace "0.0"
+     .XmaxSpace "0.0"
+     .YminSpace "0.0"
+     .YmaxSpace "0.0"
+     .ZminSpace "0.0"
+     .ZmaxSpace "0.0"
+End With
+
+With Boundary
+     .Xmin "electric"
+     .Xmax "electric"
+     .Ymin "electric"
+     .Ymax "electric"
+     .Zmin "electric"
+     .Zmax "electric"
+End With
+
+' mesh - Tetrahedral
+With Mesh
+     .MeshType "Tetrahedral"
+     .SetCreator "High Frequency"
+End With
+With MeshSettings
+     .SetMeshType "Tet"
+     .Set "Version", 1%
+
+     .Set "StepsPerWaveNear", "6"
+     .Set "StepsPerBoxNear", "10"
+     .Set "CellsPerWavelengthPolicy", "automatic"
+
+     .Set "CurvatureOrder", "2"
+     .Set "CurvatureOrderPolicy", "automatic"
+
+     .Set "CurvRefinementControl", "NormalTolerance"
+     .Set "NormalTolerance", "60"
+
+     .Set "SrfMeshGradation", "1.5"
+
+     .Set "UseAnisoCurveRefinement", "1"
+     .Set "UseSameSrfAndVolMeshGradation", "1"
+     .Set "VolMeshGradation", "1.5"
+End With
+
+With MeshSettings
+     .SetMeshType "Unstr"
+     .Set "MoveMesh", "1"
+     .Set "OptimizeForPlanarStructures", "0"
+End With
+
+With Mesh
+     .MeshType "PBA"
+     .SetCreator "High Frequency"
+     .AutomeshRefineAtPecLines "True", "4"
+
+     .UseRatioLimit "True"
+     .RatioLimit "50"
+     .LinesPerWavelength "20"
+     .MinimumStepNumber "10"
+     .Automesh "True"
+End With
+
+With MeshSettings
+     .SetMeshType "Hex"
+     .Set "RatioLimitGeometry", "50"
+     .Set "StepsPerWaveNear", "20"
+     .Set "EdgeRefinementOn", "1"
+     .Set "EdgeRefinementRatio", "4"
+End With
+
+' mesh - Multilayer (Preview)
+' default
+
+' solver - FD settings
+With FDSolver
+     .Reset
+     .Method "Tetrahedral Mesh" ' i.e. general purpose
+
+     .AccuracyHex "1e-6"
+     .AccuracyTet "1e-5"
+     .AccuracySrf "1e-3"
+
+     .SetUseFastResonantForSweepTet "False"
+
+     .Type "Direct"
+     .MeshAdaptionHex "False"
+     .MeshAdaptionTet "True"
+
+     .InterpolationSamples "5001"
+End With
+
+With MeshAdaption3D
+    .SetType "HighFrequencyTet"
+    .SetAdaptionStrategy "Energy"
+    .MinPasses "3"
+    .MaxPasses "10"
+End With
+
+FDSolver.SetShieldAllPorts "True"
+
+With FDSolver
+     .Method "Tetrahedral Mesh (MOR)"
+     .HexMORSettings "", "5001"
+End With
+
+FDSolver.Method "Tetrahedral Mesh" ' i.e. general purpose
+
+' solver - TD settings
+With MeshAdaption3D
+    .SetType "Time"
+
+    .SetAdaptionStrategy "Energy"
+    .CellIncreaseFactor "0.5"
+    .AddSParameterStopCriterion "True", "0.0", "10", "0.01", "1", "True"
+End With
+
+With Solver
+     .Method "Hexahedral"
+     .SteadyStateLimit "-40"
+
+     .MeshAdaption "True"
+     .NumberOfPulseWidths "50"
+
+     .FrequencySamples "5001"
+
+     .UseArfilter "True"
+End With
+
+' solver - M settings
+
+'----------------------------------------------------------------------------
+
+Dim sDefineAt As String
+sDefineAt = "5;5.85;6.7"
+Dim sDefineAtName As String
+sDefineAtName = "5;5.85;6.7"
+Dim sDefineAtToken As String
+sDefineAtToken = "f="
+Dim aFreq() As String
+aFreq = Split(sDefineAt, ";")
+Dim aNames() As String
+aNames = Split(sDefineAtName, ";")
+
+Dim nIndex As Integer
+For nIndex = LBound(aFreq) To UBound(aFreq)
+
+Dim zz_val As String
+zz_val = aFreq (nIndex)
+Dim zz_name As String
+zz_name = sDefineAtToken & aNames (nIndex)
+
+' Define E-Field Monitors
+With Monitor
+    .Reset
+    .Name "e-field ("& zz_name &")"
+    .Dimension "Volume"
+    .Domain "Frequency"
+    .FieldType "Efield"
+    .MonitorValue  zz_val
+    .Create
+End With
+
+Next
+
+'----------------------------------------------------------------------------
+
+With MeshSettings
+     .SetMeshType "Tet"
+     .Set "Version", 1%
+End With
+
+With Mesh
+     .MeshType "Tetrahedral"
+End With
+
+'set the solver type
+ChangeSolverType("HF Frequency Domain")
+
+'----------------------------------------------------------------------------
+
+'@ import gerber file: C:\Users\PinJung\Desktop\computer_share\CST simulation\Structure from Kicad\Wilkinson 8150MHz_Cu.gbr
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+With LayoutDB
+     .Reset 
+     .SourceFileName "C:\Users\PinJung\Desktop\computer_share\CST simulation\Structure from Kicad\Wilkinson 8150MHz_Cu.gbr" 
+     .LdbFileName "*Wilkinson 8150MHz_Cu.ldb" 
+     .PcbType "gerber" 
+     .KeepSynchronized "True" 
+     .CreateDB 
+     .LoadDB 
+End With
+
+'@ pick face
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+Pick.PickFaceFromId "Wilkinson 8150MHz_Cu(PCB1)/Nets/NONE:WILKINSON 8150MHZ_CU.GBR", "1"
+
+'@ define extrude: Wilkinson 8150MHz_Cu(PCB1):WPD
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+With Extrude 
+     .Reset 
+     .Name "WPD" 
+     .Component "Wilkinson 8150MHz_Cu(PCB1)" 
+     .Material "PEC" 
+     .Mode "Picks" 
+     .Height "1.37" 
+     .Twist "0.0" 
+     .Taper "0.0" 
+     .UsePicksForHeight "False" 
+     .DeleteBaseFaceSolid "False" 
+     .KeepMaterials "False" 
+     .ClearPickedFace "True" 
+     .Create 
+End With
+
+'@ define material: Copper
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+With Material
+     .Reset
+     .Name "Copper"
+     .Folder ""
+     .Rho "8930"
+     .ThermalType "Normal"
+     .ThermalConductivity "401"
+     .SpecificHeat "390", "J/K/kg"
+     .DynamicViscosity "0"
+     .UseEmissivity "True"
+     .Emissivity "0"
+     .MetabolicRate "0"
+     .VoxelConvection "0"
+     .BloodFlow "0"
+     .Absorptance "0"
+     .MechanicsType "Isotropic"
+     .YoungsModulus "120"
+     .PoissonsRatio "0.33"
+     .ThermalExpansionRate "17"
+     .IntrinsicCarrierDensity "0"
+     .FrqType "all"
+     .Type "Lossy metal"
+     .MaterialUnit "Frequency", "GHz"
+     .MaterialUnit "Geometry", "mm"
+     .MaterialUnit "Time", "s"
+     .Mu "1"
+     .Sigma "5.8e+07"
+     .LossyMetalSIRoughness "0.0"
+     .ReferenceCoordSystem "Global"
+     .CoordSystemType "Cartesian"
+     .NLAnisotropy "False"
+     .NLAStackingFactor "1"
+     .NLADirectionX "1"
+     .NLADirectionY "0"
+     .NLADirectionZ "0"
+     .FrqType "static"
+     .Type "Normal"
+     .MaterialUnit "Frequency", "Hz"
+     .MaterialUnit "Geometry", "mm"
+     .MaterialUnit "Time", "s"
+     .Epsilon "1"
+     .Mu "1"
+     .Sigma "5.8e+07"
+     .TanD "0.0"
+     .TanDFreq "0.0"
+     .TanDGiven "False"
+     .TanDModel "ConstTanD"
+     .SetConstTanDStrategyEps "AutomaticOrder"
+     .ConstTanDModelOrderEps "3"
+     .DjordjevicSarkarUpperFreqEps "0"
+     .SetElParametricConductivity "False"
+     .ReferenceCoordSystem "Global"
+     .CoordSystemType "Cartesian"
+     .SigmaM "0"
+     .TanDM "0.0"
+     .TanDMFreq "0.0"
+     .TanDMGiven "False"
+     .TanDMModel "ConstTanD"
+     .SetConstTanDStrategyMu "AutomaticOrder"
+     .ConstTanDModelOrderMu "3"
+     .DjordjevicSarkarUpperFreqMu "0"
+     .SetMagParametricConductivity "False"
+     .DispModelEps  "None"
+     .DispModelMu "None"
+     .DispersiveFittingSchemeEps "Nth Order"
+     .MaximalOrderNthModelFitEps "10"
+     .ErrorLimitNthModelFitEps "0.1"
+     .DispersiveFittingSchemeMu "Nth Order"
+     .MaximalOrderNthModelFitMu "10"
+     .ErrorLimitNthModelFitMu "0.1"
+     .UseGeneralDispersionEps "False"
+     .UseGeneralDispersionMu "False"
+     .NLAnisotropy "False"
+     .NLAStackingFactor "1"
+     .NLADirectionX "1"
+     .NLADirectionY "0"
+     .NLADirectionZ "0"
+     .FrqType "hf"
+     .Type "Lossy metal"
+     .MaterialUnit "Frequency", "GHz"
+     .MaterialUnit "Geometry", "mm"
+     .MaterialUnit "Time", "s"
+     .Mu "1"
+     .Sigma "5.8e+07"
+     .LossyMetalSIRoughness "0.0"
+     .ReferenceCoordSystem "Global"
+     .CoordSystemType "Cartesian"
+     .NLAnisotropy "False"
+     .NLAStackingFactor "1"
+     .NLADirectionX "1"
+     .NLADirectionY "0"
+     .NLADirectionZ "0"
+     .Colour "0.703", "0.703", "0" 
+     .Wireframe "False" 
+     .Reflection "False" 
+     .Allowoutline "True" 
+     .Transparentoutline "False" 
+     .Transparency "0" 
+     .Create
+End With
+
+'@ change material: Wilkinson 8150MHz_Cu(PCB1):WPD to: Copper
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+Solid.ChangeMaterial "Wilkinson 8150MHz_Cu(PCB1):WPD", "Copper"
+
+'@ delete component: Wilkinson 8150MHz_Cu(PCB1)/Nets
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+Component.Delete "Wilkinson 8150MHz_Cu(PCB1)/Nets"
+
+'@ pick mid point
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+Pick.PickMidpointFromId "Wilkinson 8150MHz_Cu(PCB1):WPD", "203"
+
+'@ align wcs with point
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+WCS.AlignWCSWithSelected "Point"
+
+'@ define brick: Wilkinson 8150MHz_Cu(PCB1):solid1
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+With Brick
+     .Reset 
+     .Name "solid1" 
+     .Component "Wilkinson 8150MHz_Cu(PCB1)" 
+     .Material "Copper" 
+     .Xrange "-10", "1111" 
+     .Yrange "-450", "450" 
+     .Zrange "0", "20" 
+     .Create
+End With
+
+'@ rename block: Wilkinson 8150MHz_Cu(PCB1):solid1 to: Wilkinson 8150MHz_Cu(PCB1):SUBSTRATE
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+Solid.Rename "Wilkinson 8150MHz_Cu(PCB1):solid1", "SUBSTRATE"
+
+'@ define material: Rogers RO4350B (lossy)
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+With Material
+     .Reset
+     .Name "Rogers RO4350B (lossy)"
+     .Folder ""
+     .FrqType "all"
+     .Type "Normal"
+     .SetMaterialUnit "GHz", "mm"
+     .Epsilon "3.66"
+     .Mu "1.0"
+     .Kappa "0.0"
+     .TanD "0.0037"
+     .TanDFreq "10.0"
+     .TanDGiven "True"
+     .TanDModel "ConstTanD"
+     .KappaM "0.0"
+     .TanDM "0.0"
+     .TanDMFreq "0.0"
+     .TanDMGiven "False"
+     .TanDMModel "ConstKappa"
+     .DispModelEps "None"
+     .DispModelMu "None"
+     .DispersiveFittingSchemeEps "General 1st"
+     .DispersiveFittingSchemeMu "General 1st"
+     .UseGeneralDispersionEps "False"
+     .UseGeneralDispersionMu "False"
+     .Rho "0.0"
+     .ThermalType "Normal"
+     .ThermalConductivity "0.69"
+     .SetActiveMaterial "all"
+     .Colour "0.94", "0.82", "0.76"
+     .Wireframe "False"
+     .Transparency "0"
+     .Create
+End With
+
+'@ change material and color: Wilkinson 8150MHz_Cu(PCB1):SUBSTRATE to: Rogers RO4350B (lossy)
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+Solid.ChangeMaterial "Wilkinson 8150MHz_Cu(PCB1):SUBSTRATE", "Rogers RO4350B (lossy)" 
+Solid.SetUseIndividualColor "Wilkinson 8150MHz_Cu(PCB1):SUBSTRATE", 1
+Solid.ChangeIndividualColor "Wilkinson 8150MHz_Cu(PCB1):SUBSTRATE", "85", "0", "0"
+
+'@ define brick: Wilkinson 8150MHz_Cu(PCB1):solid1
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+With Brick
+     .Reset 
+     .Name "solid1" 
+     .Component "Wilkinson 8150MHz_Cu(PCB1)" 
+     .Material "Rogers RO4350B (lossy)" 
+     .Xrange "-140", "40" 
+     .Yrange "-540", "540" 
+     .Zrange "-100", "220" 
+     .Create
+End With
+
+'@ boolean insert shapes: Wilkinson 8150MHz_Cu(PCB1):SUBSTRATE, Wilkinson 8150MHz_Cu(PCB1):solid1
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+With Solid
+     .Version 10
+     .Insert "Wilkinson 8150MHz_Cu(PCB1):SUBSTRATE", "Wilkinson 8150MHz_Cu(PCB1):solid1" 
+     .Version 1
+End With
+
+'@ boolean subtract shapes: Wilkinson 8150MHz_Cu(PCB1):WPD, Wilkinson 8150MHz_Cu(PCB1):solid1
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+Solid.Subtract "Wilkinson 8150MHz_Cu(PCB1):WPD", "Wilkinson 8150MHz_Cu(PCB1):solid1"
+
+'@ define brick: Wilkinson 8150MHz_Cu(PCB1):solid1
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+With Brick
+     .Reset 
+     .Name "solid1" 
+     .Component "Wilkinson 8150MHz_Cu(PCB1)" 
+     .Material "Rogers RO4350B (lossy)" 
+     .Xrange "920", "1240" 
+     .Yrange "-500", "520" 
+     .Zrange "-100", "1480" 
+     .Create
+End With
+
+'@ boolean insert shapes: Wilkinson 8150MHz_Cu(PCB1):SUBSTRATE, Wilkinson 8150MHz_Cu(PCB1):solid1
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+With Solid
+     .Version 10
+     .Insert "Wilkinson 8150MHz_Cu(PCB1):SUBSTRATE", "Wilkinson 8150MHz_Cu(PCB1):solid1" 
+     .Version 1
+End With
+
+'@ boolean subtract shapes: Wilkinson 8150MHz_Cu(PCB1):WPD, Wilkinson 8150MHz_Cu(PCB1):solid1
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+Solid.Subtract "Wilkinson 8150MHz_Cu(PCB1):WPD", "Wilkinson 8150MHz_Cu(PCB1):solid1"
+
+'@ pick face
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+Pick.PickFaceFromId "Wilkinson 8150MHz_Cu(PCB1):WPD", "12"
+
+'@ pick face
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+Pick.PickFaceFromId "Wilkinson 8150MHz_Cu(PCB1):SUBSTRATE", "19"
+
+'@ define extrude: Wilkinson 8150MHz_Cu(PCB1):solid1
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+With Extrude 
+     .Reset 
+     .Name "solid1" 
+     .Component "Wilkinson 8150MHz_Cu(PCB1)" 
+     .Material "PEC" 
+     .Mode "Picks" 
+     .Height "1" 
+     .Twist "0.0" 
+     .Taper "0.0" 
+     .UsePicksForHeight "False" 
+     .DeleteBaseFaceSolid "False" 
+     .KeepMaterials "False" 
+     .ClearPickedFace "True" 
+     .Create 
+End With
+
+'@ pick face
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+Pick.PickFaceFromId "Wilkinson 8150MHz_Cu(PCB1):WPD", "12"
+
+'@ define port: 1
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+With Port 
+     .Reset 
+     .PortNumber "1" 
+     .Label ""
+     .Folder ""
+     .NumberOfModes "1"
+     .AdjustPolarization "False"
+     .PolarizationAngle "0.0"
+     .ReferencePlaneDistance "0"
+     .TextSize "50"
+     .TextMaxLimit "0"
+     .Coordinates "Picks"
+     .Orientation "positive"
+     .PortOnBound "True"
+     .ClipPickedPortToBound "False"
+     .Xrange "5903.0249997262", "5903.0249997262"
+     .Yrange "-3088.0000003461", "-3045.9999996539"
+     .Zrange "0", "1.37"
+     .XrangeAdd "0.0", "0.0"
+     .YrangeAdd "5.12*20", "5.12*20"
+     .ZrangeAdd "5.12*20", "20"
+     .SingleEnded "False"
+     .WaveguideMonitor "False"
+     .Create 
+End With
+
+'@ pick face
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+Pick.PickFaceFromId "Wilkinson 8150MHz_Cu(PCB1):WPD", "4"
+
+'@ define port: 2
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+With Port 
+     .Reset 
+     .PortNumber "2" 
+     .Label ""
+     .Folder ""
+     .NumberOfModes "1"
+     .AdjustPolarization "False"
+     .PolarizationAngle "0.0"
+     .ReferencePlaneDistance "0"
+     .TextSize "50"
+     .TextMaxLimit "0"
+     .Coordinates "Picks"
+     .Orientation "positive"
+     .PortOnBound "True"
+     .ClipPickedPortToBound "False"
+     .Xrange "6783.0249997262", "6783.0249997262"
+     .Yrange "-2794.8694188729", "-2752.8999998529"
+     .Zrange "0", "1.37"
+     .XrangeAdd "0.0", "0.0"
+     .YrangeAdd "5.12*20", "5.12*20"
+     .ZrangeAdd "5.12*20", "20"
+     .SingleEnded "False"
+     .WaveguideMonitor "False"
+     .Create 
+End With
+
+'@ pick face
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+Pick.PickFaceFromId "Wilkinson 8150MHz_Cu(PCB1):WPD", "106"
+
+'@ define port: 3
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+With Port 
+     .Reset 
+     .PortNumber "3" 
+     .Label ""
+     .Folder ""
+     .NumberOfModes "1"
+     .AdjustPolarization "False"
+     .PolarizationAngle "0.0"
+     .ReferencePlaneDistance "0"
+     .TextSize "50"
+     .TextMaxLimit "0"
+     .Coordinates "Picks"
+     .Orientation "positive"
+     .PortOnBound "True"
+     .ClipPickedPortToBound "False"
+     .Xrange "6783.0249997262", "6783.0249997262"
+     .Yrange "-3381.1000001471", "-3339.1305811271"
+     .Zrange "0", "1.37"
+     .XrangeAdd "0.0", "0.0"
+     .YrangeAdd "5.12*20", "5.12*20"
+     .ZrangeAdd "5.12*20", "20"
+     .SingleEnded "False"
+     .WaveguideMonitor "False"
+     .Create 
+End With
+
+'@ define frequency domain solver parameters
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+Mesh.SetCreator "High Frequency" 
+
+With FDSolver
+     .Reset 
+     .SetMethod "Tetrahedral", "General purpose" 
+     .OrderTet "Second" 
+     .OrderSrf "First" 
+     .Stimulation "All", "All" 
+     .ResetExcitationList 
+     .AutoNormImpedance "False" 
+     .NormingImpedance "50" 
+     .ModesOnly "False" 
+     .ConsiderPortLossesTet "True" 
+     .SetShieldAllPorts "True" 
+     .AccuracyHex "1e-6" 
+     .AccuracyTet "1e-5" 
+     .AccuracySrf "1e-3" 
+     .LimitIterations "False" 
+     .MaxIterations "0" 
+     .SetCalcBlockExcitationsInParallel "True", "True", "" 
+     .StoreAllResults "False" 
+     .StoreResultsInCache "False" 
+     .UseHelmholtzEquation "True" 
+     .LowFrequencyStabilization "True" 
+     .Type "Direct" 
+     .MeshAdaptionHex "False" 
+     .MeshAdaptionTet "True" 
+     .AcceleratedRestart "True" 
+     .FreqDistAdaptMode "Distributed" 
+     .NewIterativeSolver "True" 
+     .TDCompatibleMaterials "False" 
+     .ExtrudeOpenBC "False" 
+     .SetOpenBCTypeHex "Default" 
+     .SetOpenBCTypeTet "Default" 
+     .AddMonitorSamples "True" 
+     .CalcPowerLoss "True" 
+     .CalcPowerLossPerComponent "False" 
+     .SetKeepSolutionCoefficients "MonitorsAndMeshAdaptation" 
+     .UseDoublePrecision "False" 
+     .UseDoublePrecision_ML "True" 
+     .MixedOrderSrf "False" 
+     .MixedOrderTet "False" 
+     .PreconditionerAccuracyIntEq "0.15" 
+     .MLFMMAccuracy "Default" 
+     .MinMLFMMBoxSize "0.3" 
+     .UseCFIEForCPECIntEq "True" 
+     .UseEnhancedCFIE2 "True" 
+     .UseFastRCSSweepIntEq "false" 
+     .UseSensitivityAnalysis "False" 
+     .UseEnhancedNFSImprint "True" 
+     .UseFastDirectFFCalc "False" 
+     .RemoveAllStopCriteria "Hex"
+     .AddStopCriterion "All S-Parameters", "0.01", "2", "Hex", "True"
+     .AddStopCriterion "Reflection S-Parameters", "0.01", "2", "Hex", "False"
+     .AddStopCriterion "Transmission S-Parameters", "0.01", "2", "Hex", "False"
+     .RemoveAllStopCriteria "Tet"
+     .AddStopCriterion "All S-Parameters", "0.01", "2", "Tet", "True"
+     .AddStopCriterion "Reflection S-Parameters", "0.01", "2", "Tet", "False"
+     .AddStopCriterion "Transmission S-Parameters", "0.01", "2", "Tet", "False"
+     .AddStopCriterion "All Probes", "0.05", "2", "Tet", "True"
+     .RemoveAllStopCriteria "Srf"
+     .AddStopCriterion "All S-Parameters", "0.01", "2", "Srf", "True"
+     .AddStopCriterion "Reflection S-Parameters", "0.01", "2", "Srf", "False"
+     .AddStopCriterion "Transmission S-Parameters", "0.01", "2", "Srf", "False"
+     .SweepMinimumSamples "3" 
+     .SetNumberOfResultDataSamples "5001" 
+     .SetResultDataSamplingMode "Automatic" 
+     .SweepWeightEvanescent "1.0" 
+     .AccuracyROM "1e-4" 
+     .AddSampleInterval "", "", "1", "Automatic", "True" 
+     .AddSampleInterval "", "", "", "Automatic", "False" 
+     .MPIParallelization "False"
+     .UseDistributedComputing "False"
+     .NetworkComputingStrategy "RunRemote"
+     .NetworkComputingJobCount "3"
+     .UseParallelization "True"
+     .MaxCPUs "1024"
+     .MaximumNumberOfCPUDevices "2"
+End With
+
+With IESolver
+     .Reset 
+     .UseFastFrequencySweep "True" 
+     .UseIEGroundPlane "False" 
+     .SetRealGroundMaterialName "" 
+     .CalcFarFieldInRealGround "False" 
+     .RealGroundModelType "Auto" 
+     .PreconditionerType "Auto" 
+     .ExtendThinWireModelByWireNubs "False" 
+     .ExtraPreconditioning "False" 
+End With
+
+With IESolver
+     .SetFMMFFCalcStopLevel "0" 
+     .SetFMMFFCalcNumInterpPoints "6" 
+     .UseFMMFarfieldCalc "True" 
+     .SetCFIEAlpha "0.500000" 
+     .LowFrequencyStabilization "False" 
+     .LowFrequencyStabilizationML "True" 
+     .Multilayer "False" 
+     .SetiMoMACC_I "0.0001" 
+     .SetiMoMACC_M "0.0001" 
+     .DeembedExternalPorts "True" 
+     .SetOpenBC_XY "True" 
+     .OldRCSSweepDefintion "False" 
+     .SetRCSOptimizationProperties "True", "100", "0.00001" 
+     .SetAccuracySetting "Custom" 
+     .CalculateSParaforFieldsources "True" 
+     .ModeTrackingCMA "True" 
+     .NumberOfModesCMA "3" 
+     .StartFrequencyCMA "-1.0" 
+     .SetAccuracySettingCMA "Default" 
+     .FrequencySamplesCMA "0" 
+     .SetMemSettingCMA "Auto" 
+     .CalculateModalWeightingCoefficientsCMA "True" 
+     .DetectThinDielectrics "True" 
+End With
+
+'@ change solver type
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+ChangeSolverType "HF Frequency Domain"
+
+'@ define frequency range
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+Solver.FrequencyRange "7.3", "9"
+
+'@ define frequency domain solver parameters
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+Mesh.SetCreator "High Frequency" 
+
+With FDSolver
+     .Reset 
+     .SetMethod "Tetrahedral", "General purpose" 
+     .OrderTet "Second" 
+     .OrderSrf "First" 
+     .Stimulation "All", "All" 
+     .ResetExcitationList 
+     .AutoNormImpedance "True" 
+     .NormingImpedance "50" 
+     .ModesOnly "False" 
+     .ConsiderPortLossesTet "True" 
+     .SetShieldAllPorts "True" 
+     .AccuracyHex "1e-6" 
+     .AccuracyTet "1e-5" 
+     .AccuracySrf "1e-3" 
+     .LimitIterations "False" 
+     .MaxIterations "0" 
+     .SetCalcBlockExcitationsInParallel "True", "True", "" 
+     .StoreAllResults "False" 
+     .StoreResultsInCache "False" 
+     .UseHelmholtzEquation "True" 
+     .LowFrequencyStabilization "True" 
+     .Type "Direct" 
+     .MeshAdaptionHex "False" 
+     .MeshAdaptionTet "True" 
+     .AcceleratedRestart "True" 
+     .FreqDistAdaptMode "Distributed" 
+     .NewIterativeSolver "True" 
+     .TDCompatibleMaterials "False" 
+     .ExtrudeOpenBC "False" 
+     .SetOpenBCTypeHex "Default" 
+     .SetOpenBCTypeTet "Default" 
+     .AddMonitorSamples "True" 
+     .CalcPowerLoss "True" 
+     .CalcPowerLossPerComponent "False" 
+     .SetKeepSolutionCoefficients "MonitorsAndMeshAdaptation" 
+     .UseDoublePrecision "False" 
+     .UseDoublePrecision_ML "True" 
+     .MixedOrderSrf "False" 
+     .MixedOrderTet "False" 
+     .PreconditionerAccuracyIntEq "0.15" 
+     .MLFMMAccuracy "Default" 
+     .MinMLFMMBoxSize "0.3" 
+     .UseCFIEForCPECIntEq "True" 
+     .UseEnhancedCFIE2 "True" 
+     .UseFastRCSSweepIntEq "false" 
+     .UseSensitivityAnalysis "False" 
+     .UseEnhancedNFSImprint "True" 
+     .UseFastDirectFFCalc "False" 
+     .RemoveAllStopCriteria "Hex"
+     .AddStopCriterion "All S-Parameters", "0.01", "2", "Hex", "True"
+     .AddStopCriterion "Reflection S-Parameters", "0.01", "2", "Hex", "False"
+     .AddStopCriterion "Transmission S-Parameters", "0.01", "2", "Hex", "False"
+     .RemoveAllStopCriteria "Tet"
+     .AddStopCriterion "All S-Parameters", "0.01", "2", "Tet", "True"
+     .AddStopCriterion "Reflection S-Parameters", "0.01", "2", "Tet", "False"
+     .AddStopCriterion "Transmission S-Parameters", "0.01", "2", "Tet", "False"
+     .AddStopCriterion "All Probes", "0.05", "2", "Tet", "True"
+     .RemoveAllStopCriteria "Srf"
+     .AddStopCriterion "All S-Parameters", "0.01", "2", "Srf", "True"
+     .AddStopCriterion "Reflection S-Parameters", "0.01", "2", "Srf", "False"
+     .AddStopCriterion "Transmission S-Parameters", "0.01", "2", "Srf", "False"
+     .SweepMinimumSamples "3" 
+     .SetNumberOfResultDataSamples "5001" 
+     .SetResultDataSamplingMode "Automatic" 
+     .SweepWeightEvanescent "1.0" 
+     .AccuracyROM "1e-4" 
+     .AddSampleInterval "", "", "1", "Automatic", "True" 
+     .AddSampleInterval "", "", "", "Automatic", "False" 
+     .MPIParallelization "False"
+     .UseDistributedComputing "False"
+     .NetworkComputingStrategy "RunRemote"
+     .NetworkComputingJobCount "3"
+     .UseParallelization "True"
+     .MaxCPUs "1024"
+     .MaximumNumberOfCPUDevices "2"
+End With
+
+With IESolver
+     .Reset 
+     .UseFastFrequencySweep "True" 
+     .UseIEGroundPlane "False" 
+     .SetRealGroundMaterialName "" 
+     .CalcFarFieldInRealGround "False" 
+     .RealGroundModelType "Auto" 
+     .PreconditionerType "Auto" 
+     .ExtendThinWireModelByWireNubs "False" 
+     .ExtraPreconditioning "False" 
+End With
+
+With IESolver
+     .SetFMMFFCalcStopLevel "0" 
+     .SetFMMFFCalcNumInterpPoints "6" 
+     .UseFMMFarfieldCalc "True" 
+     .SetCFIEAlpha "0.500000" 
+     .LowFrequencyStabilization "False" 
+     .LowFrequencyStabilizationML "True" 
+     .Multilayer "False" 
+     .SetiMoMACC_I "0.0001" 
+     .SetiMoMACC_M "0.0001" 
+     .DeembedExternalPorts "True" 
+     .SetOpenBC_XY "True" 
+     .OldRCSSweepDefintion "False" 
+     .SetRCSOptimizationProperties "True", "100", "0.00001" 
+     .SetAccuracySetting "Custom" 
+     .CalculateSParaforFieldsources "True" 
+     .ModeTrackingCMA "True" 
+     .NumberOfModesCMA "3" 
+     .StartFrequencyCMA "-1.0" 
+     .SetAccuracySettingCMA "Default" 
+     .FrequencySamplesCMA "0" 
+     .SetMemSettingCMA "Auto" 
+     .CalculateModalWeightingCoefficientsCMA "True" 
+     .DetectThinDielectrics "True" 
+End With
+
+'@ pick mid point
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+Pick.PickMidpointFromId "Wilkinson 8150MHz_Cu(PCB1):WPD", "151"
+
+'@ pick mid point
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+Pick.PickMidpointFromId "Wilkinson 8150MHz_Cu(PCB1):WPD", "37"
+
+'@ define lumped element: Folder1:R1
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+With LumpedElement
+     .Reset 
+     .SetName "R1" 
+     .Folder "Folder1" 
+     .SetType "RLCSerial"
+     .SetR "200"
+     .SetL "0"
+     .SetC "0"
+     .SetGs "0"
+     .SetI0 "1e-14"
+     .SetT "300"
+     .SetMonitor "True"
+     .SetRadius "0.0"
+     .CircuitFileName ""
+     .CircuitId "1"
+     .UseCopyOnly "True"
+     .UseRelativePath "False"
+     .SetP1 "True", "6422.9287795282", "-3076.4500005303", "0" 
+     .SetP2 "True", "6422.9287795282", "-3057.5499994697", "0" 
+     .SetInvert "False" 
+     .Wire "" 
+     .Position "end1" 
+     .Create
+End With
+
+'@ pick mid point
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+Pick.PickMidpointFromId "Wilkinson 8150MHz_Cu(PCB1):WPD", "67"
+
+'@ pick mid point
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+Pick.PickMidpointFromId "Wilkinson 8150MHz_Cu(PCB1):WPD", "121"
+
+'@ define lumped element: Folder1:R2
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+With LumpedElement
+     .Reset 
+     .SetName "R2" 
+     .Folder "Folder1" 
+     .SetType "RLCSerial"
+     .SetR "100"
+     .SetL "0"
+     .SetC "0"
+     .SetGs "0"
+     .SetI0 "1e-14"
+     .SetT "300"
+     .SetMonitor "True"
+     .SetRadius "0.0"
+     .CircuitFileName ""
+     .CircuitId "1"
+     .UseCopyOnly "True"
+     .UseRelativePath "False"
+     .SetP1 "True", "6297.4031884944", "-3057.5499994697", "0" 
+     .SetP2 "True", "6297.4031884944", "-3076.4500005303", "0" 
+     .SetInvert "True" 
+     .Wire "" 
+     .Position "end1" 
+     .Create
+End With
+
+'@ set 3d mesh adaptation properties
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+With MeshAdaption3D
+    .SetType "HighFrequencyHex" 
+    .SetAdaptionStrategy "ExpertSystem" 
+    .ClearStopCriteria 
+    .AddSParameterStopCriterion "True", "", "", "0.02", "1", "True" 
+    .MinPasses "9" 
+    .MaxPasses "13" 
+    .MeshIncrement "5.0" 
+End With
+
+'@ define frequency domain solver parameters
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+Mesh.SetCreator "High Frequency" 
+
+With FDSolver
+     .Reset 
+     .SetMethod "Hexahedral", "General purpose" 
+     .OrderTet "Second" 
+     .OrderSrf "First" 
+     .Stimulation "All", "All" 
+     .ResetExcitationList 
+     .AutoNormImpedance "True" 
+     .NormingImpedance "50" 
+     .ModesOnly "False" 
+     .ConsiderPortLossesTet "True" 
+     .SetShieldAllPorts "True" 
+     .AccuracyHex "1e-6" 
+     .AccuracyTet "1e-5" 
+     .AccuracySrf "1e-3" 
+     .LimitIterations "False" 
+     .MaxIterations "0" 
+     .SetCalcBlockExcitationsInParallel "True", "True", "" 
+     .StoreAllResults "False" 
+     .StoreResultsInCache "False" 
+     .UseHelmholtzEquation "True" 
+     .LowFrequencyStabilization "True" 
+     .Type "Direct" 
+     .MeshAdaptionHex "True" 
+     .MeshAdaptionTet "True" 
+     .AcceleratedRestart "True" 
+     .FreqDistAdaptMode "Distributed" 
+     .NewIterativeSolver "True" 
+     .TDCompatibleMaterials "False" 
+     .ExtrudeOpenBC "False" 
+     .SetOpenBCTypeHex "Default" 
+     .SetOpenBCTypeTet "Default" 
+     .AddMonitorSamples "True" 
+     .CalcPowerLoss "True" 
+     .CalcPowerLossPerComponent "False" 
+     .SetKeepSolutionCoefficients "MonitorsAndMeshAdaptation" 
+     .UseDoublePrecision "False" 
+     .UseDoublePrecision_ML "True" 
+     .MixedOrderSrf "False" 
+     .MixedOrderTet "False" 
+     .PreconditionerAccuracyIntEq "0.15" 
+     .MLFMMAccuracy "Default" 
+     .MinMLFMMBoxSize "0.3" 
+     .UseCFIEForCPECIntEq "True" 
+     .UseEnhancedCFIE2 "True" 
+     .UseFastRCSSweepIntEq "false" 
+     .UseSensitivityAnalysis "False" 
+     .UseEnhancedNFSImprint "True" 
+     .UseFastDirectFFCalc "False" 
+     .RemoveAllStopCriteria "Hex"
+     .AddStopCriterion "All S-Parameters", "0.01", "2", "Hex", "True"
+     .AddStopCriterion "Reflection S-Parameters", "0.01", "2", "Hex", "False"
+     .AddStopCriterion "Transmission S-Parameters", "0.01", "2", "Hex", "False"
+     .RemoveAllStopCriteria "Tet"
+     .AddStopCriterion "All S-Parameters", "0.01", "2", "Tet", "True"
+     .AddStopCriterion "Reflection S-Parameters", "0.01", "2", "Tet", "False"
+     .AddStopCriterion "Transmission S-Parameters", "0.01", "2", "Tet", "False"
+     .AddStopCriterion "All Probes", "0.05", "2", "Tet", "True"
+     .RemoveAllStopCriteria "Srf"
+     .AddStopCriterion "All S-Parameters", "0.01", "2", "Srf", "True"
+     .AddStopCriterion "Reflection S-Parameters", "0.01", "2", "Srf", "False"
+     .AddStopCriterion "Transmission S-Parameters", "0.01", "2", "Srf", "False"
+     .SweepMinimumSamples "3" 
+     .SetNumberOfResultDataSamples "5001" 
+     .SetResultDataSamplingMode "Automatic" 
+     .SweepWeightEvanescent "1.0" 
+     .AccuracyROM "1e-4" 
+     .AddSampleInterval "", "", "1", "Automatic", "True" 
+     .AddSampleInterval "", "", "", "Automatic", "False" 
+     .MPIParallelization "False"
+     .UseDistributedComputing "False"
+     .NetworkComputingStrategy "RunRemote"
+     .NetworkComputingJobCount "3"
+     .UseParallelization "True"
+     .MaxCPUs "1024"
+     .MaximumNumberOfCPUDevices "2"
+End With
+
+With IESolver
+     .Reset 
+     .UseFastFrequencySweep "True" 
+     .UseIEGroundPlane "False" 
+     .SetRealGroundMaterialName "" 
+     .CalcFarFieldInRealGround "False" 
+     .RealGroundModelType "Auto" 
+     .PreconditionerType "Auto" 
+     .ExtendThinWireModelByWireNubs "False" 
+     .ExtraPreconditioning "False" 
+End With
+
+With IESolver
+     .SetFMMFFCalcStopLevel "0" 
+     .SetFMMFFCalcNumInterpPoints "6" 
+     .UseFMMFarfieldCalc "True" 
+     .SetCFIEAlpha "0.500000" 
+     .LowFrequencyStabilization "False" 
+     .LowFrequencyStabilizationML "True" 
+     .Multilayer "False" 
+     .SetiMoMACC_I "0.0001" 
+     .SetiMoMACC_M "0.0001" 
+     .DeembedExternalPorts "True" 
+     .SetOpenBC_XY "True" 
+     .OldRCSSweepDefintion "False" 
+     .SetRCSOptimizationProperties "True", "100", "0.00001" 
+     .SetAccuracySetting "Custom" 
+     .CalculateSParaforFieldsources "True" 
+     .ModeTrackingCMA "True" 
+     .NumberOfModesCMA "3" 
+     .StartFrequencyCMA "-1.0" 
+     .SetAccuracySettingCMA "Default" 
+     .FrequencySamplesCMA "0" 
+     .SetMemSettingCMA "Auto" 
+     .CalculateModalWeightingCoefficientsCMA "True" 
+     .DetectThinDielectrics "True" 
+End With
+
+'@ set 3d mesh adaptation properties
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+With MeshAdaption3D
+    .SetType "HighFrequencyTet" 
+    .SetAdaptionStrategy "ExpertSystem" 
+    .MinPasses "3" 
+    .MaxPasses "10" 
+    .ClearStopCriteria 
+    .MaxDeltaS "0.02" 
+    .NumberOfDeltaSChecks "1" 
+    .EnableInnerSParameterAdaptation "True" 
+    .PropagationConstantAccuracy "0.005" 
+    .NumberOfPropConstChecks "2" 
+    .EnablePortPropagationConstantAdaptation "True" 
+    .RemoveAllUserDefinedStopCriteria 
+    .AddStopCriterion "All S-Parameters", "0.02", "1", "True" 
+    .AddStopCriterion "Reflection S-Parameters", "0.02", "1", "False" 
+    .AddStopCriterion "Transmission S-Parameters", "0.02", "1", "False" 
+    .AddStopCriterion "Portmode kz/k0", "0.005", "2", "True" 
+    .AddStopCriterion "All Probes", "0.05", "2", "False" 
+    .AddSParameterStopCriterion "True", "", "", "0.02", "1", "False" 
+    .MinimumAcceptedCellGrowth "0.5" 
+    .RefThetaFactor "" 
+    .SetMinimumMeshCellGrowth "5" 
+    .ErrorEstimatorType "Automatic" 
+    .RefinementType "Automatic" 
+    .SnapToGeometry "True" 
+    .SubsequentChecksOnlyOnce "False" 
+    .WavelengthBasedRefinement "True" 
+    .EnableLinearGrowthLimitation "True" 
+    .SetLinearGrowthLimitation "" 
+    .SingularEdgeRefinement "2" 
+    .DDMRefinementType "Automatic" 
+End With
+
+'@ define frequency domain solver parameters
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+Mesh.SetCreator "High Frequency" 
+
+With FDSolver
+     .Reset 
+     .SetMethod "Tetrahedral", "General purpose" 
+     .OrderTet "Second" 
+     .OrderSrf "First" 
+     .Stimulation "All", "All" 
+     .ResetExcitationList 
+     .AutoNormImpedance "True" 
+     .NormingImpedance "50" 
+     .ModesOnly "False" 
+     .ConsiderPortLossesTet "True" 
+     .SetShieldAllPorts "True" 
+     .AccuracyHex "1e-6" 
+     .AccuracyTet "1e-5" 
+     .AccuracySrf "1e-3" 
+     .LimitIterations "False" 
+     .MaxIterations "0" 
+     .SetCalcBlockExcitationsInParallel "True", "True", "" 
+     .StoreAllResults "False" 
+     .StoreResultsInCache "False" 
+     .UseHelmholtzEquation "True" 
+     .LowFrequencyStabilization "True" 
+     .Type "Direct" 
+     .MeshAdaptionHex "True" 
+     .MeshAdaptionTet "True" 
+     .AcceleratedRestart "True" 
+     .FreqDistAdaptMode "Distributed" 
+     .NewIterativeSolver "True" 
+     .TDCompatibleMaterials "False" 
+     .ExtrudeOpenBC "False" 
+     .SetOpenBCTypeHex "Default" 
+     .SetOpenBCTypeTet "Default" 
+     .AddMonitorSamples "True" 
+     .CalcPowerLoss "True" 
+     .CalcPowerLossPerComponent "False" 
+     .SetKeepSolutionCoefficients "MonitorsAndMeshAdaptation" 
+     .UseDoublePrecision "False" 
+     .UseDoublePrecision_ML "True" 
+     .MixedOrderSrf "False" 
+     .MixedOrderTet "False" 
+     .PreconditionerAccuracyIntEq "0.15" 
+     .MLFMMAccuracy "Default" 
+     .MinMLFMMBoxSize "0.3" 
+     .UseCFIEForCPECIntEq "True" 
+     .UseEnhancedCFIE2 "True" 
+     .UseFastRCSSweepIntEq "false" 
+     .UseSensitivityAnalysis "False" 
+     .UseEnhancedNFSImprint "True" 
+     .UseFastDirectFFCalc "False" 
+     .RemoveAllStopCriteria "Hex"
+     .AddStopCriterion "All S-Parameters", "0.01", "2", "Hex", "True"
+     .AddStopCriterion "Reflection S-Parameters", "0.01", "2", "Hex", "False"
+     .AddStopCriterion "Transmission S-Parameters", "0.01", "2", "Hex", "False"
+     .RemoveAllStopCriteria "Tet"
+     .AddStopCriterion "All S-Parameters", "0.01", "2", "Tet", "True"
+     .AddStopCriterion "Reflection S-Parameters", "0.01", "2", "Tet", "False"
+     .AddStopCriterion "Transmission S-Parameters", "0.01", "2", "Tet", "False"
+     .AddStopCriterion "All Probes", "0.05", "2", "Tet", "True"
+     .RemoveAllStopCriteria "Srf"
+     .AddStopCriterion "All S-Parameters", "0.01", "2", "Srf", "True"
+     .AddStopCriterion "Reflection S-Parameters", "0.01", "2", "Srf", "False"
+     .AddStopCriterion "Transmission S-Parameters", "0.01", "2", "Srf", "False"
+     .SweepMinimumSamples "3" 
+     .SetNumberOfResultDataSamples "5001" 
+     .SetResultDataSamplingMode "Automatic" 
+     .SweepWeightEvanescent "1.0" 
+     .AccuracyROM "1e-4" 
+     .AddSampleInterval "", "", "1", "Automatic", "True" 
+     .AddSampleInterval "", "", "", "Automatic", "False" 
+     .MPIParallelization "False"
+     .UseDistributedComputing "False"
+     .NetworkComputingStrategy "RunRemote"
+     .NetworkComputingJobCount "3"
+     .UseParallelization "True"
+     .MaxCPUs "1024"
+     .MaximumNumberOfCPUDevices "2"
+End With
+
+With IESolver
+     .Reset 
+     .UseFastFrequencySweep "True" 
+     .UseIEGroundPlane "False" 
+     .SetRealGroundMaterialName "" 
+     .CalcFarFieldInRealGround "False" 
+     .RealGroundModelType "Auto" 
+     .PreconditionerType "Auto" 
+     .ExtendThinWireModelByWireNubs "False" 
+     .ExtraPreconditioning "False" 
+End With
+
+With IESolver
+     .SetFMMFFCalcStopLevel "0" 
+     .SetFMMFFCalcNumInterpPoints "6" 
+     .UseFMMFarfieldCalc "True" 
+     .SetCFIEAlpha "0.500000" 
+     .LowFrequencyStabilization "False" 
+     .LowFrequencyStabilizationML "True" 
+     .Multilayer "False" 
+     .SetiMoMACC_I "0.0001" 
+     .SetiMoMACC_M "0.0001" 
+     .DeembedExternalPorts "True" 
+     .SetOpenBC_XY "True" 
+     .OldRCSSweepDefintion "False" 
+     .SetRCSOptimizationProperties "True", "100", "0.00001" 
+     .SetAccuracySetting "Custom" 
+     .CalculateSParaforFieldsources "True" 
+     .ModeTrackingCMA "True" 
+     .NumberOfModesCMA "3" 
+     .StartFrequencyCMA "-1.0" 
+     .SetAccuracySettingCMA "Default" 
+     .FrequencySamplesCMA "0" 
+     .SetMemSettingCMA "Auto" 
+     .CalculateModalWeightingCoefficientsCMA "True" 
+     .DetectThinDielectrics "True" 
+End With
+
+'@ rename block: Wilkinson 8150MHz_Cu(PCB1):solid1 to: Wilkinson 8150MHz_Cu(PCB1):pec
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+Solid.Rename "Wilkinson 8150MHz_Cu(PCB1):solid1", "pec"
+
+'@ delete port: port1
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+Port.Delete "1"
+
+'@ pick face
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+Pick.PickFaceFromId "Wilkinson 8150MHz_Cu(PCB1):WPD", "12"
+
+'@ define port: 1
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+With Port 
+     .Reset 
+     .PortNumber "1" 
+     .Label ""
+     .Folder ""
+     .NumberOfModes "1"
+     .AdjustPolarization "False"
+     .PolarizationAngle "0.0"
+     .ReferencePlaneDistance "0"
+     .TextSize "50"
+     .TextMaxLimit "0"
+     .Coordinates "Picks"
+     .Orientation "positive"
+     .PortOnBound "True"
+     .ClipPickedPortToBound "False"
+     .Xrange "5903.0249997262", "5903.0249997262"
+     .Yrange "-3088.0000003461", "-3045.9999996539"
+     .Zrange "0", "1.37"
+     .XrangeAdd "0.0", "0.0"
+     .YrangeAdd "5.12*20", "5.12*20"
+     .ZrangeAdd "5.12*20", "20"
+     .SingleEnded "False"
+     .WaveguideMonitor "False"
+     .Create 
+End With
+
+'@ delete port: port2
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+Port.Delete "2"
+
+'@ pick face
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+Pick.PickFaceFromId "Wilkinson 8150MHz_Cu(PCB1):WPD", "4"
+
+'@ define port: 2
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+With Port 
+     .Reset 
+     .PortNumber "2" 
+     .Label ""
+     .Folder ""
+     .NumberOfModes "1"
+     .AdjustPolarization "False"
+     .PolarizationAngle "0.0"
+     .ReferencePlaneDistance "0"
+     .TextSize "50"
+     .TextMaxLimit "0"
+     .Coordinates "Picks"
+     .Orientation "positive"
+     .PortOnBound "True"
+     .ClipPickedPortToBound "False"
+     .Xrange "6783.0249997262", "6783.0249997262"
+     .Yrange "-2794.8694188729", "-2752.8999998529"
+     .Zrange "0", "1.37"
+     .XrangeAdd "0.0", "0.0"
+     .YrangeAdd "5.12*20", "5.12*20"
+     .ZrangeAdd "5.12*20", "20"
+     .SingleEnded "False"
+     .WaveguideMonitor "False"
+     .Create 
+End With
+
+'@ define frequency range
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+Solver.FrequencyRange "9", "12"
+
+'@ set 3d mesh adaptation properties
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+With MeshAdaption3D
+    .SetType "HighFrequencyTet" 
+    .SetAdaptionStrategy "ExpertSystem" 
+    .MinPasses "7" 
+    .MaxPasses "10" 
+    .ClearStopCriteria 
+    .MaxDeltaS "0.02" 
+    .NumberOfDeltaSChecks "1" 
+    .EnableInnerSParameterAdaptation "True" 
+    .PropagationConstantAccuracy "0.005" 
+    .NumberOfPropConstChecks "2" 
+    .EnablePortPropagationConstantAdaptation "True" 
+    .RemoveAllUserDefinedStopCriteria 
+    .AddStopCriterion "All S-Parameters", "0.02", "1", "True" 
+    .AddStopCriterion "Reflection S-Parameters", "0.02", "1", "False" 
+    .AddStopCriterion "Transmission S-Parameters", "0.02", "1", "False" 
+    .AddStopCriterion "Portmode kz/k0", "0.005", "2", "True" 
+    .AddStopCriterion "All Probes", "0.05", "2", "False" 
+    .AddSParameterStopCriterion "True", "", "", "0.02", "1", "False" 
+    .MinimumAcceptedCellGrowth "0.5" 
+    .RefThetaFactor "" 
+    .SetMinimumMeshCellGrowth "5" 
+    .ErrorEstimatorType "Automatic" 
+    .RefinementType "Automatic" 
+    .SnapToGeometry "True" 
+    .SubsequentChecksOnlyOnce "False" 
+    .WavelengthBasedRefinement "True" 
+    .EnableLinearGrowthLimitation "True" 
+    .SetLinearGrowthLimitation "" 
+    .SingularEdgeRefinement "2" 
+    .DDMRefinementType "Automatic" 
+End With
+
+'@ define frequency domain solver parameters
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+Mesh.SetCreator "High Frequency" 
+
+With FDSolver
+     .Reset 
+     .SetMethod "Tetrahedral", "General purpose" 
+     .OrderTet "Second" 
+     .OrderSrf "First" 
+     .Stimulation "All", "All" 
+     .ResetExcitationList 
+     .AutoNormImpedance "False" 
+     .NormingImpedance "50" 
+     .ModesOnly "False" 
+     .ConsiderPortLossesTet "True" 
+     .SetShieldAllPorts "True" 
+     .AccuracyHex "1e-6" 
+     .AccuracyTet "1e-5" 
+     .AccuracySrf "1e-3" 
+     .LimitIterations "False" 
+     .MaxIterations "0" 
+     .SetCalcBlockExcitationsInParallel "True", "True", "" 
+     .StoreAllResults "False" 
+     .StoreResultsInCache "False" 
+     .UseHelmholtzEquation "True" 
+     .LowFrequencyStabilization "True" 
+     .Type "Direct" 
+     .MeshAdaptionHex "True" 
+     .MeshAdaptionTet "True" 
+     .AcceleratedRestart "True" 
+     .FreqDistAdaptMode "Distributed" 
+     .NewIterativeSolver "True" 
+     .TDCompatibleMaterials "False" 
+     .ExtrudeOpenBC "False" 
+     .SetOpenBCTypeHex "Default" 
+     .SetOpenBCTypeTet "Default" 
+     .AddMonitorSamples "True" 
+     .CalcPowerLoss "True" 
+     .CalcPowerLossPerComponent "False" 
+     .SetKeepSolutionCoefficients "MonitorsAndMeshAdaptation" 
+     .UseDoublePrecision "False" 
+     .UseDoublePrecision_ML "True" 
+     .MixedOrderSrf "False" 
+     .MixedOrderTet "False" 
+     .PreconditionerAccuracyIntEq "0.15" 
+     .MLFMMAccuracy "Default" 
+     .MinMLFMMBoxSize "0.3" 
+     .UseCFIEForCPECIntEq "True" 
+     .UseEnhancedCFIE2 "True" 
+     .UseFastRCSSweepIntEq "false" 
+     .UseSensitivityAnalysis "False" 
+     .UseEnhancedNFSImprint "True" 
+     .UseFastDirectFFCalc "False" 
+     .RemoveAllStopCriteria "Hex"
+     .AddStopCriterion "All S-Parameters", "0.01", "2", "Hex", "True"
+     .AddStopCriterion "Reflection S-Parameters", "0.01", "2", "Hex", "False"
+     .AddStopCriterion "Transmission S-Parameters", "0.01", "2", "Hex", "False"
+     .RemoveAllStopCriteria "Tet"
+     .AddStopCriterion "All S-Parameters", "0.01", "2", "Tet", "True"
+     .AddStopCriterion "Reflection S-Parameters", "0.01", "2", "Tet", "False"
+     .AddStopCriterion "Transmission S-Parameters", "0.01", "2", "Tet", "False"
+     .AddStopCriterion "All Probes", "0.05", "2", "Tet", "True"
+     .RemoveAllStopCriteria "Srf"
+     .AddStopCriterion "All S-Parameters", "0.01", "2", "Srf", "True"
+     .AddStopCriterion "Reflection S-Parameters", "0.01", "2", "Srf", "False"
+     .AddStopCriterion "Transmission S-Parameters", "0.01", "2", "Srf", "False"
+     .SweepMinimumSamples "3" 
+     .SetNumberOfResultDataSamples "5001" 
+     .SetResultDataSamplingMode "Automatic" 
+     .SweepWeightEvanescent "1.0" 
+     .AccuracyROM "1e-4" 
+     .AddSampleInterval "", "", "1", "Automatic", "True" 
+     .AddSampleInterval "", "", "", "Automatic", "False" 
+     .MPIParallelization "False"
+     .UseDistributedComputing "False"
+     .NetworkComputingStrategy "RunRemote"
+     .NetworkComputingJobCount "3"
+     .UseParallelization "True"
+     .MaxCPUs "1024"
+     .MaximumNumberOfCPUDevices "2"
+End With
+
+With IESolver
+     .Reset 
+     .UseFastFrequencySweep "True" 
+     .UseIEGroundPlane "False" 
+     .SetRealGroundMaterialName "" 
+     .CalcFarFieldInRealGround "False" 
+     .RealGroundModelType "Auto" 
+     .PreconditionerType "Auto" 
+     .ExtendThinWireModelByWireNubs "False" 
+     .ExtraPreconditioning "False" 
+End With
+
+With IESolver
+     .SetFMMFFCalcStopLevel "0" 
+     .SetFMMFFCalcNumInterpPoints "6" 
+     .UseFMMFarfieldCalc "True" 
+     .SetCFIEAlpha "0.500000" 
+     .LowFrequencyStabilization "False" 
+     .LowFrequencyStabilizationML "True" 
+     .Multilayer "False" 
+     .SetiMoMACC_I "0.0001" 
+     .SetiMoMACC_M "0.0001" 
+     .DeembedExternalPorts "True" 
+     .SetOpenBC_XY "True" 
+     .OldRCSSweepDefintion "False" 
+     .SetRCSOptimizationProperties "True", "100", "0.00001" 
+     .SetAccuracySetting "Custom" 
+     .CalculateSParaforFieldsources "True" 
+     .ModeTrackingCMA "True" 
+     .NumberOfModesCMA "3" 
+     .StartFrequencyCMA "-1.0" 
+     .SetAccuracySettingCMA "Default" 
+     .FrequencySamplesCMA "0" 
+     .SetMemSettingCMA "Auto" 
+     .CalculateModalWeightingCoefficientsCMA "True" 
+     .DetectThinDielectrics "True" 
+End With
+
+'@ define frequency range
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+Solver.FrequencyRange "7.3", "9"
+

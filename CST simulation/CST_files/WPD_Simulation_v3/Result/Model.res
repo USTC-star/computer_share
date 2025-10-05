@@ -1,5 +1,5 @@
 MWS Result File Version 20150206
-size=i:23
+size=i:24
 
 type=s:HIDDENITEM
 problemclass=s::8:1000
@@ -226,4 +226,14 @@ lifetime=s:persistent
 result=s:0
 treepath=s:1D Results\Materials\Wilkinson PD-odb_2(PCB1)\VIAS_MATERIAL\Surface Impedance\Z'' (Theory)
 files=s:Wilkinson PD-odb_2(PCB1)\VIAS_MATERIAL_Z_datalist_im.sig
+
+type=s:NOTEFILE
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:external
+lifetime=s:persistent
+result=s:0
+user_delete=s:1
+treepath=s:Wilkinson PD-2025-09-27_135046.log
+files=s:..\Model\3D\Wilkinson PD-2025-09-27_135046.log
 

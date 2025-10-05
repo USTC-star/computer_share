@@ -1,0 +1,383 @@
+// Number 3D OBJECTS:
+// ^^^^^^^^^^^^^^^^^^
+5
+
+// Obj3D_ID, MediaCode (0=Iso3D,1=LossyIso3D,2=PEC,3=Aniso3D,4=LossyAniso3D,5=SurfaceImp)
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+0 0
+>> Material name:
+Vacuum
+
+1 0
+>> Material name:
+air_0
+
+2 1
+>> Material name:
+Rogers RO4350B (lossy)
+
+3 5
+>> Material name:
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+4 2
+
+// Number 2D OBJECTS:
+// ^^^^^^^^^^^^^^^^^^
+124
+
+// Obj2D_ID, BCCode (0=Reg,1=PEC,2=PMC,3=RHO,4=OHM,5=PORT,6=OPEN,7=EXPANDEDOPEN,8=PERIODIC,9=TANGENTIAL,10=NORMAL):
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+0 0
+
+1 5
+1
+
+2 5
+2
+
+3 5
+3
+
+4 1
+
+5 0
+
+6 1
+
+7 1
+
+8 1
+
+9 0
+
+10 1
+
+11 0
+
+12 1
+
+13 1
+
+14 1
+
+15 0
+
+16 0
+
+17 1
+
+18 1
+
+19 1
+
+20 1
+
+21 1
+
+22 1
+
+23 1
+
+24 1
+
+25 1
+
+26 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+27 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+28 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+29 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+30 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+31 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+32 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+33 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+34 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+35 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+36 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+37 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+38 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+39 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+40 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+41 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+42 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+43 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+44 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+45 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+46 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+47 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+48 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+49 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+50 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+51 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+52 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+53 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+54 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+55 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+56 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+57 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+58 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+59 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+60 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+61 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+62 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+63 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+64 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+65 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+66 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+67 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+68 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+69 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+70 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+71 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+72 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+73 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+74 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+75 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+76 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+77 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+78 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+79 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+80 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+81 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+82 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+83 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+84 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+85 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+86 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+87 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+88 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+89 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+90 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+91 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+92 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+93 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+94 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+95 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+96 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+97 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+98 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+99 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+100 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+101 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+102 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+103 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+104 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+105 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+106 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+107 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+108 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+109 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+110 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+111 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+112 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+113 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+114 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+115 0
+
+116 0
+
+117 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+118 1
+
+119 0
+
+120 0
+
+121 1
+
+122 1
+
+123 1
+
+// Number 1D OBJECTS:
+// ^^^^^^^^^^^^^^^^^^
+3
+
+// Obj1D_ID, BCCode (0=Reg,1=PEC,2=PMC,3=PORT,4=Lumped):
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+0 0
+1 4
+Folder1:R1
+2 4
+Folder1:R2
+
