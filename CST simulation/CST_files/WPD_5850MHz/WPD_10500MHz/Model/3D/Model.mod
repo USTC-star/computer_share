@@ -971,3 +971,56 @@ With IESolver
      .DetectThinDielectrics "True" 
 End With
 
+'@ define boundaries
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+With Boundary
+     .Xmin "expanded open"
+     .Xmax "expanded open"
+     .Ymin "electric"
+     .Ymax "electric"
+     .Zmin "expanded open"
+     .Zmax "electric"
+     .Xsymmetry "none"
+     .Ysymmetry "none"
+     .Zsymmetry "none"
+     .ApplyInAllDirections "False"
+     .OpenAddSpaceFactor "0.5"
+End With
+
+'@ set 3d mesh adaptation properties
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+With MeshAdaption3D
+    .SetType "HighFrequencyTet" 
+    .SetAdaptionStrategy "ExpertSystem" 
+    .MinPasses "5" 
+    .MaxPasses "10" 
+    .ClearStopCriteria 
+    .MaxDeltaS "0.02" 
+    .NumberOfDeltaSChecks "1" 
+    .EnableInnerSParameterAdaptation "True" 
+    .PropagationConstantAccuracy "0.005" 
+    .NumberOfPropConstChecks "2" 
+    .EnablePortPropagationConstantAdaptation "True" 
+    .RemoveAllUserDefinedStopCriteria 
+    .AddStopCriterion "All S-Parameters", "0.02", "1", "True" 
+    .AddStopCriterion "Reflection S-Parameters", "0.02", "1", "False" 
+    .AddStopCriterion "Transmission S-Parameters", "0.02", "1", "False" 
+    .AddStopCriterion "Portmode kz/k0", "0.005", "2", "True" 
+    .AddStopCriterion "All Probes", "0.05", "2", "False" 
+    .AddSParameterStopCriterion "True", "", "", "0.02", "1", "False" 
+    .MinimumAcceptedCellGrowth "0.5" 
+    .RefThetaFactor "" 
+    .SetMinimumMeshCellGrowth "5" 
+    .ErrorEstimatorType "Automatic" 
+    .RefinementType "Automatic" 
+    .SnapToGeometry "True" 
+    .SubsequentChecksOnlyOnce "False" 
+    .WavelengthBasedRefinement "True" 
+    .EnableLinearGrowthLimitation "True" 
+    .SetLinearGrowthLimitation "" 
+    .SingularEdgeRefinement "2" 
+    .DDMRefinementType "Automatic" 
+End With
+

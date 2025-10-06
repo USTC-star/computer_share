@@ -5,7 +5,7 @@
 [PCB_IMPORT_NEW: True]
 [DISABLE_FAST_LOAD: False]
 [WCS: 5863.0250000419019 -3066.682344028206 1.3699999999999999 0 0 1 1 0 0]
-[BBOX:5883.0250000419019 6713.0250000419019 -3526.682344028206 -2606.682344028206 -102.40000000000001 22.369999999999997]
+[BBOX:5602.0046982046315 6994.0453018791723 -3526.682344028206 -2606.682344028206 -383.42030183727036 22.369999999999997]
 [BBOX_STRUCTURE:5883.0250000419019 6713.0250000419019 -3526.682344028206 -2606.682344028206 -102.40000000000001 22.369999999999997]
 [UNITS]
      .SetUnit "Length", "mil"
@@ -33,16 +33,17 @@ Solver.FrequencyRange "9", "12"
      .ApplyInAllDirections "False" 
 [ENDBACKGROUND]
 [BOUNDARY]
-     .Xmin "electric"
-     .Xmax "electric"
+     .Xmin "expanded open"
+     .Xmax "expanded open"
      .Ymin "electric"
      .Ymax "electric"
-     .Zmin "electric"
+     .Zmin "expanded open"
      .Zmax "electric"
      .Xsymmetry "none"
      .Ysymmetry "none"
      .Zsymmetry "none"
      .ApplyInAllDirections "False"
+     .OpenAddSpaceFactor "0.5"
      .ThermalBoundary "Xmin", "isothermal"
      .ThermalBoundary "Xmax", "isothermal"
      .ThermalBoundary "Ymin", "isothermal"
