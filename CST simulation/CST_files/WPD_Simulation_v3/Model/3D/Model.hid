@@ -187,7 +187,6 @@ Solid.Delete "Wilkinson PD-odb_2(PCB1):solid1"
 31
 [end]block_index
 [start]command
-
 '@ define port: 1
  (undo)
 [end]command
@@ -221,7 +220,6 @@ Port.Delete "1"
 33
 [end]block_index
 [start]command
-
 '@ define port: 2
  (undo)
 [end]command
@@ -255,7 +253,6 @@ Port.Delete "2"
 36
 [end]block_index
 [start]command
-
 '@ define port: 1
  (undo)
 [end]command
@@ -409,7 +406,6 @@ Port.Delete "1"
 56
 [end]block_index
 [start]command
-
 '@ define lumped element: Folder1:R2
  (undo)
 [end]command
@@ -458,7 +454,6 @@ LumpedElement.Delete "Folder1:R2"
 59
 [end]block_index
 [start]command
-
 '@ define lumped element: Folder1:R1
  (undo)
 [end]command
@@ -790,6 +785,36 @@ LumpedElement.Delete "R2"
 [end]command
 [start]content
 LumpedElement.Delete "R1"
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+105
+[end]block_index
+[start]command
+[end]command
+[start]content
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+106
+[end]block_index
+[start]command
+[end]command
+[start]content
 [end]content
 [start]recover_picks
 1

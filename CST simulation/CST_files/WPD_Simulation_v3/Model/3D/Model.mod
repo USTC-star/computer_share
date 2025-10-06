@@ -1919,3 +1919,80 @@ Solver.FrequencyRange "2", "5"
 '[VERSION]2024.0|33.0.1|20230901[/VERSION]
 Solver.FrequencyRange "9", "12"
 
+'@ pick end point
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+Pick.PickEndpointFromId "Wilkinson PD-odb_2(PCB1):WPD", "84"
+
+'@ pick end point
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+Pick.PickEndpointFromId "Wilkinson PD-odb_2(PCB1):WPD", "86"
+
+'@ define distance dimension
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+With Dimension
+    .Reset
+    .CreationType "picks"
+    .SetType "Distance"
+    .SetID "0"
+    .SetOrientation "Smart Mode"
+    .SetDistance "42.976704"
+    .SetViewVector "-0.006250", "-0.070871", "0.997466"
+    .SetConnectedElement1 "Wilkinson PD-odb_2(PCB1):WPD"
+    .SetConnectedElement2 "Wilkinson PD-odb_2(PCB1):WPD"
+    .Create
+End With
+
+Pick.ClearAllPicks
+
+'@ change dimension 0
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+With Dimension
+    .Reset
+    .SetID "0"
+    .SetDistance "-52.916439"
+    .SetOrientation "Smart Mode"
+    .SetViewVector "-0.006251", "-0.070871", "0.997466"
+    .Modify
+End With
+
+'@ import dxf file: C:\Users\PinJung\Desktop\computer_share\CST simulation\Structure from Kicad\Wilkinson 3500MHz_Cu.dxf
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+With DXF
+     .Reset 
+     .FileName "*Wilkinson 3500MHz_Cu.dxf" 
+     .AddAllShapes "False" 
+     .PreserveHoles "True" 
+     .CloseShapes "True" 
+     .AsCurves "False" 
+     .HealSelfIntersections "False" 
+     .Id "1" 
+     .SetSimplifyActive "True" 
+     .SetSimplifyAngle "5.0" 
+     .SetSimplifyRadiusTol "2.0" 
+     .SetSimplifyEdgeLength "0.0" 
+     .ScaleToUnit "False" 
+     .ImportFileUnits "m" 
+     .UseModelTolerance "False" 
+     .ModelTolerance "0.0001" 
+     .ConsiderPolylineStartAndEndWidth "True" 
+     .Version "11.3" 
+     .DiscardElevationsReadFromDXFFile "True" 
+     .AddLayer "black", "black", "0", "0", "0" 
+     .Read
+End With
+
+'@ delete shape: black:import_1
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+Solid.Delete "black:import_1"
+
+'@ delete component: black
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+Component.Delete "black"
+

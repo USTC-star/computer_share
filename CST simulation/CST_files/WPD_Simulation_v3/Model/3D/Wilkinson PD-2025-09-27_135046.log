@@ -1,0 +1,8 @@
+*** STARTING PCB CONVERSION ***
+
+Importing C:\Users\PinJung\Desktop\computer_share\CST simulation\SecondWilkinson PD\Wilkinson PD-backups\Wilkinson PD-2025-09-27_135046.zip... [Sun Oct  5 11:57:22 2025]
+============================================================
+Reading ODB++ database ...
+
+ERROR: No design is defined (missing matrix) in the ODB++ archive.
+*** ENDING PCB CONVERSION with FAILURE***
