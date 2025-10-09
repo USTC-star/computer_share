@@ -1,0 +1,26 @@
+% !TeX encoding = UTF-8
+% !TeX program = xelatex
+% !TeX spellcheck = en_US
+
+\documentclass{article} % You need a document class
+
+\usepackage[margin=1in]{geometry} % optional, sets margins
+\usepackage[justification=centering]{caption}
+\usepackage{multirow}
+\usepackage{rotating}
+\usepackage{booktabs}
+\usepackage{pdfpages} % required for including PDF pages
+
+\setcounter{secnumdepth}{2}
+
+\begin{document}
+
+% Include the first PDF (first page only)
+\includepdf[pages=1,fitpaper=true]{groove_paper.pdf}
+
+% Include the second PDF (pages 2 to 9)
+\includepdf[pages=2,fitpaper=true]{Improvement_of_transmittance_using_groove_structured_surface_for_microwave_imaging_diagnostics_in_tokamak_plasmas.pdf}
+
+\end{document}
+
+
