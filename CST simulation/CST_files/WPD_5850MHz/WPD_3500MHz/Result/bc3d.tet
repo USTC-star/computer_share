@@ -18,13 +18,15 @@ air_0
 
 3 5
 >> Material name:
-Copper (pure)
+Copper
 
-4 2
+4 5
+>> Material name:
+Copper
 
 // Number 2D OBJECTS:
 // ^^^^^^^^^^^^^^^^^^
-112
+111
 
 // Obj2D_ID, BCCode (0=Reg,1=PEC,2=PMC,3=RHO,4=OHM,5=PORT,6=OPEN,7=EXPANDEDOPEN,8=PERIODIC,9=TANGENTIAL,10=NORMAL):
 // ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -67,251 +69,256 @@ Copper (pure)
 
 17 1
 
-18 1
+18 7
 
-19 1
+19 7
 
-20 1
+20 7
 
 21 7
 
 22 7
 
-23 7
+23 3
+Copper
 
-24 1
+24 3
+Copper
 
-25 1
+25 3
+Copper
 
 26 1
 
-27 1
+27 3
+Copper
 
-28 1
+28 3
+Copper
 
 29 3
-Copper (pure)
+Copper
 
 30 3
-Copper (pure)
+Copper
 
 31 3
-Copper (pure)
+Copper
 
 32 3
-Copper (pure)
+Copper
 
 33 3
-Copper (pure)
+Copper
 
 34 3
-Copper (pure)
+Copper
 
 35 3
-Copper (pure)
+Copper
 
 36 3
-Copper (pure)
+Copper
 
 37 3
-Copper (pure)
+Copper
 
 38 3
-Copper (pure)
+Copper
 
 39 3
-Copper (pure)
+Copper
 
 40 3
-Copper (pure)
+Copper
 
 41 3
-Copper (pure)
+Copper
 
 42 3
-Copper (pure)
+Copper
 
 43 3
-Copper (pure)
+Copper
 
 44 3
-Copper (pure)
+Copper
 
 45 3
-Copper (pure)
+Copper
 
 46 3
-Copper (pure)
+Copper
 
 47 3
-Copper (pure)
+Copper
 
 48 3
-Copper (pure)
+Copper
 
 49 3
-Copper (pure)
+Copper
 
 50 3
-Copper (pure)
+Copper
 
 51 3
-Copper (pure)
+Copper
 
 52 3
-Copper (pure)
+Copper
 
 53 3
-Copper (pure)
+Copper
 
 54 3
-Copper (pure)
+Copper
 
 55 3
-Copper (pure)
+Copper
 
 56 3
-Copper (pure)
+Copper
 
-57 3
-Copper (pure)
+57 0
 
-58 0
+58 3
+Copper
 
 59 3
-Copper (pure)
+Copper
 
 60 3
-Copper (pure)
+Copper
 
 61 3
-Copper (pure)
+Copper
 
 62 3
-Copper (pure)
+Copper
 
 63 3
-Copper (pure)
+Copper
 
 64 3
-Copper (pure)
+Copper
 
 65 3
-Copper (pure)
+Copper
 
 66 3
-Copper (pure)
+Copper
 
 67 3
-Copper (pure)
+Copper
 
 68 3
-Copper (pure)
+Copper
 
 69 3
-Copper (pure)
+Copper
 
 70 3
-Copper (pure)
+Copper
 
-71 3
-Copper (pure)
+71 0
 
-72 0
+72 3
+Copper
 
 73 3
-Copper (pure)
+Copper
 
 74 3
-Copper (pure)
+Copper
 
 75 3
-Copper (pure)
+Copper
 
 76 3
-Copper (pure)
+Copper
 
 77 3
-Copper (pure)
+Copper
 
 78 3
-Copper (pure)
+Copper
 
 79 3
-Copper (pure)
+Copper
 
 80 3
-Copper (pure)
+Copper
 
 81 3
-Copper (pure)
+Copper
 
 82 3
-Copper (pure)
+Copper
 
 83 3
-Copper (pure)
+Copper
 
 84 3
-Copper (pure)
+Copper
 
-85 3
-Copper (pure)
+85 0
 
-86 0
+86 3
+Copper
 
 87 3
-Copper (pure)
+Copper
 
 88 3
-Copper (pure)
+Copper
 
 89 3
-Copper (pure)
+Copper
 
 90 3
-Copper (pure)
+Copper
 
 91 3
-Copper (pure)
+Copper
 
 92 3
-Copper (pure)
+Copper
 
 93 3
-Copper (pure)
+Copper
 
 94 3
-Copper (pure)
+Copper
 
 95 3
-Copper (pure)
+Copper
 
 96 3
-Copper (pure)
+Copper
 
 97 3
-Copper (pure)
+Copper
 
 98 3
-Copper (pure)
+Copper
 
 99 3
-Copper (pure)
+Copper
 
-100 3
-Copper (pure)
+100 0
 
 101 0
 
-102 0
+102 3
+Copper
 
 103 3
-Copper (pure)
+Copper
 
-104 1
+104 0
 
-105 1
+105 0
 
 106 0
 
@@ -322,8 +329,6 @@ Copper (pure)
 109 0
 
 110 0
-
-111 1
 
 // Number 1D OBJECTS:
 // ^^^^^^^^^^^^^^^^^^

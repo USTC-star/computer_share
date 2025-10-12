@@ -825,3 +825,30 @@ With MeshAdaption3D
     .DDMRefinementType "Automatic" 
 End With
 
+'@ define frequency range
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+Solver.FrequencyRange "7.3", "9"
+
+'@ define boundaries
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+With Boundary
+     .Xmin "expanded open"
+     .Xmax "expanded open"
+     .Ymin "expanded open"
+     .Ymax "expanded open"
+     .Zmin "expanded open"
+     .Zmax "electric"
+     .Xsymmetry "none"
+     .Ysymmetry "none"
+     .Zsymmetry "none"
+     .ApplyInAllDirections "False"
+     .OpenAddSpaceFactor "0.5"
+End With
+
+'@ change material: Wilkinson 8150MHz_v2_Cu(PCB1):PEC to: Copper
+
+'[VERSION]2024.0|33.0.1|20230901[/VERSION]
+Solid.ChangeMaterial "Wilkinson 8150MHz_v2_Cu(PCB1):PEC", "Copper"
+

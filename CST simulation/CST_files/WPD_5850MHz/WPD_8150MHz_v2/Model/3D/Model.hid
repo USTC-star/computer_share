@@ -53,9 +53,7 @@ false
 [start]command
 [end]command
 [start]content
-
 Solid.Delete "Wilkinson 8150MHz_v2_Cu(PCB1):solid2"
-
 [end]content
 [start]recover_picks
 1
@@ -114,7 +112,6 @@ Solid.Delete "Wilkinson 8150MHz_v2_Cu(PCB1):solid2"
 18
 [end]block_index
 [start]command
-
 '@ define lumped element: Folder1:R1
  (undo)
 [end]command
@@ -163,7 +160,6 @@ LumpedElement.Delete "Folder1:R1"
 21
 [end]block_index
 [start]command
-
 '@ define lumped element: Folder1:R2
  (undo)
 [end]command
@@ -197,7 +193,6 @@ LumpedElement.Delete "Folder1:R2"
 23
 [end]block_index
 [start]command
-
 '@ define port: 1
  (undo)
 [end]command
@@ -218,9 +213,7 @@ Port.Delete "1"
 [start]command
 [end]command
 [start]content
-
 Solid.Delete "Wilkinson 8150MHz_v2_Cu(PCB1):solid1"
-
 [end]content
 [start]recover_picks
 1
@@ -249,7 +242,6 @@ Solid.Delete "Wilkinson 8150MHz_v2_Cu(PCB1):solid1"
 30
 [end]block_index
 [start]command
-
 '@ define port: 2
  (undo)
 [end]command
@@ -283,7 +275,6 @@ Port.Delete "2"
 32
 [end]block_index
 [start]command
-
 '@ define port: 3
  (undo)
 [end]command

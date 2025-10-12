@@ -974,6 +974,45 @@
                 "    .DDMRefinementType \"Automatic\" ",
                 "End With"
             ]
+        },
+        {
+            "caption": "define frequency range",
+            "version": "2024.0|33.0.1|20230901",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Solver.FrequencyRange \"7.3\", \"9\""
+            ]
+        },
+        {
+            "caption": "define boundaries",
+            "version": "2024.0|33.0.1|20230901",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With Boundary",
+                "     .Xmin \"expanded open\"",
+                "     .Xmax \"expanded open\"",
+                "     .Ymin \"expanded open\"",
+                "     .Ymax \"expanded open\"",
+                "     .Zmin \"expanded open\"",
+                "     .Zmax \"electric\"",
+                "     .Xsymmetry \"none\"",
+                "     .Ysymmetry \"none\"",
+                "     .Zsymmetry \"none\"",
+                "     .ApplyInAllDirections \"False\"",
+                "     .OpenAddSpaceFactor \"0.5\"",
+                "End With"
+            ]
+        },
+        {
+            "caption": "change material: Wilkinson 8150MHz_v2_Cu(PCB1):PEC to: Copper",
+            "version": "2024.0|33.0.1|20230901",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Solid.ChangeMaterial \"Wilkinson 8150MHz_v2_Cu(PCB1):PEC\", \"Copper\""
+            ]
         }
     ]
 }

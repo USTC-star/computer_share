@@ -40,11 +40,11 @@
       <PortModeInfoFile filename="Port1_Info1(#0003).mmd"/>
       <FieldResultFile filename="Port1_h1(#0003).sct" type="sct" meshname="Port1.slim"/>
     </Frame>
-    <Frame index="4" characteristic="9.7157999999999998">
+    <Frame index="4" characteristic="9.7146000000000008">
       <PortModeInfoFile filename="Port1_Info1(#0004).mmd"/>
       <FieldResultFile filename="Port1_h1(#0004).sct" type="sct" meshname="Port1.slim"/>
     </Frame>
-    <Frame index="5" characteristic="11.6904">
+    <Frame index="5" characteristic="11.680200000000001">
       <PortModeInfoFile filename="Port1_Info1(#0005).mmd"/>
       <FieldResultFile filename="Port1_h1(#0005).sct" type="sct" meshname="Port1.slim"/>
     </Frame>

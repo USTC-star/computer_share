@@ -8,23 +8,25 @@
 >> Material name:
 Vacuum
 
-1 0
->> Material name:
-air_0
-
-2 1
+1 1
 >> Material name:
 Rogers RO4350B (lossy)
+
+2 0
+>> Material name:
+air_0
 
 3 5
 >> Material name:
 Wilkinson 5850MHz_Cu(PCB1)/Copper
 
-4 2
+4 5
+>> Material name:
+Copper
 
 // Number 2D OBJECTS:
 // ^^^^^^^^^^^^^^^^^^
-124
+131
 
 // Obj2D_ID, BCCode (0=Reg,1=PEC,2=PMC,3=RHO,4=OHM,5=PORT,6=OPEN,7=EXPANDEDOPEN,8=PERIODIC,9=TANGENTIAL,10=NORMAL):
 // ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -39,73 +41,71 @@ Wilkinson 5850MHz_Cu(PCB1)/Copper
 3 5
 3
 
-4 1
+4 0
 
 5 0
 
-6 1
+6 0
 
-7 1
+7 0
 
-8 1
+8 0
 
 9 0
 
-10 1
+10 0
 
 11 0
 
-12 1
+12 0
 
-13 1
+13 0
 
-14 1
+14 0
 
 15 0
 
 16 0
 
-17 1
+17 0
 
-18 1
+18 0
 
 19 1
 
-20 1
+20 7
 
-21 1
+21 7
 
-22 1
+22 7
 
-23 1
+23 7
 
-24 1
+24 7
 
-25 1
+25 3
+Copper
 
 26 3
-Wilkinson 5850MHz_Cu(PCB1)/Copper
+Copper
 
 27 3
-Wilkinson 5850MHz_Cu(PCB1)/Copper
+Copper
 
-28 3
-Wilkinson 5850MHz_Cu(PCB1)/Copper
+28 1
 
 29 3
-Wilkinson 5850MHz_Cu(PCB1)/Copper
+Copper
 
 30 3
 Wilkinson 5850MHz_Cu(PCB1)/Copper
 
-31 3
-Wilkinson 5850MHz_Cu(PCB1)/Copper
+31 0
 
 32 3
 Wilkinson 5850MHz_Cu(PCB1)/Copper
 
-33 3
-Wilkinson 5850MHz_Cu(PCB1)/Copper
+33 0
 
 34 3
 Wilkinson 5850MHz_Cu(PCB1)/Copper
@@ -116,8 +116,7 @@ Wilkinson 5850MHz_Cu(PCB1)/Copper
 36 3
 Wilkinson 5850MHz_Cu(PCB1)/Copper
 
-37 3
-Wilkinson 5850MHz_Cu(PCB1)/Copper
+37 0
 
 38 3
 Wilkinson 5850MHz_Cu(PCB1)/Copper
@@ -350,24 +349,46 @@ Wilkinson 5850MHz_Cu(PCB1)/Copper
 114 3
 Wilkinson 5850MHz_Cu(PCB1)/Copper
 
-115 0
+115 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
 
-116 0
+116 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
 
 117 3
 Wilkinson 5850MHz_Cu(PCB1)/Copper
 
-118 1
+118 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
 
-119 0
+119 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
 
-120 0
+120 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
 
-121 1
+121 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
 
-122 1
+122 0
 
-123 1
+123 0
+
+124 0
+
+125 0
+
+126 3
+Copper
+
+127 0
+
+128 3
+Wilkinson 5850MHz_Cu(PCB1)/Copper
+
+129 0
+
+130 0
 
 // Number 1D OBJECTS:
 // ^^^^^^^^^^^^^^^^^^

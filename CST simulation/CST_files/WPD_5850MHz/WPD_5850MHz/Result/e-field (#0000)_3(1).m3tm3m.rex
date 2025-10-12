@@ -3,11 +3,12 @@
   <MetaGeometryFile filename="model.gex" lod="1"/>
   <SimulationProperties fieldname="e-field (f=6.7) [3]" frequency="6.7000000000000002" encoded_unit="&amp;U:V^1.:m^-1" quantity="e-field" fieldtype="E-Field" fieldscaling="PEAK" dB_Amplitude="20"/>
   <ResultDataType vector="1" complex="1" timedomain="0" frequencymap="0"/>
-  <SimulationDomain min="5883.0249 -3526.68237 -102.400002" max="6863.0249 -2606.68237 22.3700008"/>
+  <SimulationDomain min="5378.62939 -4031.07764 -606.79541" max="7367.42041 -2102.28687 22.3700008"/>
   <PlotSettings Plot="4" ignore_symmetry="0" deformation="0" enforce_culling="0" integer_values="0" combine="CombineNone" default_arrow_type="ARROWS" default_scaling="NONE"/>
   <Source type="SOLVER"/>
   <SpecialMaterials>
     <Background type="NORMAL"/>
+    <Material name="Copper" type="FIELDFREE"/>
     <Material name="PEC" type="FIELDFREE"/>
     <Material name="Wilkinson 5850MHz_Cu(PCB1)/Copper" type="FIELDFREE"/>
   </SpecialMaterials>

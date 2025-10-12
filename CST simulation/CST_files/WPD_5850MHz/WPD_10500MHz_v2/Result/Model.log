@@ -1,14 +1,14 @@
-2025-10-05 18:51:36   In order to get an optimal performance, hyperthreading is ignored for parallel
+2025-10-10 21:36:57   In order to get an optimal performance, hyperthreading is ignored for parallel
                       computations.
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:51:37   The length ratio between the shortest and the longest model edges is 1:1663.
+2025-10-10 21:36:57   The length ratio between the shortest and the longest model edges is 1:1663.
                       Short model edges can be highlighted via Mesh:Mesh Control->Check Mesh->Check
                       Model Edge Length.... (It may be advantageous to model the metallizations as
                       infinitely thin sheets.) More...
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:51:37   --- Material prioritization table with "ElectricConductivity" scheme was used
+2025-10-10 21:36:57   --- Material prioritization table with "ElectricConductivity" scheme was used
                       ---
                        - Copper
                        - PEC
@@ -22,19 +22,19 @@
                        - air_0
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:51:39   *** Warning ***
+2025-10-10 21:36:59   *** Warning ***
 
                       This software is licensed for non-commercial use only.
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:51:39   Units settings: 
+2025-10-10 21:37:00   Units settings: 
 
                         Dimensions: mil
                         Frequency:  GHz
                         Time:       ns
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:51:39   Boundary conditions: 
+2025-10-10 21:37:00   Boundary conditions: 
 
                         YZsymmetry: none
                         XZsymmetry: none
@@ -43,530 +43,527 @@
                         Xmin: expanded open
                         Xmax: expanded open
 
-                        Ymin: electric
-                        Ymax: electric
+                        Ymin: expanded open
+                        Ymax: expanded open
 
                         Zmin: expanded open
                         Zmax: electric
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:51:39   Order settings: 
+2025-10-10 21:37:00   Order settings: 
 
                         Solver order   : 2nd (constant)
                         Curved elements: up to order 3 (automatic)
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:51:39     Mesh time                :	1 s
+2025-10-10 21:37:00     Mesh time                :	2 s
 
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:51:39   
+2025-10-10 21:37:00   
                       ================================================================================
                       Frequency Domain Solver calculation cycle started
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:51:39   Solver started at: 2025-10-05 18:51:39 -0700
+2025-10-10 21:37:00   Solver started at: 2025-10-10 21:37:00 -0700
 
                         Module:  Frequency Domain: S-Parameter (Win 64)
                         Version: 2024.0 Release from 2023-09-01 (change 1164796)
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:51:39     Calculation 1 of 1 (Frequency: 12 GHz)
+2025-10-10 21:37:00     Calculation 1 of 1 (Frequency: 12 GHz)
 
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:51:39   Using electric shielding for ports 1, 2, 3.
+2025-10-10 21:37:00   Using electric shielding for ports 1, 2, 3.
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:51:39   For some elements the curvature had to be reduced to maintain the quality of the mesh. More...
+2025-10-10 21:37:01   For some elements the curvature had to be reduced to maintain the quality of the mesh. More...
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:51:40   For some elements the curvature had to be reduced to maintain the quality of the mesh. More...
+2025-10-10 21:37:02   For some elements the curvature had to be reduced to maintain the quality of the mesh. More...
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:51:41   For some elements the curvature had to be reduced to maintain the quality of the mesh. More...
+2025-10-10 21:37:02   For some elements the curvature had to be reduced to maintain the quality of the mesh. More...
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:51:41   For some elements the curvature had to be reduced to maintain the quality of the mesh. More...
+2025-10-10 21:37:03   For some elements the curvature had to be reduced to maintain the quality of the mesh. More...
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:51:42   For some elements the curvature had to be reduced to maintain the quality of the mesh. More...
+2025-10-10 21:37:04   For some elements the curvature had to be reduced to maintain the quality of the mesh. More...
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:51:43   For some elements the curvature had to be reduced to maintain the quality of the mesh. More...
+2025-10-10 21:37:05   For some elements the curvature had to be reduced to maintain the quality of the mesh. More...
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:51:44   For some elements the curvature had to be reduced to maintain the quality of the mesh. More...
+2025-10-10 21:37:06   For some elements the curvature had to be reduced to maintain the quality of the mesh. More...
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:51:45   For some elements the curvature had to be reduced to maintain the quality of the mesh. More...
+2025-10-10 21:37:07   For some elements the curvature had to be reduced to maintain the quality of the mesh. More...
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:51:46   For some elements the curvature had to be reduced to maintain the quality of the mesh. More...
+2025-10-10 21:37:08   For some elements the curvature had to be reduced to maintain the quality of the mesh. More...
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:51:47   For some elements the curvature had to be reduced to maintain the quality of the mesh. More...
+2025-10-10 21:37:09   For some elements the curvature had to be reduced to maintain the quality of the mesh. More...
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:51:47     ----------------------------------------------------------------------------
+2025-10-10 21:37:10     ----------------------------------------------------------------------------
                         Port   Mode   Type        Z-Wave        Z-Wave-Sigma  Z-Line        F-Cutoff
-                        1      1      QTEM        228           16.3          48.8          ---
-                        2      1      QTEM        229           16.6          48.8          ---
-                        3      1      QTEM        229           15.9          48.8          ---
+                        1      1      QTEM        228           15.6          48.8          ---
+                        2      1      QTEM        229           17.4          48.8          ---
+                        3      1      QTEM        226           9.29          48.8          ---
                         ----------------------------------------------------------------------------
 
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:51:48   For some elements the curvature had to be reduced to maintain the quality of the mesh. More...
+2025-10-10 21:37:10   Adaptive mesh refinement pass 1
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:51:48   Adaptive mesh refinement pass 1
+2025-10-10 21:37:11   Performing block excitation with block size 3 and 4 threads.  More...
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:51:49   Performing block excitation with block size 3 and 4 threads.  More...
-
-                      ------------------------------------------------------------------------------
-2025-10-05 18:51:49     Matrix setup time        :	0 s
-                        Degrees of freedom       :	28039
-                        Number of mesh cells     :	4450
+2025-10-10 21:37:11     Matrix setup time        :	0 s
+                        Degrees of freedom       :	33335
+                        Number of mesh cells     :	4957
 
                         Stimulation port         :	1
                         Mode number              :	1
-                        Accuracy                 :	4.59419e-14
+                        Accuracy                 :	3.88788e-14
                         Iterations               :	1
                         Solver time              :	0 s
 
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:51:49     Stimulation port         :	2
+2025-10-10 21:37:11     Stimulation port         :	2
                         Mode number              :	1
-                        Accuracy                 :	4.71961e-14
+                        Accuracy                 :	3.54852e-14
                         Iterations               :	1
                         Solver time              :	0 s
 
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:51:49     Stimulation port         :	3
+2025-10-10 21:37:11     Stimulation port         :	3
                         Mode number              :	1
-                        Accuracy                 :	6.97824e-14
+                        Accuracy                 :	5.56058e-14
                         Iterations               :	1
                         Solver time              :	0 s
 
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:51:49   22% of all mesh edges seem to be longer than expected. The adaptive mesh refinement's growth limitation will therefore 
-                      use 10344 instead of 4235 mesh cells as a reference.
+2025-10-10 21:37:12   22% of all mesh edges seem to be longer than expected. The adaptive mesh refinement's growth limitation will therefore 
+                      use 11765 instead of 4951 mesh cells as a reference.
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:51:50   For some elements the curvature had to be reduced to maintain the quality of the mesh. More...
+2025-10-10 21:37:13   For some elements the curvature had to be reduced to maintain the quality of the mesh. More...
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:51:51   Adaptive mesh refinement pass 2
+2025-10-10 21:37:13   Adaptive mesh refinement pass 2
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:51:52     Matrix setup time        :	0 s
-                        Degrees of freedom       :	49825
-                        Number of mesh cells     :	7767
+2025-10-10 21:37:14     Matrix setup time        :	0 s
+                        Degrees of freedom       :	55997
+                        Number of mesh cells     :	8373
 
                         Stimulation port         :	1
                         Mode number              :	1
-                        Accuracy                 :	1.26796e-13
+                        Accuracy                 :	3.92761e-14
                         Iterations               :	1
                         Solver time              :	0 s
 
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:51:52     Stimulation port         :	2
+2025-10-10 21:37:14     Stimulation port         :	2
                         Mode number              :	1
-                        Accuracy                 :	3.32742e-14
+                        Accuracy                 :	3.99981e-14
                         Iterations               :	1
                         Solver time              :	0 s
 
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:51:52     Stimulation port         :	3
+2025-10-10 21:37:14     Stimulation port         :	3
                         Mode number              :	1
-                        Accuracy                 :	1.71587e-13
+                        Accuracy                 :	5.34128e-14
                         Iterations               :	1
                         Solver time              :	0 s
 
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:51:52     Delta calculation        
-2025-10-05 18:51:52     All S-Parameters         :	0.0721218
-2025-10-05 18:51:52   
+2025-10-10 21:37:15     Delta calculation        
+2025-10-10 21:37:15     All S-Parameters         :	0.105004
+2025-10-10 21:37:15   
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:51:53   For some elements the curvature had to be reduced to maintain the quality of the mesh. More...
+2025-10-10 21:37:16   For some elements the curvature had to be reduced to maintain the quality of the mesh. More...
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:51:54   Adaptive mesh refinement pass 3
+2025-10-10 21:37:17   Adaptive mesh refinement pass 3
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:51:55     Matrix setup time        :	0 s
+2025-10-10 21:37:19     Matrix setup time        :	0 s
                         Solver setup             :	1 s
-                        Degrees of freedom       :	76833
-                        Number of mesh cells     :	11809
+                        Degrees of freedom       :	84745
+                        Number of mesh cells     :	12600
 
                         Stimulation port         :	1
                         Mode number              :	1
-                        Accuracy                 :	2.20032e-13
+                        Accuracy                 :	1.4411e-13
                         Iterations               :	1
                         Solver time              :	0 s
 
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:51:55     Stimulation port         :	2
+2025-10-10 21:37:19     Stimulation port         :	2
                         Mode number              :	1
-                        Accuracy                 :	2.86706e-14
+                        Accuracy                 :	2.36339e-14
                         Iterations               :	1
                         Solver time              :	0 s
 
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:51:55     Stimulation port         :	3
+2025-10-10 21:37:19     Stimulation port         :	3
                         Mode number              :	1
-                        Accuracy                 :	2.86111e-13
+                        Accuracy                 :	2.02862e-13
                         Iterations               :	1
                         Solver time              :	0 s
 
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:51:56     Delta calculation        
-2025-10-05 18:51:56     All S-Parameters         :	0.0489704
-2025-10-05 18:51:56   
+2025-10-10 21:37:19     Delta calculation        
+2025-10-10 21:37:19     All S-Parameters         :	0.0387249
+2025-10-10 21:37:19   
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:51:58   For some elements the curvature had to be reduced to maintain the quality of the mesh. More...
+2025-10-10 21:37:23   For some elements the curvature had to be reduced to maintain the quality of the mesh. More...
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:51:58   Adaptive mesh refinement pass 4
+2025-10-10 21:37:24   Adaptive mesh refinement pass 4
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:52:01     Matrix setup time        :	0 s
-                        Solver setup             :	1 s
-                        Degrees of freedom       :	119671
-                        Number of mesh cells     :	18285
+2025-10-10 21:37:27     Matrix setup time        :	1 s
+                        Solver setup             :	2 s
+                        Degrees of freedom       :	130401
+                        Number of mesh cells     :	19333
 
                         Stimulation port         :	1
                         Mode number              :	1
-                        Accuracy                 :	6.1759e-14
+                        Accuracy                 :	1.16131e-13
                         Iterations               :	1
                         Solver time              :	0 s
 
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:52:01     Stimulation port         :	2
+2025-10-10 21:37:27     Stimulation port         :	2
                         Mode number              :	1
-                        Accuracy                 :	2.35704e-14
+                        Accuracy                 :	1.42135e-13
                         Iterations               :	1
                         Solver time              :	0 s
 
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:52:01     Stimulation port         :	3
+2025-10-10 21:37:27     Stimulation port         :	3
                         Mode number              :	1
-                        Accuracy                 :	7.86628e-14
+                        Accuracy                 :	1.51304e-13
                         Iterations               :	1
                         Solver time              :	0 s
 
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:52:01     Delta calculation        
-2025-10-05 18:52:01     All S-Parameters         :	0.021827
-2025-10-05 18:52:01   
+2025-10-10 21:37:28     Delta calculation        
+2025-10-10 21:37:28     All S-Parameters         :	0.0220406
+2025-10-10 21:37:28   
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:52:04   For some elements the curvature had to be reduced to maintain the quality of the mesh. More...
+2025-10-10 21:37:31   For some elements the curvature had to be reduced to maintain the quality of the mesh. More...
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:52:05   Adaptive mesh refinement pass 5
+2025-10-10 21:37:32   Adaptive mesh refinement pass 5
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:52:09     Matrix setup time        :	1 s
-                        Solver setup             :	3 s
-                        Degrees of freedom       :	182105
-                        Number of mesh cells     :	27852
+2025-10-10 21:37:38     Matrix setup time        :	1 s
+                        Solver setup             :	4 s
+                        Degrees of freedom       :	195639
+                        Number of mesh cells     :	29133
 
                         Stimulation port         :	1
                         Mode number              :	1
-                        Accuracy                 :	1.35239e-13
+                        Accuracy                 :	5.83159e-13
                         Iterations               :	1
                         Solver time              :	0 s
 
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:52:09     Stimulation port         :	2
+2025-10-10 21:37:38     Stimulation port         :	2
                         Mode number              :	1
-                        Accuracy                 :	3.23923e-14
+                        Accuracy                 :	9.22403e-14
                         Iterations               :	1
                         Solver time              :	0 s
 
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:52:09     Stimulation port         :	3
+2025-10-10 21:37:38     Stimulation port         :	3
                         Mode number              :	1
-                        Accuracy                 :	1.98369e-13
+                        Accuracy                 :	7.8431e-13
                         Iterations               :	1
                         Solver time              :	0 s
 
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:52:09     Delta calculation        
-2025-10-05 18:52:09     All S-Parameters         :	0.0183765
-2025-10-05 18:52:09   
+2025-10-10 21:37:38     Delta calculation        
+2025-10-10 21:37:38     All S-Parameters         :	0.0168583
+2025-10-10 21:37:38   
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:52:09   Mesh adaptation terminated because the desired accuracy limit is reached.
+2025-10-10 21:37:38   Mesh adaptation terminated because the desired accuracy limit is reached.
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:52:10     Total time               :	30 s
+2025-10-10 21:37:39     Total time               :	37 s
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:52:10   
+2025-10-10 21:37:39   
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:52:10     Calculation 2 (Frequency: 9 GHz)
+2025-10-10 21:37:39     Calculation 2 (Frequency: 9 GHz)
 
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:52:11     ----------------------------------------------------------------------------
+2025-10-10 21:37:40     ----------------------------------------------------------------------------
                         Port   Mode   Type        Z-Wave        Z-Wave-Sigma  Z-Line        F-Cutoff
-                        1      1      QTEM        229           15.6          48.8          ---
-                        2      1      QTEM        230           15.8          48.8          ---
-                        3      1      QTEM        230           15.6          48.8          ---
+                        1      1      QTEM        230           15.6          48.8          ---
+                        2      1      QTEM        230           16.6          48.8          ---
+                        3      1      QTEM        228           9.21          48.8          ---
                         ----------------------------------------------------------------------------
 
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:52:13     Matrix setup time        :	0 s
-                        Solver setup             :	1 s
-                        Degrees of freedom       :	182105
-                        Number of mesh cells     :	27852
+2025-10-10 21:37:44     Matrix setup time        :	1 s
+                        Solver setup             :	2 s
+                        Degrees of freedom       :	195639
+                        Number of mesh cells     :	29133
 
                         Stimulation port         :	1
                         Mode number              :	1
-                        Accuracy                 :	5.82385e-14
+                        Accuracy                 :	6.52581e-14
                         Iterations               :	1
                         Solver time              :	0 s
 
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:52:13     Stimulation port         :	2
+2025-10-10 21:37:44     Stimulation port         :	2
                         Mode number              :	1
-                        Accuracy                 :	3.68003e-14
+                        Accuracy                 :	4.02061e-14
                         Iterations               :	1
                         Solver time              :	0 s
 
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:52:13     Stimulation port         :	3
+2025-10-10 21:37:44     Stimulation port         :	3
                         Mode number              :	1
-                        Accuracy                 :	7.82567e-14
+                        Accuracy                 :	9.83443e-14
                         Iterations               :	1
                         Solver time              :	0 s
 
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:52:14     Total time               :	3 s
+2025-10-10 21:37:44     Total time               :	4 s
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:52:14   
+2025-10-10 21:37:44   
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:52:14     Calculation 3 (Frequency: 10.5 GHz)
+2025-10-10 21:37:44     Calculation 3 (Frequency: 10.5 GHz)
 
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:52:15     ----------------------------------------------------------------------------
+2025-10-10 21:37:45     ----------------------------------------------------------------------------
                         Port   Mode   Type        Z-Wave        Z-Wave-Sigma  Z-Line        F-Cutoff
-                        1      1      QTEM        229           15.8          48.8          ---
-                        2      1      QTEM        229           16.1          48.8          ---
-                        3      1      QTEM        229           15.7          48.8          ---
+                        1      1      QTEM        229           15.2          48.8          ---
+                        2      1      QTEM        230           17            48.8          ---
+                        3      1      QTEM        227           9.1           48.8          ---
                         ----------------------------------------------------------------------------
 
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:52:17     Matrix setup time        :	0 s
-                        Solver setup             :	1 s
-                        Degrees of freedom       :	182105
-                        Number of mesh cells     :	27852
+2025-10-10 21:37:49     Matrix setup time        :	1 s
+                        Solver setup             :	2 s
+                        Degrees of freedom       :	195639
+                        Number of mesh cells     :	29133
 
                         Stimulation port         :	1
                         Mode number              :	1
-                        Accuracy                 :	1.212e-13
+                        Accuracy                 :	2.77213e-13
                         Iterations               :	1
                         Solver time              :	0 s
 
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:52:17     Stimulation port         :	2
+2025-10-10 21:37:49     Stimulation port         :	2
                         Mode number              :	1
-                        Accuracy                 :	3.04348e-14
+                        Accuracy                 :	3.52827e-14
                         Iterations               :	1
                         Solver time              :	0 s
 
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:52:17     Stimulation port         :	3
+2025-10-10 21:37:49     Stimulation port         :	3
                         Mode number              :	1
-                        Accuracy                 :	1.33846e-13
+                        Accuracy                 :	3.72202e-13
                         Iterations               :	1
                         Solver time              :	0 s
 
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:52:18     Total time               :	3 s
+2025-10-10 21:37:49     Total time               :	4 s
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:52:18   
+2025-10-10 21:37:49   
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:52:18     Calculation 4 (Frequency: 11.25 GHz)
+2025-10-10 21:37:49     Calculation 4 (Frequency: 11.25 GHz)
 
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:52:18     ----------------------------------------------------------------------------
+2025-10-10 21:37:50     ----------------------------------------------------------------------------
                         Port   Mode   Type        Z-Wave        Z-Wave-Sigma  Z-Line        F-Cutoff
-                        1      1      QTEM        228           16            48.8          ---
-                        2      1      QTEM        229           16.3          48.8          ---
-                        3      1      QTEM        229           15.7          48.8          ---
+                        1      1      QTEM        228           15.4          48.8          ---
+                        2      1      QTEM        230           17.2          48.8          ---
+                        3      1      QTEM        227           9.3           48.8          ---
                         ----------------------------------------------------------------------------
 
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:52:21     Matrix setup time        :	0 s
-                        Solver setup             :	1 s
-                        Degrees of freedom       :	182105
-                        Number of mesh cells     :	27852
+2025-10-10 21:37:54     Matrix setup time        :	1 s
+                        Solver setup             :	2 s
+                        Degrees of freedom       :	195639
+                        Number of mesh cells     :	29133
 
                         Stimulation port         :	1
                         Mode number              :	1
-                        Accuracy                 :	1.46987e-13
+                        Accuracy                 :	3.76484e-14
                         Iterations               :	1
                         Solver time              :	0 s
 
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:52:21     Stimulation port         :	2
+2025-10-10 21:37:54     Stimulation port         :	2
                         Mode number              :	1
-                        Accuracy                 :	2.98569e-14
+                        Accuracy                 :	3.03784e-14
                         Iterations               :	1
                         Solver time              :	0 s
 
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:52:21     Stimulation port         :	3
+2025-10-10 21:37:54     Stimulation port         :	3
                         Mode number              :	1
-                        Accuracy                 :	2.13037e-13
+                        Accuracy                 :	6.42331e-14
                         Iterations               :	1
                         Solver time              :	0 s
 
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:52:21     Total time               :	3 s
+2025-10-10 21:37:54     Total time               :	4 s
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:52:21   
+2025-10-10 21:37:54   
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:52:21     Calculation 5 (Frequency: 9.7158 GHz)
+2025-10-10 21:37:54     Calculation 5 (Frequency: 9.7146 GHz)
 
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:52:22     ----------------------------------------------------------------------------
+2025-10-10 21:37:55     ----------------------------------------------------------------------------
                         Port   Mode   Type        Z-Wave        Z-Wave-Sigma  Z-Line        F-Cutoff
-                        1      1      QTEM        229           15.6          48.8          ---
-                        2      1      QTEM        229           15.9          48.8          ---
-                        3      1      QTEM        230           15.7          48.8          ---
+                        1      1      QTEM        229           15            48.8          ---
+                        2      1      QTEM        230           16.8          48.8          ---
+                        3      1      QTEM        227           9.08          48.8          ---
                         ----------------------------------------------------------------------------
 
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:52:25     Matrix setup time        :	0 s
-                        Solver setup             :	1 s
-                        Degrees of freedom       :	182105
-                        Number of mesh cells     :	27852
+2025-10-10 21:37:59     Matrix setup time        :	1 s
+                        Solver setup             :	2 s
+                        Degrees of freedom       :	195639
+                        Number of mesh cells     :	29133
 
                         Stimulation port         :	1
                         Mode number              :	1
-                        Accuracy                 :	1.43604e-13
+                        Accuracy                 :	5.6451e-14
                         Iterations               :	1
                         Solver time              :	0 s
 
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:52:25     Stimulation port         :	2
+2025-10-10 21:37:59     Stimulation port         :	2
                         Mode number              :	1
-                        Accuracy                 :	3.46259e-14
+                        Accuracy                 :	3.62483e-14
                         Iterations               :	1
                         Solver time              :	0 s
 
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:52:25     Stimulation port         :	3
+2025-10-10 21:37:59     Stimulation port         :	3
                         Mode number              :	1
-                        Accuracy                 :	2.1123e-13
+                        Accuracy                 :	6.95037e-14
                         Iterations               :	1
                         Solver time              :	0 s
 
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:52:25     Total time               :	3 s
+2025-10-10 21:37:59     Total time               :	4 s
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:52:25   
+2025-10-10 21:37:59   
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:52:25     Calculation 6 (Frequency: 11.6904 GHz)
+2025-10-10 21:37:59     Calculation 6 (Frequency: 11.6802 GHz)
 
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:52:26     ----------------------------------------------------------------------------
+2025-10-10 21:38:00     ----------------------------------------------------------------------------
                         Port   Mode   Type        Z-Wave        Z-Wave-Sigma  Z-Line        F-Cutoff
-                        1      1      QTEM        228           16.2          48.8          ---
-                        2      1      QTEM        229           16.5          48.8          ---
-                        3      1      QTEM        229           15.8          48.8          ---
+                        1      1      QTEM        228           15.5          48.8          ---
+                        2      1      QTEM        229           17.3          48.8          ---
+                        3      1      QTEM        226           9.24          48.8          ---
                         ----------------------------------------------------------------------------
 
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:52:29     Matrix setup time        :	0 s
-                        Solver setup             :	1 s
-                        Degrees of freedom       :	182105
-                        Number of mesh cells     :	27852
+2025-10-10 21:38:04     Matrix setup time        :	1 s
+                        Solver setup             :	2 s
+                        Degrees of freedom       :	195639
+                        Number of mesh cells     :	29133
 
                         Stimulation port         :	1
                         Mode number              :	1
-                        Accuracy                 :	1.28802e-13
+                        Accuracy                 :	1.94953e-13
                         Iterations               :	1
                         Solver time              :	0 s
 
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:52:29     Stimulation port         :	2
+2025-10-10 21:38:04     Stimulation port         :	2
                         Mode number              :	1
-                        Accuracy                 :	2.90332e-14
+                        Accuracy                 :	3.23138e-14
                         Iterations               :	1
                         Solver time              :	0 s
 
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:52:29     Stimulation port         :	3
+2025-10-10 21:38:04     Stimulation port         :	3
                         Mode number              :	1
-                        Accuracy                 :	1.86811e-13
+                        Accuracy                 :	2.60581e-13
                         Iterations               :	1
                         Solver time              :	0 s
 
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:52:29     Total time               :	3 s
+2025-10-10 21:38:04     Total time               :	4 s
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:52:29   
+2025-10-10 21:38:04   
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:52:29   Finished the general purpose interpolative broadband frequency sweep:
+2025-10-10 21:38:04   Finished the general purpose interpolative broadband frequency sweep:
                       All broadband sweep convergence criteria have been satisfied after
                       calculating 6 frequency samples:
 
@@ -576,32 +573,32 @@
                         Number of data samples, linear        :  5001
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:52:29     Number of mesh cells     :	27852
-                        Degrees of freedom       :	182105
-                        Total Solver Time        :	50 s
+2025-10-10 21:38:04     Number of mesh cells     :	29133
+                        Degrees of freedom       :	195639
+                        Total Solver Time        :	65 s	 (= 0 h, 01 m, 05 s)
                       ================================================================================
 
 
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:52:29     ----------------------------------------------------------------------------
+2025-10-10 21:38:04     ----------------------------------------------------------------------------
                                             Peak memory used (kB)         Free physical memory (kB) 
                                                                           At begin     Minimum      
                         ----------------------------------------------------------------------------
-                        Solver start        21468                         21158256     21157400     
-                        Eq. system setup    1242284                       20979512     20643492     
-                        Eq. system solve    1242284                       20969764     19967896     
-                        Mesh refinement     820368                        20945972     20801432     
-                        Solver run total    1242284                       21158260     19967896     
+                        Solver start        21796                         16724072     16724072     
+                        Eq. system setup    1349556                       16614576     16235684     
+                        Eq. system solve    1350108                       16597172     15470288     
+                        Mesh refinement     923340                        16595752     16443228     
+                        Solver run total    1350108                       16724076     15470288     
 
                         Computer name       DESKTOP-9C14OLV
                         ----------------------------------------------------------------------------
 
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:52:29   Running postprocessing.
+2025-10-10 21:38:04   Running postprocessing.
 
                       ------------------------------------------------------------------------------
-2025-10-05 18:52:31   Postprocessing finished.
+2025-10-10 21:38:07   Postprocessing finished.
 
                       ------------------------------------------------------------------------------

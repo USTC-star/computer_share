@@ -4,9 +4,9 @@
    "Last Problem Type": "High Frequency",
    "Last Solver Type": "HF Frequency Domain",
    "Last Solver Type Abb": "f",
-   "Mesh Cells": "25,098",
+   "Mesh Cells": "13,219",
    "Mesh Type": "Tetrahedral",
-   "Modeler Unique ID": "5:wpd_5850mhz.cst?5d52d8fc76d0f4601b381f9cc63428c7?18081:numberofparameters=0:port=1>mode=1>zre=50>zim=0?port=2>mode=1>zre=50>zim=0?port=3>mode=1>zre=50>zim=0::wilkinson 5850mhz_cu.ldb.sab>e0f5c52d039dcd05e36b2a59c8331d8e>33923",
+   "Modeler Unique ID": "5:wpd_5850mhz.cst?4ed5156fbfb994a4cefcd8f0f17168f2?20946:numberofparameters=0:port=1>mode=1>zre=50>zim=0?port=2>mode=1>zre=50>zim=0?port=3>mode=1>zre=50>zim=0::wilkinson 5850mhz_cu.ldb.sab>e0f5c52d039dcd05e36b2a59c8331d8e>33923",
    "ProjectVersion": "'# MWS Version: Version 2024.0 - Sep 01 2023 - ACIS 33.0.1 -",
    "Results": "Frequency Domain: S-Parameter",
    "Version": "3"

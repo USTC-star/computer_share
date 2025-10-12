@@ -20,11 +20,13 @@ air_0
 >> Material name:
 Copper
 
-4 2
+4 5
+>> Material name:
+Copper
 
 // Number 2D OBJECTS:
 // ^^^^^^^^^^^^^^^^^^
-122
+121
 
 // Obj2D_ID, BCCode (0=Reg,1=PEC,2=PMC,3=RHO,4=OHM,5=PORT,6=OPEN,7=EXPANDEDOPEN,8=PERIODIC,9=TANGENTIAL,10=NORMAL):
 // ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -69,37 +71,42 @@ Copper
 
 18 1
 
-19 1
+19 7
 
-20 1
+20 7
 
-21 1
+21 7
 
 22 7
 
 23 7
 
-24 7
+24 3
+Copper
 
-25 1
+25 3
+Copper
 
-26 1
+26 3
+Copper
 
-27 1
+27 3
+Copper
 
 28 1
 
-29 1
-
-30 3
+29 3
 Copper
 
-31 0
+30 0
 
-32 3
+31 3
 Copper
 
-33 0
+32 0
+
+33 3
+Copper
 
 34 3
 Copper
@@ -299,10 +306,10 @@ Copper
 99 3
 Copper
 
-100 3
-Copper
+100 0
 
-101 0
+101 3
+Copper
 
 102 3
 Copper
@@ -337,25 +344,23 @@ Copper
 112 3
 Copper
 
-113 3
+113 0
+
+114 3
 Copper
 
-114 0
+115 0
 
-115 3
+116 3
 Copper
-
-116 1
 
 117 0
 
 118 0
 
-119 1
+119 0
 
 120 0
-
-121 1
 
 // Number 1D OBJECTS:
 // ^^^^^^^^^^^^^^^^^^

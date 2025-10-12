@@ -40,19 +40,19 @@
       <PortModeInfoFile filename="Port2_Info1(#0003).mmd"/>
       <FieldResultFile filename="Port2_h1(#0003).sct" type="sct" meshname="Port2.slim"/>
     </Frame>
-    <Frame index="4" characteristic="2.8772000000000002">
+    <Frame index="4" characteristic="2.8682000000000003">
       <PortModeInfoFile filename="Port2_Info1(#0004).mmd"/>
       <FieldResultFile filename="Port2_h1(#0004).sct" type="sct" meshname="Port2.slim"/>
     </Frame>
-    <Frame index="5" characteristic="4.9328000000000003">
+    <Frame index="5" characteristic="4.9442000000000004">
       <PortModeInfoFile filename="Port2_Info1(#0005).mmd"/>
       <FieldResultFile filename="Port2_h1(#0005).sct" type="sct" meshname="Port2.slim"/>
     </Frame>
-    <Frame index="6" characteristic="2.3714">
+    <Frame index="6" characteristic="2.3720000000000003">
       <PortModeInfoFile filename="Port2_Info1(#0006).mmd"/>
       <FieldResultFile filename="Port2_h1(#0006).sct" type="sct" meshname="Port2.slim"/>
     </Frame>
-    <Frame index="7" characteristic="3.1309999999999998">
+    <Frame index="7" characteristic="3.1268000000000007">
       <PortModeInfoFile filename="Port2_Info1(#0007).mmd"/>
       <FieldResultFile filename="Port2_h1(#0007).sct" type="sct" meshname="Port2.slim"/>
     </Frame>

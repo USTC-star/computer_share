@@ -1,7 +1,8 @@
 Number of low quality groups
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-1
+2
 
 Low quality group labels (in quotes) and fileIDs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 "Reduced Curvature Elements" 0
+"Unsnapped Elements" 1

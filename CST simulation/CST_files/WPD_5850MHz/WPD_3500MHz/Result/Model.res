@@ -1,5 +1,5 @@
 MWS Result File Version 20150206
-size=i:344
+size=i:348
 
 type=s:HIDDENITEM
 problemclass=s::8:1000
@@ -535,6 +535,226 @@ files=s:..\Model\3D\Wilkinson PD-2025-09-27_135046.log
 
 type=s:XYSIGNAL
 subtype=s:user
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:persistent
+result=s:0
+treepath=s:1D Results\Materials\Rogers RO4350B (lossy)\Dispersive\Eps' (Fit)
+files=s:Rogers RO4350B (lossy)_eps_re.sig
+
+type=s:XYSIGNAL
+subtype=s:user
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:persistent
+result=s:0
+treepath=s:1D Results\Materials\Rogers RO4350B (lossy)\Dispersive\Eps'' (Fit)
+files=s:Rogers RO4350B (lossy)_eps_im.sig
+
+type=s:XYSIGNAL
+subtype=s:user
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:persistent
+result=s:0
+treepath=s:1D Results\Materials\Rogers RO4350B (lossy)\Dispersive\Eps TangD (Fit)
+files=s:Rogers RO4350B (lossy)_eps_tgd.sig
+
+type=s:XYSIGNAL
+subtype=s:user
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:persistent
+result=s:0
+treepath=s:1D Results\Materials\Wilkinson PD-odb_2(PCB1)\FR4\Dispersive\Eps' (Fit)
+files=s:Wilkinson PD-odb_2(PCB1)\FR4_eps_re.sig
+
+type=s:XYSIGNAL
+subtype=s:user
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:persistent
+result=s:0
+treepath=s:1D Results\Materials\Wilkinson PD-odb_2(PCB1)\FR4\Dispersive\Eps'' (Fit)
+files=s:Wilkinson PD-odb_2(PCB1)\FR4_eps_im.sig
+
+type=s:XYSIGNAL
+subtype=s:user
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:persistent
+result=s:0
+treepath=s:1D Results\Materials\Wilkinson PD-odb_2(PCB1)\FR4\Dispersive\Eps TangD (Fit)
+files=s:Wilkinson PD-odb_2(PCB1)\FR4_eps_tgd.sig
+
+type=s:XYSIGNAL
+subtype=s:user
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:persistent
+result=s:0
+treepath=s:1D Results\Materials\Copper (pure)\Surface Impedance\Z' (Fit)
+files=s:Copper (pure)_Z_re.sig
+
+type=s:XYSIGNAL
+subtype=s:user
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:persistent
+result=s:0
+treepath=s:1D Results\Materials\Copper (pure)\Surface Impedance\Z'' (Fit)
+files=s:Copper (pure)_Z_im.sig
+
+type=s:XYSIGNAL
+subtype=s:user
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:persistent
+result=s:0
+treepath=s:1D Results\Materials\Copper (pure)\Surface Impedance\Z' (Theory)
+files=s:Copper (pure)_Z_datalist_re.sig
+
+type=s:XYSIGNAL
+subtype=s:user
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:persistent
+result=s:0
+treepath=s:1D Results\Materials\Copper (pure)\Surface Impedance\Z'' (Theory)
+files=s:Copper (pure)_Z_datalist_im.sig
+
+type=s:XYSIGNAL
+subtype=s:user
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:persistent
+result=s:0
+treepath=s:1D Results\Materials\Wilkinson PD-odb_2(PCB1)\Copper\Surface Impedance\Z' (Fit)
+files=s:Wilkinson PD-odb_2(PCB1)\Copper_Z_re.sig
+
+type=s:XYSIGNAL
+subtype=s:user
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:persistent
+result=s:0
+treepath=s:1D Results\Materials\Wilkinson PD-odb_2(PCB1)\Copper\Surface Impedance\Z'' (Fit)
+files=s:Wilkinson PD-odb_2(PCB1)\Copper_Z_im.sig
+
+type=s:XYSIGNAL
+subtype=s:user
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:persistent
+result=s:0
+treepath=s:1D Results\Materials\Wilkinson PD-odb_2(PCB1)\Copper\Surface Impedance\Z' (Theory)
+files=s:Wilkinson PD-odb_2(PCB1)\Copper_Z_datalist_re.sig
+
+type=s:XYSIGNAL
+subtype=s:user
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:persistent
+result=s:0
+treepath=s:1D Results\Materials\Wilkinson PD-odb_2(PCB1)\Copper\Surface Impedance\Z'' (Theory)
+files=s:Wilkinson PD-odb_2(PCB1)\Copper_Z_datalist_im.sig
+
+type=s:XYSIGNAL
+subtype=s:user
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:persistent
+result=s:0
+treepath=s:1D Results\Materials\Wilkinson PD-odb_2(PCB1)\VIAS_MATERIAL\Surface Impedance\Z' (Fit)
+files=s:Wilkinson PD-odb_2(PCB1)\VIAS_MATERIAL_Z_re.sig
+
+type=s:XYSIGNAL
+subtype=s:user
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:persistent
+result=s:0
+treepath=s:1D Results\Materials\Wilkinson PD-odb_2(PCB1)\VIAS_MATERIAL\Surface Impedance\Z'' (Fit)
+files=s:Wilkinson PD-odb_2(PCB1)\VIAS_MATERIAL_Z_im.sig
+
+type=s:XYSIGNAL
+subtype=s:user
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:persistent
+result=s:0
+treepath=s:1D Results\Materials\Wilkinson PD-odb_2(PCB1)\VIAS_MATERIAL\Surface Impedance\Z' (Theory)
+files=s:Wilkinson PD-odb_2(PCB1)\VIAS_MATERIAL_Z_datalist_re.sig
+
+type=s:XYSIGNAL
+subtype=s:user
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:persistent
+result=s:0
+treepath=s:1D Results\Materials\Wilkinson PD-odb_2(PCB1)\VIAS_MATERIAL\Surface Impedance\Z'' (Theory)
+files=s:Wilkinson PD-odb_2(PCB1)\VIAS_MATERIAL_Z_datalist_im.sig
+
+type=s:XYSIGNAL
+subtype=s:user
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:persistent
+result=s:0
+treepath=s:1D Results\Materials\Copper\Surface Impedance\Z' (Fit)
+files=s:Copper_Z_re.sig
+
+type=s:XYSIGNAL
+subtype=s:user
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:persistent
+result=s:0
+treepath=s:1D Results\Materials\Copper\Surface Impedance\Z'' (Fit)
+files=s:Copper_Z_im.sig
+
+type=s:XYSIGNAL
+subtype=s:user
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:persistent
+result=s:0
+treepath=s:1D Results\Materials\Copper\Surface Impedance\Z' (Theory)
+files=s:Copper_Z_datalist_re.sig
+
+type=s:XYSIGNAL
+subtype=s:user
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:persistent
+result=s:0
+treepath=s:1D Results\Materials\Copper\Surface Impedance\Z'' (Theory)
+files=s:Copper_Z_datalist_im.sig
+
+type=s:XYSIGNAL
+subtype=s:user
 problemclass=s::4:3
 visibility=s:visible
 creation=s:internal
@@ -649,26 +869,6 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:rebuild
 result=s:1
-treepath=s:1D Results\Materials\Copper (pure)\Surface Impedance\Z' (FD - Interpolated)
-files=s:Copper (pure)_Z_re Frequency Domain.sig
-
-type=s:XYSIGNAL
-subtype=s:user
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:rebuild
-result=s:1
-treepath=s:1D Results\Materials\Copper (pure)\Surface Impedance\Z'' (FD - Interpolated)
-files=s:Copper (pure)_Z_im Frequency Domain.sig
-
-type=s:XYSIGNAL
-subtype=s:user
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:rebuild
-result=s:1
 treepath=s:1D Results\Materials\Rogers RO4350B (lossy)\Dispersive\Eps' (FD - Interpolated)
 files=s:Rogers RO4350B (lossy)_eps_re Frequency Domain.sig
 
@@ -681,6 +881,26 @@ lifetime=s:rebuild
 result=s:1
 treepath=s:1D Results\Materials\Rogers RO4350B (lossy)\Dispersive\Eps'' (FD - Interpolated)
 files=s:Rogers RO4350B (lossy)_eps_im Frequency Domain.sig
+
+type=s:XYSIGNAL
+subtype=s:user
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:1D Results\Materials\Copper\Surface Impedance\Z' (FD - Interpolated)
+files=s:Copper_Z_re Frequency Domain.sig
+
+type=s:XYSIGNAL
+subtype=s:user
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:1D Results\Materials\Copper\Surface Impedance\Z'' (FD - Interpolated)
+files=s:Copper_Z_im Frequency Domain.sig
 
 type=s:XYSIGNAL
 subtype=s:user
@@ -1399,8 +1619,8 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:rebuild
 result=s:1
-treepath=s:1D Results\Power\Excitation [3]\Loss per Material\Metal loss in Copper (pure)
-files=s:cMetal_loss_Copper (pure)(3).sig
+treepath=s:1D Results\Power\Excitation [3]\Loss per Material\Metal loss in Copper
+files=s:cMetal_loss_Copper(3).sig
 
 type=s:XYSIGNAL
 subtype=s:complex
@@ -1469,26 +1689,6 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:rebuild
 result=s:1
-treepath=s:1D Results\Power\Excitation [2]\Power Outgoing all Ports
-files=s:ReflectedPower_2.sig
-
-type=s:XYSIGNAL
-subtype=s:complex
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:rebuild
-result=s:1
-treepath=s:1D Results\Power\Excitation [2]\Power Accepted
-files=s:AcceptedPower_2.sig
-
-type=s:XYSIGNAL
-subtype=s:complex
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:rebuild
-result=s:1
 treepath=s:1D Results\Power\Excitation [3]\Loss per Lumped Element\Folder1\Loss in element R1
 files=s:plFolder1[b]R1(3).sig
 
@@ -1499,8 +1699,8 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:rebuild
 result=s:1
-treepath=s:1D Results\Power\Excitation [2]\Power Stimulated
-files=s:StimulatedPower_2.sig
+treepath=s:1D Results\Power\Excitation [2]\Power Outgoing all Ports
+files=s:ReflectedPower_2.sig
 
 type=s:XYSIGNAL
 subtype=s:complex
@@ -1519,6 +1719,26 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:rebuild
 result=s:1
+treepath=s:1D Results\Power\Excitation [2]\Power Accepted
+files=s:AcceptedPower_2.sig
+
+type=s:XYSIGNAL
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:1D Results\Power\Excitation [2]\Power Stimulated
+files=s:StimulatedPower_2.sig
+
+type=s:XYSIGNAL
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
 treepath=s:1D Results\Power\Excitation [2]\Loss in Metals
 files=s:cTotal_metal_loss(2).sig
 
@@ -1529,8 +1749,8 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:rebuild
 result=s:1
-treepath=s:1D Results\Power\Excitation [2]\Loss per Material\Metal loss in Copper (pure)
-files=s:cMetal_loss_Copper (pure)(2).sig
+treepath=s:1D Results\Power\Excitation [2]\Loss per Material\Metal loss in Copper
+files=s:cMetal_loss_Copper(2).sig
 
 type=s:XYSIGNAL
 subtype=s:complex
@@ -1549,8 +1769,8 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:rebuild
 result=s:1
-treepath=s:1D Results\Power\Excitation [2]\Loss per Lumped Element\Folder1\Loss in element R2
-files=s:plFolder1[b]R2(2).sig
+treepath=s:1D Results\Power\Excitation [2]\Loss per Material\Volume loss in Rogers RO4350B (lossy)
+files=s:cVolume_loss_in_Rogers RO4350B (lossy)(2).sig
 
 type=s:XYSIGNAL
 subtype=s:complex
@@ -1589,6 +1809,16 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:rebuild
 result=s:1
+treepath=s:1D Results\Power\Excitation [2]\Loss per Lumped Element\Folder1\Loss in element R1
+files=s:plFolder1[b]R1(2).sig
+
+type=s:XYSIGNAL
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
 treepath=s:1D Results\Power\Excitation [1]\Power Outgoing all Ports
 files=s:ReflectedPower_1.sig
 
@@ -1599,28 +1829,28 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:rebuild
 result=s:1
+treepath=s:1D Results\Power\Excitation [2]\Loss in Lumped Elements
+files=s:LumpedElementPower_2.sig
+
+type=s:XYSIGNAL
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:1D Results\Power\Excitation [2]\Loss per Lumped Element\Folder1\Loss in element R2
+files=s:plFolder1[b]R2(2).sig
+
+type=s:XYSIGNAL
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
 treepath=s:1D Results\Power\Excitation [1]\Power Accepted
 files=s:AcceptedPower_1.sig
-
-type=s:XYSIGNAL
-subtype=s:complex
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:rebuild
-result=s:1
-treepath=s:1D Results\Power\Excitation [2]\Loss per Material\Volume loss in Rogers RO4350B (lossy)
-files=s:cVolume_loss_in_Rogers RO4350B (lossy)(2).sig
-
-type=s:XYSIGNAL
-subtype=s:complex
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:rebuild
-result=s:1
-treepath=s:1D Results\Power\Excitation [2]\Loss per Lumped Element\Folder1\Loss in element R1
-files=s:plFolder1[b]R1(2).sig
 
 type=s:XYSIGNAL
 subtype=s:complex
@@ -1649,8 +1879,8 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:rebuild
 result=s:1
-treepath=s:1D Results\Power\Excitation [2]\Loss in Lumped Elements
-files=s:LumpedElementPower_2.sig
+treepath=s:1D Results\Power\Excitation [1]\Loss per Material\Metal loss in Copper
+files=s:cMetal_loss_Copper(1).sig
 
 type=s:XYSIGNAL
 subtype=s:complex
@@ -1659,8 +1889,18 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:rebuild
 result=s:1
-treepath=s:1D Results\Power\Excitation [1]\Loss per Material\Metal loss in Copper (pure)
-files=s:cMetal_loss_Copper (pure)(1).sig
+treepath=s:1D Results\Power\Excitation [1]\Loss in Dielectrics
+files=s:cTotal_loss_in_dielectrics(1).sig
+
+type=s:XYSIGNAL
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:1D Results\Power\Excitation [1]\Loss per Material\Volume loss in Rogers RO4350B (lossy)
+files=s:cVolume_loss_in_Rogers RO4350B (lossy)(1).sig
 
 type=s:XYSIGNAL
 subtype=s:complex
@@ -1681,26 +1921,6 @@ lifetime=s:rebuild
 result=s:1
 treepath=s:1D Results\Power\Excitation [1]\Loss in Lumped Elements
 files=s:LumpedElementPower_1.sig
-
-type=s:XYSIGNAL
-subtype=s:complex
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:rebuild
-result=s:1
-treepath=s:1D Results\Power\Excitation [1]\Loss per Material\Volume loss in Rogers RO4350B (lossy)
-files=s:cVolume_loss_in_Rogers RO4350B (lossy)(1).sig
-
-type=s:XYSIGNAL
-subtype=s:complex
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:rebuild
-result=s:1
-treepath=s:1D Results\Power\Excitation [1]\Loss in Dielectrics
-files=s:cTotal_loss_in_dielectrics(1).sig
 
 type=s:XYSIGNAL
 subtype=s:complex
@@ -1951,28 +2171,6 @@ creation=s:internal
 lifetime=s:surviveparchange
 result=s:1
 parametric=s:P
-treepath=s:1D Results\Materials\Copper (pure)\Surface Impedance\Z' (FD - Interpolated)
-files=s:Copper (pure)_Z_re Frequency Domain.sig
-
-type=s:XYSIGNAL
-subtype=s:user
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:surviveparchange
-result=s:1
-parametric=s:P
-treepath=s:1D Results\Materials\Copper (pure)\Surface Impedance\Z'' (FD - Interpolated)
-files=s:Copper (pure)_Z_im Frequency Domain.sig
-
-type=s:XYSIGNAL
-subtype=s:user
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:surviveparchange
-result=s:1
-parametric=s:P
 treepath=s:1D Results\Materials\Rogers RO4350B (lossy)\Dispersive\Eps' (FD - Interpolated)
 files=s:Rogers RO4350B (lossy)_eps_re Frequency Domain.sig
 
@@ -1986,6 +2184,28 @@ result=s:1
 parametric=s:P
 treepath=s:1D Results\Materials\Rogers RO4350B (lossy)\Dispersive\Eps'' (FD - Interpolated)
 files=s:Rogers RO4350B (lossy)_eps_im Frequency Domain.sig
+
+type=s:XYSIGNAL
+subtype=s:user
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Materials\Copper\Surface Impedance\Z' (FD - Interpolated)
+files=s:Copper_Z_re Frequency Domain.sig
+
+type=s:XYSIGNAL
+subtype=s:user
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Materials\Copper\Surface Impedance\Z'' (FD - Interpolated)
+files=s:Copper_Z_im Frequency Domain.sig
 
 type=s:XYSIGNAL
 subtype=s:user
@@ -2776,8 +2996,8 @@ creation=s:internal
 lifetime=s:surviveparchange
 result=s:1
 parametric=s:P
-treepath=s:1D Results\Power\Excitation [3]\Loss per Material\Metal loss in Copper (pure)
-files=s:cMetal_loss_Copper (pure)(3).sig
+treepath=s:1D Results\Power\Excitation [3]\Loss per Material\Metal loss in Copper
+files=s:cMetal_loss_Copper(3).sig
 
 type=s:XYSIGNAL
 subtype=s:complex
@@ -2853,28 +3073,6 @@ creation=s:internal
 lifetime=s:surviveparchange
 result=s:1
 parametric=s:P
-treepath=s:1D Results\Power\Excitation [2]\Power Outgoing all Ports
-files=s:ReflectedPower_2.sig
-
-type=s:XYSIGNAL
-subtype=s:complex
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:surviveparchange
-result=s:1
-parametric=s:P
-treepath=s:1D Results\Power\Excitation [2]\Power Accepted
-files=s:AcceptedPower_2.sig
-
-type=s:XYSIGNAL
-subtype=s:complex
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:surviveparchange
-result=s:1
-parametric=s:P
 treepath=s:1D Results\Power\Excitation [3]\Loss per Lumped Element\Folder1\Loss in element R1
 files=s:plFolder1[b]R1(3).sig
 
@@ -2886,8 +3084,8 @@ creation=s:internal
 lifetime=s:surviveparchange
 result=s:1
 parametric=s:P
-treepath=s:1D Results\Power\Excitation [2]\Power Stimulated
-files=s:StimulatedPower_2.sig
+treepath=s:1D Results\Power\Excitation [2]\Power Outgoing all Ports
+files=s:ReflectedPower_2.sig
 
 type=s:XYSIGNAL
 subtype=s:complex
@@ -2908,6 +3106,28 @@ creation=s:internal
 lifetime=s:surviveparchange
 result=s:1
 parametric=s:P
+treepath=s:1D Results\Power\Excitation [2]\Power Accepted
+files=s:AcceptedPower_2.sig
+
+type=s:XYSIGNAL
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Power\Excitation [2]\Power Stimulated
+files=s:StimulatedPower_2.sig
+
+type=s:XYSIGNAL
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
 treepath=s:1D Results\Power\Excitation [2]\Loss in Metals
 files=s:cTotal_metal_loss(2).sig
 
@@ -2919,8 +3139,8 @@ creation=s:internal
 lifetime=s:surviveparchange
 result=s:1
 parametric=s:P
-treepath=s:1D Results\Power\Excitation [2]\Loss per Material\Metal loss in Copper (pure)
-files=s:cMetal_loss_Copper (pure)(2).sig
+treepath=s:1D Results\Power\Excitation [2]\Loss per Material\Metal loss in Copper
+files=s:cMetal_loss_Copper(2).sig
 
 type=s:XYSIGNAL
 subtype=s:complex
@@ -2941,8 +3161,8 @@ creation=s:internal
 lifetime=s:surviveparchange
 result=s:1
 parametric=s:P
-treepath=s:1D Results\Power\Excitation [2]\Loss per Lumped Element\Folder1\Loss in element R2
-files=s:plFolder1[b]R2(2).sig
+treepath=s:1D Results\Power\Excitation [2]\Loss per Material\Volume loss in Rogers RO4350B (lossy)
+files=s:cVolume_loss_in_Rogers RO4350B (lossy)(2).sig
 
 type=s:XYSIGNAL
 subtype=s:complex
@@ -2985,6 +3205,17 @@ creation=s:internal
 lifetime=s:surviveparchange
 result=s:1
 parametric=s:P
+treepath=s:1D Results\Power\Excitation [2]\Loss per Lumped Element\Folder1\Loss in element R1
+files=s:plFolder1[b]R1(2).sig
+
+type=s:XYSIGNAL
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
 treepath=s:1D Results\Power\Excitation [1]\Power Outgoing all Ports
 files=s:ReflectedPower_1.sig
 
@@ -2996,30 +3227,30 @@ creation=s:internal
 lifetime=s:surviveparchange
 result=s:1
 parametric=s:P
+treepath=s:1D Results\Power\Excitation [2]\Loss in Lumped Elements
+files=s:LumpedElementPower_2.sig
+
+type=s:XYSIGNAL
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Power\Excitation [2]\Loss per Lumped Element\Folder1\Loss in element R2
+files=s:plFolder1[b]R2(2).sig
+
+type=s:XYSIGNAL
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
 treepath=s:1D Results\Power\Excitation [1]\Power Accepted
 files=s:AcceptedPower_1.sig
-
-type=s:XYSIGNAL
-subtype=s:complex
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:surviveparchange
-result=s:1
-parametric=s:P
-treepath=s:1D Results\Power\Excitation [2]\Loss per Material\Volume loss in Rogers RO4350B (lossy)
-files=s:cVolume_loss_in_Rogers RO4350B (lossy)(2).sig
-
-type=s:XYSIGNAL
-subtype=s:complex
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:surviveparchange
-result=s:1
-parametric=s:P
-treepath=s:1D Results\Power\Excitation [2]\Loss per Lumped Element\Folder1\Loss in element R1
-files=s:plFolder1[b]R1(2).sig
 
 type=s:XYSIGNAL
 subtype=s:complex
@@ -3051,8 +3282,8 @@ creation=s:internal
 lifetime=s:surviveparchange
 result=s:1
 parametric=s:P
-treepath=s:1D Results\Power\Excitation [2]\Loss in Lumped Elements
-files=s:LumpedElementPower_2.sig
+treepath=s:1D Results\Power\Excitation [1]\Loss per Material\Metal loss in Copper
+files=s:cMetal_loss_Copper(1).sig
 
 type=s:XYSIGNAL
 subtype=s:complex
@@ -3062,8 +3293,19 @@ creation=s:internal
 lifetime=s:surviveparchange
 result=s:1
 parametric=s:P
-treepath=s:1D Results\Power\Excitation [1]\Loss per Material\Metal loss in Copper (pure)
-files=s:cMetal_loss_Copper (pure)(1).sig
+treepath=s:1D Results\Power\Excitation [1]\Loss in Dielectrics
+files=s:cTotal_loss_in_dielectrics(1).sig
+
+type=s:XYSIGNAL
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+parametric=s:P
+treepath=s:1D Results\Power\Excitation [1]\Loss per Material\Volume loss in Rogers RO4350B (lossy)
+files=s:cVolume_loss_in_Rogers RO4350B (lossy)(1).sig
 
 type=s:XYSIGNAL
 subtype=s:complex
@@ -3086,28 +3328,6 @@ result=s:1
 parametric=s:P
 treepath=s:1D Results\Power\Excitation [1]\Loss in Lumped Elements
 files=s:LumpedElementPower_1.sig
-
-type=s:XYSIGNAL
-subtype=s:complex
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:surviveparchange
-result=s:1
-parametric=s:P
-treepath=s:1D Results\Power\Excitation [1]\Loss per Material\Volume loss in Rogers RO4350B (lossy)
-files=s:cVolume_loss_in_Rogers RO4350B (lossy)(1).sig
-
-type=s:XYSIGNAL
-subtype=s:complex
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:surviveparchange
-result=s:1
-parametric=s:P
-treepath=s:1D Results\Power\Excitation [1]\Loss in Dielectrics
-files=s:cTotal_loss_in_dielectrics(1).sig
 
 type=s:XYSIGNAL
 subtype=s:complex
@@ -3251,184 +3471,4 @@ result=s:1
 parametric=s:P
 treepath=s:1D Results\Port Information\Port Modes_pmi\3(1)
 files=s:Gamma_3(1)_pmi.sig
-
-type=s:XYSIGNAL
-subtype=s:user
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:persistent
-result=s:0
-treepath=s:1D Results\Materials\Rogers RO4350B (lossy)\Dispersive\Eps' (Fit)
-files=s:Rogers RO4350B (lossy)_eps_re.sig
-
-type=s:XYSIGNAL
-subtype=s:user
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:persistent
-result=s:0
-treepath=s:1D Results\Materials\Rogers RO4350B (lossy)\Dispersive\Eps'' (Fit)
-files=s:Rogers RO4350B (lossy)_eps_im.sig
-
-type=s:XYSIGNAL
-subtype=s:user
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:persistent
-result=s:0
-treepath=s:1D Results\Materials\Rogers RO4350B (lossy)\Dispersive\Eps TangD (Fit)
-files=s:Rogers RO4350B (lossy)_eps_tgd.sig
-
-type=s:XYSIGNAL
-subtype=s:user
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:persistent
-result=s:0
-treepath=s:1D Results\Materials\Wilkinson PD-odb_2(PCB1)\FR4\Dispersive\Eps' (Fit)
-files=s:Wilkinson PD-odb_2(PCB1)\FR4_eps_re.sig
-
-type=s:XYSIGNAL
-subtype=s:user
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:persistent
-result=s:0
-treepath=s:1D Results\Materials\Wilkinson PD-odb_2(PCB1)\FR4\Dispersive\Eps'' (Fit)
-files=s:Wilkinson PD-odb_2(PCB1)\FR4_eps_im.sig
-
-type=s:XYSIGNAL
-subtype=s:user
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:persistent
-result=s:0
-treepath=s:1D Results\Materials\Wilkinson PD-odb_2(PCB1)\FR4\Dispersive\Eps TangD (Fit)
-files=s:Wilkinson PD-odb_2(PCB1)\FR4_eps_tgd.sig
-
-type=s:XYSIGNAL
-subtype=s:user
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:persistent
-result=s:0
-treepath=s:1D Results\Materials\Copper (pure)\Surface Impedance\Z' (Fit)
-files=s:Copper (pure)_Z_re.sig
-
-type=s:XYSIGNAL
-subtype=s:user
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:persistent
-result=s:0
-treepath=s:1D Results\Materials\Copper (pure)\Surface Impedance\Z'' (Fit)
-files=s:Copper (pure)_Z_im.sig
-
-type=s:XYSIGNAL
-subtype=s:user
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:persistent
-result=s:0
-treepath=s:1D Results\Materials\Copper (pure)\Surface Impedance\Z' (Theory)
-files=s:Copper (pure)_Z_datalist_re.sig
-
-type=s:XYSIGNAL
-subtype=s:user
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:persistent
-result=s:0
-treepath=s:1D Results\Materials\Copper (pure)\Surface Impedance\Z'' (Theory)
-files=s:Copper (pure)_Z_datalist_im.sig
-
-type=s:XYSIGNAL
-subtype=s:user
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:persistent
-result=s:0
-treepath=s:1D Results\Materials\Wilkinson PD-odb_2(PCB1)\Copper\Surface Impedance\Z' (Fit)
-files=s:Wilkinson PD-odb_2(PCB1)\Copper_Z_re.sig
-
-type=s:XYSIGNAL
-subtype=s:user
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:persistent
-result=s:0
-treepath=s:1D Results\Materials\Wilkinson PD-odb_2(PCB1)\Copper\Surface Impedance\Z'' (Fit)
-files=s:Wilkinson PD-odb_2(PCB1)\Copper_Z_im.sig
-
-type=s:XYSIGNAL
-subtype=s:user
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:persistent
-result=s:0
-treepath=s:1D Results\Materials\Wilkinson PD-odb_2(PCB1)\Copper\Surface Impedance\Z' (Theory)
-files=s:Wilkinson PD-odb_2(PCB1)\Copper_Z_datalist_re.sig
-
-type=s:XYSIGNAL
-subtype=s:user
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:persistent
-result=s:0
-treepath=s:1D Results\Materials\Wilkinson PD-odb_2(PCB1)\Copper\Surface Impedance\Z'' (Theory)
-files=s:Wilkinson PD-odb_2(PCB1)\Copper_Z_datalist_im.sig
-
-type=s:XYSIGNAL
-subtype=s:user
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:persistent
-result=s:0
-treepath=s:1D Results\Materials\Wilkinson PD-odb_2(PCB1)\VIAS_MATERIAL\Surface Impedance\Z' (Fit)
-files=s:Wilkinson PD-odb_2(PCB1)\VIAS_MATERIAL_Z_re.sig
-
-type=s:XYSIGNAL
-subtype=s:user
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:persistent
-result=s:0
-treepath=s:1D Results\Materials\Wilkinson PD-odb_2(PCB1)\VIAS_MATERIAL\Surface Impedance\Z'' (Fit)
-files=s:Wilkinson PD-odb_2(PCB1)\VIAS_MATERIAL_Z_im.sig
-
-type=s:XYSIGNAL
-subtype=s:user
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:persistent
-result=s:0
-treepath=s:1D Results\Materials\Wilkinson PD-odb_2(PCB1)\VIAS_MATERIAL\Surface Impedance\Z' (Theory)
-files=s:Wilkinson PD-odb_2(PCB1)\VIAS_MATERIAL_Z_datalist_re.sig
-
-type=s:XYSIGNAL
-subtype=s:user
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:persistent
-result=s:0
-treepath=s:1D Results\Materials\Wilkinson PD-odb_2(PCB1)\VIAS_MATERIAL\Surface Impedance\Z'' (Theory)
-files=s:Wilkinson PD-odb_2(PCB1)\VIAS_MATERIAL_Z_datalist_im.sig
 

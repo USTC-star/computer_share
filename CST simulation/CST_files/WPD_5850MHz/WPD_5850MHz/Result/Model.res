@@ -1,5 +1,5 @@
 MWS Result File Version 20150206
-size=i:214
+size=i:224
 
 type=s:HIDDENITEM
 problemclass=s::8:1000
@@ -497,6 +497,14 @@ lifetime=s:rebuild
 result=s:0
 files=s:bad.tet
 
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:persistent
+result=s:0
+files=s:MCalcAccess.log
+
 type=s:FOLDER
 problemclass=s::8:1000
 visibility=s:visible
@@ -514,6 +522,156 @@ result=s:0
 user_delete=s:1
 treepath=s:Wilkinson 5850MHz_Cu.log
 files=s:..\Model\3D\Wilkinson 5850MHz_Cu.log
+
+type=s:XYSIGNAL
+subtype=s:user
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:persistent
+result=s:0
+treepath=s:1D Results\Materials\Rogers RO4350B (lossy)\Dispersive\Eps' (Fit)
+files=s:Rogers RO4350B (lossy)_eps_re.sig
+
+type=s:XYSIGNAL
+subtype=s:user
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:persistent
+result=s:0
+treepath=s:1D Results\Materials\Rogers RO4350B (lossy)\Dispersive\Eps'' (Fit)
+files=s:Rogers RO4350B (lossy)_eps_im.sig
+
+type=s:XYSIGNAL
+subtype=s:user
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:persistent
+result=s:0
+treepath=s:1D Results\Materials\Rogers RO4350B (lossy)\Dispersive\Eps TangD (Fit)
+files=s:Rogers RO4350B (lossy)_eps_tgd.sig
+
+type=s:XYSIGNAL
+subtype=s:user
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:persistent
+result=s:0
+treepath=s:1D Results\Materials\Wilkinson 5850MHz_Cu(PCB1)\Copper\Surface Impedance\Z' (Fit)
+files=s:Wilkinson 5850MHz_Cu(PCB1)\Copper_Z_re.sig
+
+type=s:XYSIGNAL
+subtype=s:user
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:persistent
+result=s:0
+treepath=s:1D Results\Materials\Wilkinson 5850MHz_Cu(PCB1)\Copper\Surface Impedance\Z'' (Fit)
+files=s:Wilkinson 5850MHz_Cu(PCB1)\Copper_Z_im.sig
+
+type=s:XYSIGNAL
+subtype=s:user
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:persistent
+result=s:0
+treepath=s:1D Results\Materials\Wilkinson 5850MHz_Cu(PCB1)\Copper\Surface Impedance\Z' (Theory)
+files=s:Wilkinson 5850MHz_Cu(PCB1)\Copper_Z_datalist_re.sig
+
+type=s:XYSIGNAL
+subtype=s:user
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:persistent
+result=s:0
+treepath=s:1D Results\Materials\Wilkinson 5850MHz_Cu(PCB1)\Copper\Surface Impedance\Z'' (Theory)
+files=s:Wilkinson 5850MHz_Cu(PCB1)\Copper_Z_datalist_im.sig
+
+type=s:XYSIGNAL
+subtype=s:user
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:persistent
+result=s:0
+treepath=s:1D Results\Materials\Wilkinson 5850MHz_Cu(PCB1)\VIAS_MATERIAL\Surface Impedance\Z' (Fit)
+files=s:Wilkinson 5850MHz_Cu(PCB1)\VIAS_MATERIAL_Z_re.sig
+
+type=s:XYSIGNAL
+subtype=s:user
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:persistent
+result=s:0
+treepath=s:1D Results\Materials\Wilkinson 5850MHz_Cu(PCB1)\VIAS_MATERIAL\Surface Impedance\Z'' (Fit)
+files=s:Wilkinson 5850MHz_Cu(PCB1)\VIAS_MATERIAL_Z_im.sig
+
+type=s:XYSIGNAL
+subtype=s:user
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:persistent
+result=s:0
+treepath=s:1D Results\Materials\Wilkinson 5850MHz_Cu(PCB1)\VIAS_MATERIAL\Surface Impedance\Z' (Theory)
+files=s:Wilkinson 5850MHz_Cu(PCB1)\VIAS_MATERIAL_Z_datalist_re.sig
+
+type=s:XYSIGNAL
+subtype=s:user
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:persistent
+result=s:0
+treepath=s:1D Results\Materials\Wilkinson 5850MHz_Cu(PCB1)\VIAS_MATERIAL\Surface Impedance\Z'' (Theory)
+files=s:Wilkinson 5850MHz_Cu(PCB1)\VIAS_MATERIAL_Z_datalist_im.sig
+
+type=s:XYSIGNAL
+subtype=s:user
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:persistent
+result=s:0
+treepath=s:1D Results\Materials\Copper\Surface Impedance\Z' (Fit)
+files=s:Copper_Z_re.sig
+
+type=s:XYSIGNAL
+subtype=s:user
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:persistent
+result=s:0
+treepath=s:1D Results\Materials\Copper\Surface Impedance\Z'' (Fit)
+files=s:Copper_Z_im.sig
+
+type=s:XYSIGNAL
+subtype=s:user
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:persistent
+result=s:0
+treepath=s:1D Results\Materials\Copper\Surface Impedance\Z' (Theory)
+files=s:Copper_Z_datalist_re.sig
+
+type=s:XYSIGNAL
+subtype=s:user
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:persistent
+result=s:0
+treepath=s:1D Results\Materials\Copper\Surface Impedance\Z'' (Theory)
+files=s:Copper_Z_datalist_im.sig
 
 type=s:XYSIGNAL
 subtype=s:user
@@ -663,6 +821,26 @@ lifetime=s:rebuild
 result=s:1
 treepath=s:1D Results\Materials\Rogers RO4350B (lossy)\Dispersive\Eps'' (FD - Interpolated)
 files=s:Rogers RO4350B (lossy)_eps_im Frequency Domain.sig
+
+type=s:XYSIGNAL
+subtype=s:user
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:1D Results\Materials\Copper\Surface Impedance\Z' (FD - Interpolated)
+files=s:Copper_Z_re Frequency Domain.sig
+
+type=s:XYSIGNAL
+subtype=s:user
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:1D Results\Materials\Copper\Surface Impedance\Z'' (FD - Interpolated)
+files=s:Copper_Z_im Frequency Domain.sig
 
 type=s:XYSIGNAL
 subtype=s:user
@@ -1381,16 +1559,6 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:rebuild
 result=s:1
-treepath=s:1D Results\Power\Excitation [3]\Loss per Material\Wilkinson 5850MHz_Cu(PCB1)\Metal loss in Copper
-files=s:cMetal_loss_Wilkinson 5850MHz_Cu(PCB1)_Copper(3).sig
-
-type=s:XYSIGNAL
-subtype=s:complex
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:rebuild
-result=s:1
 treepath=s:1D Results\Power\Excitation [3]\Loss per Material\Volume loss in Rogers RO4350B (lossy)
 files=s:cVolume_loss_in_Rogers RO4350B (lossy)(3).sig
 
@@ -1401,8 +1569,28 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:rebuild
 result=s:1
+treepath=s:1D Results\Power\Excitation [3]\Loss per Material\Metal loss in Copper
+files=s:cMetal_loss_Copper(3).sig
+
+type=s:XYSIGNAL
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
 treepath=s:1D Results\Power\Excitation [3]\Loss in Metals
 files=s:cTotal_metal_loss(3).sig
+
+type=s:XYSIGNAL
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:1D Results\Power\Excitation [3]\Loss per Material\Wilkinson 5850MHz_Cu(PCB1)\Metal loss in Copper
+files=s:cMetal_loss_Wilkinson 5850MHz_Cu(PCB1)_Copper(3).sig
 
 type=s:XYSIGNAL
 subtype=s:complex
@@ -1511,8 +1699,8 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:rebuild
 result=s:1
-treepath=s:1D Results\Power\Excitation [2]\Loss per Material\Wilkinson 5850MHz_Cu(PCB1)\Metal loss in Copper
-files=s:cMetal_loss_Wilkinson 5850MHz_Cu(PCB1)_Copper(2).sig
+treepath=s:1D Results\Power\Excitation [2]\Loss per Material\Volume loss in Rogers RO4350B (lossy)
+files=s:cVolume_loss_in_Rogers RO4350B (lossy)(2).sig
 
 type=s:XYSIGNAL
 subtype=s:complex
@@ -1521,8 +1709,8 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:rebuild
 result=s:1
-treepath=s:1D Results\Power\Excitation [2]\Loss per Material\Volume loss in Rogers RO4350B (lossy)
-files=s:cVolume_loss_in_Rogers RO4350B (lossy)(2).sig
+treepath=s:1D Results\Power\Excitation [2]\Loss per Material\Metal loss in Copper
+files=s:cMetal_loss_Copper(2).sig
 
 type=s:XYSIGNAL
 subtype=s:complex
@@ -1541,8 +1729,18 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:rebuild
 result=s:1
-treepath=s:1D Results\Power\Excitation [1]\Power Accepted per Port\Port 2
-files=s:AcceptedPower_2(1).sig
+treepath=s:1D Results\Power\Excitation [2]\Loss per Material\Wilkinson 5850MHz_Cu(PCB1)\Metal loss in Copper
+files=s:cMetal_loss_Wilkinson 5850MHz_Cu(PCB1)_Copper(2).sig
+
+type=s:XYSIGNAL
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:1D Results\Power\Excitation [2]\Loss per Lumped Element\Folder1\Loss in element R1
+files=s:plFolder1[b]R1(2).sig
 
 type=s:XYSIGNAL
 subtype=s:complex
@@ -1601,8 +1799,8 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:rebuild
 result=s:1
-treepath=s:1D Results\Power\Excitation [2]\Loss per Lumped Element\Folder1\Loss in element R1
-files=s:plFolder1[b]R1(2).sig
+treepath=s:1D Results\Power\Excitation [1]\Power Stimulated
+files=s:StimulatedPower_1.sig
 
 type=s:XYSIGNAL
 subtype=s:complex
@@ -1621,8 +1819,18 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:rebuild
 result=s:1
-treepath=s:1D Results\Power\Excitation [1]\Power Stimulated
-files=s:StimulatedPower_1.sig
+treepath=s:1D Results\Power\Excitation [1]\Power Accepted per Port\Port 2
+files=s:AcceptedPower_2(1).sig
+
+type=s:XYSIGNAL
+subtype=s:complex
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:1D Results\Power\Excitation [1]\Loss per Material\Volume loss in Rogers RO4350B (lossy)
+files=s:cVolume_loss_in_Rogers RO4350B (lossy)(1).sig
 
 type=s:XYSIGNAL
 subtype=s:complex
@@ -1641,8 +1849,8 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:rebuild
 result=s:1
-treepath=s:1D Results\Power\Excitation [1]\Loss per Material\Wilkinson 5850MHz_Cu(PCB1)\Metal loss in Copper
-files=s:cMetal_loss_Wilkinson 5850MHz_Cu(PCB1)_Copper(1).sig
+treepath=s:1D Results\Power\Excitation [1]\Loss per Material\Metal loss in Copper
+files=s:cMetal_loss_Copper(1).sig
 
 type=s:XYSIGNAL
 subtype=s:complex
@@ -1671,8 +1879,8 @@ visibility=s:visible
 creation=s:internal
 lifetime=s:rebuild
 result=s:1
-treepath=s:1D Results\Power\Excitation [1]\Loss per Material\Volume loss in Rogers RO4350B (lossy)
-files=s:cVolume_loss_in_Rogers RO4350B (lossy)(1).sig
+treepath=s:1D Results\Power\Excitation [1]\Loss per Material\Wilkinson 5850MHz_Cu(PCB1)\Metal loss in Copper
+files=s:cMetal_loss_Wilkinson 5850MHz_Cu(PCB1)_Copper(1).sig
 
 type=s:XYSIGNAL
 subtype=s:complex
@@ -1903,114 +2111,4 @@ lifetime=s:rebuild
 result=s:1
 treepath=s:1D Results\Port Information\Port Modes_pmi\3(1)
 files=s:Gamma_3(1)_pmi.sig
-
-type=s:XYSIGNAL
-subtype=s:user
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:persistent
-result=s:0
-treepath=s:1D Results\Materials\Rogers RO4350B (lossy)\Dispersive\Eps' (Fit)
-files=s:Rogers RO4350B (lossy)_eps_re.sig
-
-type=s:XYSIGNAL
-subtype=s:user
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:persistent
-result=s:0
-treepath=s:1D Results\Materials\Rogers RO4350B (lossy)\Dispersive\Eps'' (Fit)
-files=s:Rogers RO4350B (lossy)_eps_im.sig
-
-type=s:XYSIGNAL
-subtype=s:user
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:persistent
-result=s:0
-treepath=s:1D Results\Materials\Rogers RO4350B (lossy)\Dispersive\Eps TangD (Fit)
-files=s:Rogers RO4350B (lossy)_eps_tgd.sig
-
-type=s:XYSIGNAL
-subtype=s:user
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:persistent
-result=s:0
-treepath=s:1D Results\Materials\Wilkinson 5850MHz_Cu(PCB1)\Copper\Surface Impedance\Z' (Fit)
-files=s:Wilkinson 5850MHz_Cu(PCB1)\Copper_Z_re.sig
-
-type=s:XYSIGNAL
-subtype=s:user
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:persistent
-result=s:0
-treepath=s:1D Results\Materials\Wilkinson 5850MHz_Cu(PCB1)\Copper\Surface Impedance\Z'' (Fit)
-files=s:Wilkinson 5850MHz_Cu(PCB1)\Copper_Z_im.sig
-
-type=s:XYSIGNAL
-subtype=s:user
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:persistent
-result=s:0
-treepath=s:1D Results\Materials\Wilkinson 5850MHz_Cu(PCB1)\Copper\Surface Impedance\Z' (Theory)
-files=s:Wilkinson 5850MHz_Cu(PCB1)\Copper_Z_datalist_re.sig
-
-type=s:XYSIGNAL
-subtype=s:user
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:persistent
-result=s:0
-treepath=s:1D Results\Materials\Wilkinson 5850MHz_Cu(PCB1)\Copper\Surface Impedance\Z'' (Theory)
-files=s:Wilkinson 5850MHz_Cu(PCB1)\Copper_Z_datalist_im.sig
-
-type=s:XYSIGNAL
-subtype=s:user
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:persistent
-result=s:0
-treepath=s:1D Results\Materials\Wilkinson 5850MHz_Cu(PCB1)\VIAS_MATERIAL\Surface Impedance\Z' (Fit)
-files=s:Wilkinson 5850MHz_Cu(PCB1)\VIAS_MATERIAL_Z_re.sig
-
-type=s:XYSIGNAL
-subtype=s:user
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:persistent
-result=s:0
-treepath=s:1D Results\Materials\Wilkinson 5850MHz_Cu(PCB1)\VIAS_MATERIAL\Surface Impedance\Z'' (Fit)
-files=s:Wilkinson 5850MHz_Cu(PCB1)\VIAS_MATERIAL_Z_im.sig
-
-type=s:XYSIGNAL
-subtype=s:user
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:persistent
-result=s:0
-treepath=s:1D Results\Materials\Wilkinson 5850MHz_Cu(PCB1)\VIAS_MATERIAL\Surface Impedance\Z' (Theory)
-files=s:Wilkinson 5850MHz_Cu(PCB1)\VIAS_MATERIAL_Z_datalist_re.sig
-
-type=s:XYSIGNAL
-subtype=s:user
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:persistent
-result=s:0
-treepath=s:1D Results\Materials\Wilkinson 5850MHz_Cu(PCB1)\VIAS_MATERIAL\Surface Impedance\Z'' (Theory)
-files=s:Wilkinson 5850MHz_Cu(PCB1)\VIAS_MATERIAL_Z_datalist_im.sig
 

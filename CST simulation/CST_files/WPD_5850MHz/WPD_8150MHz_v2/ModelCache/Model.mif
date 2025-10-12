@@ -5,7 +5,7 @@
 [PCB_IMPORT_NEW: True]
 [DISABLE_FAST_LOAD: False]
 [WCS: 6054.0487007897063 -3067 0 0 0 1 1 0 0]
-[BBOX:5611.9980051711373 7376.0993964082754 -3627 -2507 -465.82069561856918 21]
+[BBOX:5611.9980051711373 7376.0993964082754 -3989.0506956185691 -2144.9493043814309 -465.82069561856918 21]
 [BBOX_STRUCTURE:5974.0487007897063 7014.0487007897063 -3627 -2507 -103.77000000000001 21]
 [UNITS]
      .SetUnit "Length", "mil"
@@ -35,8 +35,8 @@ Solver.FrequencyRange "7.3", "9"
 [BOUNDARY]
      .Xmin "expanded open"
      .Xmax "expanded open"
-     .Ymin "electric"
-     .Ymax "electric"
+     .Ymin "expanded open"
+     .Ymax "expanded open"
      .Zmin "expanded open"
      .Zmax "electric"
      .Xsymmetry "none"

@@ -915,6 +915,36 @@
                 "     .DetectThinDielectrics \"True\" ",
                 "End With"
             ]
+        },
+        {
+            "caption": "define boundaries",
+            "version": "2024.0|33.0.1|20230901",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With Boundary",
+                "     .Xmin \"expanded open\"",
+                "     .Xmax \"expanded open\"",
+                "     .Ymin \"expanded open\"",
+                "     .Ymax \"expanded open\"",
+                "     .Zmin \"expanded open\"",
+                "     .Zmax \"electric\"",
+                "     .Xsymmetry \"none\"",
+                "     .Ysymmetry \"none\"",
+                "     .Zsymmetry \"none\"",
+                "     .ApplyInAllDirections \"False\"",
+                "     .OpenAddSpaceFactor \"0.5\"",
+                "End With"
+            ]
+        },
+        {
+            "caption": "change material: Wilkinson 10500MHz_v2_Cu(PCB1):PEC to: Copper",
+            "version": "2024.0|33.0.1|20230901",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Solid.ChangeMaterial \"Wilkinson 10500MHz_v2_Cu(PCB1):PEC\", \"Copper\""
+            ]
         }
     ]
 }

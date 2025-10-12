@@ -23,15 +23,6 @@
   <ResultGroups num_steps="0" transformation="1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1" process_mesh_group="0">
     <SharedDataWith/>
   </ResultGroups>
-  <InfoText num_lines="7">
-    <InfoTextLine key="Type" value="High Frequency Mesh" visible="1"/>
-    <InfoTextLine key="Tetrahedrons" value="25,098" visible="1"/>
-    <InfoTextLine key="Min. edge length" value="0.0903419" visible="0"/>
-    <InfoTextLine key="Max. edge length" value="251.756" visible="0"/>
-    <InfoTextLine key="Min. quality" value="0.00474868" visible="0"/>
-    <InfoTextLine key="Max. quality" value="0.993177" visible="0"/>
-    <InfoTextLine key="Avg. quality" value="0.626773" visible="0"/>
-  </InfoText>
   <AutoScale>
     <SmartScaling log_strength="1" log_anchor="0" log_anchor_type="0" db_range="40" phase="0"/>
   </AutoScale>
