@@ -1,4 +1,4 @@
-26634610375617738
+26752474225115324
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -74696,6 +74696,447 @@ DIL DIP PDIP 2.54mm 7.62mm 300mil
 0
 4
 4
+PDG Footprints
+Amphenol_MCX_SMD
+http://www.molex.com/pdm_docs/sd/734151471_sd.pdf
+Molex MMCX Coaxial Connector 50 ohms Female Jack Vertical THT
+0
+5
+2
+PDG Footprints
+BC020-08-A
+Through hole straight pin header, 1x08, 1.00mm pitch, single row
+Through hole pin header THT 1x08 1.00mm single row
+0
+8
+8
+PDG Footprints
+BC075-08-A-L-A
+
+
+0
+8
+8
+PDG Footprints
+CON120_2X60_UTZF_FX2C
+
+FX2-120P-1.27SV71 
+0
+122
+122
+PDG Footprints
+D_SOD-882
+http://www.diodes.com/datasheets/ap02001.pdf p.144
+Diode SOD523
+0
+2
+2
+PDG Footprints
+EHC-24L
+QFN, 12 Pin (http://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-qfn/QFN_12_%2005-08-1855.pdf), generated with kicad-footprint-generator ipc_dfn_qfn_generator.py
+QFN DFN_QFN
+0
+14
+3
+PDG Footprints
+Filter_LFCV-45+
+
+
+0
+4
+4
+PDG Footprints
+Filter_MC_FV1206
+Mini-Circuits Filter SMD 1206 https://ww2.minicircuits.com/case_style/FV1206.pdf
+Mini-Circuits Filter SMD 1206
+0
+6
+4
+PDG Footprints
+GAT_PL-126
+
+
+0
+4
+4
+PDG Footprints
+GCT_BC075_1x08-1MP_P1.0mm_Horizontal
+TE FPC connector, 06 bottom-side contacts, 1.0mm pitch, 1.0mm height, SMT, http://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=84952&DocType=Customer+Drawing&DocLang=English&DocFormat=pdf&PartCntxt=84952-4
+te fpc 84952
+0
+8
+8
+PDG Footprints
+GP2X+
+QFN, 12 Pin (https://www.nxp.com/docs/en/data-sheet/MMZ09332B.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
+QFN NoLead
+0
+18
+4
+PDG Footprints
+HFCG-4400+
+Mini-Circuits Filter SMD 1206 https://ww2.minicircuits.com/case_style/FV1206-1.pdf
+Mini-Circuits Filter SMD 1206
+0
+6
+6
+PDG Footprints
+HMC451LP3E
+QFN, 16 Pin (http://www.cypress.com/file/46236/download), generated with kicad-footprint-generator ipc_dfn_qfn_generator.py
+QFN DFN_QFN
+0
+31
+13
+PDG Footprints
+HMC510LP5E
+32 Lead 5x5mm SMT
+Integrated Circuit
+0
+33
+33
+PDG Footprints
+HMC547ALP3E
+QFN, 16 Pin (https://www.onsemi.com/pub/Collateral/NCN4555-D.PDF), generated with kicad-footprint-generator ipc_noLead_generator.py
+QFN NoLead
+0
+26
+17
+PDG Footprints
+Hittite_LP4E_Thermal_Vias
+QFN, 24 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/hmc431.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
+QFN NoLead
+0
+39
+25
+PDG Footprints
+JC0603C
+JC0603C_2024-2
+Filter
+0
+6
+6
+PDG Footprints
+L78LXXA
+
+L78L05ACUTR 
+0
+3
+3
+PDG Footprints
+LFCSP-32-1EP_5x5mm_P0.5mm_EP
+LFCSP, 32 Pin (https://www.analog.com/media/en/package-pcb-resources/package/414143737956480539664569cp_32_2.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
+LFCSP NoLead
+0
+52
+33
+PDG Footprints
+LINX_CONSMA003.031-L-G
+
+
+0
+5
+2
+PDG Footprints
+MCLP-8_3x3mm_EP1.7x1.7mm
+QFN, 12 Pin (http://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-qfn/QFN_12_%2005-08-1855.pdf), generated with kicad-footprint-generator ipc_dfn_qfn_generator.py
+QFN DFN_QFN
+0
+18
+9
+PDG Footprints
+MCX_Vertical
+http://www.molex.com/pdm_docs/sd/734151471_sd.pdf
+Molex MMCX Coaxial Connector 50 ohms Female Jack Vertical THT
+0
+5
+2
+PDG Footprints
+MMCX_Vertical
+http://www.molex.com/pdm_docs/sd/734151471_sd.pdf
+Molex MMCX Coaxial Connector 50 ohms Female Jack Vertical THT
+0
+5
+2
+PDG Footprints
+MOLEX_71430-0101
+
+
+0
+70
+70
+PDG Footprints
+Mini-Circuits_98-PL-597
+QFN, 12 Pin (http://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-qfn/QFN_12_%2005-08-1855.pdf), generated with kicad-footprint-generator ipc_dfn_qfn_generator.py
+QFN DFN_QFN
+0
+15
+3
+PDG Footprints
+Mitre_20mil
+Mitre for 20mil RO4350B
+mitre bend
+0
+2
+2
+PDG Footprints
+Mitre_31mil
+Mitre for 31mil FR4 board
+mitre bend
+0
+2
+2
+PDG Footprints
+Mixer_DZ885
+SOIC, 10 Pin (https://www.onsemi.com/pub/Collateral/751BQ.PDF), generated with kicad-footprint-generator ipc_gullwing_generator.py
+SOIC SO SOIC-10 NB
+0
+10
+10
+PDG Footprints
+Molex_52271-0679_1x06-1MP_P1.0mm_Horizontal
+TE FPC connector, 06 bottom-side contacts, 1.0mm pitch, 1.0mm height, SMT, http://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=84952&DocType=Customer+Drawing&DocLang=English&DocFormat=pdf&PartCntxt=84952-4
+te fpc 84952
+0
+8
+7
+PDG Footprints
+Molex_52271-1479_1x14-1MP_P1.0mm_Horizontal
+TE FPC connector, 14 bottom-side contacts, 1.0mm pitch, 1.0mm height, SMT, http://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=84952&DocType=Customer+Drawing&DocLang=English&DocFormat=pdf&PartCntxt=84952-4
+te fpc 84952
+0
+16
+15
+PDG Footprints
+PV37X
+Potentiometer, horizontal, Bourns 3266X, https://www.bourns.com/docs/Product-Datasheets/3266.pdf
+Potentiometer horizontal Bourns 3266X
+0
+3
+3
+PDG Footprints
+Potentiometer_Bourns_3266X_Horizontal
+Potentiometer, horizontal, Bourns 3266X, https://www.bourns.com/docs/Product-Datasheets/3266.pdf
+Potentiometer horizontal Bourns 3266X
+0
+3
+3
+PDG Footprints
+QFN-12-1EP_3x3mm_P0.5mm_EP1.24x1.24mm_ThermalVias
+QFN, 12 Pin (https://www.nxp.com/docs/en/data-sheet/MMZ09332B.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
+QFN NoLead
+0
+15
+13
+PDG Footprints
+QFN-16-1EP_3x3mm_P0.5mm_EP1.7x1.7mm_Vias
+QFN, 16 Pin (http://www.cypress.com/file/46236/download), generated with kicad-footprint-generator ipc_dfn_qfn_generator.py
+QFN DFN_QFN
+0
+31
+17
+PDG Footprints
+QFN-20-1EP_4x4mm_P0.5mm_EP1.8x1.8mm
+QFN, 20 Pin (http://ww1.microchip.com/downloads/en/PackagingSpec/00000049BQ.pdf#page=274), generated with kicad-footprint-generator ipc_noLead_generator.py
+QFN NoLead
+0
+27
+21
+PDG Footprints
+QFN-24-VCO
+QFN, 24 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/hmc431.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
+QFN NoLead
+0
+35
+25
+PDG Footprints
+RF_MC_Mar6SM
+
+
+0
+4
+4
+PDG Footprints
+RF_MC_Mar6SM_1
+
+
+0
+4
+4
+PDG Footprints
+SHM-110-02_P2.54mm_SMD
+surface-mounted straight socket strip, 2x10, 2.54mm pitch, double cols (from Kicad 4.0.7), script generated
+Surface mounted socket strip SMD 2x10 2.54mm double row
+0
+20
+20
+PDG Footprints
+SIM-83+
+SO, 8 Pin (https://www.nxp.com/docs/en/data-sheet/PCF8523.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
+SO SO
+0
+12
+4
+PDG Footprints
+SMA_BoardEdge_142-0761-831
+https://belfuse.com/resources/Johnson/productinformation/pi-142-0701-801.pdf
+
+0
+13
+2
+PDG Footprints
+SMA_Molex_73251-2120_EdgeMount_Horizontal_Modification
+Molex SMA RF Connector, Edge Mount, (http://www.molex.com/pdm_docs/sd/732512120_sd.pdf)
+sma edge
+0
+7
+2
+PDG Footprints
+SOIC-8
+
+
+0
+8
+8
+PDG Footprints
+SOT-89-4
+http://www.digikey.com/products/en?keywords=863-1063-1-ND
+
+0
+4
+4
+PDG Footprints
+SOT-223-3
+module CMS SOT223 4 pins
+CMS SOT
+0
+4
+4
+PDG Footprints
+SOT-223_3MC_MCH
+
+MCP1826S-3002E/DB 
+0
+3
+3
+PDG Footprints
+SOT-223_3MC_MCH-L
+
+MCP1826S-3002E/DB 
+0
+3
+3
+PDG Footprints
+SOT-223_3MC_MCH-M
+
+MCP1826S-3002E/DB 
+0
+3
+3
+PDG Footprints
+SOT-323FL_SC-85_Handsoldering
+SOT-323, SC-70 Handsoldering
+SOT-323 SC-70 Handsoldering
+0
+3
+3
+PDG Footprints
+SOT230P700X180-4N
+
+
+0
+4
+4
+PDG Footprints
+TRIM_PVG5A
+Potentiometer, vertical, Bourns 3214W, https://www.bourns.com/docs/Product-Datasheets/3214.pdf
+Potentiometer vertical Bourns 3214W
+0
+3
+3
+PDG Footprints
+Untitled
+
+
+0
+1
+1
+PDG Footprints
+WPD_2Ring_3500
+Original setup based on APPCAD Calculation
+
+0
+7
+7
+PDG Footprints
+WPD_2Ring_3500_RO4350B
+Change the pad size from 41.9 mils to 42 mils
+
+0
+7
+7
+PDG Footprints
+WPD_2Ring_3500_RO4350B_test
+The inpud pad size is 41.9 mils for 50 Ohms impedance
+
+0
+7
+7
+PDG Footprints
+WPD_2Ring_5850_RO4350B
+WPD for Frequency range [5 6.7] GHz
+
+0
+7
+7
+PDG Footprints
+WPD_2Ring_8150_RO4350B
+WPD for Frequency range [7.3 9.0] GHz
+
+0
+7
+7
+PDG Footprints
+WPD_2Ring_8150_RO4350B_test
+WPD for Frequency range [7.3 9.0] GHz
+
+0
+7
+7
+PDG Footprints
+WPD_2Ring_10500_RO4350B
+WPD for Frequency range [9 12] GHz
+
+0
+7
+7
+PDG Footprints
+WPD_2Ring_10500_RO4350B_test
+WPD for Frequency range [9 12] GHz
+
+0
+7
+7
+PDG Footprints
+WPD_2Ring_10500_RO4350B_test3
+WPD for Frequency range [9 12] GHz
+
+0
+7
+7
+PDG Footprints
+WPD_Input_Output_Pad
+
+
+0
+1
+1
+PDG Footprints
+byteofpython_120 copy
+surface-mounted straight socket strip, 2x10, 2.54mm pitch, double cols (from Kicad 4.0.7), script generated
+Surface mounted socket strip SMD 2x10 2.54mm double row
+0
+20
+20
 Package_BGA
 Alliance_TFBGA-36_6x8mm_Layout6x8_P0.75mm
 Alliance TFBGA-36, NSMD, 6.0x8.0mm, 36 Ball, 6x8 Layout, 0.75mm Pitch, generated with kicad-footprint-generator ipc_bga_generator.py, https://www.alliancememory.com/wp-content/uploads/pdf/AS6C1008_Mar_2023V1.2.pdf#page=13
@@ -94772,6 +95213,34 @@ Shielding Cabinet
 0
 48
 1
+RF_WPD
+Pad for termination
+
+
+0
+1
+1
+RF_WPD
+WPD_2Ring_3500
+
+
+0
+7
+7
+RF_WPD
+WPD_2Ring_3500_RO4350B
+
+
+0
+7
+7
+RF_WPD
+WPD_2Ring_5850_RO4350B
+
+
+0
+7
+7
 RF_WiFi
 USR-C322
 https://www.usriot.com/download/WIFI/USR-C322-Hardware-Manual_V1.2.01.pdf
