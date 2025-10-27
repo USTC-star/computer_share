@@ -1,0 +1,16 @@
+*** STARTING PCB CONVERSION ***
+
+Importing C:\Users\PinJung\Desktop\computer_share\CST simulation\Structure from Kicad\Wilkinson 10500MHz_v2_Cu.gbr... [Sun Oct  5 18:43:50 2025]
+============================================================
+Reading Gerber files ...
+
+Finished reading Gerber database.
+============================================================
+*** ENDING PCB CONVERSION with SUCCESS***
+
+========== Starting Layout Check ==========
+Checking geometry
+Looking for geometry artifacts
+Looking for healed shape problems
+
+========== End Layout Check ==========
