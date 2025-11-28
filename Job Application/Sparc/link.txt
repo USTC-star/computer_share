@@ -1,0 +1,15 @@
+https://jobs.lever.co/cfsenergy/607ff1ed-771f-4b37-8997-250f93c7150f
+
+
+Interpreting experimental diagnostics data in tokamaks, while considering non-ideal effects, is
+challenging due to the complexity of plasmas. To address this challenge, a general synthetic
+diagnostics (GSD) platform has been established that facilitates microwave imaging
+reflectometry and electron cyclotron emission imaging. This platform utilizes plasma profiles as
+input and incorporates the finite-difference time domain, ray tracing and the radiative transfer
+equation to calculate the propagation of plasma spontaneous radiation and the external
+electromagnetic field in plasmas. Benchmark tests for classical cases have been conducted to
+verify the accuracy of every core module in the GSD platform. Finally, 2D imaging of a typical
+electron temperature distribution is reproduced by this platform and the results are consistent
+with the given real experimental data. This platform also has the potential to be extended to 3D
+electromagnetic field simulations and other microwave diagnostics such as cross-polarization
+scattering.
