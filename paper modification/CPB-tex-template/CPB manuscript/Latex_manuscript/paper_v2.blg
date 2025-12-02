@@ -3,7 +3,7 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: paper_v2.aux
 The style file: iopart-num.bst
 Database file #1: aipsamp_ADE.bib
-Repeated entry---line 288 of file aipsamp_ADE.bib
+Repeated entry---line 599 of file aipsamp_ADE.bib
  : @article{ginzburg1996radiation
  :                               ,
 I'm skipping whatever remains of this entry
@@ -11,43 +11,43 @@ Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--empty journal in gorozhanin1997waves
 You've used 41 entries,
             3033 wiz_defined-function locations,
-            872 strings with 11938 characters,
-and the built_in function-call counts, 33449 in all, are:
-= -- 3611
-> -- 499
+            873 strings with 11971 characters,
+and the built_in function-call counts, 33863 in all, are:
+= -- 3656
+> -- 514
 < -- 0
-+ -- 282
-- -- 206
-* -- 2113
-:= -- 4010
++ -- 287
+- -- 211
+* -- 2147
+:= -- 4054
 add.period$ -- 0
 call.type$ -- 41
 change.case$ -- 2
 chr.to.int$ -- 0
 cite$ -- 42
-duplicate$ -- 3024
-empty$ -- 3223
-format.name$ -- 156
-if$ -- 7495
+duplicate$ -- 3058
+empty$ -- 3258
+format.name$ -- 161
+if$ -- 7592
 int.to.chr$ -- 0
 int.to.str$ -- 41
-missing$ -- 441
+missing$ -- 446
 newline$ -- 133
 num.names$ -- 41
-pop$ -- 907
+pop$ -- 912
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
 skip$ -- 398
 stack$ -- 0
-substring$ -- 4940
-swap$ -- 930
+substring$ -- 5011
+swap$ -- 940
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
-while$ -- 536
+while$ -- 540
 width$ -- 43
 write$ -- 333
 (There was 1 error message)

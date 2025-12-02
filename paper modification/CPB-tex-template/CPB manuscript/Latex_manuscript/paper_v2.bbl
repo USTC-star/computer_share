@@ -20,10 +20,6 @@ Ginzburg V~L 1960 {\em Soviet Physics Uspekhi\/} {\bf 2} 874
 Shustin E, POPOVICH P and Kharchenko I 1971 {\em SOVIET PHYSICS JETP\/} {\bf
   32}
 
-\bibitem{ginzburg1946radiation}
-Ginzburg V and Frank I 1946 {\em Journ. of Experimental and Theoretical Physics
-  (JETP) V\/} {\bf 16} 15--26
-
 \bibitem{nezlin1976negative}
 Nezlin M~V 1976 {\em Soviet Physics Uspekhi\/} {\bf 19} 946
 
@@ -148,5 +144,9 @@ Zhang R, Liu J, Qin H, Wang Y, He Y and Sun Y 2015 {\em Physics of Plasmas\/}
 
 \bibitem{liu2016collisionless}
 Liu J, Wang Y and Qin H 2016 {\em Nuclear Fusion\/} {\bf 56} 064002
+
+\bibitem{zhao2022plasma}
+Zhao Y, Bai J, Cao Y, Wu S, Ahedo E, Merino M and Tian B 2022 {\em Chinese
+  Physics B\/} {\bf 31} 075203
 
 \end{thebibliography}
