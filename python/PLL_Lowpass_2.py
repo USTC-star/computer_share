@@ -15,14 +15,16 @@ t = np.arange(0, T, 1/fs)
 N = len(t)
 
 # 输入信号：1kHz 正弦波，在 0.05s 时发生频率跳变到 1.1kHz
-f_in = np.ones(N) * 1000
-f_in[N//2:] = 1300 
+f_in = np.ones(N) * 900
+f_in[N//4:] = 1300 
+f_in[N//3:] = 800 
+f_in[N//2:] = 900 
 phase_in = 2 * np.pi * np.cumsum(f_in) / fs
 sig_in = np.sin(phase_in)
 
 # 2. 环路滤波器参数 (基于你之前的电路)
 # F(s) = (1 + s/w2) / (1 + s/w1) -> 离散化处理
-R1, R2, C =10000, 2000,1e-6
+R1, R2, C = 20000, 20000,7e-6
 w1 = 1 / (C * (R1 + R2))
 w2 = 1 / (C * R2)
 
@@ -44,8 +46,8 @@ v_control = np.zeros(N)
 freq_vco = np.zeros(N)
 
 # --- 在参数设置区新增 ---
-R3 = 20000     # 2k Ohm
-C3 = 1e-8     # 0.1 uF
+R3 = 30000     # 2k Ohm
+C3 = 2e-8     # 0.1 uF
 tau3 = R3 * C3 # 第三个极点的时间常数
 
 # --- 在初始化区新增 ---
@@ -81,17 +83,25 @@ window_size = 500
 v_smooth = np.convolve(v_control, np.ones(window_size)/window_size, mode='same')
 fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(10, 8))
 
+
+
+# --- Top plot: Frequency tracking ---
 ax1.plot(t, f_in, 'r', label='Input Freq')
 ax1.plot(t, freq_vco, 'b', label='VCO Freq')
 ax1.set_title('Frequency Tracking')
 ax1.legend()
 ax1.grid(True)
-
+ax1.set_xlim(0.0, 0.28)
+# --- Bottom plot: Control voltage ---
 ax2.plot(t, v_control, 'g')
-#ax2.plot(t, v_smooth, 'g')
+# ax2.plot(t, v_smooth, 'g')  # optional
 ax2.set_title('Control Voltage (Filter Output)')
 ax2.set_xlabel('Time (s)')
 ax2.grid(True)
 
+# --- Set x-axis limit ONCE (shared) ---
+ax2.set_xlim(0.0, 0.28)
+
+# --- Layout ---
 plt.tight_layout()
 plt.show()

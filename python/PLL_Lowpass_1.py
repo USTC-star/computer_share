@@ -16,13 +16,14 @@ N = len(t)
 
 # 输入信号：1kHz 正弦波，在 0.05s 时发生频率跳变到 1.1kHz
 f_in = np.ones(N) * 1000
-f_in[N//2:] = 1300 
+f_in[N//4:] = 1300 
+f_in[N//2:] = 700 
 phase_in = 2 * np.pi * np.cumsum(f_in) / fs
 sig_in = np.sin(phase_in)
 
 # 2. 环路滤波器参数 (基于你之前的电路)
 # F(s) = (1 + s/w2) / (1 + s/w1) -> 离散化处理
-R1, R2, C = 20000, 1,8e-7
+R1,R2,C = 5000,1E-19,9e-7
 w1 = 1 / (C * (R1 + R2))
 w2 = 1 / (C * R2)
 
