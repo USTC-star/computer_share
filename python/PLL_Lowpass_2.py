@@ -22,7 +22,7 @@ sig_in = np.sin(phase_in)
 
 # 2. 环路滤波器参数 (基于你之前的电路)
 # F(s) = (1 + s/w2) / (1 + s/w1) -> 离散化处理
-R1, R2, C = 20000, 2000,1e-6
+R1, R2, C =10000, 2000,1e-6
 w1 = 1 / (C * (R1 + R2))
 w2 = 1 / (C * R2)
 
@@ -92,6 +92,6 @@ ax2.plot(t, v_control, 'g')
 ax2.set_title('Control Voltage (Filter Output)')
 ax2.set_xlabel('Time (s)')
 ax2.grid(True)
-plt.xlim(0.10, 0.28)
+
 plt.tight_layout()
 plt.show()
