@@ -51,17 +51,17 @@ class Thicklens:
         self.H2 = -P23/P/n*d
         self.Matrix = np.array([[1,0],[-1/self.f,1]])
 
-# def main():
+def main():
 # ---------- Example ----------
-beam = GaussianBeam(w0=1e-3, lambda0=10.6e-6)
-lens = ThinLens(r1=0.6, r2=-0.6, n=1.6)
-lens2 = Thicklens(r1=0.6, r2=-0.6, d=0.2, n=1.6)
-system = OpticalSystem(beam, lens, z=0.2)
-z_new, w0_new = system.compute_new_waist()
+    beam = GaussianBeam(w0=1e-3, lambda0=10.6e-6)
+    lens = ThinLens(r1=0.6, r2=-0.6, n=1.6)
+    lens2 = Thicklens(r1=0.6, r2=-0.6, d=0.2, n=1.6)
+    system = OpticalSystem(beam, lens, z=0.2)
+    z_new, w0_new = system.compute_new_waist()
     
-print("New waist position:", z_new)
-print("New waist size:", w0_new)
-print("thicklens foucs length f = :%.2f m" % lens2.f)
-print("thinlens foucs length f =  m" , lens2.Matrix)
-# if __name__ == "__main__":
-#         main()
+    print("New waist position:", z_new)
+    print("New waist size:", w0_new)
+    print("thicklens foucs length f = :%.2f m" % lens2.f)
+    print("thicklens matrix :" , lens2.Matrix)
+if __name__ == "__main__":
+        main()
