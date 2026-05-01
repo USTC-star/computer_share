@@ -5,7 +5,7 @@ Created on Tue Apr 21 02:02:54 2026
 @author: PinJung
 
 """
-from IPython import get_ipython
+from  IPython import get_ipython
 get_ipython().run_line_magic('reset', '-sf')
 
 n = 1.623449
