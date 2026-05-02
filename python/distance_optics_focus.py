@@ -26,3 +26,39 @@ H2_1 = optics2.h1*1
 f_h = optics2.f + H2_1
 delatD = xi - optics2.f_h1
 print("deltaD:%.9f m"% delatD)
+#calculate the distance of the object from last focus lens if
+#the image is  1850 mm in front of the last lens
+
+optics5 = OpticalMatrix(lens5.Matrix)
+x0 = optics5.transform_raytrace(-2.4)
+optics4 = OpticalMatrix(lens4.Matrix)
+xd = optics4.transform_raytrace(-1e99)
+x=x0+xd
+f4h2=optics4.f_h2
+
+lens= Thicklens(r1=1,r2=-1,d=2,n=1.5)
+optics=OpticalMatrix(lens.Matrix)
+h1=optics.h1
+h2=optics.h2
+f =optics.f
+
+xi = optics5.transform_raytrace(-x0)
+
+space = SpaceMatrix(x)
+M = lens5.Matrix@space.Matrix@lens4.Matrix
+optics=OpticalMatrix(M)
+#xd = optics.transform_raytrace(-1e99)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
