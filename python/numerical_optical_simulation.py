@@ -44,6 +44,8 @@ class Thicklens:
         self.h1 = (1-self.M22)/self.M21
         self.h2 = (1-self.M11)/self.M21
         self.f  = -1/self.M21
+        self.f_h1 = -self.f - self.h1 
+        self.f_h2 = self.f + self.h2 
 
 class OpticalMatrix:
     def __init__(self,Mtotal):
