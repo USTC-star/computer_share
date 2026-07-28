@@ -1,0 +1,8 @@
+LEN NEW
+DDM M
+SEE 0
+RES "D:\MIRmaterial\HL-3_MIR\Optical_HL3_TEST.5.len"
+SAV "D:\MIRmaterial\HL-3_MIR\Optical_HL3_Simple_Model.len"
+DEL S2..7
+SAV "D:\MIRmaterial\HL-3_MIR\Optical_HL3_Simple_Model.len"
+EXI Y

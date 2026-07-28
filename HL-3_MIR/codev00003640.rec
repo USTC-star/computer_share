@@ -1,0 +1,8 @@
+LEN NEW
+DDM M
+SEE 0
+RES "D:\MIRmaterial\HL-3_MIR\Optical_HL3_Simple_Model.len"
+ROF 'F11.5' X Y Z AOI
+GLO S1 0 0 0
+RSI SO..12 W1 F1 R1
+EXI Y
