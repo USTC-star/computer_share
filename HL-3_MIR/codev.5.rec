@@ -1,0 +1,20 @@
+LEN NEW
+DDM M
+SEE 0
+RES "D:\MIRmaterial\HL-3_MIR\Optical_HL3.1.len"
+WAV ; BES; RFO; GO
+MTF ; GO
+PSF ; GO
+in cv_macro:cvquickrim OPD
+FIE ; GO
+WAV ; BES; RFO; GO
+MTF ; GO
+PSF ; GO
+in cv_macro:cvquickrim
+in cv_macro:cvquickrim OPD
+FIE ; GO
+SLB S19 'cutoff9'
+SLB S19 'cutoff9'
+in cv_macro:cvquickrim OPD
+FIE ; GO
+EXI Y
