@@ -108,6 +108,8 @@ def main():
     lens1= Thicklens(r1=1e99,r2=-2,d=0.18,n=1.623450)
     lens2= Thicklens(r1=2,r2=1e99,d=0.15,n=1.623450)
     lens3= Thicklens(r1=-0.6,r2=1e99,d=0.1,n=1.623450)
+    len_thin=ThinLens.set_focal_length(10)
+    print("len_thin:%.3f m" % len_thin.f)
     for sj in s :
     
         space =SpaceMatrix(sj)
