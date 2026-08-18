@@ -1,0 +1,77 @@
+LEN NEW
+DDM M
+SEE 0
+RES "D:\MIRmaterial\MIRoptical\illumination\endmode\nonthing is final\MIR_optics_Tx_combine_upgrad_3.len"
+SLB S6 'parabolic'
+THI  S3 200
+DEL PIK THI S5
+PIK THI S5 THI S3 -1 420
+THI  S6 -340
+THI  S7 300
+ADE  S6 40.5
+ADE  S7 40.5
+V3D ; GO
+ADE  S7 -40.5
+V3D ; GO
+ADE  S6 49.5
+ADE  S7 -49.5
+V3D ; GO
+DAR S8
+CDE  S8 45
+V3D ; GO
+CDE  S8 0
+BDE  S8 45
+V3D ; GO
+DAR S9
+BDE  S9 45
+RMD  S8 REFL
+BDE  S8 -45
+THI  S8 -390
+RMD  S9 REFL
+V3D ; GO
+BDE  S9 -45
+V3D ; GO
+THI  S9 -144
+V3D ; GO
+RMD  S8 REFR
+V3D ; GO
+THI  S8 390
+THI  S9 144
+V3D ; GO
+RMD  S9 REFR
+V3D ; GO
+DAR S10
+BDE  S10 53
+DAR S11
+BDE  S11 74
+V3D ; GO
+BDE  S11 -45
+V3D ; GO
+CXP; CAN;
+SAV "D:\MIRmaterial\MIRoptical\illumination\endmode\nonthing is final\20190927\20190927optical.len"
+V3D ; GO
+INS S12
+THI  S11 140
+THI  S12 70
+BEA
+WRX  7
+WRY  8
+GO
+BEA
+WRX  7
+WRY  8
+GO
+ADE  S6 0
+ADE  S6 45
+BEA
+WRX  7
+WRY  8
+GO
+ADE  S7 -45
+BEA
+WRX  7
+WRY  8
+GO
+V3D ; GO
+SAV "D:\MIRmaterial\MIRoptical\illumination\endmode\nonthing is final\20190927\20190927optical.len"
+EXI Y

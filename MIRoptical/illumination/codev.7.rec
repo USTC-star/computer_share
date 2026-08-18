@@ -1,0 +1,23 @@
+LEN NEW
+DDM M
+SEE 0
+RES "D:\MIRmaterial\MIRoptical\illumination\MIR_Tx_20161130.len"
+THI  S1 150
+THI  S3 1529.8
+BEA; CAN;
+RDY  S2 -550
+RDY  S3 400
+BEA
+WRX  8.8
+WRY  9.5
+DIS  NO
+GO
+THI  S5 -200
+IND
+BEA
+WRX  8.8
+WRY  9.5
+DIS  NO
+GO
+SAV "D:\MIRmaterial\MIRoptical\illumination\MIR_Tx_20161130.len"
+EXI Y

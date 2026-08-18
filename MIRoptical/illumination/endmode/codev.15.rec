@@ -1,0 +1,14 @@
+LEN NEW
+DDM M
+SEE 0
+RES "D:\MIRmaterial\MIRoptical\illumination\endmode\MIR_optics_Tx_combine.2.len"
+V3D ; GO
+V3D ; GO
+in "C:\CODEV102\macro\setvig.seq" 1e-007 0.1 100 YES
+V3D ; GO
+BEA; CAN;
+BEA
+WRX  10
+WRY  12
+GO
+EXI Y

@@ -1,0 +1,11 @@
+LEN NEW
+DDM M
+SEE 0
+RES "D:\desktop\computer_share\HL-3_MIR\Optical_HL3_TEST_8.3.len"
+BEA
+WRX  7
+WRY  8
+SUR SO..22
+DIS  YES
+XZ NO
+GO

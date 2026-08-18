@@ -1,0 +1,7 @@
+LEN NEW
+DDM M
+CA APE
+SEE 0
+RES "D:\MIRmaterial\MIRoptical\MIRopticalrecent\MIRNEW.len"
+SAV "D:\MIRmaterial\MIRoptical\MIRopticalrecent\NarrowEdge Schematic.len"
+EXI Y

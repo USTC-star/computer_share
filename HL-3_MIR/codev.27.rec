@@ -1,0 +1,19 @@
+LEN NEW
+DDM M
+SEE 0
+RES "D:\desktop\computer_share\HL-3_MIR\Optical_HL3_TEST_8.3.len"
+VIE ; LAB; GO
+RDY  S8 -1100
+RDY  S9 -1300
+VIE ; LAB; GO
+RDY  S8 -900
+VIE ; LAB; GO
+RDY  S8 -500
+VIE ; LAB; GO
+BEA
+WRX  7
+WRY  8
+SUR SO..22
+DIS  YES
+XZ NO
+GO

@@ -1,0 +1,28 @@
+LEN NEW
+DDM M
+SEE 0
+RES "D:\MIRmaterial\MIRoptical\robust\Wide_cutoff1.len"
+THI  S1 335
+THI  S3 500
+RDY  S3 -900
+IN CV_MACRO:cvcurvaturex RDX  S3 -1000
+THI  S5 200
+THI  S7 100
+DEL S10..11
+THI  S9 2420
+THI  S11 50
+THI  S17 40
+THI  S18 20
+RDY  S17 450
+BPR; CAN;
+BPR
+RAN COL SPE
+PLO INT SA NO
+PLO AMP SA NO; PLO PHA SA NO
+WBF INT   S17..21 B1
+LIS INT   S17..I
+DIS INT SUR  S17..I
+GO
+SAV "D:\MIRmaterial\MIRoptical\robust\Wide_cutoff1.len"
+SAV "D:\MIRmaterial\MIRoptical\robust\Wide_cutoff_test.len"
+EXI Y

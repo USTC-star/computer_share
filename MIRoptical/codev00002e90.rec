@@ -1,0 +1,11 @@
+LEN NEW
+DDM M
+SEE 0
+RES "D:\MIRmaterial\MIRoptical\Narrow_Edge_Schematic.len"
+BEA; CAN;
+BEA
+WRX  22
+WRY  22
+DIS  YES
+GO
+EXI Y

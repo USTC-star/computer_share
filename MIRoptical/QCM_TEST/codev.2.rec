@@ -1,0 +1,8 @@
+LEN NEW
+DDM M
+SEE 0
+RES "D:\MIRmaterial\MIRoptical\QCM_TEST\tabelteast_beanspliterWithSpehercal.len"
+VIE ; LAB; GO
+V3D ; GO
+SAV "D:\MIRmaterial\MIRoptical\QCM_TEST\tabelteast_beanspliterWithSpehercal.len"
+EXI Y

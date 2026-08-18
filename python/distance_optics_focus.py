@@ -47,7 +47,7 @@ for d in ds:
     optics = OpticalMatrix(M)
     fh2s.append(optics.f_h2)
     
-plt.figure
+plt.figure(1)
 
 plt.plot(ds,fh2s)
 
@@ -56,7 +56,7 @@ plt.ylabel('f/m')
 
 print("fc=%.2fm"% fc)
 
-plt.show()
+
 
 
 Amp = []

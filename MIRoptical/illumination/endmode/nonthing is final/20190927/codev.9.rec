@@ -1,0 +1,17 @@
+LEN NEW
+DDM M
+SEE 0
+RES "D:\MIRmaterial\MIRoptical\illumination\endmode\nonthing is final\20190927\20190927optical.3.len"
+BEA; CAN;
+BEA
+WRX  7
+WRY  8
+GO
+BEA; CAN;
+BEA
+WRX  7
+WRY  8
+GO
+V3D ; GO
+VIE ; LAB; GO
+EXI Y

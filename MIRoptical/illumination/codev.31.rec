@@ -1,0 +1,7 @@
+LEN NEW
+DDM M
+CA APE
+SEE 0
+RES "D:\MIRmaterial\MIRoptical\illumination\MIR_optics_Tx_combine.3.len"
+V3D ; GO
+EXI Y

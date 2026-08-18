@@ -1,0 +1,37 @@
+LEN NEW
+DDM M
+CA APE
+SEE 0
+RES "D:\MIRmaterial\MIRoptical\illumination\endmode\nonthing is final\20190927\20190927optical.1.len"
+V3D ; GO
+SAV "D:\MIRmaterial\MIRoptical\illumination\endmode\nonthing is final\20190927\2019test.len"
+DEL S1..11
+DEL S3..9
+VIE ; LAB; GO
+V3D ; GO
+CYL S1
+RDY  S1 850
+V3D ; GO
+SPH S3
+RDY  S3 0
+V3D ; GO
+REY S1 120
+REX S1 200
+REY S3 120
+REX S3 200
+V3D ; GO
+THI  S1 25
+V3D ; GO
+RDY  S1 0
+RDY  S3 -850
+V3D ; GO
+CYL S3
+IN CV_MACRO:cvcurvaturex RDX  S3 0
+RDY  S3 -850
+V3D ; GO
+RDY  S3 850
+RDY  S3 850
+V3D ; GO
+RDY  S3 -850
+V3D ; GO
+EXI Y

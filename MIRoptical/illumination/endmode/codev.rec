@@ -1,0 +1,113 @@
+LEN NEW
+DDM M
+SEE 0
+RES "D:\MIRmaterial\MIRoptical\illumination\endmode\MIR_optics_Tx_combine_upgrad.len"
+ADE  S6 80
+ADE  S7 -80
+V3D ; GO
+THI  S6 -1928
+V3D ; GO
+THI  S6 -345
+V3D ; GO
+THI  S6 -978
+THI  S6 -978
+V3D ; GO
+THI  S6 -340
+ADE  S6 45
+SAV "C:\Users\81364\Desktop\test.len"
+DEL S8..18
+DEL S9..15
+DEL S10
+DEL S9
+DEL S8
+V3D ; GO
+RMD  S6 REFR
+THI  S7 -1650
+THI  S6 150
+SAV "C:\Users\81364\Desktop\test.len"
+V3D ; GO
+GL1 S6  651000
+V3D ; GO
+THI  S7 -50
+V3D ; GO
+ADE  S7 0
+in CV_MACRO:deldecenter S7;
+DEL BEN S6; XDE S6 (XDE S6)
+in CV_MACRO:deldecenter S6;
+VIE ; LAB; GO
+V3D ; GO
+GL1 S6  651000
+GL1 S6  651000.600000
+V3D ; GO
+GL1 S6
+INS S7
+GL1 S6  651000.600000
+THI  S6 15
+V3D ; GO
+CIR S7 78.1027123773768
+DEL APE S7; REY S7 78.1027123773768
+REY S7 250
+REX S7 150
+V3D ; GO
+THI  S7 150
+V3D ; GO
+IN CV_MACRO:cvcurvaturex RDX  S6 -1400
+BEA
+WRX  7
+WRY  8
+GO
+V3D ; GO
+V3D ; GO
+CXP; CAN;
+CXP
+TYP STE
+FIL "C:\Users\81364\Desktop\mirror.stp"
+LYR  S6..7 Z1..1 1
+RAT DEF;RFR
+GO
+CXP; CAN;
+CXP
+TYP STE
+FIL "C:\Users\81364\Desktop\zoom.stp"
+LYR  S4..5 Z1..1 1
+RAT DEF;RFR
+GO
+CXP; CAN;
+CXP
+TYP STE
+LYR  S4..5 Z1..1 1
+SUR  S4..5 Z1..1
+RVS  S4..5 Z1..1
+DUM  S4..5 Z1..1 APE
+RAT DEF;RFR
+GO
+CXP; CAN;
+CXP
+TYP STE
+FIL "C:\Users\81364\Desktop\zoom2.stp"
+LYR  S4..5 Z1..1 1
+SUR  S4..5 Z1..1
+RVS  S4..5 Z1..1
+DUM  S4..5 Z1..1 APE
+RAT DEF;RFR
+GO
+CXP; CAN;
+CXP
+TYP STE
+FIL "C:\Users\81364\Desktop\mirror2.stp"
+LYR  S6..7 Z1..1 1
+RVS  S6..7 Z1..1
+DUM  S6..7 Z1..1 APE
+RAT DEF;RFR
+GO
+CXP; CAN;
+CXP
+TYP STE
+FIL "C:\Users\81364\Desktop\mirror2.stp"
+LYR  S6..7 Z1..1 1
+SUR  S6..7 Z1..1
+RVS  S6..7 Z1..1
+DUM  S6..7 Z1..1 APE
+RAT DEF;RFR
+GO
+EXI Y

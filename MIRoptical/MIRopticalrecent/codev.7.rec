@@ -1,0 +1,9 @@
+LEN NEW
+DDM M
+SEE 0
+RES "D:\MIRmaterial\MIRoptical\MIRopticalrecent\NarrowEdge Schematic.len"
+RMD  S12 REFR
+V3D ; GO
+RMD  S12 REFL
+V3D ; GO
+EXI Y

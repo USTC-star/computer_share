@@ -1,0 +1,21 @@
+LEN NEW
+DDM M
+SEE 0
+RES "D:\desktop\computer_share\HL-3_MIR\Cooke triplet.len"
+VUY F1  1
+VLY F1  1
+VIE ; LAB; GO
+VUY F1  -1
+VLY F1  -1
+VIE ; LAB; GO
+set vig
+VIE ; LAB; GO
+VIE ; LAB; GO
+in cv_macro:unvig
+VIE ; LAB; GO
+in "D:\software\macro\setvig.seq" 1e-007 0.1 100 NO
+VIE ; LAB; GO
+VUY F1  -1
+VLY F1  -1
+VIE ; LAB; GO
+EXI Y

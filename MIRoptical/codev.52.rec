@@ -1,0 +1,7 @@
+LEN NEW
+DDM M
+SEE 0
+RES "D:\MIRmaterial\MIRoptical\NAROW-EDGE-1820-5-6-7.1.len"
+VIE; CAN;
+V3D ; GO
+EXI Y

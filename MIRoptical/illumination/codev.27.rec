@@ -1,0 +1,29 @@
+LEN NEW
+DDM M
+SEE 0
+RES "D:\MIRmaterial\MIRoptical\illumination\MIR_Tx_20161130.1.len"
+V3D ; GO
+THI  S1 200
+THI  S4 -1223
+THI  S6 -1968
+BEA; CAN;
+BEA
+WRX  6.9
+WRY  12.2
+GO
+WL W1 3333333
+THI  S4 -1309
+BEA
+WRX  6.9
+WRY  12.2
+GO
+VIE ; LAB; GO
+V3D ; GO
+THI  S4 -1009
+THI  S3 1300
+BEA
+WRX  6.9
+WRY  12.2
+GO
+SAV "C:\Users\81364\Desktop\illumination_19_1_20.len"
+EXI Y

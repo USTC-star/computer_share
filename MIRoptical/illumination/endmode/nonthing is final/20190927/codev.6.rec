@@ -1,0 +1,13 @@
+LEN NEW
+DDM M
+SEE 0
+RES "D:\MIRmaterial\MIRoptical\illumination\endmode\nonthing is final\20190927\20191004opticaltest.1.len"
+THI  S18 2239
+BEA
+WRX  7
+WRY  8
+DIS  YES
+XZ NO
+GO
+SAV "D:\MIRmaterial\MIRoptical\illumination\endmode\nonthing is final\20190927\20191004opticaltest.1.len"
+EXI Y

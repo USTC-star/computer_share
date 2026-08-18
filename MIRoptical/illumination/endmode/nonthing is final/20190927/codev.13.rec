@@ -1,0 +1,9 @@
+LEN NEW
+DDM M
+SEE 0
+RES "D:\MIRmaterial\MIRoptical\illumination\endmode\nonthing is final\20190927\20191002opticaltest.len"
+V3D ; GO
+SLB S23 'mag_axis'
+THI  S22 250
+SAV "D:\MIRmaterial\MIRoptical\illumination\endmode\nonthing is final\20190927\20191002opticaltest.len"
+EXI Y

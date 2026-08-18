@@ -1,0 +1,11 @@
+LEN NEW
+SEE 0
+RES "D:\desktop\computer_share\MIRoptical\Narrow_Edge_Schematic.1.len"
+BEA; CAN;
+BEA
+WRX  22
+WRY  22
+DIS  YES
+GO
+BEA; CAN;
+EXI Y

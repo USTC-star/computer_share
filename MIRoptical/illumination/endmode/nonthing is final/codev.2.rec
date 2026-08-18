@@ -1,0 +1,16 @@
+LEN NEW
+DDM M
+SEE 0
+RES "D:\MIRmaterial\MIRoptical\illumination\endmode\nonthing is final\MIR_optics_Tx_combine_upgrad.len"
+CXP; CAN;
+CXP
+TYP STE
+FIL "D:\MIRmaterial\MIRoptical\illumination\endmode\nonthing is final\zoom2_recheck.stp"
+LYR  S4..5 Z1..1 1
+SUR  S4..5 Z1..1
+RVS  S4..5 Z1..1
+DUM  S4..5 Z1..1 APE
+RAT DEF;RFR
+GO
+SAV "D:\MIRmaterial\MIRoptical\illumination\endmode\nonthing is final\MIR_optics_Tx_combine_upgrad.len"
+EXI Y

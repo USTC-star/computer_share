@@ -1,0 +1,7 @@
+LEN NEW
+DDM M
+SEE 0
+RES "D:\MIRmaterial\MIRoptical\Wide_Edge_Schematic.len"
+RDY  S3 -900
+IN CV_MACRO:cvcurvaturex RDX  S3 -1000
+EXI Y

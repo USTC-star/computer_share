@@ -1,0 +1,14 @@
+LEN NEW
+DDM M
+SEE 0
+RES "D:\MIRmaterial\MIRoptical\Wide_Cutoff1_Schematic.len"
+V3D ; GO
+THI  S10 695
+THI  S11 170
+BEA; CAN;
+BEA
+WRX  22
+WRY  22
+DIS  YES
+GO
+EXI Y

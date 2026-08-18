@@ -1,0 +1,11 @@
+LEN NEW
+DDM M
+SEE 0
+RES "D:\MIRmaterial\MIRoptical\MIR_optics_Rx_20180201.1.len"
+ROF 'F11.5' X Y Z TNX TNY LEN AOI
+RSI S19 W1 F1 R1
+ROF 'F11.5' X Y Z TNX TNY LEN AOI
+RSI S13..22 W1 F1 R1
+V3D ; GO
+SAV "D:\MIRmaterial\MIRoptical\MIR_optics_Rx_20180201.1.len"
+EXI Y

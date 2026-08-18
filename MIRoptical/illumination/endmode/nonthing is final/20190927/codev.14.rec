@@ -1,0 +1,9 @@
+LEN NEW
+DDM M
+CA APE
+SEE 0
+RES "D:\MIRmaterial\MIRoptical\illumination\endmode\nonthing is final\20190927\20191011opticaltest.1.len"
+THI  S3 100
+THI  S3 200
+SAV "D:\MIRmaterial\MIRoptical\illumination\endmode\nonthing is final\20190927\20191011opticaltest.1.len"
+EXI Y

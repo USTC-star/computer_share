@@ -1,0 +1,53 @@
+LEN NEW
+DDM M
+SEE 0
+RES "D:\MIRmaterial\MIRoptical\illumination\endmode\nonthing is final\MIR_optics_Tx_combine_upgrad.len"
+REX S6 100
+REY S6 150
+REY S7 150
+REX S7 100
+V3D ; GO
+REY S7 300
+REX S7 200
+V3D ; GO
+SAV "D:\MIRmaterial\MIRoptical\illumination\endmode\nonthing is final\MIR_optics_Tx_combine_upgrad_3.len"
+THI  S6 -290
+V3D ; GO
+BEA
+WRX  7
+WRY  8
+GO
+INS S7..9
+! Undo:  Insert Surface
+INS S8..11
+THI  S7 1050
+THI  S8 390
+THI  S9 144
+THI  S10 195
+THI  S11 210
+SLB S8 'mirror2'
+SLB S9 'mirror1'
+SLB S9 'mir1'
+SLB S8 'mir2'
+SLB S10 'beamsp'
+SLB S10 'beamsp2'
+SLB S11 'mir1'
+SLB S9 'mirr1'
+BEA
+WRX  7
+WRY  8
+GO
+DEL APE S8; REX S8 246.007639377428
+REX S8 150
+REY S8 550
+DEL APE S9; REX S9 296.258316426608
+REX S9 150
+REY S9 550
+DEL APE S10; REY S10 314.812412567844
+REY S10 550
+REX S10 150
+DEL APE S11; REY S11 339.937751092434
+REY S11 550
+REX S11 150
+SAV "D:\MIRmaterial\MIRoptical\illumination\endmode\nonthing is final\MIR_optics_Tx_combine_upgrad_3.len"
+EXI Y

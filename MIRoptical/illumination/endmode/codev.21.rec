@@ -1,0 +1,13 @@
+LEN NEW
+DDM M
+SEE 0
+RES "D:\MIRmaterial\MIRoptical\illumination\endmode\MIR_optics_Tx_combine_upgrad.len"
+V3D ; GO
+TR1 S7 0.5
+RMD  S7 REFR
+TR1 S7 0.5
+TR1 S7 0.5
+V3D ; GO
+RMD  S7 REFL
+V3D ; GO
+EXI Y

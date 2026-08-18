@@ -7,16 +7,19 @@ Created on Wed Apr 22 22:45:50 2026
 
 import numpy as np
 import matplotlib.pyplot as plt
-
+import math
 class GaussianBeam:
     def __init__(self, w0, lambda0):
         self.w0 = w0
         self.lambda0 = lambda0
-        self.zR = np.pi * w0**2 / lambda0
+        self.zR0 = np.pi * w0**2 / lambda0
+
 
     def q_at_distance(self, z):
         """Return q parameter at distance z from waist"""
-        return z + 1j * self.zR
+        w = self.w0*np.sqrt(1+(z/self.zR0)**2)
+        zR = np.pi*w**2 / self.lambda0
+        return z + 1j*zR
 
 
 class ThinLens:
@@ -45,7 +48,8 @@ class Thicklens:
         self.h2 = (1-self.M11)/self.M21
         self.f  = -1/self.M21
         self.f_h1 = -self.f - self.h1 
-        self.f_h2 = self.f + self.h2 
+        self.f_h2 = self.f + self.h2
+        self.P = (n-1)/n/r1+(1-n)/r2
 
 class OpticalMatrix:
     def __init__(self,Mtotal):
@@ -55,7 +59,8 @@ class OpticalMatrix:
         self.h2 = (1-self.M11)/self.M21
         self.f  = -1/self.M21
         self.f_h1 = -self.f - self.h1 
-        self.f_h2 = self.f + self.h2 
+        self.f_h2 = self.f + self.h2
+        self.Matrix = Mtotal
     def transform_gaussian(self, q_in):
         """Apply lens transformation"""
         q_out = (q_in*self.M11+self.M12)/(self.M21*q_in+self.M22)
@@ -85,10 +90,10 @@ class OpticalSystem:
 
         # extract waist
         z_new = -np.real(q_out)
-        zR_new = np.imag(q_out)
-        w0_new = np.sqrt(self.beam.lambda0 * zR_new / np.pi)
-
-        return z_new*1e3, w0_new*1e3
+        zR0_new = np.imag(q_out)
+        w0_new = np.sqrt(self.beam.lambda0 * zR0_new / np.pi)
+        w_new  = np.sqrt(self.beam.lambda0/np.pi*(-1)/np.imag(1/q_out))
+        return z_new, w0_new*1e3, w_new*1e3
     
 
 

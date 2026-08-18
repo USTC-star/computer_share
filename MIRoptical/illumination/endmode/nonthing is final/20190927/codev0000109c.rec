@@ -1,0 +1,6 @@
+LEN NEW
+DDM M
+SEE 0
+RES "D:\MIRmaterial\MIRoptical\illumination\endmode\nonthing is final\20190927\20190927optical.3.len"
+V3D ; GO
+EXI Y

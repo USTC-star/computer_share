@@ -1,0 +1,6 @@
+LEN NEW
+DDM M
+SEE 0
+RES "D:\MIRmaterial\MIRoptical\MIR_optics_Tx_20180201.len"
+BPR; CAN;
+EXI Y

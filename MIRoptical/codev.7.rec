@@ -1,0 +1,7 @@
+LEN NEW
+DDM M
+SEE 0
+RES "D:\MIRmaterial\MIRoptical\MIR_Tx_20161130.len"
+V3D ; GO
+SAV "D:\MIRmaterial\MIRoptical\MIR_TX_20181120.len"
+EXI Y

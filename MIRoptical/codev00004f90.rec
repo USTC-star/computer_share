@@ -1,0 +1,5 @@
+LEN NEW
+DDM M
+SEE 0
+RES "D:\MIRmaterial\MIRoptical\Wide_Cutoff2_Schematic.len"
+EXI Y
