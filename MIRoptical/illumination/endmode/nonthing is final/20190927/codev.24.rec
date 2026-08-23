@@ -1,0 +1,6 @@
+LEN NEW
+DDM M
+SEE 0
+RES "D:\MIRmaterial\MIRoptical\illumination\endmode\nonthing is final\20190927\2019test.len"
+SAV "D:\MIRmaterial\MIRoptical\illumination\endmode\nonthing is final\MIRoptical_2020\mir_illumination.len"
+EXI Y

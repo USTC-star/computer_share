@@ -1,0 +1,7 @@
+LEN NEW
+DDM M
+SEE 0
+RES "D:\desktop\computer_share\HL-3_MIR\Optical_HL3_Simple_Model.len"
+THI S19 OAL  S15..20 1850
+SAV "D:\desktop\computer_share\HL-3_MIR\Optical_HL3_Simple_Model.len"
+EXI Y

@@ -1,0 +1,279 @@
+LEN NEW
+DDM M
+SEE 0
+RES "D:\MIRmaterial\MIRoptical\illumination\endmode\nonthing is final\20190927\MIR_illumination\mir_illumination.len"
+V3D ; GO
+SAV "D:\MIRmaterial\MIRoptical\illumination\endmode\nonthing is final\20190927\QCM_TEST\mir_illu2.len"
+DEL S4..14
+V3D ; GO
+SAV "D:\MIRmaterial\MIRoptical\illumination\endmode\nonthing is final\20190927\QCM_TEST\tabelteast_beanspliter.len"
+REY S4 200
+REX S4 300
+REY S5 200
+REX S5 300
+DEL S7..11
+V3D ; GO
+DEL S6
+THI  S3 240
+THI  S4 360
+THI  S4 0
+THI  S1 240
+THI  S3 360
+THI  S5 180
+REY S5 60
+REX S5 60
+V3D ; GO
+REY S5 200
+REX S5 300
+REX S6 60
+REY S6 60
+V3D ; GO
+COP S5 S5 *
+V3D ; GO
+REY S6 60
+REX S6 60
+V3D ; GO
+SAV "D:\MIRmaterial\MIRoptical\illumination\endmode\nonthing is final\20190927\QCM_TEST\tabelteast_beanspliter.len"
+BEA; CAN;
+BEA
+WRX  2
+WRY  3
+GO
+BEA; CAN;
+BEA
+WRX  2
+WRY  3
+DIS  YES
+GO
+BEA; CAN;
+BEA; CAN;
+BEA
+WRX  7
+WRY  8
+DIS  YES
+GO
+SAV "D:\MIRmaterial\MIRoptical\illumination\endmode\nonthing is final\20190927\QCM_TEST\tabelteast_beanspliterLong.len"
+THI  S1 40
+THI  S3 553
+THI  S5 550
+V3D ; GO
+BEA
+WRX  7
+WRY  8
+DIS  YES
+GO
+BEA
+WRX  7
+WRY  8
+DIS  YES
+GO
+RES "D:\MIRmaterial\MIRoptical\illumination\endmode\nonthing is final\20190927\QCM_TEST\tabelteast_beanspliter.1.len"
+V3D ; GO
+RES "D:\MIRmaterial\MIRoptical\illumination\endmode\nonthing is final\20190927\QCM_TEST\tabelteast_beanspliter.1.len"
+V3D ; GO
+RES "D:\MIRmaterial\MIRoptical\illumination\endmode\nonthing is final\20190927\QCM_TEST\tabelteast_beanspliter.len"
+V3D ; GO
+SAV "D:\MIRmaterial\MIRoptical\illumination\endmode\nonthing is final\20190927\QCM_TEST\tabelteast_beansplitershortNoLens.len"
+DEL S2
+V3D ; GO
+THI  S1 600
+DEL S2
+V3D ; GO
+BEA; CAN;
+BEA
+WRX  7
+WRY  8
+GO
+BEA; CAN;
+BEA
+WRX  7
+WRY  8
+DIS  YES
+GO
+BEA
+WRX  7
+WRY  8
+DIS  YES
+GO
+BEA
+WRX  7
+WRY  8
+DIS  YES
+GO
+SAV "D:\MIRmaterial\MIRoptical\illumination\endmode\nonthing is final\20190927\QCM_TEST\tabelteast_beansplitershortNoLens.len"
+RES "D:\MIRmaterial\MIRoptical\illumination\endmode\nonthing is final\20190927\QCM_TEST\tabelteast_beanspliter.len"
+BEA; CAN;
+BEA
+WRX  7
+WRY  8
+GO
+BEA; CAN;
+BEA
+WRX  7
+WRY  8
+DIS  YES
+GO
+RES "D:\MIRmaterial\MIRoptical\illumination\endmode\nonthing is final\20190927\QCM_TEST\tabelteast_beansplitershortNoLens.len"
+BEA; CAN;
+BEA
+WRX  7
+WRY  8
+SUR SO..3
+DIS  YES
+GO
+BEA; CAN;
+BEA
+WRX  7
+WRY  8
+SUR SO..4
+DIS  YES
+GO
+BEA; CAN;
+BEA; CAN;
+BEA
+WRX  7
+WRY  8
+SUR SO..4
+DIS  YES
+GO
+RES "D:\MIRmaterial\MIRoptical\illumination\endmode\nonthing is final\20190927\QCM_TEST\tabelteast_beanspliter.len"
+BEA; CAN;
+BEA
+WRX  7
+WRY  8
+SUR SO..5
+DIS  YES
+GO
+BEA; CAN;
+BEA
+WRX  7
+WRY  8
+SUR SO..6
+DIS  YES
+GO
+RES "D:\MIRmaterial\MIRoptical\illumination\endmode\nonthing is final\20190927\QCM_TEST\tabelteast_beansplitershortNoLens.len"
+V3D ; GO
+BEA
+WRX  7
+WRY  8
+DIS  YES
+GO
+THI  S2 180
+BEA
+WRX  7
+WRY  8
+DIS  YES
+GO
+THI  S4 0
+THI  S3 0
+BEA
+WRX  7
+WRY  8
+DIS  YES
+GO
+THI  S1 640
+THI  S2 0
+THI  S3 180
+THI  S4 180
+V3D ; GO
+BEA
+WRX  7
+WRY  8
+DIS  YES
+GO
+RES "D:\MIRmaterial\MIRoptical\illumination\endmode\nonthing is final\20190927\QCM_TEST\tabelteast_beanspliter.len"
+V3D ; GO
+GL1 S2  0
+SAV "D:\MIRmaterial\MIRoptical\illumination\endmode\nonthing is final\20190927\QCM_TEST\tabelteast_beansplitershortNoLens.len"
+SAV "D:\MIRmaterial\MIRoptical\illumination\endmode\nonthing is final\20190927\QCM_TEST\tabelteast_beansplitershortNoLensnew.2"
+V3D ; GO
+GL1 S2
+V3D ; GO
+BEA; CAN;
+BEA
+WRX  7
+WRY  8
+SUR SO..6
+DIS  YES
+GO
+V3D ; GO
+BEA
+WRX  7
+WRY  8
+SUR SO..6
+DIS  YES
+GO
+THI  S6 10
+BEA
+WRX  7
+WRY  8
+SUR SO..6
+DIS  YES
+GO
+BEA; CAN;
+BEA
+WRX  7
+WRY  8
+SUR S1..6
+DIS  YES
+GO
+BEA; CAN;
+BEA
+WRX  7
+WRY  8
+SUR SO..6
+DIS  YES
+GO
+INS S1
+THI  S1 240
+BEA
+WRX  7
+WRY  8
+SUR SO..6
+DIS  YES
+GO
+! Undo:  DIS  YES
+DEL S1
+BEA
+WRX  7
+WRY  8
+SUR SO..6
+DIS  YES
+GO
+SAV "D:\MIRmaterial\MIRoptical\illumination\endmode\nonthing is final\20190927\QCM_TEST\tabelteast_beansplitershortNoLensnew.2.len"
+RES "D:\MIRmaterial\MIRoptical\illumination\endmode\nonthing is final\20190927\QCM_TEST\tabelteast_beansplitershortNoLens.len"
+V3D ; GO
+GL1 S2
+V3D ; GO
+BEA; CAN;
+BEA
+WRX  7
+WRY  8
+SUR SO..6
+DIS  YES
+GO
+THI  S1 280
+THI  S2 0
+BEA
+WRX  7
+WRY  8
+SUR SO..6
+DIS  YES
+GO
+THI  S1 640
+BEA
+WRX  7
+WRY  8
+SUR SO..6
+DIS  YES
+GO
+THI  S2 640
+THI  S1 0
+BEA
+WRX  7
+WRY  8
+SUR SO..6
+DIS  YES
+GO
+SAV "D:\MIRmaterial\MIRoptical\illumination\endmode\nonthing is final\20190927\QCM_TEST\tabelteast_beansplitershortNoLens.len"
+EXI Y

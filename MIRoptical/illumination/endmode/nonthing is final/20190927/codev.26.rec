@@ -1,0 +1,16 @@
+LEN NEW
+DDM M
+SEE 0
+RES "D:\MIRmaterial\MIRoptical\illumination\endmode\nonthing is final\20190927\20190927optical.3.len"
+V3D ; GO
+CXP; CAN;
+CXP
+TYP STE
+FIL "C:\Users\81364\Desktop\illumination.stp"
+LYR  S1..7 Z1..1 1
+SUR  SO..7 Z1..1
+RVS  S1..7 Z1..1
+DUM  S1..7 Z1..1 APE
+RAT DEF;RFR
+GO
+EXI Y

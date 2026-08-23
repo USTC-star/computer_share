@@ -5,31 +5,147 @@ Created on Fri Apr 24 00:03:43 2026
 @author: PinJung
 """
 
-from  numerical_optical_simulation import GaussianBeam,Thicklens,SpaceMatrix,OpticalMatrix
+from  numerical_optical_simulation import GaussianBeam,Thicklens,SpaceMatrix,OpticalMatrix,OpticalSystem
 import numpy as np
 import matplotlib.pyplot as plt
-beam = GaussianBeam(w0=8*1e-3, lambda0=3.333333*1e-3)
-lens1= Thicklens(r1=1e99,r2=-2,d=0.1,n=1.623450)
-lens2= Thicklens(r1=2,r2=1e99,d=0.1,n=1.623450)
-lens3= Thicklens(r1=-0.6,r2=1e99,d=0.1,n=1.623450)
-lens4= Thicklens(r1=-0.9,r2=1e99,d=0.1,n=1.623450)
-lens5= Thicklens(r1=1.65,r2=-1.65,d=0.2,n=1.623450)
-lens6= Thicklens(r1=1e99,r2=1e99,d=0.044,n=1.623450)
-space1 = SpaceMatrix(0.4)
-space3 = SpaceMatrix(0.05)
-ds = np.linspace(0.01,2.9,500)
-xc = 2.4-0.094
-delta_xi=[]
-for di in ds:
-    space2 = SpaceMatrix(di)
-    M2 = lens6.Matrix@space3.Matrix@lens5.Matrix@space2.Matrix@lens4.Matrix
-    optics2 = OpticalMatrix(M2)
-    xi = optics2.transform_raytrace(-1e99)
-    delta_xi.append(xi-xc)
+import math
+# beam = GaussianBeam(w0=8*1e-3, lambda0=3.333333*1e-3)
+# lens1= Thicklens(r1=1e99,r2=-2,d=0.1,n=1.623450)
+# lens2= Thicklens(r1=2,r2=1e99,d=0.1,n=1.623450)
+# lens3= Thicklens(r1=-0.6,r2=1e99,d=0.1,n=1.623450)
+# lens4= Thicklens(r1=-0.9,r2=1e99,d=0.1,n=1.623450)
+# lens5= Thicklens(r1=1.65,r2=-1.65,d=0.2,n=1.623450)
+# lens6= Thicklens(r1=1e99,r2=1e99,d=0.044,n=1.623450)
+# space1 = SpaceMatrix(0.4)
+# space3 = SpaceMatrix(0.05)
+# ds = np.linspace(0.01,2.9,500)
+# xc = 2.4-0.094
+# delta_xi=[]
+# for di in ds:
+#     space2 = SpaceMatrix(di)
+#     M2 = lens6.Matrix@space3.Matrix@lens5.Matrix@space2.Matrix@lens4.Matrix
+#     optics2 = OpticalMatrix(M2)
+#     xi = optics2.transform_raytrace(-1e99)
+#     delta_xi.append(xi-xc)
+#
+# plt.plot(ds,delta_xi)
+#
+# min_idx = np.argmin(np.abs(delta_xi))
+# min_val = delta_xi[min_idx]
+#
+# print(ds[min_idx])
 
-plt.plot(ds,delta_xi)
+first_lens = Thicklens(r1=1.55,r2=-1.55,d=0.260,n=1.623450)
+h_first_lens = 0.55
+optics = OpticalMatrix(first_lens.Matrix)
+x0 = 2.1
+R_cutoff = 0.55
+xi = optics.transform_raytrace(-x0)
+print('xi=%.4fm' %xi)
+print(f"xi = {xi:.4f} m")
+h_cutoff = (h_first_lens - 0.06)/x0*R_cutoff;
+print(f"h_cutoff = {h_cutoff:.4f} m")
+alpha_0 = math.atan(0.528/xi)
+print(f"alpha_0 = {alpha_0:.4f} rad")
 
-min_idx = np.argmin(np.abs(delta_xi))
-min_val = delta_xi[min_idx]
+# beam = GaussianBeam(w0=8*1e-3, lambda0=3.333333*1e-3)
+# system = OpticalSystem(beam, optics, z=-1.01)
+# z_new, w0_new = system.compute_new_waist()
+# print("z_new=%.4fm, w0_new = %.2fmm"%(z_new, w0_new))
 
-print(ds[min_idx])
+# f2_list = []
+# f2h_list= []
+# alphai_list=[]
+zoom1 = Thicklens(r1=1,r2=-1e99,d=0.1,n=1.623450)
+zoom2 = Thicklens(r1=1,r2=-1e99,d=0.1,n=1.623450)
+
+
+L0 = np.array([[0.146], [0]])
+
+d_antenna_zoom1 = 0.140
+space0 = SpaceMatrix(d_antenna_zoom1)
+s = 0.8
+space = SpaceMatrix(s)
+s2 = 0.45+3
+space2 = SpaceMatrix(s2)
+optics_new = OpticalMatrix(first_lens.Matrix@space2.Matrix@zoom2.Matrix@space.Matrix@zoom1.Matrix@space0.Matrix)
+print('optics.fh2=%.4f m'%optics_new.f_h2)
+dcutoff = optics_new.f_h2 -R_cutoff
+print(f"Dcutoff= {dcutoff:.4f} ")
+L = SpaceMatrix(dcutoff).Matrix@optics_new.Matrix@L0
+print(f" z= {L[0,0]*1e3:.7f}mm ")
+
+
+# f2_list = []
+# f2h_list = []
+#
+#
+# lambda0 = 4*1e-3
+# w0 = 22*1e-3
+# beam = GaussianBeam(w0=w0, lambda0=lambda0)
+# system = OpticalSystem(beam, optics_new, z=0)
+#
+# z_new, w0_new, w_new = system.compute_new_waist()
+# zR=np.pi*(w_new*1E-3)**2/lambda0
+# print("z_new=%.4fm, w0_new = %.4fmm,w_new = %.4fmm zR=%.4f m"%(z_new, w0_new,w_new,zR))
+# print('z_cutoff = %.4f m '%(optics.f_h2-0.550))
+
+
+# d_antenna_zoom1 = 0.140
+# space0 = SpaceMatrix(d_antenna_zoom1)
+# s1 = np.linspace(0.01, 1.3,100)
+# L_obj_1stlens = 4.590
+# L_fixed = 0.14+0.1+0.1
+# L_cutoff = 1.5429
+# f2_list = []
+# f2h_list = []
+# R_list = []
+# z_new_list = []
+# w0_new_list = []
+# w_new_list = []
+# z_R_list= []
+# lambda0 = 4 * 1e-3
+# w0 = 22 * 1e-3
+# for s in s1:
+#   space = SpaceMatrix(s)
+#   s2 = L_obj_1stlens - L_fixed-s
+#   space2 = SpaceMatrix(s2)
+#   optics = OpticalMatrix(SpaceMatrix(L_cutoff).Matrix@first_lens.Matrix@space2.Matrix@zoom2.Matrix@space.Matrix@zoom1.Matrix@space0.Matrix)
+#   f2h_list.append(optics.f_h2)
+#   R_list.append(optics.f_h2)
+#
+#   beam = GaussianBeam(w0=w0, lambda0=lambda0)
+#   system = OpticalSystem(beam, optics, z=0)
+#   z_new, w0_new,w_new = system.compute_new_waist()
+#   zR=np.pi*(w0_new*1E-3)**2/lambda0
+#   z_R_list.append(zR)
+#   z_new_list.append(z_new)
+#   w0_new_list.append(w0_new)
+#   w_new_list.append(w_new)
+#   print("z_new=%.4fm, w0_new = %.2fmm,w_new=%.4fmm zR=%.4f m"%(z_new, w0_new,w_new,zR))
+#
+# plt.figure(3)
+# plt.plot(s1,R_list,'r-')
+# plt.xlabel("Distance from zoom1 to zoom2 (m)")
+# plt.ylabel("R (m)")
+# plt.show()
+# plt.figure(4)
+# plt.plot(s1,z_R_list,'b-')
+# plt.xlabel("Distance from zoom1 to zoom2 (m)")
+# plt.ylabel("z_R (m)")
+# plt.show()
+# plt.figure(5)
+# plt.plot(s1,z_new_list,'b-')
+# plt.xlabel("Distance from zoom1 to zoom2 (m)")
+# plt.ylabel("z_new (m)")
+# plt.show()
+# plt.figure(6)
+# plt.plot(s1,w_new_list,'b-')
+# plt.xlabel("Distance from zoom1 to zoom2 (m)")
+# plt.ylabel("w (m)")
+# plt.show()
+# plt.figure(7)
+# plt.plot(s1,w0_new_list,'b-')
+# plt.xlabel("Distance from zoom1 to zoom2 (m)")
+# plt.ylabel("w0 (m)")
+# plt.show()

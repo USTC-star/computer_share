@@ -1,0 +1,40 @@
+LEN NEW
+DDM M
+SEE 0
+RES "D:\MIRmaterial\MIRoptical\illumination\endmode\nonthing is final\20190927\QCM_TEST\mir_illu.len"
+SAV "D:\MIRmaterial\MIRoptical\illumination\endmode\nonthing is final\20190927\QCM_TEST\tabelteast_beanspliter.len"
+GL1 S4
+SAV "D:\MIRmaterial\MIRoptical\illumination\endmode\nonthing is final\20190927\QCM_TEST\tabelteast_beanspliter.len"
+V3D ; GO
+RMD  S6 REFR
+RMD  S7 REFR
+SAV "D:\MIRmaterial\MIRoptical\illumination\endmode\nonthing is final\20190927\QCM_TEST\tabelteast_beanspliter.len"
+V3D ; GO
+DEL S4
+DEL S3
+DEL S11..12
+DEL S4..9
+V3D ; GO
+THI  S1 240
+V3D ; GO
+DEL S4
+THI  S3 360
+THI  S4 180
+V3D ; GO
+COP S5 S5 *
+THI  S4 0
+THI  S5 180
+THI  S6 1000
+DEL S7..12
+V3D ; GO
+REY S5 200
+REX S5 300
+V3D ; GO
+REY S4 200
+REX S4 300
+V3D ; GO
+REY S6 60
+REX S6 60
+SAV "D:\MIRmaterial\MIRoptical\illumination\endmode\nonthing is final\20190927\QCM_TEST\tabelteast_beanspliter.len"
+V3D ; GO
+EXI Y

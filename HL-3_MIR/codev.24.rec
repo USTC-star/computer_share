@@ -1,0 +1,38 @@
+LEN NEW
+DDM M
+SEE 0
+RES "D:\desktop\computer_share\HL-3_MIR\Optical_HL3_TEST_8.3.len"
+DEL S3
+DEL S3
+DEL S8
+DEL S7
+SAV "D:\desktop\computer_share\HL-3_MIR\Optical_HL3_TEST_8.3.len"
+INS S7..8
+GL1 S8  651000.600000
+THI  S7 300
+SLB S8 'fca'
+RDY  S8 -1000
+THI  S8 100
+THI  S7 800
+VIE ; LAB; GO
+SAV "D:\desktop\computer_share\HL-3_MIR\Optical_HL3_TEST_8.3.len"
+THI  S5 300
+VIE ; LAB; GO
+SAV "D:\desktop\computer_share\HL-3_MIR\Optical_HL3_TEST_8.3.len"
+VIE ; LAB; GO
+VIE ; LAB; GO
+V3D ; GO
+DEL APE S8; REY S8 59.35438544677
+DEL APE S7; REY S7 145.256709665241
+REY S7 350
+REY S8 350
+REX S7 150
+REX S8 150
+VIE ; LAB; GO
+BEA
+WRX  7
+WRY  8
+SUR SO..22
+DIS  YES
+XZ NO
+GO

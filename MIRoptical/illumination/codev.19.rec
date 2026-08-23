@@ -1,0 +1,67 @@
+LEN NEW
+DDM M
+SEE 0
+RES "D:\MIRmaterial\MIRoptical\illumination\MIR_optics_Tx_combine.4.len"
+V3D ; GO
+CXP; CAN;
+CXP
+TYP STE
+FIL "D:\MIRmaterial\MIRoptical\illumination\MIR_optics_Tx_combine4.stp"
+LYR  S1..5 Z1..1 1
+RAT DEF;RFR
+GO
+THI  S4 70
+BEA
+WRX  6.9
+WRY  12.2
+GO
+CXP
+TYP STE
+FIL "D:\MIRmaterial\MIRoptical\illumination\MIR_optics_Tx_combine4.stp"
+LYR  S1..5 Z1..1 1
+RAT DEF;RFR
+GO
+CXP; CAN;
+CXP
+TYP STE
+FIL "D:\MIRmaterial\MIRoptical\illumination\MIR_optics_Tx_combine5.stp"
+LYR  S1..5 Z1..1 1
+SUR  S1..5 Z1..1
+RVS  S1..5 Z1..1
+DUM  S1..5 Z1..1 APE
+RAT DEF;RFR
+GO
+BEA; CAN;
+BEA
+WRX  6.9
+WRY  12.2
+DIS  YES
+GO
+BEA; CAN;
+BEA
+WRX  6.9
+WRY  12.2
+DIS  YES
+XZ YES
+GO
+CXP; CAN;
+CXP
+TYP STE
+FIL "D:\MIRmaterial\MIRoptical\illumination\MIR_optics_Tx_combine5.stp"
+LYR  S1..5 Z1..1 1
+SUR  S1..5 Z1..1
+RVS  S1..5 Z1..1
+DUM  S1..5 Z1..1 APE
+RAT DEF;RFR
+GO
+CXP; CAN;
+CXP
+TYP STE
+FIL "D:\MIRmaterial\MIRoptical\illumination\MIR_optics_Tx_combine6.stp"
+LYR  S1..5 Z1..1 1
+SUR  S1..5 Z1..1
+RVS  S1..5 Z1..1
+DUM  S1..5 Z1..1 APE
+RAT DEF;RFR
+GO
+EXI Y

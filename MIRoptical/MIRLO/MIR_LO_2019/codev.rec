@@ -1,0 +1,7 @@
+LEN NEW
+DDM M
+SEE 0
+RES "D:\MIRmaterial\MIRoptical\MIRLO\MIR_LO_2019\MIRLO_20190105.3.len"
+VIE ; LAB; GO
+SAV "D:\MIRmaterial\MIRoptical\MIRLO\MIR_LO_2019\mir_lo\mir_lo.len"
+EXI Y

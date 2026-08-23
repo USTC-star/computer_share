@@ -1,0 +1,29 @@
+LEN NEW
+DDM M
+SEE 0
+RES "D:\MIRmaterial\MIRoptical\Narrow_Edge_Schematic_test.len"
+BEA
+WRX  22
+WRY  22
+GO
+BEA; CAN;
+BEA
+WRX  22
+WRY  22
+DIS  YES
+GO
+V3D ; GO
+BEA; CAN;
+BEA
+WRX  22
+WRY  22
+DIS  YES
+GO
+GL1 S24  651000.600000
+BEA
+WRX  22
+WRY  22
+DIS  YES
+GO
+SAV "D:\MIRmaterial\MIRoptical\Narrow_Edge_Schematic_test.len"
+EXI Y

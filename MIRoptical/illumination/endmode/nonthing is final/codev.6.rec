@@ -1,0 +1,40 @@
+LEN NEW
+DDM M
+SEE 0
+RES "D:\MIRmaterial\MIRoptical\illumination\endmode\nonthing is final\MIR_optics_Tx_combine_upgrad.len"
+THI  S3 300
+BEA
+WRX  7
+WRY  8
+GO
+BEA
+WRX  7
+WRY  8
+GO
+BEA
+WRX  7
+WRY  8
+GO
+THI  S3 200
+BEA
+WRX  7
+WRY  8
+GO
+V3D ; GO
+REY S6 150
+REX S6 100
+V3D ; GO
+BEA
+WRX  7
+WRY  8
+GO
+ADE  S6 0
+BEA
+WRX  7
+WRY  8
+GO
+ADE  S6 45
+BEA
+WRX  7
+WRY  8
+GO

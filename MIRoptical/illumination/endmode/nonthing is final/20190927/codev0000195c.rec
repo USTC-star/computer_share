@@ -1,0 +1,34 @@
+LEN NEW
+DDM M
+SEE 0
+RES "D:\MIRmaterial\MIRoptical\illumination\endmode\nonthing is final\20190927\20190927optical.1.len"
+V3D ; GO
+SAV "D:\MIRmaterial\MIRoptical\illumination\endmode\nonthing is final\20190927\20190927optical.1.len"
+SAV "C:\Users\81364\Desktop\optical_test.len"
+RES "D:\grooved lens\Groove lens\test20131025V2.len"
+RES "D:\grooved lens\Groove lens\test20131025.len"
+V3D ; GO
+RES "D:\ECEInotebook\ECEIanalysis\PPT\grooved_lens\experiment setup.len"
+THI  S2 50
+INS S3
+THI  S3 59
+DEL APE S3; REY S3 0
+! Undo:  REY S3 0
+CYL S3
+DEL APE S3; REY S3 0
+! Undo:  REY S3 0
+REX S3   50
+REY S3   50
+ ORA S3  L""
+ADX S3  L""  0
+ADY S3  L""  0
+ARO S3  L""  0
+ 
+THI  S3 50
+THI  S3 59
+THI  S3 50
+V3D
+RAT DEF;RFR
+GO
+VIE ; LAB; GO
+EXI Y

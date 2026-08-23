@@ -1,0 +1,24 @@
+LEN NEW
+DDM M
+SEE 0
+RES "D:\MIRmaterial\MIRoptical\MIRopticalrecent\NarrowEdge Schematic.len"
+THI  S1 350
+THI  S3 50
+THI  S5 200
+THI  S7 560
+THI  S9 1366
+THI  S9 1005
+V3D ; GO
+SAV "D:\MIRmaterial\MIRoptical\MIRopticalrecent\NarrowEdge Schematic.len"
+CXP; CAN;
+CXP
+TYP STE
+FIL "C:\Users\81364\Desktop\NarrowEdge_Schematic.stp"
+LYR  S1..15 Z1..1 1
+SUR  S1..15 Z1..1
+RVS  S1..15 Z1..1
+DUM  S1..15 Z1..1 APE
+RAT DEF;RFR
+GO
+SAV "D:\MIRmaterial\MIRoptical\MIRopticalrecent\NarrowEdge Schematic.len"
+EXI Y

@@ -1,0 +1,8 @@
+LEN NEW
+DDM M
+SEE 0
+RES "D:\MIRmaterial\MIRoptical\QCM_TEST\tabelteast_beanspliterWithSpehercal.len"
+in cv_macro:cvquickrim OPD
+WAV ; BES; RFO; GO
+in cv_macro:cvquickrim
+EXI Y

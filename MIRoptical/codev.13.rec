@@ -1,0 +1,24 @@
+LEN NEW
+DDM M
+SEE 0
+RES "D:\MIRmaterial\MIRoptical\MIR_Tx_20161130.1.len"
+BEA; CAN;
+BEA
+WRX  4
+WRY  4
+GO
+BEA; CAN;
+BEA
+WRX  4
+WRY  4
+DIS  YES
+GO
+BEA; CAN;
+BEA
+WRX  4
+WRY  4
+DIS  YES
+XZ YES
+GO
+SAV "D:\optical\TEST\    _20181121.len"
+EXI Y

@@ -1,0 +1,7 @@
+LEN NEW
+DDM M
+SEE 0
+RES "D:\MIRmaterial\MIRoptical\robust\Wide_cutoff_test.len"
+BEA; CAN;
+BEA; CAN;
+EXI Y

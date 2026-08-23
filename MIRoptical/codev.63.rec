@@ -1,0 +1,6 @@
+LEN NEW
+DDM M
+SEE 0
+RES "D:\desktop\computer_share\MIRoptical\NAROW-EDGE-1820-5-6-7.1.len"
+V3D ; GO
+EXI Y

@@ -1,0 +1,171 @@
+LEN NEW
+DDM M
+SEE 0
+RES "D:\MIRmaterial\MIRoptical\illumination\endmode\MIR_optics_Tx_combine_upgrad.len"
+THI  S3 100
+BEA
+WRX  10
+WRY  12
+GO
+THI  S3 200
+BEA
+WRX  10
+WRY  12
+GO
+THI  S3 300
+BEA
+WRX  10
+WRY  12
+GO
+THI  S3 400
+BEA
+WRX  10
+WRY  12
+GO
+THI  S3 250
+BEA
+WRX  10
+WRY  12
+GO
+BEA; CAN;
+BEA
+WRX  7
+WRY  8
+GO
+BEN S1
+ADE  S1 45
+BEA
+WRX  7
+WRY  8
+GO
+ADE  S1 0
+in CV_MACRO:deldecenter S1;
+BEA
+WRX  7
+WRY  8
+GO
+RDY  S18 0
+IN CV_MACRO:cvcurvaturex RDX  S18 0
+BEN S18
+CYL S18
+DAR S18
+ADE  S18 45
+BEA
+WRX  7
+WRY  8
+GO
+V3D ; GO
+in CV_MACRO:deldecenter S18;
+BEA
+WRX  7
+WRY  8
+GO
+BEA
+WRX  7
+WRY  8
+GO
+THI  S3 20
+BEA
+WRX  7
+WRY  8
+GO
+SLB S7 'beamspliter'
+BEA
+WRX  7
+WRY  8
+GO
+BEA
+WRX  7
+WRY  8
+GO
+THI  S3 100
+BEA
+WRX  7
+WRY  8
+GO
+BEA
+WRX  7
+WRY  8
+GO
+THI  S3 200
+BEA
+WRX  7
+WRY  8
+GO
+THI  S3 20
+BEA
+WRX  7
+WRY  8
+GO
+THI  S3 100
+BEA
+WRX  7
+WRY  8
+GO
+THI  S3 20
+BEA
+WRX  7
+WRY  8
+GO
+THI  S3 200
+BEA
+WRX  7
+WRY  8
+GO
+THI  S3 300
+BEA
+WRX  7
+WRY  8
+GO
+THI  S3 350
+BEA
+WRX  7
+WRY  8
+GO
+THI  S3 20
+BEA
+WRX  7
+WRY  8
+GO
+RDY  S13 730
+IN CV_MACRO:cvcurvaturex RDX  S13 2338
+IN CV_MACRO:cvcurvaturex RDX  S14 2313
+RDY  S14 710
+RDY  S15 690
+IN CV_MACRO:cvcurvaturex RDX  S15 2288
+IN CV_MACRO:cvcurvaturex RDX  S16 2265
+RDY  S16 670
+RDY  S17 660
+IN CV_MACRO:cvcurvaturex RDX  S17 2237
+V3D ; GO
+V3D ; GO
+V3D ; GO
+BEA
+WRX  7
+WRY  8
+GO
+THI  S3 300
+BEA
+WRX  7
+WRY  8
+GO
+THI  S3 400
+BEA
+WRX  7
+WRY  8
+GO
+REY S3 110
+REY S4 110
+REY S3 90
+REY S5 110
+V3D ; GO
+THI  S3 300
+V3D ; GO
+REY S4 105
+REY S5 105
+V3D ; GO
+REY S4 100
+REY S5 100
+V3D ; GO
+SAV "D:\MIRmaterial\MIRoptical\illumination\endmode\MIR_optics_Tx_combine_upgrad.len"
+EXI Y

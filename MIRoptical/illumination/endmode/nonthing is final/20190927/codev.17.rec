@@ -1,0 +1,107 @@
+LEN NEW
+DDM M
+SEE 0
+RES "D:\MIRmaterial\MIRoptical\illumination\endmode\nonthing is final\20190927\20191011opticaltest.1.len"
+SAV "D:\MIRmaterial\MIRoptical\illumination\endmode\nonthing is final\20190927\20191117opticaltest.1"
+THI  S22 500
+THI  S23 100
+THI  S24 600
+GL1 S23  651000.600000
+SLB S23 'focus2'
+CYL S23
+IN CV_MACRO:cvcurvaturex RDX  S23 1200
+CYL S24
+RDY  S24 2000
+RDY  S24 -2000
+BEA
+WRX  7
+WRY  8
+DIS  YES
+XZ NO
+GO
+V3D ; GO
+REY S23 550
+REX S23 150
+REY S23 400
+REY S24 400
+REX S24 150
+V3D ; GO
+RDY  S24 -1500
+IN CV_MACRO:cvcurvaturex RDX  S23 1000
+RDY  S24 0
+RDY  S24 -571.9
+IN CV_MACRO:cvcurvaturex RDX  S23 340
+THI  S23 115
+REY S23 300
+REX S23 100
+REY S24 300
+REX S24 100
+V3D ; GO
+BEA
+WRX  7
+WRY  8
+DIS  YES
+XZ NO
+GO
+THI  S20 0
+V3D ; GO
+BEA
+WRX  7
+WRY  8
+DIS  YES
+XZ NO
+GO
+BEA; CAN;
+BEA
+WRX  7
+WRY  8
+DIS  YES
+XZ YES
+GO
+THI  S25 1
+BEA
+WRX  7
+WRY  8
+DIS  YES
+XZ YES
+GO
+THI  S24 311
+BEA
+WRX  7
+WRY  8
+DIS  YES
+XZ YES
+GO
+THI  S22 300
+BEA
+WRX  7
+WRY  8
+DIS  YES
+XZ YES
+GO
+BEA; CAN;
+BEA
+WRX  7
+WRY  8
+DIS  YES
+XZ NO
+GO
+THI  S20 100
+BEA
+WRX  7
+WRY  8
+DIS  YES
+XZ NO
+GO
+BEA; CAN;
+BEA
+WRX  7
+WRY  8
+DIS  YES
+XZ NO
+GO
+IN CV_MACRO:cvcurvaturex RDX  S7 0
+IN CV_MACRO:cvcurvaturex RDX  S6 -400
+V3D ; GO
+SAV "D:\MIRmaterial\MIRoptical\illumination\endmode\nonthing is final\20190927\20191117opticaltest.1.len"
+EXI Y

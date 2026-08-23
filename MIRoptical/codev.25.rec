@@ -1,0 +1,58 @@
+LEN NEW
+DDM M
+SEE 0
+RES "D:\MIRmaterial\MIRoptical\Narrow_Edge_Schematic.1.len"
+BEA; CAN;
+BEA
+WRX  22
+WRY  22
+GO
+BEA; CAN;
+BEA
+WRX  8.8
+WRY  9.5
+GO
+BEA; CAN;
+BEA
+WRX  3
+WRY  3
+GO
+V3D ; GO
+DEL F11+1
+DEL F10+1
+DEL F9+1
+DEL F8+1
+DEL F7+1
+DEL F6+1
+in cv_macro:unvig
+DEL F1+1
+DEL F0+1
+in cv_macro:unvig
+DEL F1+1
+DEL F0+1
+DEL F0+1
+in CV_MACRO:cvsetfield Y 0 F1
+BEA
+WRX  3
+WRY  3
+GO
+BEA; CAN;
+BEA
+WRX  22
+WRY  22
+GO
+BEA; CAN;
+BEA
+WRX  8.8
+WRY  9.5
+GO
+BEA; CAN;
+BEA
+WRX  22
+WRY  22
+GO
+BEA; CAN;
+BEA
+WRX  8.8
+WRY  9.5
+GO

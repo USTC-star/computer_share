@@ -1,0 +1,12 @@
+LEN NEW
+DDM M
+SEE 0
+RES "D:\MIRmaterial\MIRoptical\illumination\MIR_optics_Tx_combine.len"
+BEA; CAN;
+BEA
+WRX  6.9
+WRY  12.2
+DIS  NO
+GO
+SAV "D:\MIRmaterial\MIRoptical\illumination\MIR_optics_Tx_combine.len"
+EXI Y

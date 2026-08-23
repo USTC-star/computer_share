@@ -1,0 +1,10 @@
+LEN NEW
+DDM M
+SEE 0
+RES "D:\MIRmaterial\MIRoptical\MIRLO\MIRLO_20190105.3.len"
+V3D ; GO
+SLB SO 'source'
+SLB S1 'gain'
+SLB S3 'focus'
+SAV "D:\MIRmaterial\MIRoptical\MIRLO\MIRLO_20190105.3.len"
+EXI Y

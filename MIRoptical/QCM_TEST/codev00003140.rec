@@ -1,0 +1,56 @@
+LEN NEW
+DDM M
+SEE 0
+RES "D:\MIRmaterial\MIRoptical\QCM_TEST\tabelteast_beanspliterWithSpehercal.len"
+IND
+BEA
+WRX  7
+WRY  8
+SUR SO..6
+DIS  YES
+GO
+RDY  S2 400
+RDY  S3 -400
+BEA
+WRX  7
+WRY  8
+SUR SO..6
+DIS  YES
+GO
+THI  S1 160
+BEA
+WRX  7
+WRY  8
+SUR SO..6
+DIS  YES
+GO
+RDY  S2 100
+BEA
+WRX  7
+WRY  8
+SUR SO..6
+DIS  YES
+GO
+THI  S3 0.0001
+BEA
+WRX  7
+WRY  8
+SUR SO..6
+DIS  YES
+GO
+RDY  S3 -100
+BEA
+WRX  7
+WRY  8
+SUR SO..6
+DIS  YES
+GO
+THI  S3 1e-006
+BEA
+WRX  7
+WRY  8
+SUR SO..6
+DIS  YES
+GO
+SAV "D:\MIRmaterial\MIRoptical\QCM_TEST\tabelteast_beanspliterWithSpehercal.len"
+EXI Y

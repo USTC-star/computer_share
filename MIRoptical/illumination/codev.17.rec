@@ -1,0 +1,59 @@
+LEN NEW
+DDM M
+SEE 0
+RES "D:\MIRmaterial\MIRoptical\illumination\MIR_optics_Tx_combine.len"
+RDY  S2 -265
+RDY  S3 265
+BEA; CAN;
+BEA
+WRX  6.9
+WRY  12.2
+DIS  NO
+GO
+V3D ; GO
+BEA; CAN;
+BEA; CAN;
+BEA
+WRX  6.9
+WRY  12.2
+GO
+WL W1 3333333
+BEA
+WRX  6.9
+WRY  12.2
+GO
+RDY  S2 -275
+RDY  S3 275
+BEA
+WRX  6.9
+WRY  12.2
+GO
+RDY  S2 -255
+RDY  S3 255
+BEA
+WRX  6.9
+WRY  12.2
+GO
+RDY  S2 -198
+RDY  S3 198
+BEA
+WRX  6.9
+WRY  12.2
+GO
+V3D ; GO
+BEA; CAN;
+BEA
+WRX  6.9
+WRY  12.2
+GO
+RDY  S2 -200
+RDY  S3 200
+BEA
+WRX  6.9
+WRY  12.2
+GO
+V3D ; GO
+SAV "D:\MIRmaterial\MIRoptical\illumination\MIR_optics_Tx_combine.len"
+SAV "D:\MIRmaterial\MIRoptical\illumination\MIR_optics_Tx_combine.len"
+SAV "D:\MIRmaterial\MIRoptical\illumination\MIR_optics_Tx_combine.20190105.len"
+EXI Y

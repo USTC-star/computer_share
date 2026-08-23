@@ -1,0 +1,5 @@
+LEN NEW
+DDM M
+SEE 0
+RES "D:\MIRmaterial\MIRoptical\illumination\testmode\illumination_19_1_20.len"
+EXI Y

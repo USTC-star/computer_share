@@ -1,0 +1,106 @@
+LEN NEW
+DDM M
+SEE 0
+RES "D:\MIRmaterial\MIRoptical\illumination\endmode\MIR_optics_Tx_combine_upgrad.len"
+THI  S6 -340
+THI  S7 1650
+BEA
+WRX  10
+WRY  12
+GO
+THI  S3 200
+BEA
+WRX  10
+WRY  12
+GO
+V3D ; GO
+THI  S3 50
+THI  S3 50
+BEA
+WRX  10
+WRY  12
+GO
+V3D ; GO
+THI  S1 100
+BEA
+WRX  10
+WRY  12
+GO
+BEA
+WRX  10
+WRY  12
+GO
+RDY  S4 900
+RDY  S5 -900
+BEA
+WRX  10
+WRY  12
+GO
+BEA; CAN;
+BEA
+WRX  10
+WRY  12
+GO
+BEA
+WRX  10
+WRY  12
+GO
+BEA
+WRX  10
+WRY  12
+GO
+THI  S3 100
+IND
+BEA
+WRX  10
+WRY  12
+GO
+REY S6 300
+REY S7 300
+V3D ; GO
+REY S6 250
+V3D ; GO
+THI  S3 350
+V3D ; GO
+THI  S3 300
+V3D ; GO
+THI  S3 19
+THI  S3 19
+V3D ; GO
+THI  S3 20
+BEA
+WRX  10
+WRY  12
+GO
+CXP; CAN;
+CXP
+TYP STE
+FIL "C:\Users\81364\Desktop\optical.stp"
+RAT DEF;RFR
+GO
+CXP; CAN;
+CXP
+TYP STE
+FIL "C:\Users\81364\Desktop\optical.stp"
+LYR  S1..8 Z1..1 1
+RAT DEF;RFR
+GO
+CXP; CAN;
+CXP
+TYP STE
+FIL "C:\Users\81364\Desktop\optical.1.stp"
+LYR  S1..7 Z1..1 1
+RAT DEF;RFR
+GO
+CXP; CAN;
+CXP
+TYP STE
+FIL "C:\Users\81364\Desktop\opticalqwww.1.stp"
+LYR  S1..7 Z1..1 1
+SUR  SO..7 Z1..1
+RVS  S1..7 Z1..1
+DUM  S1..7 Z1..1 APE
+RAT DEF;RFR
+GO
+SAV "D:\MIRmaterial\MIRoptical\illumination\endmode\MIR_optics_Tx_combine_upgrad.len"
+EXI Y

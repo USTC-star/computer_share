@@ -1,0 +1,6 @@
+LEN NEW
+DDM M
+SEE 0
+RES "D:\MIRmaterial\MIRoptical\MIRLO\MIRLO_20190105.3.len"
+SAV "D:\MIRmaterial\MIRoptical\illumination\endmode\nonthing is final\MIRoptical_2020\mir_LO.len"
+EXI Y

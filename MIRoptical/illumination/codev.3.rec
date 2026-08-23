@@ -1,0 +1,12 @@
+LEN NEW
+DDM M
+SEE 0
+RES "D:\MIRmaterial\MIRoptical\illumination\MIR_Tx_20161130.len"
+IN CV_MACRO:cvcurvaturex RDX  S2 500
+IN CV_MACRO:cvcurvaturex RDX  S3 -600
+BEA
+WRX  8.8
+WRY  9.5
+DIS  NO
+GO
+EXI Y

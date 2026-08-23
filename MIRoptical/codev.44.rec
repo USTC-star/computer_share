@@ -1,0 +1,31 @@
+LEN NEW
+DDM M
+SEE 0
+RES "D:\MIRmaterial\MIRoptical\Narrow_Edge_Schematic.1.len"
+SAV "D:\MIRmaterial\MIRoptical\Narrow_Edge_Schematic_test.len"
+THI  S7 0
+THI  S10 560
+BEA
+WRX  22
+WRY  22
+GO
+THI  S18 55
+THI  S19 1435
+THI  S20 300
+GL1 S21
+THI  S21 100
+THI  S22 0
+THI  S23 200
+THI  S24 0
+THI  S25 150
+BEA
+WRX  22
+WRY  22
+GO
+V3D; CAN;
+V3D
+RAT DEF;RFR
+GO
+SAV "D:\MIRmaterial\MIRoptical\Narrow_Edge_Schematic_test.len"
+SAV "D:\MIRmaterial\MIRoptical\Narrow_Edge_Schematic_test.len"
+EXI Y

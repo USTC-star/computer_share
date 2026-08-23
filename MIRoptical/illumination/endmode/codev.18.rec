@@ -1,0 +1,56 @@
+LEN NEW
+DDM M
+SEE 0
+RES "D:\MIRmaterial\MIRoptical\illumination\endmode\MIR_optics_Tx_combine_upgrad.len"
+THI  S6 -340
+V3D ; GO
+GL1 S4
+V3D ; GO
+BEA
+WRX  10
+WRY  12
+GO
+REY S6 250
+REY S7 250
+BEA
+WRX  10
+WRY  12
+GO
+V3D ; GO
+GL1 S4  651000.600000
+BEA
+WRX  10
+WRY  12
+GO
+V3D ; GO
+THI  S7 1750
+BEA
+WRX  10
+WRY  12
+GO
+V3D ; GO
+BEA
+WRX  10
+WRY  12
+GO
+BEA
+WRX  10
+WRY  12
+GO
+THI  S7 750
+BEA
+WRX  10
+WRY  12
+GO
+BEA
+WRX  10
+WRY  12
+GO
+V3D ; GO
+THI  S7 1750
+! Undo:  THI  S7 1750
+THI  S8 0
+! Undo:  THI  S8 0
+! Undo:  WRY  12
+! Undo:  WRX  10
+EXI Y

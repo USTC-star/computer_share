@@ -1,0 +1,7 @@
+LEN NEW
+DDM M
+SEE 0
+RES "D:\MIRmaterial\MIRoptical\illumination\endmode\nonthing is final\20190927\20191117opticaltest.1.len"
+VIE ; LAB; GO
+V3D ; GO
+EXI Y

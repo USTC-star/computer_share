@@ -1,0 +1,81 @@
+LEN NEW
+DDM M
+SEE 0
+RES "D:\MIRmaterial\MIRoptical\illumination\endmode\nonthing is final\20190927\20190927optical.len"
+DEL S11..13
+DEL S12..18
+DEL S8..10
+V3D ; GO
+DEL S8
+V3D ; GO
+CXP; CAN;
+CXP
+TYP STE
+FIL "export_illumination.stp"
+RAT DEF;RFR
+GO
+SAV "D:\MIRmaterial\MIRoptical\illumination\endmode\nonthing is final\20190927\20190927optical.len"
+RES "D:\MIRmaterial\MIRoptical\Wide_Cutoff2_Schematic.len"
+VIE ; LAB; GO
+VIE; CAN;
+V3D ; GO
+RES "D:\MIRmaterial\MIRoptical\Narrow_Edge_Schematic.1.len"
+VIE; CAN;
+VIE ; LAB; GO
+RSI SO..I W1 F2 R1
+VIE; CAN;
+VIE ; LAB; GO
+V3D ; GO
+RSI SO..23 W1 F1 R1
+RSI SO..23 W1 F12 R1
+INS S11..13
+THI  S14 0
+THI  S10 865
+SLB S13 'mir1'
+THI  S14 210
+SLB S12 'beamp2'
+THI  S14 0
+THI  S13 210
+THI  S12 195
+SLB S11 'mir1'
+THI  S11 144
+SLB S10 'mirr2'
+SLB S10 'mir2'
+THI  S10 0
+THI  S10 390
+! Undo:  THI  S10 390
+! Undo:  THI  S10 0
+INS S10
+INS S12
+DEL S10
+SLB S11 'mirror2'
+THI  S11 390
+THI  S10 0
+THI  S9 1366
+BEA; CAN;
+BEA
+WRX  22
+WRY  22
+GO
+SLB S14 'mirr1'
+DAR S10
+DAR S11
+BDE  S11 -45
+DAR S12
+BDE  S12 -45
+DAR S13
+BDE  S13 53
+DAR S14
+BDE  S14 -45
+BEA
+WRX  22
+WRY  22
+GO
+THI  S14 70
+THI  S15 140
+BEA
+WRX  22
+WRY  22
+GO
+SAV "D:\MIRmaterial\MIRoptical\Narrow_Edge_Schematic.1.len"
+EXI Y

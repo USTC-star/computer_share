@@ -1,0 +1,8 @@
+LEN NEW
+DDM M
+SEE 0
+RES "D:\MIRmaterial\MIRoptical\illumination\endmode\MIR_optics_Tx_combine.len"
+V3D ; GO
+V3D ; GO
+SAV "D:\MIRmaterial\MIRoptical\illumination\endmode\MIR_optics_Tx_combine.len"
+EXI Y

@@ -1,0 +1,12 @@
+LEN NEW
+DDM M
+CA APE
+SEE 0
+RES "D:\MIRmaterial\MIRoptical\MIRopticalrecent\MIRNEW.len"
+VIE ; LAB; GO
+V3D ; GO
+BEA
+WRX  22
+WRY  22
+GO
+EXI Y

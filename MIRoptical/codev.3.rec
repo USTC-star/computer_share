@@ -1,0 +1,8 @@
+LEN NEW
+DDM M
+CA APE
+SEE 0
+RES "D:\ECEInotebook\optical\MIROptics\MIR_optics_Tx_20180201.len"
+VIE ; LAB; GO
+V3D ; GO
+EXI Y

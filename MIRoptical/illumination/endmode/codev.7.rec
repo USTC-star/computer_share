@@ -1,0 +1,14 @@
+LEN NEW
+DDM M
+SEE 0
+RES "D:\MIRmaterial\MIRoptical\illumination\endmode\MIR_optics_Tx_combine.len"
+THI  S2 40
+THI  S3 1200
+THI  S7 -180
+THI  S11 -197
+BEA; CAN;
+BEA
+WRX  10
+WRY  11
+GO
+EXI Y

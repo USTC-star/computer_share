@@ -1,0 +1,31 @@
+LEN NEW
+DDM M
+SEE 0
+RES "D:\MIRmaterial\MIRoptical\illumination\endmode\nonthing is final\20190927\20191002opticaltest.1.len"
+BEA; CAN;
+BEA
+WRX  7
+WRY  8
+GO
+V3D ; GO
+SLB S23 'magnetic axis'
+SLB S23 'magn-axis'
+THI  S22 250
+BEA
+WRX  7
+WRY  8
+GO
+BEA; CAN;
+BEA
+WRX  7
+WRY  8
+DIS  YES
+GO
+BEA; CAN;
+BEA
+WRX  7
+WRY  8
+DIS  YES
+XZ YES
+GO
+EXI Y

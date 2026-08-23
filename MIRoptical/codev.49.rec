@@ -1,0 +1,13 @@
+LEN NEW
+DDM M
+SEE 0
+RES "D:\MIRmaterial\MIRoptical\Wide_Cutoff1_Schematic.len"
+RSI SO..I W1 F1 R1
+FIE; CAN;
+FIE
+GO
+BPR; CAN;
+BPR; CAN;
+BEA; CAN;
+SAV "C:\Users\81364\Desktop\MIRNEW.len"
+EXI Y

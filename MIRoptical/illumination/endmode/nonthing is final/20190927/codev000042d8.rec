@@ -1,0 +1,27 @@
+LEN NEW
+DDM M
+SEE 0
+RES "D:\MIRmaterial\MIRoptical\illumination\endmode\nonthing is final\20190927\20190927optical.len"
+BEA
+WRX  7
+WRY  8
+GO
+BDE  S10 -53
+V3D ; GO
+REY S7 150
+REX S7 300
+REY S8 140
+REX S8 400
+REX S8 140
+REY S8 400
+REY S7 300
+! Undo:  REY S7 300
+REX S7 150
+REY S7 300
+REX S9 280
+REY S9 400
+REY S10 320
+REY S11 400
+REX S11 140
+SAV "D:\MIRmaterial\MIRoptical\illumination\endmode\nonthing is final\20190927\20190927optical.len"
+EXI Y

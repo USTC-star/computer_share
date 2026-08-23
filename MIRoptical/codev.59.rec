@@ -1,0 +1,6 @@
+LEN NEW
+DDM M
+SEE 0
+RES "D:\MIRmaterial\MIRoptical\Narrow_Edge_Schematic_test.1.len"
+V3D ; GO
+EXI Y

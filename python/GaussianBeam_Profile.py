@@ -59,4 +59,4 @@ plt.ylabel("Beam radius w(z) (m)")
 plt.title("Gaussian Beam Propagation (Before and After Lens)")
 plt.grid()
 
-#plt.show()
+plt.show()

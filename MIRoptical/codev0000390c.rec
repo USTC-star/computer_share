@@ -1,0 +1,6 @@
+LEN NEW
+DDM M
+SEE 0
+RES "H:\MIROptics\Narrow_Edge_Schematic.1.len"
+V3D ; GO
+EXI Y
