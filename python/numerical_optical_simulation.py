@@ -33,7 +33,14 @@ class ThinLens:
         obj.f = f
         obj.Matrix = np.array([[1, 0], [-1/f, 1]])
         return obj
-
+class Mirror:
+    def __init__(self,ry,rx):
+        inv_fx = -2/rx
+        inv_fy = -2/ry
+        self.fx = 1/inv_fx
+        self.fy = 1/inv_fy
+        self.Matrix_x = np.array([[1,0],[-1/self.fx,1]])
+        self.Matrix_y = np.array([[1, 0], [-1 / self.fy, 1]])
         
 class Thicklens:
     def __init__(self,r1,r2,d,n):
@@ -90,10 +97,13 @@ class OpticalSystem:
 
         # extract waist
         z_new = -np.real(q_out)
-        zR0_new = np.imag(q_out)
-        w0_new = np.sqrt(self.beam.lambda0 * zR0_new / np.pi)
+        zr0_new = np.imag(q_out)
+        w0_new = np.sqrt(self.beam.lambda0 * zr0_new / np.pi)
         w_new  = np.sqrt(self.beam.lambda0/np.pi*(-1)/np.imag(1/q_out))
-        return z_new, w0_new*1e3, w_new*1e3
+        inv_R = np.real(1 / q_out)
+        R_cur = 1 / inv_R
+        return z_new*1e3, w0_new*1e3, w_new*1e3, R_cur*1e3
+
     
 
 

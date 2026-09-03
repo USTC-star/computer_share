@@ -1,0 +1,94 @@
+LEN NEW
+DDM M
+SEE 0
+RES "D:\desktop\computer_share\HL-3_MIR\Illumination\HL_3 illumination.len"
+IN CV_MACRO:cvcurvaturex RDX  S7 0
+IN CV_MACRO:cvcurvaturex RDX  S6 -1000
+BEA
+WRX  7
+WRY  8
+SUR S1..17
+DIS  YES
+GO
+BEA
+WRX  7
+WRY  8
+SUR S1..17
+DIS  YES
+GO
+CXP
+TYP STE
+FIL "C:\Users\81364\Desktop\optical.stp"
+LYR  S1..8 Z1..1 1
+RAT DEF;RFR
+GO
+RDY  S15 -670
+RDY  S16 -660
+RDY  S13 -730
+GL1 S10  651000.6
+BEA
+WRX  7
+WRY  8
+SUR S1..17
+DIS  YES
+GO
+CXP
+TYP STE
+FIL "C:\Users\81364\Desktop\optical.stp"
+LYR  S1..8 Z1..1 1
+RAT DEF;RFR
+GO
+RDY  S15 670
+RDY  S13 730
+RDY  S16 660
+CXP
+TYP STE
+FIL "C:\Users\81364\Desktop\optical.stp"
+LYR  S1..8 Z1..1 1
+RAT DEF;RFR
+GO
+V3D ; GO
+VIE ; LAB; GO
+V3D ; GO
+REY S7 200
+CXP
+TYP STE
+FIL "C:\Users\81364\Desktop\optical.stp"
+LYR  S1..8 Z1..1 1
+RAT DEF;RFR
+GO
+V3D ; GO
+V3D ; GO
+VIE ; LAB; GO
+VIE ; LAB; GO
+V3D ; GO
+SPH S7
+V3D ; GO
+DRA S11 NO
+V3D ; GO
+DRA S11 = N
+DRA S11 = NO
+DRA S11 N
+S11 DRA NO
+BEA
+WRX  7
+WRY  8
+SUR S1..17
+DIS  YES
+GO
+BEA
+WRX  7
+WRY  8
+SUR S1..17
+DIS  YES
+GO
+BEA; CAN;
+BEA
+WRX  7
+WRY  8
+SUR S1..17
+DIS  YES
+XZ YES
+GO
+SAV "D:\desktop\computer_share\HL-3_MIR\Illumination\HL_3 illumination.len"
+EXI Y

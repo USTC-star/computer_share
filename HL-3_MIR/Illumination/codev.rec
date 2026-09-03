@@ -1,0 +1,40 @@
+LEN NEW
+DDM M
+SEE 0
+RES "D:\desktop\computer_share\HL-3_MIR\Illumination\HL_3 illumination.len"
+V3D ; GO
+RDY  S14 550
+V3D ; GO
+THI S5 OAL  S1..8 2759
+! Undo:               
+THI S5 OAL  S4..8 2759
+THI S5 OAL  S4..7 2759
+THI S5 OAL  S1..8 2759
+THI S5 ET 2759 0
+THI S5 OAL  SO..8 2759
+THI S5 OAL  S1..8 2179
+BEA
+WRX  7
+WRY  8
+SUR S1..17
+DIS  YES
+XZ YES
+GO
+THI  S1 200
+BEA
+WRX  7
+WRY  8
+SUR S1..17
+DIS  YES
+XZ YES
+GO
+BEA; CAN;
+BEA
+WRX  7
+WRY  8
+SUR S1..17
+DIS  YES
+XZ NO
+GO
+SAV "D:\desktop\computer_share\HL-3_MIR\Illumination\HL_3 illumination.len"
+EXI Y

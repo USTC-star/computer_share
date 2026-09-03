@@ -1,6 +1,9 @@
 LEN NEW
 DDM M
 SEE 0
-RES "D:\MIRmaterial\MIRoptical\illumination\endmode\nonthing is final\MIR_optics_Tx_combine_upgrad_3.len"
-V3D ; GO
+RES "D:\desktop\computer_share\MIRoptical\illumination\endmode\nonthing is final\MIR_optics_Tx_combine_upgrad_3.len"
+BEA
+WRX  7
+WRY  8
+GO
 EXI Y

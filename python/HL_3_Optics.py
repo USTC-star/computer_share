@@ -34,7 +34,7 @@ import math
 # min_val = delta_xi[min_idx]
 #
 # print(ds[min_idx])
-
+# %%
 first_lens = Thicklens(r1=1.55,r2=-1.55,d=0.260,n=1.623450)
 h_first_lens = 0.55
 optics = OpticalMatrix(first_lens.Matrix)
@@ -43,7 +43,7 @@ R_cutoff = 0.55
 xi = optics.transform_raytrace(-x0)
 print('xi=%.4fm' %xi)
 print(f"xi = {xi:.4f} m")
-h_cutoff = (h_first_lens - 0.06)/x0*R_cutoff;
+h_cutoff = (h_first_lens - 0.06)/x0*R_cutoff
 print(f"h_cutoff = {h_cutoff:.4f} m")
 alpha_0 = math.atan(0.528/xi)
 print(f"alpha_0 = {alpha_0:.4f} rad")
@@ -75,7 +75,36 @@ print(f"Dcutoff= {dcutoff:.4f} ")
 L = SpaceMatrix(dcutoff).Matrix@optics_new.Matrix@L0
 print(f" z= {L[0,0]*1e3:.7f}mm ")
 
+# Scan s2 while keeping the distance between zoom1 and the first lens fixed.
+# For each s2 position, s1 is adjusted so that s1 + s2 remains constant.
+s1_s2_total = s + s2
+s2_scan = np.linspace(0.01, s1_s2_total - 0.01, 100)
+s1_scan = s1_s2_total - s2_scan
+f_h2_scan = []
+dcutoff_scan = []
 
+for s2_value, s1_value in zip(s2_scan, s1_scan):
+    scan_space1 = SpaceMatrix(s1_value)
+    scan_space2 = SpaceMatrix(s2_value)
+    scan_optics = OpticalMatrix(
+        first_lens.Matrix
+        @ scan_space2.Matrix
+        @ zoom2.Matrix
+        @ scan_space1.Matrix
+        @ zoom1.Matrix
+        @ space0.Matrix
+    )
+    f_h2_scan.append(scan_optics.f_h2)
+    dcutoff_scan.append(scan_optics.f_h2 - R_cutoff)
+
+plt.figure()
+plt.plot(s2_scan, dcutoff_scan)
+plt.xlabel("S2 distance (m)")
+plt.ylabel("Cutoff distance (m)")
+plt.grid()
+plt.show()
+
+# %%
 # f2_list = []
 # f2h_list = []
 #
@@ -149,3 +178,101 @@ print(f" z= {L[0,0]*1e3:.7f}mm ")
 # plt.xlabel("Distance from zoom1 to zoom2 (m)")
 # plt.ylabel("w0 (m)")
 # plt.show()
+# %% illumination optics
+s3 = 2.379
+s2 = 0.200
+s1 = 0.1
+s4 = 0.2
+s5 = 1.323
+
+
+space1 = SpaceMatrix(s1)
+space2 = SpaceMatrix(s2)
+space3 = SpaceMatrix(s3)
+space4 = SpaceMatrix(s4)
+space5 = SpaceMatrix(s5)
+first_lens = Thicklens(r1=1.55,r2=-1.55,d=0.260,n=1.623450)
+gain_lens = Thicklens(r1=-0.4,r2=1e99,d=0.040,n=1.623450)
+zoom_lens = Thicklens(r1= 1,r2= -1,d=0.040,n=1.623450)
+window_lens = Thicklens(r1= 1e99,r2= -1e99,d=0.044,n=1.623450)
+optics = OpticalMatrix(space5.Matrix
+                       @window_lens.Matrix
+                       @space4.Matrix
+                       @first_lens.Matrix
+                        @space3.Matrix
+                       @zoom_lens.Matrix
+                        @space2.Matrix
+                        @gain_lens.Matrix
+                        @space1.Matrix)
+
+lambda0 = 4*1e-3
+w0 = 8*1e-3
+beam = GaussianBeam(w0=w0, lambda0=lambda0)
+system = OpticalSystem(beam, optics, z=0)
+
+z_new, w0_new, w_new ,R_cur = system.compute_new_waist()
+zR=np.pi*(w_new*1E-3)**2/lambda0
+print("z_new=%.4fmm, w0_new = %.4fmm,w_new = %.4fmm zR=%.4f m,R_cur=%.4f mm"%(z_new, w0_new,w_new,zR,R_cur))
+print('z_cutoff = %.4f m '%(optics.f_h2-0.550))
+
+# %% scanning the code
+# Scan s2 while keeping the distance between horn and the first lens fixed.
+# For each s2 position, s3 is adjusted so that s1 + s2 remains constant.
+d_horn_1stlens = 2.679
+s1 = 0.1
+s4 = 0.2
+s5 = 1.323
+space1 = SpaceMatrix(s1)
+space2 = SpaceMatrix(s2)
+space3 = SpaceMatrix(s3)
+space4 = SpaceMatrix(s4)
+space5 = SpaceMatrix(s5)
+first_lens = Thicklens(r1=1.55,r2=-1.55,d=0.260,n=1.623450)
+gain_lens = Thicklens(r1=-0.4,r2=1e99,d=0.040,n=1.623450)
+zoom_lens = Thicklens(r1= 1,r2= -1,d=0.040,n=1.623450)
+window_lens = Thicklens(r1= 1e99,r2= -1e99,d=0.044,n=1.623450)
+
+
+s2_scan = np.linspace(0.01,0.2, 30)
+s3_scan = d_horn_1stlens -s1-s2_scan
+
+R_cur_scan = []
+w_new_scan = []
+lambda0 = 4*1e-3
+w0 = 8*1e-3
+beam = GaussianBeam(w0=w0, lambda0=lambda0)
+
+for s2_value, s3_value in zip(s2_scan, s3_scan):
+    scan_space3 = SpaceMatrix(s3_value)
+    scan_space2 = SpaceMatrix(s2_value)
+
+    scan_optics = OpticalMatrix(space5.Matrix
+                       @window_lens.Matrix
+        @space4.Matrix
+        @first_lens.Matrix
+        @ scan_space3.Matrix
+        @ zoom_lens.Matrix
+        @ scan_space2.Matrix
+        @ gain_lens.Matrix
+        @ space1.Matrix
+    )
+    system = OpticalSystem(beam, scan_optics, z=0)
+    z_new, w0_new, w_new, R_cur = system.compute_new_waist()
+    R_cur_scan.append(-1*R_cur)
+    w_new_scan.append(w_new)
+
+fig, ax_radius = plt.subplots()
+ax_beam = ax_radius.twinx()
+
+ax_radius.plot(s2_scan * 1e3, R_cur_scan,'*-', color="tab:blue", label="Wavefront radius")
+ax_beam.plot(s2_scan * 1e3, w_new_scan,"o-", color="tab:orange", label="Beam radius")
+
+ax_radius.set_xlabel("S2 distance (mm)")
+ax_radius.set_ylabel("Wavefront Radius (mm)", color="tab:blue")
+ax_beam.set_ylabel("Beam Radius (mm)", color="tab:orange")
+ax_radius.set_title(f"s1 = {s1 * 1e3:.0f} mm")
+ax_radius.tick_params(axis="y", labelcolor="tab:blue")
+ax_beam.tick_params(axis="y", labelcolor="tab:orange")
+ax_radius.grid()
+fig.tight_layout()
+plt.show()
