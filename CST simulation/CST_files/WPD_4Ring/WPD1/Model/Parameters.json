@@ -1,0 +1,55 @@
+{
+    "parameters": [
+        {
+            "expr": "1.37",
+            "name": "h_trace",
+            "value": "1.37"
+        },
+        {
+            "expr": "20",
+            "name": "h_sub",
+            "value": "20"
+        },
+        {
+            "expr": "400",
+            "name": "V_vacuum",
+            "value": "400"
+        },
+        {
+            "expr": "200",
+            "name": "V_min",
+            "value": "200"
+        },
+        {
+            "expr": "1900",
+            "name": "V2_max",
+            "value": "1900"
+        },
+        {
+            "expr": "1300",
+            "name": "V2_min",
+            "value": "1300"
+        },
+        {
+            "expr": "200",
+            "name": "R2",
+            "value": "200"
+        },
+        {
+            "expr": "200",
+            "name": "R1",
+            "value": "200"
+        },
+        {
+            "expr": "100",
+            "name": "R3",
+            "value": "100"
+        },
+        {
+            "expr": "100",
+            "name": "R4",
+            "value": "100"
+        }
+    ],
+    "version": 1
+}

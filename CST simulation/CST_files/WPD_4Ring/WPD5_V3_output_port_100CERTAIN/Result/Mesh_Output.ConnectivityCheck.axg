@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CSTAuxiliaryGeometry version="20170928">
+  <Objects>
+    <Object name="Lumped Elements\Folder1:R1" id="0">
+      <PointSet points="5934.33105 -3211.55005 -2.22044605e-16 5934.19531 -3230.46313 -2.22044605e-16" material="$ConnectedMaterial$"/>
+    </Object>
+    <Object name="Lumped Elements\Folder1:R2" id="1">
+      <PointSet points="5782 -3211.55005 -2.22044605e-16 5782 -3230.44995 -2.22044605e-16" material="$ConnectedMaterial$"/>
+    </Object>
+    <Object name="Components\WPD5:ground" id="2"/>
+    <Object name="Components\WPD5:sub" id="3"/>
+    <Object name="Components\WPD5:trace" id="4">
+      <PointSet points="5934.33105 -3211.55005 -2.22044605e-16 5782 -3211.55005 -2.22044605e-16 5782 -3230.44995 -2.22044605e-16 5934.19531 -3230.46313 -2.22044605e-16" material="$ConnectedMaterial$"/>
+    </Object>
+  </Objects>
+  <Materials/>
+  <Groups>
+    <Group name="Group 0" ID="0">
+      <Item name="Lumped Elements\Folder1:R1" id="0"/>
+      <Item name="Lumped Elements\Folder1:R2" id="1"/>
+      <Item name="Components\WPD5:trace" id="4"/>
+    </Group>
+    <Group name="Group 1" ID="1">
+      <Item name="Components\WPD5:ground" id="2"/>
+    </Group>
+    <Group name="Isolators" ID="2">
+      <Item name="Components\WPD5:sub" id="3"/>
+    </Group>
+  </Groups>
+</CSTAuxiliaryGeometry>

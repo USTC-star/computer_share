@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CSTAuxiliaryGeometry version="20170928" creator="modeler">
+  <Objects>
+    <Object name="Lumped Elements\Resistors:R1" id="0">
+      <FatArrow position="5644.12695 -3132 2.22044605e-16" direction="0 18.9000015 0" dimension="10 10 10" material="$WireMaterial$" text="Resistors:R1" short="R1"/>
+    </Object>
+    <Object name="Lumped Elements\Resistors:R2" id="1">
+      <FatArrow position="5385.18066 -3132 2.22044605e-16" direction="0 18.9000015 0" dimension="10 10 10" material="$WireMaterial$" text="Resistors:R2" short="R2"/>
+    </Object>
+    <Object name="Lumped Elements\Resistors:R3" id="2">
+      <FatArrow position="5168.93311 -3132 2.22044605e-16" direction="0 18.9000015 0" dimension="10 10 10" material="$WireMaterial$" text="Resistors:R3" short="R3"/>
+    </Object>
+    <Object name="Lumped Elements\Resistors:R4" id="3">
+      <FatArrow position="4940 -3132 2.22044605e-16" direction="0 18.9000015 0" dimension="10 10 10" material="$WireMaterial$" text="Resistors:R4" short="R4"/>
+    </Object>
+    <Object name="Ports\port1" id="8">
+      <LineSet points="4505.77295 -3272.3999 -119.400002 4505.77295 -2991.6001 -119.400002 4505.77295 -2991.6001 21.3700008 4505.77295 -3272.3999 21.3700008 4505.77295 -3272.3999 -119.400002" stripped="1" material="$PortMaterial$" text="1" short="1"/>
+    </Object>
+    <Object name="Ports\port2" id="9">
+      <LineSet points="6005.77295 -2971.58057 -119.400002 6005.77295 -2690.78076 -119.400002 6005.77295 -2690.78076 21.3700008 6005.77295 -2971.58057 21.3700008 6005.77295 -2971.58057 -119.400002" stripped="1" material="$PortMaterial$" text="2" short="2"/>
+    </Object>
+    <Object name="Ports\port3" id="10">
+      <LineSet points="6005.77295 -3573.21582 -119.400002 6005.77295 -3292.41602 -119.400002 6005.77295 -3292.41602 21.3700008 6005.77295 -3573.21582 21.3700008 6005.77295 -3573.21582 -119.400002" stripped="1" material="$PortMaterial$" text="3" short="3"/>
+    </Object>
+  </Objects>
+  <Materials/>
+  <Groups/>
+</CSTAuxiliaryGeometry>

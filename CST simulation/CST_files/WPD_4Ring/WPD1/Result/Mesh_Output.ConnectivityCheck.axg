@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CSTAuxiliaryGeometry version="20170928">
+  <Objects>
+    <Object name="Lumped Elements\Resistors:R1" id="0">
+      <PointSet points="5644.12695 -3122.55005 2.22044605e-16 5644.12695 -3141.44995 2.22044605e-16" material="$ConnectedMaterial$"/>
+    </Object>
+    <Object name="Lumped Elements\Resistors:R2" id="1">
+      <PointSet points="5385.18066 -3122.55005 2.22044605e-16 5385.18066 -3141.44995 2.22044605e-16" material="$ConnectedMaterial$"/>
+    </Object>
+    <Object name="Lumped Elements\Resistors:R3" id="2">
+      <PointSet points="5168.93311 -3122.55005 2.22044605e-16 5168.93311 -3141.44995 2.22044605e-16" material="$ConnectedMaterial$"/>
+    </Object>
+    <Object name="Lumped Elements\Resistors:R4" id="3">
+      <PointSet points="4940 -3122.55005 2.22044605e-16 4940 -3141.44995 2.22044605e-16" material="$ConnectedMaterial$"/>
+    </Object>
+    <Object name="Components\WPD1:dielectric" id="4"/>
+    <Object name="Components\WPD1:ground" id="5"/>
+    <Object name="Components\WPD1:trace" id="6">
+      <PointSet points="5644.12695 -3122.55005 2.22044605e-16 5385.18066 -3122.55005 2.22044605e-16 5168.93311 -3122.55005 2.22044605e-16 4940 -3122.55005 2.22044605e-16 4940 -3141.44995 2.22044605e-16 5168.93311 -3141.44995 2.22044605e-16 5385.18066 -3141.44995 2.22044605e-16 5644.12695 -3141.44995 2.22044605e-16" material="$ConnectedMaterial$"/>
+    </Object>
+  </Objects>
+  <Materials/>
+  <Groups>
+    <Group name="Group 0" ID="0">
+      <Item name="Lumped Elements\Resistors:R1" id="0"/>
+      <Item name="Lumped Elements\Resistors:R2" id="1"/>
+      <Item name="Lumped Elements\Resistors:R3" id="2"/>
+      <Item name="Lumped Elements\Resistors:R4" id="3"/>
+      <Item name="Components\WPD1:trace" id="6"/>
+    </Group>
+    <Group name="Group 1" ID="1">
+      <Item name="Components\WPD1:ground" id="5"/>
+    </Group>
+    <Group name="Isolators" ID="2">
+      <Item name="Components\WPD1:dielectric" id="4"/>
+    </Group>
+  </Groups>
+</CSTAuxiliaryGeometry>

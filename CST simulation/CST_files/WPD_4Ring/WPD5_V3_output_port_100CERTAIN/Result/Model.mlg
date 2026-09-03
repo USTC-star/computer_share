@@ -1,0 +1,52 @@
+----------------------------------------------------------------------
+  3D mesh modifications    :	1
+  Mesh adaptation pass     :	1
+  Simulation point         :	12 GHz
+----------------------------------------------------------------------
+  Solver time w/o ref.     :	3 s
+  Mesh refinement time     :	6 s
+  Number of mesh cells     :	7961
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+  3D mesh modifications    :	2
+  Mesh adaptation pass     :	2
+  Simulation point         :	12 GHz
+----------------------------------------------------------------------
+  Solver time w/o ref.     :	4 s
+  Mesh refinement time     :	2 s
+  Number of mesh cells     :	10437
+  Delta calculation        
+  All S-Parameters         :	0.0689233
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+  3D mesh modifications    :	3
+  Mesh adaptation pass     :	3
+  Simulation point         :	12 GHz
+----------------------------------------------------------------------
+  Solver time w/o ref.     :	7 s
+  Mesh refinement time     :	3 s
+  Number of mesh cells     :	16400
+  Delta calculation        
+  All S-Parameters         :	0.0311575
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+  3D mesh modifications    :	4
+  Mesh adaptation pass     :	4
+  Simulation point         :	12 GHz
+----------------------------------------------------------------------
+  Solver time w/o ref.     :	8 s
+  Mesh refinement time     :	0 s
+  Number of mesh cells     :	25050
+  Delta calculation        
+  All S-Parameters         :	0.0138688
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+  Total solver time        :	42 s
+
+  Desired accuracy limit reached, mesh adaptation stopped.
+----------------------------------------------------------------------
+

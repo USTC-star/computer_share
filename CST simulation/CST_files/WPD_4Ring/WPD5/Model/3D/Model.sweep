@@ -1,0 +1,10 @@
+{
+    "parameter sweep": {
+        "options": {
+            "restore parameter values after run": "false",
+            "simulation type": "Active Solver",
+            "skip existing combinations": "true"
+        },
+        "version": 1
+    }
+}

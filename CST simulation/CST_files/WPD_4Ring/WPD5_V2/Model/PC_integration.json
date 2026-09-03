@@ -1,0 +1,29 @@
+{
+   "execution": {
+      "classname": "SMAPowerByEmagHPCFrameReduced",
+      "libname": "SMAPowerByEmagUI"
+   },
+   "inputVariables": [
+      {
+         "name": "h_trace",
+         "type": "float",
+         "value": 1.37
+      },
+      {
+         "name": "H_sub",
+         "type": "float",
+         "value": 20.0
+      },
+      {
+         "name": "R1",
+         "type": "float",
+         "value": 200.0
+      },
+      {
+         "name": "R2",
+         "type": "float",
+         "value": 100.0
+      }
+   ],
+   "outputVariables": []
+}

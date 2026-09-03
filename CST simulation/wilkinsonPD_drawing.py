@@ -2,36 +2,59 @@
 """
 Created on Tue Aug 25 12:28:48 2026
 
-@author: mmwave
+@author: Xinhang Xu
 """
 get_ipython().run_line_magic('reset', '-sf') # noqa
 import numpy as np
 
-# %% trace1;
-Width_T0 = 42.6; # microstrap width with 50 ohm impedance 
-Width_T1 = 10.5549;# arc1 width with Z1 ohm impedance 
-L1 = 255.54;# arc1 phase shift with 90 degree 
 W_pad_x = 25.2;# 0402 pad size x 
 W_pad_y = 21.26;# 0402 pad size x 
 yc_pad= 20.08;# 0402 pad central y 
-Y1_right = 20.08 #  y coordinate on the right side of arc1
-X1_right = -1/2*W_pad_x+ 1/2*Width_T1  # x coordinate on the right side of arc1,align the left side of arc on the right side with the left side of pad
-
-L1_m = L1-2*Y1_right- np.abs(X1_right) #calculate the arc1 length by subtracting the lengh of connection
-R1_m =L1_m/np.pi;
-X1_left = -2*R1_m+X1_right #calculate x coordinate on the left side of arc1
+xc_pad= 0;# 0402 pad central 0 
+# %% trace1;
+Width_T0 = 42 ; # microstrap width with 50 ohm impedance 
+Width_T1 = 10.15;# arc1 width with Z1 ohm impedance 
+L1 = 411.76;# arc1 phase shift with 90 degree 
+theta_trace_1 =3*np.pi/3 # define the angle of arc2 
+theta_trace_1_degree = theta_trace_1*180/np.pi
+Width_T=Width_T1
+if Width_T<W_pad_x:
+    if Width_T1<W_pad_y:
+     Y_right =  yc_pad+Width_T/2 #  y coordinate on the right side of arc1
+    else:
+     Y_right =  yc_pad-W_pad_y/2+Width_T/2
+     
+    X_right = -1/2*W_pad_x+ 1/2*Width_T  # x coordinate on the right side of arc1,align the left side 
+                                           # of arc on the right side with the left side of pad
+else:
+    R = Width_T/2
+    l = W_pad_x/2
+    d = R-np.sqrt(R**2-l**2)
+    if d < W_pad_y:
+      Y_right =  yc_pad+W_pad_y/2-d+ Width_T/2 #  y coordinate on the right side of arc1
+    else: 
+      Y_right =  yc_pad-W_pad_y/2+Width_T/2
+    X_right = xc_pad  # x coordinate on the right side of arc1,align the end
+                      # of the arc on the center of the pad 
+ 
+Y1_right  =   Y_right
+X1_right  =   X_right                                                                           
+L1_m = L1-2*Y1_right- np.abs(X1_right) #calculate the arc1 length by subtracting the lengh of 
+                                       #connection
+R1_m =L1_m/theta_trace_1;
+X1_left = -2*R1_m*np.sin(1/2*theta_trace_1)+X1_right #calculate x coordinate on the left side of arc1
 Y1_left =  Y1_right #calculate y coordinate on the left side of arc1
-X1_C = X1_right - R1_m #calculate x coordinate on the center of arc1
-Y1_C = Y1_left         #calculate y coordinate on the center of arc1
+X1_C = X1_right - R1_m*np.sin(1/2*theta_trace_1) #calculate x coordinate on the center of arc1
+Y1_C = Y1_left - R1_m*np.cos(1/2*theta_trace_1)  #calculate y coordinate on the center of arc1
 X_in = X1_left - Width_T0/2+Width_T1/2   #calculate x coordinate on the center of input pad
 # print(f"X1_left={X1_left:.4f} mil,Y1_left={Y1_left:.4f} mil" )
 # print(f"X1_right={X1_right:.4f} mil,Y1_right={Y1_right:.4f} mil" )
 # print(f"X1_C={X1_C:.4f} mil,Y1_C={Y1_C:.4f} mil" )
 # print(f"Xin={X_in:.4f} mil" )
-
+# print(f"incident angle = {theta_trace_1_degree:.5f} degree")
 # %%trace2;
-Width_T2 = 13.88;
-L2 = 253.7;
+Width_T2 = 16.28;
+L2 = 407.40;
 theta_trace_2 =3*np.pi/3 # define the angle of arc2 
 theta_trace_2_degree = theta_trace_2*180/np.pi
 X2_left=Width_T1/2+Width_T2/2+3.5+X1_right # calculate the x coordinate on the left side of arc2, with about 6 mil gap between the right edge of arc1 on the right side and the left edge of arc 2 on the left side
@@ -50,11 +73,11 @@ X2_C= X2_left + R2_m*np.sin(1/2*theta_trace_2)
 Y2_C= Y2_left -R2_m*np.cos(1/2*theta_trace_2)
 X_2R = X2_right-Width_T2/2+W_pad_x/2
 
-# print(f"X2_left={X2_left:.4f} mil,Y2_left={Y2_left:.4f} mil" )
-# print(f"X2_right={X2_right:.4f} mil,Y2_right={Y2_right:.4f} mil" )
-# print(f"X2_C={X2_C:.4f} mil,Y2_C={Y2_C:.4f} mil" )
-# print(f"incident angle = {theta_trace_2_degree:.5f} degree")
-# print(f"X_2R = {X_2R:.5f} mil")
+print(f"X2_left={X2_left:.4f} mil,Y2_left={Y2_left:.4f} mil" )
+print(f"X2_right={X2_right:.4f} mil,Y2_right={Y2_right:.4f} mil" )
+print(f"X2_C={X2_C:.4f} mil,Y2_C={Y2_C:.4f} mil" )
+print(f"incident angle = {theta_trace_2_degree:.5f} degree")
+print(f"X_2R = {X_2R:.5f} mil")
 
 
 # %%trace3;
@@ -117,8 +140,8 @@ X5_C= X5_left + R5_m*np.sin(1/2*theta_trace_5)
 Y5_C= Y5_left -R5_m*np.cos(1/2*theta_trace_5)
 X_5R = X5_right
 
-print(f"X5_left={X5_left:.4f} mil,Y5_left={Y5_left:.4f} mil" )
-print(f"X5_right={X5_right:.4f} mil,Y5_right={Y5_right:.4f} mil" )
-print(f"X5_C={X5_C:.4f} mil,Y5_C={Y5_C:.4f} mil" )
-print(f"X_5R = {X_5R:.5f} mil")
-print(f"incident angle = {theta_trace_5_degree:.5f} degree")
+# print(f"X5_left={X5_left:.4f} mil,Y5_left={Y5_left:.4f} mil" )
+# print(f"X5_right={X5_right:.4f} mil,Y5_right={Y5_right:.4f} mil" )
+# print(f"X5_C={X5_C:.4f} mil,Y5_C={Y5_C:.4f} mil" )
+# print(f"X_5R = {X_5R:.5f} mil")
+# print(f"incident angle = {theta_trace_5_degree:.5f} degree")

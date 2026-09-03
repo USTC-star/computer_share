@@ -1,0 +1,603 @@
+// Number 3D OBJECTS:
+// ^^^^^^^^^^^^^^^^^^
+5
+
+// Obj3D_ID, MediaCode (0=Iso3D,1=LossyIso3D,2=PEC,3=Aniso3D,4=LossyAniso3D,5=SurfaceImp)
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+0 0
+>> Material name:
+Vacuum
+
+1 1
+>> Material name:
+Rogers RO4350B (lossy)
+
+2 0
+>> Material name:
+air_0
+
+3 5
+>> Material name:
+Copper
+
+4 5
+>> Material name:
+Copper
+
+// Number 2D OBJECTS:
+// ^^^^^^^^^^^^^^^^^^
+197
+
+// Obj2D_ID, BCCode (0=Reg,1=PEC,2=PMC,3=RHO,4=OHM,5=PORT,6=OPEN,7=EXPANDEDOPEN,8=PERIODIC,9=TANGENTIAL,10=NORMAL):
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+0 0
+
+1 5
+1
+
+2 5
+2
+
+3 5
+3
+
+4 0
+
+5 0
+
+6 0
+
+7 0
+
+8 0
+
+9 0
+
+10 0
+
+11 0
+
+12 0
+
+13 0
+
+14 0
+
+15 0
+
+16 0
+
+17 0
+
+18 0
+
+19 3
+Copper
+
+20 3
+Copper
+
+21 3
+Copper
+
+22 0
+
+23 3
+Copper
+
+24 0
+
+25 3
+Copper
+
+26 3
+Copper
+
+27 3
+Copper
+
+28 0
+
+29 3
+Copper
+
+30 3
+Copper
+
+31 3
+Copper
+
+32 3
+Copper
+
+33 3
+Copper
+
+34 3
+Copper
+
+35 3
+Copper
+
+36 3
+Copper
+
+37 3
+Copper
+
+38 3
+Copper
+
+39 3
+Copper
+
+40 3
+Copper
+
+41 3
+Copper
+
+42 3
+Copper
+
+43 3
+Copper
+
+44 3
+Copper
+
+45 3
+Copper
+
+46 3
+Copper
+
+47 3
+Copper
+
+48 3
+Copper
+
+49 3
+Copper
+
+50 3
+Copper
+
+51 3
+Copper
+
+52 3
+Copper
+
+53 3
+Copper
+
+54 3
+Copper
+
+55 3
+Copper
+
+56 3
+Copper
+
+57 3
+Copper
+
+58 3
+Copper
+
+59 3
+Copper
+
+60 3
+Copper
+
+61 3
+Copper
+
+62 3
+Copper
+
+63 3
+Copper
+
+64 3
+Copper
+
+65 3
+Copper
+
+66 3
+Copper
+
+67 3
+Copper
+
+68 3
+Copper
+
+69 3
+Copper
+
+70 3
+Copper
+
+71 3
+Copper
+
+72 3
+Copper
+
+73 3
+Copper
+
+74 3
+Copper
+
+75 3
+Copper
+
+76 3
+Copper
+
+77 3
+Copper
+
+78 3
+Copper
+
+79 3
+Copper
+
+80 3
+Copper
+
+81 3
+Copper
+
+82 3
+Copper
+
+83 3
+Copper
+
+84 3
+Copper
+
+85 3
+Copper
+
+86 3
+Copper
+
+87 3
+Copper
+
+88 3
+Copper
+
+89 3
+Copper
+
+90 3
+Copper
+
+91 3
+Copper
+
+92 3
+Copper
+
+93 3
+Copper
+
+94 3
+Copper
+
+95 3
+Copper
+
+96 3
+Copper
+
+97 3
+Copper
+
+98 3
+Copper
+
+99 3
+Copper
+
+100 3
+Copper
+
+101 3
+Copper
+
+102 3
+Copper
+
+103 3
+Copper
+
+104 3
+Copper
+
+105 3
+Copper
+
+106 3
+Copper
+
+107 3
+Copper
+
+108 3
+Copper
+
+109 3
+Copper
+
+110 3
+Copper
+
+111 3
+Copper
+
+112 3
+Copper
+
+113 3
+Copper
+
+114 3
+Copper
+
+115 3
+Copper
+
+116 3
+Copper
+
+117 3
+Copper
+
+118 3
+Copper
+
+119 3
+Copper
+
+120 3
+Copper
+
+121 3
+Copper
+
+122 3
+Copper
+
+123 3
+Copper
+
+124 3
+Copper
+
+125 3
+Copper
+
+126 3
+Copper
+
+127 3
+Copper
+
+128 3
+Copper
+
+129 3
+Copper
+
+130 3
+Copper
+
+131 3
+Copper
+
+132 3
+Copper
+
+133 3
+Copper
+
+134 3
+Copper
+
+135 3
+Copper
+
+136 3
+Copper
+
+137 3
+Copper
+
+138 3
+Copper
+
+139 3
+Copper
+
+140 3
+Copper
+
+141 3
+Copper
+
+142 3
+Copper
+
+143 3
+Copper
+
+144 3
+Copper
+
+145 3
+Copper
+
+146 3
+Copper
+
+147 3
+Copper
+
+148 3
+Copper
+
+149 3
+Copper
+
+150 3
+Copper
+
+151 3
+Copper
+
+152 3
+Copper
+
+153 3
+Copper
+
+154 3
+Copper
+
+155 3
+Copper
+
+156 3
+Copper
+
+157 3
+Copper
+
+158 3
+Copper
+
+159 3
+Copper
+
+160 3
+Copper
+
+161 3
+Copper
+
+162 3
+Copper
+
+163 3
+Copper
+
+164 3
+Copper
+
+165 3
+Copper
+
+166 3
+Copper
+
+167 3
+Copper
+
+168 3
+Copper
+
+169 3
+Copper
+
+170 3
+Copper
+
+171 3
+Copper
+
+172 3
+Copper
+
+173 3
+Copper
+
+174 3
+Copper
+
+175 3
+Copper
+
+176 3
+Copper
+
+177 3
+Copper
+
+178 0
+
+179 0
+
+180 0
+
+181 0
+
+182 3
+Copper
+
+183 3
+Copper
+
+184 0
+
+185 1
+
+186 1
+
+187 1
+
+188 1
+
+189 1
+
+190 1
+
+191 1
+
+192 1
+
+193 7
+
+194 7
+
+195 7
+
+196 1
+
+// Number 1D OBJECTS:
+// ^^^^^^^^^^^^^^^^^^
+5
+
+// Obj1D_ID, BCCode (0=Reg,1=PEC,2=PMC,3=PORT,4=Lumped):
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+0 0
+1 4
+Resistors:R1
+2 4
+Resistors:R2
+3 4
+Resistors:R3
+4 4
+Resistors:R4
+
