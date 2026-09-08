@@ -1,0 +1,60 @@
+# Order of components will be applied in pipline
+antenna:
+    kind: "RF" # "RF", "video", or "ADC"
+    position: [2.4, 0.0, 0.0]
+    polarization_vector: [1.0, 0.0, 0.0] # # (Q/I, U/I, V/I)
+    orientation: [0.0, 0.0, 1.0] # (eX, eY, eZ) unity vector for antenna orientation with respect to E-field
+    gain: -1.0 # [dB]
+    noise_figure: 2.0 # [dB]
+    temperature: 290.0 # [K]
+    
+notch_filters:
+    kind: "RF" # "RF", "video", or "ADC"
+    center_frequency: 110.0e+9  # [Hz]
+    bandwidth: 0.5e+9  # [Hz]
+    bandstop_gain: -60.0  # [dB]
+    gain: -2.0  # [dB]
+    noise_figure: 2.0 # [dB]
+    temperature: 290.0 # [K]
+
+high_pass_filters:
+    kind: "RF" # "RF", "video", or "ADC"
+    cutoff_frequency: 81.0e+9  # [Hz]
+    bandstop_gain: -40.0  # [dB]
+    gain: -0.8  # [dB]
+    noise_figure: 1.5 # [dB]
+    temperature: 290.0 # [K]
+
+mixer_iq:
+    kind: "RF" # "RF", "video", or "ADC"
+    frequency_lo: 80.0e+9  # [Hz]
+    gain: -10.0 # [dB]
+    noise_figure: 5.0 # [dB]
+    temperature: 290.0 # [K]
+
+low_noise_amplifier:
+    kind: "RF" # "RF", "video", or "ADC"
+    gain: 40.0 # [dB]
+    noise_figure: 1.0 # [dB]
+    temperature: 290.0 # [K]
+
+detector:
+    kind: "video" # "RF", "video", or "ADC"
+    responsivity: 4000.0 # [V/W]
+    bandwidth: 100.0e+3 # [Hz] - low-pass filter bandwidth after detector
+    gain: -0.5 # [dB]
+    noise_equivalent_power: 1.0e-11 # [W/Hz^0.5]
+
+video_amplifier:
+    kind: "video" # "RF", "video", or "ADC"
+    impedance: 50.0 # Ohms
+    gain: 40.0 # [dB]
+    noise_figure: 3.0 # [dB]
+    temperature: 290.0 # [K]
+
+digitizer:
+    kind: "ADC" # "RF", "video", or "ADC"
+    sampling_rate: 0.5e+6 # [samples/s]
+    vmin: 0.0 # [V]
+    vmax: 5.0 # [V]
+    bits: 12 # [bits]

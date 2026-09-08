@@ -1,0 +1,96 @@
+*** STARTING PCB CONVERSION ***
+
+Importing F:\NSF\WPD5\WPD5\WPD5_V2\GERBER\WPD5.mlpcb... [Tue Sep  8 01:25:47 2026]
+============================================================
+Reading Multilayer PCB file ...
+
+WARNING: Broken shape: <ShapeWithHoles (shape: 6 segments, 0 holes, 0 errors)>Shape:
+<Shape with 6 segments>
+0: CurveSegment( R2(6018.5, -3746), R2(6087.5, -3746)), # l=69>
+1: CurveSegment( R2(6087.5, -3746), R2(6087.5, -3746), R2(6087.5, -3746), 0.000492126), # l=0.00077303>
+2: CurveSegment( R2(6087.5, -3746), R2(6087.5, -3746), R2(6087.5, -3746), 0.000492126), # l=0.00077303>
+3: CurveSegment( R2(6087.5, -3746), R2(6018.5, -3746)), # l=69>
+4: CurveSegment( R2(6018.5, -3746), R2(6018.5, -3746), R2(6018.5, -3746), 0.000492126), # l=0.00077303>
+5: CurveSegment( R2(6018.5, -3746), R2(6018.5, -3746), R2(6018.5, -3746), 0.000492126), # l=0.00077303>
+
+WARNING: Broken shape: <ShapeWithHoles (shape: 6 segments, 0 holes, 0 errors)>Shape:
+<Shape with 6 segments>
+0: CurveSegment( R2(6087.5, -3746), R2(6087.5, -3788)), # l=42>
+1: CurveSegment( R2(6087.5, -3788), R2(6087.5, -3788), R2(6087.5, -3788), 0.000492126), # l=0.00077303>
+2: CurveSegment( R2(6087.5, -3788), R2(6087.5, -3788), R2(6087.5, -3788), 0.000492126), # l=0.00077303>
+3: CurveSegment( R2(6087.5, -3788), R2(6087.5, -3746)), # l=42>
+4: CurveSegment( R2(6087.5, -3746), R2(6087.5, -3746), R2(6087.5, -3746), 0.000492126), # l=0.00077303>
+5: CurveSegment( R2(6087.5, -3746), R2(6087.5, -3746), R2(6087.5, -3746), 0.000492126), # l=0.00077303>
+
+WARNING: Broken shape: <ShapeWithHoles (shape: 6 segments, 0 holes, 0 errors)>Shape:
+<Shape with 6 segments>
+0: CurveSegment( R2(6087.5, -3788), R2(6018.5, -3788)), # l=69>
+1: CurveSegment( R2(6018.5, -3788), R2(6018.5, -3788), R2(6018.5, -3788), 0.000492126), # l=0.00077303>
+2: CurveSegment( R2(6018.5, -3788), R2(6018.5, -3788), R2(6018.5, -3788), 0.000492126), # l=0.00077303>
+3: CurveSegment( R2(6018.5, -3788), R2(6087.5, -3788)), # l=69>
+4: CurveSegment( R2(6087.5, -3788), R2(6087.5, -3788), R2(6087.5, -3788), 0.000492126), # l=0.00077303>
+5: CurveSegment( R2(6087.5, -3788), R2(6087.5, -3788), R2(6087.5, -3788), 0.000492126), # l=0.00077303>
+
+WARNING: Broken shape: <ShapeWithHoles (shape: 6 segments, 0 holes, 0 errors)>Shape:
+<Shape with 6 segments>
+0: CurveSegment( R2(6018.5, -3788), R2(6018.5, -3746)), # l=42>
+1: CurveSegment( R2(6018.5, -3746), R2(6018.5, -3746), R2(6018.5, -3746), 0.000492126), # l=0.00077303>
+2: CurveSegment( R2(6018.5, -3746), R2(6018.5, -3746), R2(6018.5, -3746), 0.000492126), # l=0.00077303>
+3: CurveSegment( R2(6018.5, -3746), R2(6018.5, -3788)), # l=42>
+4: CurveSegment( R2(6018.5, -3788), R2(6018.5, -3788), R2(6018.5, -3788), 0.000492126), # l=0.00077303>
+5: CurveSegment( R2(6018.5, -3788), R2(6018.5, -3788), R2(6018.5, -3788), 0.000492126), # l=0.00077303>
+
+WARNING: Broken shape: <ShapeWithHoles (shape: 6 segments, 0 holes, 0 errors)>Shape:
+<Shape with 6 segments>
+0: CurveSegment( R2(6018.5, -2814), R2(6087.5, -2814)), # l=69>
+1: CurveSegment( R2(6087.5, -2814), R2(6087.5, -2814), R2(6087.5, -2814), 0.000492126), # l=0.00077303>
+2: CurveSegment( R2(6087.5, -2814), R2(6087.5, -2814), R2(6087.5, -2814), 0.000492126), # l=0.00077303>
+3: CurveSegment( R2(6087.5, -2814), R2(6018.5, -2814)), # l=69>
+4: CurveSegment( R2(6018.5, -2814), R2(6018.5, -2814), R2(6018.5, -2814), 0.000492126), # l=0.00077303>
+5: CurveSegment( R2(6018.5, -2814), R2(6018.5, -2814), R2(6018.5, -2814), 0.000492126), # l=0.00077303>
+
+WARNING: Broken shape: <ShapeWithHoles (shape: 6 segments, 0 holes, 0 errors)>Shape:
+<Shape with 6 segments>
+0: CurveSegment( R2(6087.5, -2814), R2(6087.5, -2856)), # l=42>
+1: CurveSegment( R2(6087.5, -2856), R2(6087.5, -2856), R2(6087.5, -2856), 0.000492126), # l=0.00077303>
+2: CurveSegment( R2(6087.5, -2856), R2(6087.5, -2856), R2(6087.5, -2856), 0.000492126), # l=0.00077303>
+3: CurveSegment( R2(6087.5, -2856), R2(6087.5, -2814)), # l=42>
+4: CurveSegment( R2(6087.5, -2814), R2(6087.5, -2814), R2(6087.5, -2814), 0.000492126), # l=0.00077303>
+5: CurveSegment( R2(6087.5, -2814), R2(6087.5, -2814), R2(6087.5, -2814), 0.000492126), # l=0.00077303>
+
+WARNING: Broken shape: <ShapeWithHoles (shape: 6 segments, 0 holes, 0 errors)>Shape:
+<Shape with 6 segments>
+0: CurveSegment( R2(6087.5, -2856), R2(6018.5, -2856)), # l=69>
+1: CurveSegment( R2(6018.5, -2856), R2(6018.5, -2856), R2(6018.5, -2856), 0.000492126), # l=0.00077303>
+2: CurveSegment( R2(6018.5, -2856), R2(6018.5, -2856), R2(6018.5, -2856), 0.000492126), # l=0.00077303>
+3: CurveSegment( R2(6018.5, -2856), R2(6087.5, -2856)), # l=69>
+4: CurveSegment( R2(6087.5, -2856), R2(6087.5, -2856), R2(6087.5, -2856), 0.000492126), # l=0.00077303>
+5: CurveSegment( R2(6087.5, -2856), R2(6087.5, -2856), R2(6087.5, -2856), 0.000492126), # l=0.00077303>
+
+WARNING: Broken shape: <ShapeWithHoles (shape: 6 segments, 0 holes, 0 errors)>Shape:
+<Shape with 6 segments>
+0: CurveSegment( R2(6018.5, -2856), R2(6018.5, -2814)), # l=42>
+1: CurveSegment( R2(6018.5, -2814), R2(6018.5, -2814), R2(6018.5, -2814), 0.000492126), # l=0.00077303>
+2: CurveSegment( R2(6018.5, -2814), R2(6018.5, -2814), R2(6018.5, -2814), 0.000492126), # l=0.00077303>
+3: CurveSegment( R2(6018.5, -2814), R2(6018.5, -2856)), # l=42>
+4: CurveSegment( R2(6018.5, -2856), R2(6018.5, -2856), R2(6018.5, -2856), 0.000492126), # l=0.00077303>
+5: CurveSegment( R2(6018.5, -2856), R2(6018.5, -2856), R2(6018.5, -2856), 0.000492126), # l=0.00077303>
+
+Added layer SOLDER_MASK_BOTTOM below etch layer B_CU
+Added layer SOLDER_MASK_TOP above etch layer F_CU
+Finished reading Multilayer PCB file.
+============================================================
+Further warnings:
+WARNING: Shape deleted upon healing.
+ (8 times)
+WARNING: empty None shape after healing (skipped) (8 times)
+*** ENDING PCB CONVERSION with SUCCESS after 1 second ***
+warning: Unphysical value of lateral reference length (0.01), resetting to 500um.
+
+
+========== Starting Layout Check ==========
+Checking geometry
+Looking for geometry artifacts
+Looking for healed shape problems
+
+========== End Layout Check ==========

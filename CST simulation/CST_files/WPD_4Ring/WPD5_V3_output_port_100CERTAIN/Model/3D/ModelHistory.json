@@ -8,9 +8,9 @@
         "length": "mil",
         "frequency": {
             "unit": "GHz",
-            "minimum": "7.5",
+            "minimum": "1",
             "maximum": "12",
-            "minimum_expr": "7.5",
+            "minimum_expr": "1",
             "maximum_expr": "12"
         },
         "time": "ns",
@@ -894,6 +894,15 @@
                 "     .UseLegacyRadiatedPowerCalc \"False\" ",
                 "     .UseFarfieldPreCalculation \"True\" ",
                 "End With"
+            ]
+        },
+        {
+            "caption": "define frequency range",
+            "version": "2026.5|35.0.0|20260618",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Solver.FrequencyRange \"1\", \"12\""
             ]
         }
     ]

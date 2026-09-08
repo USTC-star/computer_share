@@ -1,5 +1,5 @@
 MWS Result File Version 20150206
-size=i:333
+size=i:334
 
 type=s:HIDDENITEM
 problemclass=s::8:1000
@@ -3304,4 +3304,15 @@ lifetime=s:persistent
 result=s:0
 treepath=s:1D Results\Materials\Copper\Surface Impedance\Z'' (Theory)
 files=s:Copper_Z_datalist_im.sig
+
+type=s:XYSIGNAL
+subtype=s:user
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:external
+lifetime=s:surviveparchange
+result=s:1
+user_delete=s:1
+treepath=s:1D Results\Impedance\Impedance eps = 3.66
+files=s:eps=3.66_imp.sig
 

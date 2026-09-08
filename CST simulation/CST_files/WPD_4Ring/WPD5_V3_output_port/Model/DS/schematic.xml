@@ -27,7 +27,7 @@
                 <Port Label="" Name="3"/>
             </Ports>
         </Pins>
-        <Image FileName="Image/Model.dib" IconPosition="TopRight" Scale="AutoFit">
+        <Image FileName="../3D/Model.dib" IconPosition="TopRight" Scale="AutoFit">
             <Size Height="392" Width="512"/>
         </Image>
         <Pos X="87.5" Y="-12.5"/>

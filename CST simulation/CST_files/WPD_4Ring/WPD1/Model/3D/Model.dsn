@@ -25,7 +25,7 @@ PortSourceGroups:
 FloquetPortSourceGroups:
 SchematicPortSourceGroups:
 Number of frequency-points: 3
-Fmin: 2.000000e+09
+Fmin: 1.000000e+09
 Fmax: 7.000000e+09
 Fscale: 1.000000e+09
 

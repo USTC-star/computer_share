@@ -24,47 +24,51 @@
   <LocalAxes/>
   <MeshViewSettings/>
   <WaveguidePort/>
-  <ResultGroups num_steps="10" transformation="1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1" process_mesh_group="0">
+  <ResultGroups num_steps="11" transformation="1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1" process_mesh_group="0">
     <SharedDataWith/>
     <Frame index="0" characteristic="7">
       <PortModeInfoFile filename="Port1_Info1(#0000).mmd"/>
       <FieldResultFile filename="Port1_h1(#0000).sct" type="sct" meshname="Port1.slim"/>
     </Frame>
-    <Frame index="1" characteristic="2">
+    <Frame index="1" characteristic="1">
       <PortModeInfoFile filename="Port1_Info1(#0001).mmd"/>
       <FieldResultFile filename="Port1_h1(#0001).sct" type="sct" meshname="Port1.slim"/>
     </Frame>
-    <Frame index="2" characteristic="4.5">
+    <Frame index="2" characteristic="4">
       <PortModeInfoFile filename="Port1_Info1(#0002).mmd"/>
       <FieldResultFile filename="Port1_h1(#0002).sct" type="sct" meshname="Port1.slim"/>
     </Frame>
-    <Frame index="3" characteristic="5.75">
+    <Frame index="3" characteristic="3.5260000000000007">
       <PortModeInfoFile filename="Port1_Info1(#0003).mmd"/>
       <FieldResultFile filename="Port1_h1(#0003).sct" type="sct" meshname="Port1.slim"/>
     </Frame>
-    <Frame index="4" characteristic="3.5450000000000004">
+    <Frame index="4" characteristic="5.0199999999999996">
       <PortModeInfoFile filename="Port1_Info1(#0004).mmd"/>
       <FieldResultFile filename="Port1_h1(#0004).sct" type="sct" meshname="Port1.slim"/>
     </Frame>
-    <Frame index="5" characteristic="5.1950000000000003">
+    <Frame index="5" characteristic="2.8780000000000001">
       <PortModeInfoFile filename="Port1_Info1(#0005).mmd"/>
       <FieldResultFile filename="Port1_h1(#0005).sct" type="sct" meshname="Port1.slim"/>
     </Frame>
-    <Frame index="6" characteristic="2.2000000000000002">
+    <Frame index="6" characteristic="5.8420000000000005">
       <PortModeInfoFile filename="Port1_Info1(#0006).mmd"/>
       <FieldResultFile filename="Port1_h1(#0006).sct" type="sct" meshname="Port1.slim"/>
     </Frame>
-    <Frame index="7" characteristic="3.9800000000000004">
+    <Frame index="7" characteristic="2.3320000000000003">
       <PortModeInfoFile filename="Port1_Info1(#0007).mmd"/>
       <FieldResultFile filename="Port1_h1(#0007).sct" type="sct" meshname="Port1.slim"/>
     </Frame>
-    <Frame index="8" characteristic="2.9300000000000002">
+    <Frame index="8" characteristic="4.6480000000000006">
       <PortModeInfoFile filename="Port1_Info1(#0008).mmd"/>
       <FieldResultFile filename="Port1_h1(#0008).sct" type="sct" meshname="Port1.slim"/>
     </Frame>
-    <Frame index="9" characteristic="6.5250000000000004">
+    <Frame index="9" characteristic="1.4680000000000002">
       <PortModeInfoFile filename="Port1_Info1(#0009).mmd"/>
       <FieldResultFile filename="Port1_h1(#0009).sct" type="sct" meshname="Port1.slim"/>
+    </Frame>
+    <Frame index="10" characteristic="6.5020000000000007">
+      <PortModeInfoFile filename="Port1_Info1(#0010).mmd"/>
+      <FieldResultFile filename="Port1_h1(#0010).sct" type="sct" meshname="Port1.slim"/>
     </Frame>
   </ResultGroups>
   <AutoScale>
