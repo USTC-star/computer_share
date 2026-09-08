@@ -1,0 +1,15 @@
+{
+    "parameters": [
+        {
+            "expr": "330",
+            "name": "R1",
+            "value": "330"
+        },
+        {
+            "expr": "100",
+            "name": "R2",
+            "value": "100"
+        }
+    ],
+    "version": 1
+}

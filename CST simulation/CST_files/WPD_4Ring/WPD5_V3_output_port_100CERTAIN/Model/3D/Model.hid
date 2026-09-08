@@ -38,9 +38,7 @@ false
 [start]command
 [end]command
 [start]content
-
 Solid.Delete "WPD5:sub"
-
 [end]content
 [start]recover_picks
 1
@@ -71,9 +69,7 @@ Solid.Delete "WPD5:sub"
 [start]command
 [end]command
 [start]content
-
 Solid.Delete "WPD5:solid1"
-
 [end]content
 [start]recover_picks
 1
@@ -89,9 +85,7 @@ Solid.Delete "WPD5:solid1"
 [start]command
 [end]command
 [start]content
-
 Solid.Delete "WPD5:solid1"
-
 [end]content
 [start]recover_picks
 1
@@ -180,7 +174,6 @@ Solid.Delete "WPD5:solid1"
 30
 [end]block_index
 [start]command
-
 '@ define lumped element: Folder1:R1
  (undo)
 [end]command
@@ -229,7 +222,6 @@ LumpedElement.Delete "Folder1:R1"
 33
 [end]block_index
 [start]command
-
 '@ define lumped element: Folder1:R2
  (undo)
 [end]command

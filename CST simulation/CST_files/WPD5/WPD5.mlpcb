@@ -1,0 +1,116 @@
+{
+    "unit": {
+        "value": 10,
+        "$type": "LengthUnit"
+    },
+    "layer": [
+        {
+            "name": "F_Cu",
+            "use_file": "F_Cu",
+            "thickness": 1.37,
+            "color": null,
+            "material": "",
+            "type": {
+                "value": 0,
+                "$type": "LayerType"
+            },
+            "$type": "Layer"
+        },
+        {
+            "name": "Edge_Cuts",
+            "use_file": "Edge_Cuts",
+            "thickness": 20.0,
+            "color": null,
+            "material": "",
+            "type": {
+                "value": 2,
+                "$type": "LayerType"
+            },
+            "$type": "Layer"
+        },
+        {
+            "name": "B_Cu",
+            "use_file": "B_Cu",
+            "thickness": 1.37,
+            "color": null,
+            "material": "",
+            "type": {
+                "value": 0,
+                "$type": "LayerType"
+            },
+            "$type": "Layer"
+        }
+    ],
+    "layerinput": {
+        "B_Cu": {
+            "filename": "WPD5_V2-B_Cu.gbr",
+            "positive": true,
+            "settings": null,
+            "$type": "LayerInput"
+        },
+        "Edge_Cuts": {
+            "filename": "WPD5_V2-Edge_Cuts.gbr",
+            "positive": true,
+            "settings": null,
+            "$type": "LayerInput"
+        },
+        "F_Cu": {
+            "filename": "WPD5_V2-F_Cu.gbr",
+            "positive": true,
+            "settings": null,
+            "$type": "LayerInput"
+        }
+    },
+    "drill": [],
+    "materials": {},
+    "testpoint_file": null,
+    "version": 2,
+    "cst": {
+        "unit": "mil",
+        "graphical_input_files": {
+            "B_Cu": {
+                "filename": "WPD5_V2-B_Cu.gbr",
+                "positive": true,
+                "settings": null
+            },
+            "Edge_Cuts": {
+                "filename": "WPD5_V2-Edge_Cuts.gbr",
+                "positive": true,
+                "settings": null
+            },
+            "F_Cu": {
+                "filename": "WPD5_V2-F_Cu.gbr",
+                "positive": true,
+                "settings": null
+            }
+        },
+        "layers": [
+            {
+                "name": "F_Cu",
+                "use_file": "F_Cu",
+                "mat_type": "METAL"
+            },
+            {
+                "name": "Edge_Cuts",
+                "use_file": "Edge_Cuts",
+                "mat_type": "DIELECTRIC"
+            },
+            {
+                "name": "B_Cu",
+                "use_file": "B_Cu",
+                "mat_type": "METAL"
+            }
+        ],
+        "drills": [],
+        "testpoint_file": null,
+        "pycmds": [
+            "layer = pcb.layer(\"F_Cu\")",
+            "layer.thickness = 1.37",
+            "layer = pcb.layer(\"Edge_Cuts\")",
+            "layer.thickness = 20.0",
+            "layer = pcb.layer(\"B_Cu\")",
+            "layer.thickness = 1.37"
+        ]
+    },
+    "$type": "MultiLayerSetup"
+}

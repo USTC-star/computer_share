@@ -15,7 +15,7 @@ d_gap = 4 # The spacing between two neighboring rings
 # %% trace1;
 Width_T0 = 42 ; # microstrap width with 50 ohm impedance 
 Width_T1 = 14.39;# arc1 width with Z1 ohm impedance L1 = 213.23;# arc1 phase shift with 90 degree 
-L1 = 213.23
+L1 = 1.5899e+02
 theta_trace_1 =3*np.pi/4 # define the angle of arc2 
 theta_trace_1_degree = theta_trace_1*180/np.pi
 Width_T=Width_T1
@@ -54,11 +54,11 @@ X_in = X1_left - Width_T0/2+Width_T1/2   #calculate x coordinate on the center o
 # print(f"Xin={X_in:.4f} mil" )
 # print(f"incident angle = {theta_trace_1_degree:.5f} degree")
 # %%trace2;
-Width_T2 = 30.83;
-L2 = 208.25;
-theta_trace_2 =1*np.pi/3 # define the angle of arc2 
+Width_T2 = 30.87;
+L2 = 1.5527e+02;
+theta_trace_2 =2*np.pi/3 # define the angle of arc2 
 theta_trace_2_degree = theta_trace_2*180/np.pi
-X2_left=Width_T1/2+Width_T2/2+d_gap+X1_right # calculate the x coordinate on the left side of arc2, with about 6 mil gap between the right edge of arc1 on the right side and the left edge of arc 2 on the left side
+X2_left=Width_T1/2+Width_T2/2+d_gap/2+X1_right # calculate the x coordinate on the left side of arc2, with about 6 mil gap between the right edge of arc1 on the right side and the left edge of arc 2 on the left side
 Width_T=Width_T2
 X_left = X2_left
 XL_R = xc_pad
@@ -103,9 +103,9 @@ print(f"X_2R = {X_2R:.5f} mil")
 
 
 # %%trace3;
-Width_T3 = 28.05;
-L3 = 400.46;
-theta_trace_3 =3*np.pi/3
+Width_T3 = 27.88;
+L3 = 4.2296e+02
+theta_trace_3 =4*np.pi/4
 theta_trace_3_degree = theta_trace_3*180/np.pi
 X3_left=Width_T2/2+Width_T3/2+d_gap+X2_right
 
@@ -152,8 +152,8 @@ X_3R = XR_R
 # print(f"incident angle = {theta_trace_3_degree:.6f} degree")
 
 # %% trace4;
-Width_T4 = 38.65;
-L4 = 395.82;
+Width_T4 = 38.40;
+L4 = 4.1807e+02;
 theta_trace_4 =2*np.pi/3
 theta_trace_4_degree = theta_trace_4*180/np.pi
 X4_left=Width_T3/2+Width_T4/2+d_gap+X3_right
@@ -177,7 +177,8 @@ else:
     l = W_pad_x/2
     d = R-np.sqrt(R**2-l**2)
     if d < W_pad_y:
-        Y_right =  yc_pad+W_pad_y/2-d+ Width_T/2 #align the end of the arc on the center of the pad in vertical direction
+        # Y_right =  yc_pad+W_pad_y/2-d+ Width_T/2 #align the end of the arc on the center of the pad in vertical direction
+        Y_right =  yc_pad-W_pad_y/2+Width_T/2
     else: 
         Y_right =  yc_pad-W_pad_y/2+Width_T/2 #align the end of the arc on the bottom of the pad
     L_m = L - 2 * Y_right - (X_left-XL_R)

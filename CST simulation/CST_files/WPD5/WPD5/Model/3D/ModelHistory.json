@@ -1,0 +1,919 @@
+{
+    "general": {
+        "version": "2026.5",
+        "date": "2026-06-18",
+        "acis": "35.0.0",
+        "buildnumber": "20260618",
+        "project_type": "MWS",
+        "length": "mil",
+        "frequency": {
+            "unit": "GHz",
+            "minimum": "7.5",
+            "maximum": "9.5",
+            "minimum_expr": "7.5",
+            "maximum_expr": "9.5"
+        },
+        "time": "ns",
+        "created": "2026.5|35.0.0|20260618"
+    },
+    "history": [
+        {
+            "caption": "import multilayer_pcb file: F:\\NSF\\WPD5\\WPD5\\WPD5_V2\\GERBER\\WPD5.mlpcb",
+            "version": "2026.5|35.0.0|20260618",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With LayoutDB",
+                "                         .Reset",
+                "                         .SourceFileName \"F:\\NSF\\WPD5\\WPD5\\WPD5_V2\\GERBER\\WPD5.mlpcb\"",
+                "                         .LdbFileName \"*pcb.ldb\"",
+                "                         .PcbType \"multilayer_pcb\"",
+                "                         .KeepSynchronized \"True\"",
+                "                         .CreateDB",
+                "                         .LoadDB",
+                "                    End With"
+            ]
+        },
+        {
+            "caption": "delete shape: pcb(PCB1)/Substrates:01_SOLDER_MASK_TOP",
+            "version": "2026.5|35.0.0|20260618",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Solid.Delete \"pcb(PCB1)/Substrates:01_SOLDER_MASK_TOP\""
+            ]
+        },
+        {
+            "caption": "delete shape: pcb(PCB1)/Substrates:05_SOLDER_MASK_BOTTOM",
+            "version": "2026.5|35.0.0|20260618",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Solid.Delete \"pcb(PCB1)/Substrates:05_SOLDER_MASK_BOTTOM\""
+            ]
+        },
+        {
+            "caption": "define material: Rogers RO4350B (lossy)",
+            "version": "2026.5|35.0.0|20260618",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With Material",
+                "     .Reset",
+                "     .Name \"Rogers RO4350B (lossy)\"",
+                "     .Folder \"\"",
+                "     .FrqType \"all\"",
+                "     .Type \"Normal\"",
+                "     .SetMaterialUnit \"GHz\", \"mm\"",
+                "     .Epsilon \"3.66\"",
+                "     .Mu \"1.0\"",
+                "     .Kappa \"0.0\"",
+                "     .TanD \"0.0037\"",
+                "     .TanDFreq \"10.0\"",
+                "     .TanDGiven \"True\"",
+                "     .TanDModel \"ConstTanD\"",
+                "     .KappaM \"0.0\"",
+                "     .TanDM \"0.0\"",
+                "     .TanDMFreq \"0.0\"",
+                "     .TanDMGiven \"False\"",
+                "     .TanDMModel \"ConstKappa\"",
+                "     .DispModelEps \"None\"",
+                "     .DispModelMu \"None\"",
+                "     .DispersiveFittingSchemeEps \"General 1st\"",
+                "     .DispersiveFittingSchemeMu \"General 1st\"",
+                "     .UseGeneralDispersionEps \"False\"",
+                "     .UseGeneralDispersionMu \"False\"",
+                "     .Rho \"0.0\"",
+                "     .ThermalType \"Normal\"",
+                "     .ThermalConductivity \"0.69\"",
+                "     .SetActiveMaterial \"all\"",
+                "     .Colour \"0.94\", \"0.82\", \"0.76\"",
+                "     .Wireframe \"False\"",
+                "     .Transparency \"0\"",
+                "     .Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "change material: pcb(PCB1)/Substrates:03_EDGE_CUTS to: Rogers RO4350B (lossy)",
+            "version": "2026.5|35.0.0|20260618",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Solid.ChangeMaterial \"pcb(PCB1)/Substrates:03_EDGE_CUTS\", \"Rogers RO4350B (lossy)\""
+            ]
+        },
+        {
+            "caption": "change material and color: pcb(PCB1)/Nets/NONE:04_B_CU to: pcb(PCB1)/Copper",
+            "version": "2026.5|35.0.0|20260618",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Solid.SetUseIndividualColor \"pcb(PCB1)/Nets/NONE:04_B_CU\", 1",
+                "Solid.ChangeIndividualColor \"pcb(PCB1)/Nets/NONE:04_B_CU\", \"255\", \"255\", \"127\""
+            ]
+        },
+        {
+            "caption": "change material and color: pcb(PCB1)/Nets/NONE:02_F_CU to: pcb(PCB1)/Copper",
+            "version": "2026.5|35.0.0|20260618",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Solid.SetUseIndividualColor \"pcb(PCB1)/Nets/NONE:02_F_CU\", 1",
+                "Solid.ChangeIndividualColor \"pcb(PCB1)/Nets/NONE:02_F_CU\", \"255\", \"255\", \"127\""
+            ]
+        },
+        {
+            "caption": "define brick: pcb(PCB1):solid1",
+            "version": "2026.5|35.0.0|20260618",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With Brick",
+                "     .Reset ",
+                "     .Name \"solid1\" ",
+                "     .Component \"pcb(PCB1)\" ",
+                "     .Material \"Rogers RO4350B (lossy)\" ",
+                "     .Xrange \"111\", \"120\" ",
+                "     .Yrange \"-115\", \"-53\" ",
+                "     .Zrange \"-190\", \"190\" ",
+                "     .Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "define brick: pcb(PCB1):solid2",
+            "version": "2026.5|35.0.0|20260618",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With Brick",
+                "     .Reset ",
+                "     .Name \"solid2\" ",
+                "     .Component \"pcb(PCB1)\" ",
+                "     .Material \"Rogers RO4350B (lossy)\" ",
+                "     .Xrange \"152\", \"166\" ",
+                "     .Yrange \"-120\", \"-50\" ",
+                "     .Zrange \"-190\", \"190\" ",
+                "     .Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "boolean insert shapes: pcb(PCB1)/Nets/NONE:02_F_CU, pcb(PCB1):solid1",
+            "version": "2026.5|35.0.0|20260618",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With Solid",
+                "     .Version 10",
+                "     .Insert \"pcb(PCB1)/Nets/NONE:02_F_CU\", \"pcb(PCB1):solid1\" ",
+                "     .Version 1",
+                "End With"
+            ]
+        },
+        {
+            "caption": "boolean insert shapes: pcb(PCB1)/Nets/NONE:04_B_CU, pcb(PCB1):solid1",
+            "version": "2026.5|35.0.0|20260618",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With Solid",
+                "     .Version 10",
+                "     .Insert \"pcb(PCB1)/Nets/NONE:04_B_CU\", \"pcb(PCB1):solid1\" ",
+                "     .Version 1",
+                "End With"
+            ]
+        },
+        {
+            "caption": "boolean subtract shapes: pcb(PCB1)/Substrates:03_EDGE_CUTS, pcb(PCB1):solid1",
+            "version": "2026.5|35.0.0|20260618",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Solid.Subtract \"pcb(PCB1)/Substrates:03_EDGE_CUTS\", \"pcb(PCB1):solid1\""
+            ]
+        },
+        {
+            "caption": "boolean insert shapes: pcb(PCB1)/Nets/NONE:02_F_CU, pcb(PCB1):solid2",
+            "version": "2026.5|35.0.0|20260618",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With Solid",
+                "     .Version 10",
+                "     .Insert \"pcb(PCB1)/Nets/NONE:02_F_CU\", \"pcb(PCB1):solid2\" ",
+                "     .Version 1",
+                "End With"
+            ]
+        },
+        {
+            "caption": "boolean insert shapes: pcb(PCB1)/Nets/NONE:04_B_CU, pcb(PCB1):solid2",
+            "version": "2026.5|35.0.0|20260618",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With Solid",
+                "     .Version 10",
+                "     .Insert \"pcb(PCB1)/Nets/NONE:04_B_CU\", \"pcb(PCB1):solid2\" ",
+                "     .Version 1",
+                "End With"
+            ]
+        },
+        {
+            "caption": "boolean subtract shapes: pcb(PCB1)/Substrates:03_EDGE_CUTS, pcb(PCB1):solid2",
+            "version": "2026.5|35.0.0|20260618",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Solid.Subtract \"pcb(PCB1)/Substrates:03_EDGE_CUTS\", \"pcb(PCB1):solid2\""
+            ]
+        },
+        {
+            "caption": "clear picks",
+            "version": "2026.5|35.0.0|20260618",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Pick.ClearAllPicks"
+            ]
+        },
+        {
+            "caption": "pick edge",
+            "version": "2026.5|35.0.0|20260618",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Pick.PickEdgeFromId \"pcb(PCB1)/Nets/NONE:02_F_CU\", \"261\", \"178\""
+            ]
+        },
+        {
+            "caption": "pick edge",
+            "version": "2026.5|35.0.0|20260618",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Pick.PickEdgeFromId \"pcb(PCB1)/Nets/NONE:02_F_CU\", \"259\", \"176\""
+            ]
+        },
+        {
+            "caption": "set units in materials",
+            "version": "2026.5|35.0.0|20260618",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Material.UnitInMaterial \"pcb(PCB1)/PEC Sheets\",  \"Frequency\", \"GHz\" ",
+                "Material.UnitInMaterial \"pcb(PCB1)/PEC Sheets\",  \"Geometry\", \"mm\""
+            ]
+        },
+        {
+            "caption": "define units",
+            "version": "2026.5|35.0.0|20260618",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With Units ",
+                "     .SetUnit \"Length\", \"mil\"",
+                "     .SetUnit \"Temperature\", \"degC\"",
+                "     .SetUnit \"Voltage\", \"V\"",
+                "     .SetUnit \"Current\", \"A\"",
+                "     .SetUnit \"Resistance\", \"Ohm\"",
+                "     .SetUnit \"Conductance\", \"S\"",
+                "     .SetUnit \"Capacitance\", \"pF\"",
+                "     .SetUnit \"Inductance\", \"nH\"",
+                "     .SetUnit \"Frequency\", \"GHz\"",
+                "     .SetUnit \"Time\", \"ns\"",
+                "     .SetResultUnit \"frequency\", \"frequency\", \"\" ",
+                "End With"
+            ]
+        },
+        {
+            "caption": "clear picks",
+            "version": "2026.5|35.0.0|20260618",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Pick.ClearAllPicks"
+            ]
+        },
+        {
+            "caption": "pick edge",
+            "version": "2026.5|35.0.0|20260618",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Pick.PickEdgeFromId \"pcb(PCB1)/Substrates:03_EDGE_CUTS\", \"35\", \"26\""
+            ]
+        },
+        {
+            "caption": "pick edge",
+            "version": "2026.5|35.0.0|20260618",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Pick.PickEdgeFromId \"pcb(PCB1)/Substrates:03_EDGE_CUTS\", \"37\", \"28\""
+            ]
+        },
+        {
+            "caption": "delete component: pcb(PCB1)",
+            "version": "2026.5|35.0.0|20260618",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Component.Delete \"pcb(PCB1)\""
+            ]
+        },
+        {
+            "caption": "import multilayer_pcb file: F:\\NSF\\WPD5\\WPD5\\WPD5_V2\\GERBER\\WPD5_1.mlpcb",
+            "version": "2026.5|35.0.0|20260618",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With LayoutDB",
+                "                         .Reset",
+                "                         .SourceFileName \"F:\\NSF\\WPD5\\WPD5\\WPD5_V2\\GERBER\\WPD5_1.mlpcb\"",
+                "                         .LdbFileName \"*pcb0.ldb\"",
+                "                         .PcbType \"multilayer_pcb\"",
+                "                         .KeepSynchronized \"True\"",
+                "                         .CreateDB",
+                "                         .LoadDB",
+                "                    End With"
+            ]
+        },
+        {
+            "caption": "delete shapes",
+            "version": "2026.5|35.0.0|20260618",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Solid.Delete \"pcb0(PCB1)/Substrates:01_SOLDER_MASK_TOP\" ",
+                "Solid.Delete \"pcb0(PCB1)/Substrates:05_SOLDER_MASK_BOTTOM\""
+            ]
+        },
+        {
+            "caption": "clear picks",
+            "version": "2026.5|35.0.0|20260618",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Pick.ClearAllPicks"
+            ]
+        },
+        {
+            "caption": "define material: Rogers RO4350B (lossy)",
+            "version": "2026.5|35.0.0|20260618",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With Material",
+                "     .Reset",
+                "     .Name \"Rogers RO4350B (lossy)\"",
+                "     .Folder \"\"",
+                "     .FrqType \"all\"",
+                "     .Type \"Normal\"",
+                "     .SetMaterialUnit \"GHz\", \"mm\"",
+                "     .Epsilon \"3.66\"",
+                "     .Mu \"1.0\"",
+                "     .Kappa \"0.0\"",
+                "     .TanD \"0.0037\"",
+                "     .TanDFreq \"10.0\"",
+                "     .TanDGiven \"True\"",
+                "     .TanDModel \"ConstTanD\"",
+                "     .KappaM \"0.0\"",
+                "     .TanDM \"0.0\"",
+                "     .TanDMFreq \"0.0\"",
+                "     .TanDMGiven \"False\"",
+                "     .TanDMModel \"ConstKappa\"",
+                "     .DispModelEps \"None\"",
+                "     .DispModelMu \"None\"",
+                "     .DispersiveFittingSchemeEps \"General 1st\"",
+                "     .DispersiveFittingSchemeMu \"General 1st\"",
+                "     .UseGeneralDispersionEps \"False\"",
+                "     .UseGeneralDispersionMu \"False\"",
+                "     .Rho \"0.0\"",
+                "     .ThermalType \"Normal\"",
+                "     .ThermalConductivity \"0.69\"",
+                "     .SetActiveMaterial \"all\"",
+                "     .Colour \"0.94\", \"0.82\", \"0.76\"",
+                "     .Wireframe \"False\"",
+                "     .Transparency \"0\"",
+                "     .Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "change material and color: pcb0(PCB1)/Substrates:03_EDGE_CUTS to: Rogers RO4350B (lossy)",
+            "version": "2026.5|35.0.0|20260618",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Solid.ChangeMaterial \"pcb0(PCB1)/Substrates:03_EDGE_CUTS\", \"Rogers RO4350B (lossy)\" ",
+                "Solid.SetUseIndividualColor \"pcb0(PCB1)/Substrates:03_EDGE_CUTS\", 1",
+                "Solid.ChangeIndividualColor \"pcb0(PCB1)/Substrates:03_EDGE_CUTS\", \"85\", \"85\", \"127\""
+            ]
+        },
+        {
+            "caption": "change material and color: pcb0(PCB1)/Nets/NONE:04_B_CU to: pcb0(PCB1)/Copper",
+            "version": "2026.5|35.0.0|20260618",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Solid.SetUseIndividualColor \"pcb0(PCB1)/Nets/NONE:04_B_CU\", 1",
+                "Solid.ChangeIndividualColor \"pcb0(PCB1)/Nets/NONE:04_B_CU\", \"255\", \"255\", \"127\""
+            ]
+        },
+        {
+            "caption": "define brick: pcb0(PCB1):solid1",
+            "version": "2026.5|35.0.0|20260618",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With Brick",
+                "     .Reset ",
+                "     .Name \"solid1\" ",
+                "     .Component \"pcb0(PCB1)\" ",
+                "     .Material \"pcb(PCB1)/Copper\" ",
+                "     .Xrange \"6000\", \"6300\" ",
+                "     .Yrange \"-4400\", \"-2100\" ",
+                "     .Zrange \"-400\", \"400\" ",
+                "     .Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "define brick: pcb0(PCB1):solid2",
+            "version": "2026.5|35.0.0|20260618",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With Brick",
+                "     .Reset ",
+                "     .Name \"solid2\" ",
+                "     .Component \"pcb0(PCB1)\" ",
+                "     .Material \"pcb(PCB1)/Copper\" ",
+                "     .Xrange \"4300\", \"4800\" ",
+                "     .Yrange \"-4500\", \"-1900\" ",
+                "     .Zrange \"-1000\", \"1000\" ",
+                "     .Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "boolean insert shapes: pcb0(PCB1)/Nets/NONE:02_F_CU, pcb0(PCB1):solid1",
+            "version": "2026.5|35.0.0|20260618",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With Solid",
+                "     .Version 10",
+                "     .Insert \"pcb0(PCB1)/Nets/NONE:02_F_CU\", \"pcb0(PCB1):solid1\" ",
+                "     .Version 1",
+                "End With"
+            ]
+        },
+        {
+            "caption": "boolean insert shapes: pcb0(PCB1)/Nets/NONE:04_B_CU, pcb0(PCB1):solid1",
+            "version": "2026.5|35.0.0|20260618",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With Solid",
+                "     .Version 10",
+                "     .Insert \"pcb0(PCB1)/Nets/NONE:04_B_CU\", \"pcb0(PCB1):solid1\" ",
+                "     .Version 1",
+                "End With"
+            ]
+        },
+        {
+            "caption": "boolean subtract shapes: pcb0(PCB1)/Substrates:03_EDGE_CUTS, pcb0(PCB1):solid1",
+            "version": "2026.5|35.0.0|20260618",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Solid.Subtract \"pcb0(PCB1)/Substrates:03_EDGE_CUTS\", \"pcb0(PCB1):solid1\""
+            ]
+        },
+        {
+            "caption": "boolean insert shapes: pcb0(PCB1)/Nets/NONE:02_F_CU, pcb0(PCB1):solid2",
+            "version": "2026.5|35.0.0|20260618",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With Solid",
+                "     .Version 10",
+                "     .Insert \"pcb0(PCB1)/Nets/NONE:02_F_CU\", \"pcb0(PCB1):solid2\" ",
+                "     .Version 1",
+                "End With"
+            ]
+        },
+        {
+            "caption": "boolean insert shapes: pcb0(PCB1)/Nets/NONE:04_B_CU, pcb0(PCB1):solid2",
+            "version": "2026.5|35.0.0|20260618",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With Solid",
+                "     .Version 10",
+                "     .Insert \"pcb0(PCB1)/Nets/NONE:04_B_CU\", \"pcb0(PCB1):solid2\" ",
+                "     .Version 1",
+                "End With"
+            ]
+        },
+        {
+            "caption": "boolean subtract shapes: pcb0(PCB1)/Substrates:03_EDGE_CUTS, pcb0(PCB1):solid2",
+            "version": "2026.5|35.0.0|20260618",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Solid.Subtract \"pcb0(PCB1)/Substrates:03_EDGE_CUTS\", \"pcb0(PCB1):solid2\""
+            ]
+        },
+        {
+            "caption": "pick face",
+            "version": "2026.5|35.0.0|20260618",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Pick.PickFaceFromId \"pcb0(PCB1)/Nets/NONE:02_F_CU\", \"6\""
+            ]
+        },
+        {
+            "caption": "define port:1",
+            "version": "2026.5|35.0.0|20260618",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "' Port constructed by macro Solver -> Ports -> Calculate port extension coefficient\r",
+                "\r",
+                "\r",
+                "With Port\r",
+                "  .Reset\r",
+                "  .PortNumber \"1\"\r",
+                "  .NumberOfModes \"1\"\r",
+                "  .AdjustPolarization False\r",
+                "  .PolarizationAngle \"0.0\"\r",
+                "  .ReferencePlaneDistance \"0\"\r",
+                "  .TextSize \"50\"\r",
+                "  .Coordinates \"Picks\"\r",
+                "  .Orientation \"Positive\"\r",
+                "  .PortOnBound \"True\"\r",
+                "  .ClipPickedPortToBound \"False\"\r",
+                "  .XrangeAdd \"0\", \"0\"\r",
+                "  .YrangeAdd \"20*7.41\", \"20*7.41\"\r",
+                "  .ZrangeAdd \"20\", \"20*7.41\"\r",
+                "  .Shield \"PEC\"\r",
+                "  .SingleEnded \"False\"\r",
+                "  .Create\r",
+                "End With"
+            ]
+        },
+        {
+            "caption": "pick face",
+            "version": "2026.5|35.0.0|20260618",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Pick.PickFaceFromId \"pcb0(PCB1)/Nets/NONE:02_F_CU\", \"10\""
+            ]
+        },
+        {
+            "caption": "define port:2",
+            "version": "2026.5|35.0.0|20260618",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "' Port constructed by macro Solver -> Ports -> Calculate port extension coefficient\r",
+                "\r",
+                "\r",
+                "With Port\r",
+                "  .Reset\r",
+                "  .PortNumber \"2\"\r",
+                "  .NumberOfModes \"1\"\r",
+                "  .AdjustPolarization False\r",
+                "  .PolarizationAngle \"0.0\"\r",
+                "  .ReferencePlaneDistance \"0\"\r",
+                "  .TextSize \"50\"\r",
+                "  .Coordinates \"Picks\"\r",
+                "  .Orientation \"Positive\"\r",
+                "  .PortOnBound \"True\"\r",
+                "  .ClipPickedPortToBound \"False\"\r",
+                "  .XrangeAdd \"0\", \"0\"\r",
+                "  .YrangeAdd \"20*7.41\", \"20*7.41\"\r",
+                "  .ZrangeAdd \"20\", \"20*7.41\"\r",
+                "  .Shield \"PEC\"\r",
+                "  .SingleEnded \"False\"\r",
+                "  .Create\r",
+                "End With"
+            ]
+        },
+        {
+            "caption": "pick face",
+            "version": "2026.5|35.0.0|20260618",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Pick.PickFaceFromId \"pcb0(PCB1)/Nets/NONE:02_F_CU\", \"94\""
+            ]
+        },
+        {
+            "caption": "define port:3",
+            "version": "2026.5|35.0.0|20260618",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "' Port constructed by macro Solver -> Ports -> Calculate port extension coefficient\r",
+                "\r",
+                "\r",
+                "With Port\r",
+                "  .Reset\r",
+                "  .PortNumber \"3\"\r",
+                "  .NumberOfModes \"1\"\r",
+                "  .AdjustPolarization False\r",
+                "  .PolarizationAngle \"0.0\"\r",
+                "  .ReferencePlaneDistance \"0\"\r",
+                "  .TextSize \"50\"\r",
+                "  .Coordinates \"Picks\"\r",
+                "  .Orientation \"Positive\"\r",
+                "  .PortOnBound \"True\"\r",
+                "  .ClipPickedPortToBound \"False\"\r",
+                "  .XrangeAdd \"0\", \"0\"\r",
+                "  .YrangeAdd \"20*7.41\", \"20*7.41\"\r",
+                "  .ZrangeAdd \"20\", \"20*7.41\"\r",
+                "  .Shield \"PEC\"\r",
+                "  .SingleEnded \"False\"\r",
+                "  .Create\r",
+                "End With"
+            ]
+        },
+        {
+            "caption": "define boundaries",
+            "version": "2026.5|35.0.0|20260618",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With Boundary",
+                "     .Xmin \"expanded open\"",
+                "     .Xmax \"expanded open\"",
+                "     .Ymin \"electric\"",
+                "     .Ymax \"electric\"",
+                "     .Zmin \"electric\"",
+                "     .Zmax \"expanded open\"",
+                "     .Xsymmetry \"none\"",
+                "     .Ysymmetry \"none\"",
+                "     .Zsymmetry \"none\"",
+                "     .ApplyInAllDirections \"False\"",
+                "     .OpenAddSpaceFactor \"0.5\"",
+                "End With"
+            ]
+        },
+        {
+            "caption": "pick mid point",
+            "version": "2026.5|35.0.0|20260618",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Pick.PickMidpointFromId \"pcb0(PCB1)/Nets/NONE:02_F_CU\", \"156\""
+            ]
+        },
+        {
+            "caption": "pick mid point",
+            "version": "2026.5|35.0.0|20260618",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Pick.PickMidpointFromId \"pcb0(PCB1)/Nets/NONE:02_F_CU\", \"134\""
+            ]
+        },
+        {
+            "caption": "define lumped element: R:R1",
+            "version": "2026.5|35.0.0|20260618",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With LumpedElement",
+                "     .Reset ",
+                "     .SetName \"R1\" ",
+                "     .Folder \"R\" ",
+                "     .SetType \"RLCSerial\"",
+                "     .SetR \"R1\"",
+                "     .SetL \"0\"",
+                "     .SetC \"0\"",
+                "     .SetGs \"0\"",
+                "     .SetI0 \"1e-14\"",
+                "     .SetT \"300\"",
+                "     .SetMonitor \"True\"",
+                "     .SetRadius \"0.0\"",
+                "     .CircuitFileName \"\"",
+                "     .CircuitId \"1\"",
+                "     .UseCopyOnly \"True\"",
+                "     .UseRelativePath \"False\"",
+                "     .SetP1 \"True\", \"5554.0000006102\", \"-3291.5500005566\", \"22.74\" ",
+                "     .SetP2 \"True\", \"5554.0000006102\", \"-3310.4500000361\", \"22.74\" ",
+                "     .SetInvert \"False\" ",
+                "     .Wire \"\" ",
+                "     .Position \"end1\" ",
+                "     .Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "pick mid point",
+            "version": "2026.5|35.0.0|20260618",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Pick.PickMidpointFromId \"pcb0(PCB1)/Nets/NONE:02_F_CU\", \"148\""
+            ]
+        },
+        {
+            "caption": "pick mid point",
+            "version": "2026.5|35.0.0|20260618",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Pick.PickMidpointFromId \"pcb0(PCB1)/Nets/NONE:02_F_CU\", \"142\""
+            ]
+        },
+        {
+            "caption": "define lumped element: R:R2",
+            "version": "2026.5|35.0.0|20260618",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With LumpedElement",
+                "     .Reset ",
+                "     .SetName \"R2\" ",
+                "     .Folder \"R\" ",
+                "     .SetType \"RLCSerial\"",
+                "     .SetR \"R2\"",
+                "     .SetL \"0\"",
+                "     .SetC \"0\"",
+                "     .SetGs \"0\"",
+                "     .SetI0 \"1e-14\"",
+                "     .SetT \"300\"",
+                "     .SetMonitor \"True\"",
+                "     .SetRadius \"0.0\"",
+                "     .CircuitFileName \"\"",
+                "     .CircuitId \"1\"",
+                "     .UseCopyOnly \"True\"",
+                "     .UseRelativePath \"False\"",
+                "     .SetP1 \"True\", \"5417.8344875181\", \"-3291.5500005566\", \"22.74\" ",
+                "     .SetP2 \"True\", \"5417.8344875181\", \"-3310.4500000361\", \"22.74\" ",
+                "     .SetInvert \"False\" ",
+                "     .Wire \"\" ",
+                "     .Position \"end1\" ",
+                "     .Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "define frequency range",
+            "version": "2026.5|35.0.0|20260618",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Solver.FrequencyRange \"7.5\", \"9.5\""
+            ]
+        },
+        {
+            "caption": "change solver type",
+            "version": "2026.5|35.0.0|20260618",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "ChangeSolverType \"HF Frequency Domain\""
+            ]
+        },
+        {
+            "caption": "define frequency domain solver parameters",
+            "version": "2026.5|35.0.0|20260618",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Mesh.SetCreator \"High Frequency\" ",
+                "",
+                "With FDSolver",
+                "     .Reset ",
+                "     .SetMethod \"Tetrahedral\", \"General purpose\" ",
+                "     .OrderTet \"Second\" ",
+                "     .OrderSrf \"First\" ",
+                "     .Stimulation \"All\", \"All\" ",
+                "     .ResetExcitationList ",
+                "     .AutoNormImpedance \"True\" ",
+                "     .NormingImpedance \"50\" ",
+                "     .ModesOnly \"False\" ",
+                "     .ConsiderPortLossesTet \"True\" ",
+                "     .SetShieldAllPorts \"False\" ",
+                "     .AccuracyHex \"1e-6\" ",
+                "     .AccuracyTet \"1e-4\" ",
+                "     .AccuracySrf \"1e-3\" ",
+                "     .LimitIterations \"False\" ",
+                "     .MaxIterations \"0\" ",
+                "     .SetCalcBlockExcitationsInParallel \"True\", \"True\", \"\" ",
+                "     .StoreAllResults \"False\" ",
+                "     .StoreResultsInCache \"False\" ",
+                "     .UseHelmholtzEquation \"True\" ",
+                "     .LowFrequencyStabilization \"True\" ",
+                "     .Type \"Auto\" ",
+                "     .MeshAdaptionHex \"False\" ",
+                "     .MeshAdaptionTet \"True\" ",
+                "     .AcceleratedRestart \"True\" ",
+                "     .FreqDistAdaptMode \"Distributed\" ",
+                "     .NewIterativeSolver \"True\" ",
+                "     .TDCompatibleMaterials \"False\" ",
+                "     .ExtrudeOpenBC \"False\" ",
+                "     .SetOpenBCTypeHex \"Default\" ",
+                "     .SetOpenBCTypeTet \"Default\" ",
+                "     .AddMonitorSamples \"True\" ",
+                "     .CalcPowerLoss \"True\" ",
+                "     .CalcPowerLossPerComponent \"False\" ",
+                "     .SetKeepSolutionCoefficients \"MonitorsAndMeshAdaptation\" ",
+                "     .UseDoublePrecision \"False\" ",
+                "     .UseDoublePrecision_ML \"True\" ",
+                "     .MixedOrderSrf \"False\" ",
+                "     .MixedOrderTet \"False\" ",
+                "     .PreconditionerAccuracyIntEq \"0.15\" ",
+                "     .MLFMMAccuracy \"Default\" ",
+                "     .MinMLFMMBoxSize \"0.3\" ",
+                "     .UseCFIEForCPECIntEq \"True\" ",
+                "     .UseEnhancedCFIE2 \"True\" ",
+                "     .UseFastRCSSweepIntEq \"false\" ",
+                "     .UseSensitivityAnalysis \"False\" ",
+                "     .UseEnhancedNFSImprint \"True\" ",
+                "     .UseFastDirectFFCalc \"True\" ",
+                "     .RemoveAllStopCriteria \"Hex\"",
+                "     .AddStopCriterion \"All S-Parameters\", \"0.01\", \"2\", \"Hex\", \"True\"",
+                "     .AddStopCriterion \"Reflection S-Parameters\", \"0.01\", \"2\", \"Hex\", \"False\"",
+                "     .AddStopCriterion \"Transmission S-Parameters\", \"0.01\", \"2\", \"Hex\", \"False\"",
+                "     .RemoveAllStopCriteria \"Tet\"",
+                "     .AddStopCriterion \"All S-Parameters\", \"0.01\", \"2\", \"Tet\", \"True\"",
+                "     .AddStopCriterion \"Reflection S-Parameters\", \"0.01\", \"2\", \"Tet\", \"False\"",
+                "     .AddStopCriterion \"Transmission S-Parameters\", \"0.01\", \"2\", \"Tet\", \"False\"",
+                "     .AddStopCriterion \"All Probes\", \"0.05\", \"2\", \"Tet\", \"True\"",
+                "     .RemoveAllStopCriteria \"Srf\"",
+                "     .AddStopCriterion \"All S-Parameters\", \"0.01\", \"2\", \"Srf\", \"True\"",
+                "     .AddStopCriterion \"Reflection S-Parameters\", \"0.01\", \"2\", \"Srf\", \"False\"",
+                "     .AddStopCriterion \"Transmission S-Parameters\", \"0.01\", \"2\", \"Srf\", \"False\"",
+                "     .SweepMinimumSamples \"3\" ",
+                "     .SetNumberOfResultDataSamples \"1001\" ",
+                "     .SetResultDataSamplingMode \"Automatic\" ",
+                "     .SweepWeightEvanescent \"1.0\" ",
+                "     .AccuracyROM \"1e-4\" ",
+                "     .AddSampleInterval \"\", \"\", \"\", \"Automatic\", \"False\" ",
+                "     .AddInactiveSampleInterval \"\", \"\", \"\", \"Automatic\", \"False\" ",
+                "     .MPIParallelization \"False\"",
+                "     .UseDistributedComputing \"False\"",
+                "     .NetworkComputingStrategy \"RunRemote\"",
+                "     .NetworkComputingJobCount \"3\"",
+                "     .UseParallelization \"True\"",
+                "     .MaxCPUs \"1024\"",
+                "     .MaximumNumberOfCPUDevices \"2\"",
+                "     .HardwareAcceleration \"False\"",
+                "     .MaximumNumberOfGPUs \"1\"",
+                "End With",
+                "",
+                "With IESolver",
+                "     .Reset ",
+                "     .UseFastFrequencySweep \"True\" ",
+                "     .UseIEGroundPlane \"False\" ",
+                "     .SetRealGroundMaterialName \"\" ",
+                "     .CalcFarFieldInRealGround \"False\" ",
+                "     .RealGroundModelType \"Auto\" ",
+                "     .PreconditionerType \"Auto\" ",
+                "     .ExtendThinWireModelByWireNubs \"False\" ",
+                "     .ExtraPreconditioning \"False\" ",
+                "End With",
+                "",
+                "With IESolver",
+                "     .SetFMMFFCalcStopLevel \"0\" ",
+                "     .SetFMMFFCalcNumInterpPoints \"6\" ",
+                "     .UseFMMFarfieldCalc \"True\" ",
+                "     .SetCFIEAlpha \"0.500000\" ",
+                "     .LowFrequencyStabilization \"False\" ",
+                "     .LowFrequencyStabilizationML \"True\" ",
+                "     .Multilayer \"False\" ",
+                "     .SetiMoMACC_I \"0.0001\" ",
+                "     .SetiMoMACC_M \"0.0001\" ",
+                "     .DeembedExternalPorts \"True\" ",
+                "     .SetOpenBC_XY \"True\" ",
+                "     .OldRCSSweepDefintion \"False\" ",
+                "     .SetRCSOptimizationProperties \"True\", \"100\", \"0.00001\" ",
+                "     .SetAccuracySetting \"Medium\" ",
+                "     .CalculateSParaforFieldsources \"True\" ",
+                "     .ModeTrackingCMA \"True\" ",
+                "     .NumberOfModesCMA \"3\" ",
+                "     .StartFrequencyCMA \"-1.0\" ",
+                "     .SetAccuracySettingCMA \"Default\" ",
+                "     .FrequencySamplesCMA \"0\" ",
+                "     .SetMemSettingCMA \"Auto\" ",
+                "     .SetStrategyCMA \"Standard\" ",
+                "     .SetApproachCMA \"Adaptive\" ",
+                "     .CalculateModalWeightingCoefficientsCMA \"True\" ",
+                "     .DetectThinDielectrics \"True\" ",
+                "     .UseLegacyRadiatedPowerCalc \"False\" ",
+                "     .UseFarfieldPreCalculation \"True\" ",
+                "End With"
+            ]
+        }
+    ]
+}

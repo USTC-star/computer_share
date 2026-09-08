@@ -38,9 +38,7 @@ false
 [start]command
 [end]command
 [start]content
-
 Solid.Delete "WPD1:solid1"
-
 [end]content
 [start]recover_picks
 1
@@ -71,9 +69,7 @@ Solid.Delete "WPD1:solid1"
 [start]command
 [end]command
 [start]content
-
 Solid.Delete "WPD1:solid3"
-
 [end]content
 [start]recover_picks
 1
@@ -89,9 +85,7 @@ Solid.Delete "WPD1:solid3"
 [start]command
 [end]command
 [start]content
-
 Solid.Delete "WPD1:solid1"
-
 [end]content
 [start]recover_picks
 1
@@ -135,7 +129,6 @@ Solid.Delete "WPD1:solid1"
 26
 [end]block_index
 [start]command
-
 '@ define lumped element: Resistors:R1
  (undo)
 [end]command
@@ -184,7 +177,6 @@ LumpedElement.Delete "Resistors:R1"
 29
 [end]block_index
 [start]command
-
 '@ define lumped element: Resistors:R2
  (undo)
 [end]command
@@ -233,7 +225,6 @@ LumpedElement.Delete "Resistors:R2"
 32
 [end]block_index
 [start]command
-
 '@ define lumped element: Resistors:R3
  (undo)
 [end]command
@@ -282,7 +273,6 @@ LumpedElement.Delete "Resistors:R3"
 35
 [end]block_index
 [start]command
-
 '@ define lumped element: Resistors:R4
  (undo)
 [end]command
