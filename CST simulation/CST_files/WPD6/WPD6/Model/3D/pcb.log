@@ -1,125 +1,13 @@
 *** STARTING PCB CONVERSION ***
 
-Importing F:\NSF\WPD6\WPD6\GERBER\WPD6.mlpcb... [Tue Sep  8 09:32:58 2026]
+Importing F:\NSF\WPD6\WPD6\GERBER\WPD6_v5.mlpcb... [Thu Sep 10 00:41:04 2026]
 ============================================================
 Reading Multilayer PCB file ...
 
-WARNING: Broken shape: <ShapeWithHoles (shape: 6 segments, 0 holes, 0 errors)>Shape:
-<Shape with 6 segments>
-0: CurveSegment( R2(6948.67, -3731.54), R2(7053.67, -3731.54)), # l=105>
-1: CurveSegment( R2(7053.67, -3731.54), R2(7053.67, -3731.54), R2(7053.67, -3731.54), 0.000492126), # l=0.00077303>
-2: CurveSegment( R2(7053.67, -3731.54), R2(7053.67, -3731.54), R2(7053.67, -3731.54), 0.000492126), # l=0.00077303>
-3: CurveSegment( R2(7053.67, -3731.54), R2(6948.67, -3731.54)), # l=105>
-4: CurveSegment( R2(6948.67, -3731.54), R2(6948.67, -3731.54), R2(6948.67, -3731.54), 0.000492126), # l=0.00077303>
-5: CurveSegment( R2(6948.67, -3731.54), R2(6948.67, -3731.54), R2(6948.67, -3731.54), 0.000492126), # l=0.00077303>
-
-WARNING: Broken shape: <ShapeWithHoles (shape: 6 segments, 0 holes, 0 errors)>Shape:
-<Shape with 6 segments>
-0: CurveSegment( R2(7053.67, -3731.54), R2(7053.67, -3773.54)), # l=42>
-1: CurveSegment( R2(7053.67, -3773.54), R2(7053.67, -3773.54), R2(7053.67, -3773.54), 0.000492126), # l=0.00077303>
-2: CurveSegment( R2(7053.67, -3773.54), R2(7053.67, -3773.54), R2(7053.67, -3773.54), 0.000492126), # l=0.00077303>
-3: CurveSegment( R2(7053.67, -3773.54), R2(7053.67, -3731.54)), # l=42>
-4: CurveSegment( R2(7053.67, -3731.54), R2(7053.67, -3731.54), R2(7053.67, -3731.54), 0.000492126), # l=0.00077303>
-5: CurveSegment( R2(7053.67, -3731.54), R2(7053.67, -3731.54), R2(7053.67, -3731.54), 0.000492126), # l=0.00077303>
-
-WARNING: Broken shape: <ShapeWithHoles (shape: 6 segments, 0 holes, 0 errors)>Shape:
-<Shape with 6 segments>
-0: CurveSegment( R2(7053.67, -3773.54), R2(6948.67, -3773.54)), # l=105>
-1: CurveSegment( R2(6948.67, -3773.54), R2(6948.67, -3773.54), R2(6948.67, -3773.54), 0.000492126), # l=0.00077303>
-2: CurveSegment( R2(6948.67, -3773.54), R2(6948.67, -3773.54), R2(6948.67, -3773.54), 0.000492126), # l=0.00077303>
-3: CurveSegment( R2(6948.67, -3773.54), R2(7053.67, -3773.54)), # l=105>
-4: CurveSegment( R2(7053.67, -3773.54), R2(7053.67, -3773.54), R2(7053.67, -3773.54), 0.000492126), # l=0.00077303>
-5: CurveSegment( R2(7053.67, -3773.54), R2(7053.67, -3773.54), R2(7053.67, -3773.54), 0.000492126), # l=0.00077303>
-
-WARNING: Broken shape: <ShapeWithHoles (shape: 6 segments, 0 holes, 0 errors)>Shape:
-<Shape with 6 segments>
-0: CurveSegment( R2(6948.67, -3773.54), R2(6948.67, -3731.54)), # l=42>
-1: CurveSegment( R2(6948.67, -3731.54), R2(6948.67, -3731.54), R2(6948.67, -3731.54), 0.000492126), # l=0.00077303>
-2: CurveSegment( R2(6948.67, -3731.54), R2(6948.67, -3731.54), R2(6948.67, -3731.54), 0.000492126), # l=0.00077303>
-3: CurveSegment( R2(6948.67, -3731.54), R2(6948.67, -3773.54)), # l=42>
-4: CurveSegment( R2(6948.67, -3773.54), R2(6948.67, -3773.54), R2(6948.67, -3773.54), 0.000492126), # l=0.00077303>
-5: CurveSegment( R2(6948.67, -3773.54), R2(6948.67, -3773.54), R2(6948.67, -3773.54), 0.000492126), # l=0.00077303>
-
-WARNING: Broken shape: <ShapeWithHoles (shape: 6 segments, 0 holes, 0 errors)>Shape:
-<Shape with 6 segments>
-0: CurveSegment( R2(6948.67, -3731.54), R2(7053.67, -3731.54)), # l=105>
-1: CurveSegment( R2(7053.67, -3731.54), R2(7053.67, -3731.54), R2(7053.67, -3731.54), 0.000492126), # l=0.00077303>
-2: CurveSegment( R2(7053.67, -3731.54), R2(7053.67, -3731.54), R2(7053.67, -3731.54), 0.000492126), # l=0.00077303>
-3: CurveSegment( R2(7053.67, -3731.54), R2(6948.67, -3731.54)), # l=105>
-4: CurveSegment( R2(6948.67, -3731.54), R2(6948.67, -3731.54), R2(6948.67, -3731.54), 0.000492126), # l=0.00077303>
-5: CurveSegment( R2(6948.67, -3731.54), R2(6948.67, -3731.54), R2(6948.67, -3731.54), 0.000492126), # l=0.00077303>
-
-WARNING: Broken shape: <ShapeWithHoles (shape: 6 segments, 0 holes, 0 errors)>Shape:
-<Shape with 6 segments>
-0: CurveSegment( R2(7053.67, -3731.54), R2(7053.67, -3773.54)), # l=42>
-1: CurveSegment( R2(7053.67, -3773.54), R2(7053.67, -3773.54), R2(7053.67, -3773.54), 0.000492126), # l=0.00077303>
-2: CurveSegment( R2(7053.67, -3773.54), R2(7053.67, -3773.54), R2(7053.67, -3773.54), 0.000492126), # l=0.00077303>
-3: CurveSegment( R2(7053.67, -3773.54), R2(7053.67, -3731.54)), # l=42>
-4: CurveSegment( R2(7053.67, -3731.54), R2(7053.67, -3731.54), R2(7053.67, -3731.54), 0.000492126), # l=0.00077303>
-5: CurveSegment( R2(7053.67, -3731.54), R2(7053.67, -3731.54), R2(7053.67, -3731.54), 0.000492126), # l=0.00077303>
-
-WARNING: Broken shape: <ShapeWithHoles (shape: 6 segments, 0 holes, 0 errors)>Shape:
-<Shape with 6 segments>
-0: CurveSegment( R2(7053.67, -3773.54), R2(6948.67, -3773.54)), # l=105>
-1: CurveSegment( R2(6948.67, -3773.54), R2(6948.67, -3773.54), R2(6948.67, -3773.54), 0.000492126), # l=0.00077303>
-2: CurveSegment( R2(6948.67, -3773.54), R2(6948.67, -3773.54), R2(6948.67, -3773.54), 0.000492126), # l=0.00077303>
-3: CurveSegment( R2(6948.67, -3773.54), R2(7053.67, -3773.54)), # l=105>
-4: CurveSegment( R2(7053.67, -3773.54), R2(7053.67, -3773.54), R2(7053.67, -3773.54), 0.000492126), # l=0.00077303>
-5: CurveSegment( R2(7053.67, -3773.54), R2(7053.67, -3773.54), R2(7053.67, -3773.54), 0.000492126), # l=0.00077303>
-
-WARNING: Broken shape: <ShapeWithHoles (shape: 6 segments, 0 holes, 0 errors)>Shape:
-<Shape with 6 segments>
-0: CurveSegment( R2(6948.67, -3773.54), R2(6948.67, -3731.54)), # l=42>
-1: CurveSegment( R2(6948.67, -3731.54), R2(6948.67, -3731.54), R2(6948.67, -3731.54), 0.000492126), # l=0.00077303>
-2: CurveSegment( R2(6948.67, -3731.54), R2(6948.67, -3731.54), R2(6948.67, -3731.54), 0.000492126), # l=0.00077303>
-3: CurveSegment( R2(6948.67, -3731.54), R2(6948.67, -3773.54)), # l=42>
-4: CurveSegment( R2(6948.67, -3773.54), R2(6948.67, -3773.54), R2(6948.67, -3773.54), 0.000492126), # l=0.00077303>
-5: CurveSegment( R2(6948.67, -3773.54), R2(6948.67, -3773.54), R2(6948.67, -3773.54), 0.000492126), # l=0.00077303>
-
-WARNING: Broken shape: <ShapeWithHoles (shape: 6 segments, 0 holes, 0 errors)>Shape:
-<Shape with 6 segments>
-0: CurveSegment( R2(6948.67, -3034.46), R2(7053.67, -3034.46)), # l=105>
-1: CurveSegment( R2(7053.67, -3034.46), R2(7053.67, -3034.46), R2(7053.67, -3034.46), 0.000492126), # l=0.00077303>
-2: CurveSegment( R2(7053.67, -3034.46), R2(7053.67, -3034.46), R2(7053.67, -3034.46), 0.000492126), # l=0.00077303>
-3: CurveSegment( R2(7053.67, -3034.46), R2(6948.67, -3034.46)), # l=105>
-4: CurveSegment( R2(6948.67, -3034.46), R2(6948.67, -3034.46), R2(6948.67, -3034.46), 0.000492126), # l=0.00077303>
-5: CurveSegment( R2(6948.67, -3034.46), R2(6948.67, -3034.46), R2(6948.67, -3034.46), 0.000492126), # l=0.00077303>
-
-WARNING: Broken shape: <ShapeWithHoles (shape: 6 segments, 0 holes, 0 errors)>Shape:
-<Shape with 6 segments>
-0: CurveSegment( R2(7053.67, -3034.46), R2(7053.67, -3076.46)), # l=42>
-1: CurveSegment( R2(7053.67, -3076.46), R2(7053.67, -3076.46), R2(7053.67, -3076.46), 0.000492126), # l=0.00077303>
-2: CurveSegment( R2(7053.67, -3076.46), R2(7053.67, -3076.46), R2(7053.67, -3076.46), 0.000492126), # l=0.00077303>
-3: CurveSegment( R2(7053.67, -3076.46), R2(7053.67, -3034.46)), # l=42>
-4: CurveSegment( R2(7053.67, -3034.46), R2(7053.67, -3034.46), R2(7053.67, -3034.46), 0.000492126), # l=0.00077303>
-5: CurveSegment( R2(7053.67, -3034.46), R2(7053.67, -3034.46), R2(7053.67, -3034.46), 0.000492126), # l=0.00077303>
-
-WARNING: Broken shape: <ShapeWithHoles (shape: 6 segments, 0 holes, 0 errors)>Shape:
-<Shape with 6 segments>
-0: CurveSegment( R2(7053.67, -3076.46), R2(6948.67, -3076.46)), # l=105>
-1: CurveSegment( R2(6948.67, -3076.46), R2(6948.67, -3076.46), R2(6948.67, -3076.46), 0.000492126), # l=0.00077303>
-2: CurveSegment( R2(6948.67, -3076.46), R2(6948.67, -3076.46), R2(6948.67, -3076.46), 0.000492126), # l=0.00077303>
-3: CurveSegment( R2(6948.67, -3076.46), R2(7053.67, -3076.46)), # l=105>
-4: CurveSegment( R2(7053.67, -3076.46), R2(7053.67, -3076.46), R2(7053.67, -3076.46), 0.000492126), # l=0.00077303>
-5: CurveSegment( R2(7053.67, -3076.46), R2(7053.67, -3076.46), R2(7053.67, -3076.46), 0.000492126), # l=0.00077303>
-
-WARNING: Broken shape: <ShapeWithHoles (shape: 6 segments, 0 holes, 0 errors)>Shape:
-<Shape with 6 segments>
-0: CurveSegment( R2(6948.67, -3076.46), R2(6948.67, -3034.46)), # l=42>
-1: CurveSegment( R2(6948.67, -3034.46), R2(6948.67, -3034.46), R2(6948.67, -3034.46), 0.000492126), # l=0.00077303>
-2: CurveSegment( R2(6948.67, -3034.46), R2(6948.67, -3034.46), R2(6948.67, -3034.46), 0.000492126), # l=0.00077303>
-3: CurveSegment( R2(6948.67, -3034.46), R2(6948.67, -3076.46)), # l=42>
-4: CurveSegment( R2(6948.67, -3076.46), R2(6948.67, -3076.46), R2(6948.67, -3076.46), 0.000492126), # l=0.00077303>
-5: CurveSegment( R2(6948.67, -3076.46), R2(6948.67, -3076.46), R2(6948.67, -3076.46), 0.000492126), # l=0.00077303>
-
-Added layer SOLDER_MASK_BOTTOM below etch layer B_CU
-Added layer SOLDER_MASK_TOP above etch layer F_CU
+Added layer SOLDER_MASK_BOTTOM below etch layer F_CU
+Added layer SOLDER_MASK_TOP above etch layer B_CU
 Finished reading Multilayer PCB file.
 ============================================================
-Further warnings:
-WARNING: Shape deleted upon healing.
- (12 times)
-WARNING: empty None shape after healing (skipped) (12 times)
 *** ENDING PCB CONVERSION with SUCCESS after 1 second ***
 warning: Unphysical value of lateral reference length (0.01), resetting to 500um.
 

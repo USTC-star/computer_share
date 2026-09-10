@@ -1,9 +1,9 @@
 {
     "parameters": [
         {
-            "expr": "330",
+            "expr": "200",
             "name": "R1",
-            "value": "330"
+            "value": "200"
         },
         {
             "expr": "100",

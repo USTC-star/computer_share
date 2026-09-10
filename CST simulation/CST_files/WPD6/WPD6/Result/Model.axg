@@ -2,19 +2,19 @@
 <CSTAuxiliaryGeometry version="20170928" creator="modeler">
   <Objects>
     <Object name="Lumped Elements\R:R1" id="0">
-      <FatArrow position="6530.57373 -3404 22.7399998" direction="0 -18.8999996 0" dimension="10 10 10" material="$WireMaterial$" text="R:R1" short="R1"/>
+      <FatArrow position="165.493958 -77.5970001 0" direction="0 0.480059981 0" dimension="10 10 10" material="$WireMaterial$" text="R:R1" short="R1"/>
     </Object>
     <Object name="Lumped Elements\R:R2" id="1">
-      <FatArrow position="6440 -3404 22.7399998" direction="0 -18.8999996 0" dimension="10 10 10" material="$WireMaterial$" text="R:R2" short="R2"/>
+      <FatArrow position="162.483795 -77.5970001 0" direction="0 0.480059981 0" dimension="10 10 10" material="$WireMaterial$" text="R:R2" short="R2"/>
     </Object>
     <Object name="Ports\port1" id="6">
-      <LineSet points="5950 -3527.3999 1.37 5950 -3280.6001 1.37 5950 -3280.6001 125.139999 5950 -3527.3999 125.139999 5950 -3527.3999 1.37" stripped="1" material="$PortMaterial$" text="1" short="1"/>
+      <LineSet points="150 -81.8946762 -3.76428008 150 -73.2993164 -3.76428008 150 -73.2993164 0.542797983 150 -81.8946762 0.542797983 150 -81.8946762 -3.76428008" stripped="1" material="$PortMaterial$" text="1" short="1"/>
     </Object>
     <Object name="Ports\port2" id="7">
-      <LineSet points="7000 -3875.54395 1.37 7000 -3629 1.37 7000 -3629 124.739998 7000 -3875.54395 124.739998 7000 -3875.54395 1.37" stripped="1" material="$PortMaterial$" text="2" short="2"/>
+      <LineSet points="182 -69.9273987 -3.76428008 182 -61.3320389 -3.76428008 182 -61.3320389 0.542797983 182 -69.9273987 0.542797983 182 -69.9273987 -3.76428008" stripped="1" material="$PortMaterial$" text="2" short="2"/>
     </Object>
     <Object name="Ports\port3" id="8">
-      <LineSet points="7000 -3179.01416 1.37 7000 -2932.45605 1.37 7000 -2932.45605 124.739998 7000 -3179.01416 124.739998 7000 -3179.01416 1.37" stripped="1" material="$PortMaterial$" text="3" short="3"/>
+      <LineSet points="182 -93.8619614 -3.76428008 182 -85.2666016 -3.76428008 182 -85.2666016 0.542797983 182 -93.8619614 0.542797983 182 -93.8619614 -3.76428008" stripped="1" material="$PortMaterial$" text="3" short="3"/>
     </Object>
   </Objects>
   <Materials/>

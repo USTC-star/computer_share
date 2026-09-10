@@ -2,15 +2,15 @@
 <CSTAuxiliaryGeometry version="20170928">
   <Objects>
     <Object name="Lumped Elements\R:R1" id="0">
-      <PointSet points="6530.57373 -3413.44995 22.7399998 6530.57373 -3394.55005 22.7399998" material="$ConnectedMaterial$"/>
+      <PointSet points="165.493958 -77.3569717 0 165.493958 -77.8370285 0" material="$ConnectedMaterial$"/>
     </Object>
     <Object name="Lumped Elements\R:R2" id="1">
-      <PointSet points="6440 -3413.44995 22.7399998 6440 -3394.55005 22.7399998" material="$ConnectedMaterial$"/>
+      <PointSet points="162.483795 -77.3569717 0 162.483795 -77.8370285 0" material="$ConnectedMaterial$"/>
     </Object>
-    <Object name="Components\pcb(PCB1)/Nets/NONE:02_F_CU" id="2">
-      <PointSet points="6530.57373 -3413.44995 22.7399998 6440 -3413.44995 22.7399998 6440 -3394.55005 22.7399998 6530.57373 -3394.55005 22.7399998" material="$ConnectedMaterial$"/>
+    <Object name="Components\pcb(PCB1)/Nets/NONE:02_B_CU" id="2"/>
+    <Object name="Components\pcb(PCB1)/Nets/NONE:04_F_CU" id="3">
+      <PointSet points="165.493958 -77.3569717 0 162.483795 -77.3569717 0 162.483795 -77.8370285 0 165.493958 -77.8370285 0" material="$ConnectedMaterial$"/>
     </Object>
-    <Object name="Components\pcb(PCB1)/Nets/NONE:04_B_CU" id="3"/>
     <Object name="Components\pcb(PCB1)/Substrates:03_EDGE_CUTS" id="4"/>
   </Objects>
   <Materials/>
@@ -18,10 +18,10 @@
     <Group name="Group 0" ID="0">
       <Item name="Lumped Elements\R:R1" id="0"/>
       <Item name="Lumped Elements\R:R2" id="1"/>
-      <Item name="Components\pcb(PCB1)/Nets/NONE:02_F_CU" id="2"/>
+      <Item name="Components\pcb(PCB1)/Nets/NONE:04_F_CU" id="3"/>
     </Group>
     <Group name="Group 1" ID="1">
-      <Item name="Components\pcb(PCB1)/Nets/NONE:04_B_CU" id="3"/>
+      <Item name="Components\pcb(PCB1)/Nets/NONE:02_B_CU" id="2"/>
     </Group>
     <Group name="Isolators" ID="2">
       <Item name="Components\pcb(PCB1)/Substrates:03_EDGE_CUTS" id="4"/>

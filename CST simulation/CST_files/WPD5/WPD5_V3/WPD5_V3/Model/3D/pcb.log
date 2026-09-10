@@ -1,0 +1,20 @@
+*** STARTING PCB CONVERSION ***
+
+Importing F:\NSF\WPD5\Gerber\V5\WPD5.mlpcb... [Wed Sep  9 14:22:26 2026]
+============================================================
+Reading Multilayer PCB file ...
+
+Added layer SOLDER_MASK_BOTTOM below etch layer F_CU
+Added layer SOLDER_MASK_TOP above etch layer B_CU
+Finished reading Multilayer PCB file.
+============================================================
+*** ENDING PCB CONVERSION with SUCCESS after 1 second ***
+warning: Unphysical value of lateral reference length (0.01), resetting to 500um.
+
+
+========== Starting Layout Check ==========
+Checking geometry
+Looking for geometry artifacts
+Looking for healed shape problems
+
+========== End Layout Check ==========

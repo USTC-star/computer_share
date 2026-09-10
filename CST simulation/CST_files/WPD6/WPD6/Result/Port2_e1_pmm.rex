@@ -5,7 +5,7 @@
   <ResultDataType vector="1" complex="1" timedomain="0" frequencymap="1" designcycle="0"/>
   <SimulationDomain min="0 0 0" max="0 0 0"/>
   <PlotSettings Plot="1" ignore_symmetry="0" deformation="0" enforce_culling="0" integer_values="0" combine="CombineNone" default_arrow_type="ARROWS" default_scaling="NONE">
-    <Plane normal="1 0 0" distance="7000"/>
+    <Plane normal="1 0 0" distance="182"/>
   </PlotSettings>
   <Source type="SOLVER"/>
   <SpecialMaterials>
@@ -24,31 +24,47 @@
   <LocalAxes/>
   <MeshViewSettings/>
   <WaveguidePort/>
-  <ResultGroups num_steps="6" transformation="1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1" process_mesh_group="0">
+  <ResultGroups num_steps="10" transformation="1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1" process_mesh_group="0">
     <SharedDataWith/>
-    <Frame index="0" characteristic="12.5">
+    <Frame index="0" characteristic="14">
       <PortModeInfoFile filename="Port2_Info1(#0000).mmd"/>
       <FieldResultFile filename="Port2_e1(#0000).sct" type="sct" meshname="Port2.slim"/>
     </Frame>
-    <Frame index="1" characteristic="10.300000000000001">
+    <Frame index="1" characteristic="8">
       <PortModeInfoFile filename="Port2_Info1(#0001).mmd"/>
       <FieldResultFile filename="Port2_e1(#0001).sct" type="sct" meshname="Port2.slim"/>
     </Frame>
-    <Frame index="2" characteristic="11.4">
+    <Frame index="2" characteristic="11">
       <PortModeInfoFile filename="Port2_Info1(#0002).mmd"/>
       <FieldResultFile filename="Port2_e1(#0002).sct" type="sct" meshname="Port2.slim"/>
     </Frame>
-    <Frame index="3" characteristic="11.949999999999999">
+    <Frame index="3" characteristic="12.5">
       <PortModeInfoFile filename="Port2_Info1(#0003).mmd"/>
       <FieldResultFile filename="Port2_e1(#0003).sct" type="sct" meshname="Port2.slim"/>
     </Frame>
-    <Frame index="4" characteristic="10.641">
+    <Frame index="4" characteristic="9.8600000000000012">
       <PortModeInfoFile filename="Port2_Info1(#0004).mmd"/>
       <FieldResultFile filename="Port2_e1(#0004).sct" type="sct" meshname="Port2.slim"/>
     </Frame>
-    <Frame index="5" characteristic="11.609">
+    <Frame index="5" characteristic="11.828000000000001">
       <PortModeInfoFile filename="Port2_Info1(#0005).mmd"/>
       <FieldResultFile filename="Port2_e1(#0005).sct" type="sct" meshname="Port2.slim"/>
+    </Frame>
+    <Frame index="6" characteristic="12.644">
+      <PortModeInfoFile filename="Port2_Info1(#0006).mmd"/>
+      <FieldResultFile filename="Port2_e1(#0006).sct" type="sct" meshname="Port2.slim"/>
+    </Frame>
+    <Frame index="7" characteristic="10.496">
+      <PortModeInfoFile filename="Port2_Info1(#0007).mmd"/>
+      <FieldResultFile filename="Port2_e1(#0007).sct" type="sct" meshname="Port2.slim"/>
+    </Frame>
+    <Frame index="8" characteristic="8.3900000000000006">
+      <PortModeInfoFile filename="Port2_Info1(#0008).mmd"/>
+      <FieldResultFile filename="Port2_e1(#0008).sct" type="sct" meshname="Port2.slim"/>
+    </Frame>
+    <Frame index="9" characteristic="13.568000000000001">
+      <PortModeInfoFile filename="Port2_Info1(#0009).mmd"/>
+      <FieldResultFile filename="Port2_e1(#0009).sct" type="sct" meshname="Port2.slim"/>
     </Frame>
   </ResultGroups>
   <AutoScale>

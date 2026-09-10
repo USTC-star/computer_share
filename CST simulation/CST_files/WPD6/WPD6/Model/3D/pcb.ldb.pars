@@ -42,12 +42,12 @@
             "unit": "H"
         },
         "Length": {
-            "encoded": "&Um:in_i^1",
-            "full_symbol": "mil",
+            "encoded": "&Um:m^1",
+            "full_symbol": "mm",
             "prefix": "m",
-            "si_scale": 2.54e-05,
+            "si_scale": 0.001,
             "si_unit": "m",
-            "unit": "in"
+            "unit": "m"
         },
         "Resistance": {
             "encoded": "&U:Ohm^1",

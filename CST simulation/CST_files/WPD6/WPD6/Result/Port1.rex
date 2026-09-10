@@ -5,7 +5,7 @@
   <ResultDataType vector="0" complex="0" timedomain="0" frequencymap="0" designcycle="0"/>
   <SimulationDomain min="0 0 0" max="0 0 0"/>
   <PlotSettings Plot="4" ignore_symmetry="0" deformation="0" enforce_culling="0" integer_values="0" combine="CombineNone" default_arrow_type="ARROWS" default_scaling="NONE">
-    <Plane normal="1 -0 -0" distance="5950"/>
+    <Plane normal="1 -0 -0" distance="150"/>
   </PlotSettings>
   <Source type="SOLVER"/>
   <SpecialMaterials>

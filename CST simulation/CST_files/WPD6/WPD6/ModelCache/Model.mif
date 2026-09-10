@@ -1,13 +1,13 @@
 2019_10_21
-[GSCALE: 2.54e-05]
+[GSCALE: 0.001]
 [PCB_BODIES: False]
 [PCB_IMPORT: True]
 [PCB_IMPORT_NEW: True]
 [DISABLE_FAST_LOAD: False]
-[BBOX:5691.1655114656724 7258.8344885343276 -4293.132678154986 -2683.8673227910886 0 383.97448853432797]
-[BBOX_STRUCTURE:5950 7000 -4293.132678154986 -2683.8673227910886 0 125.14000000000001]
+[BBOX:143.18653504545455 188.81346495454545 -103.75221000108475 -53.600789974884954 -10.577744954545455 0.577596]
+[BBOX_STRUCTURE:150 182 -103.75221000108475 -53.600789974884954 -3.7642799999999998 0.577596]
 [UNITS]
-     .SetUnit "Length", "mil"
+     .SetUnit "Length", "mm"
      .SetUnit "Temperature", "degC"
      .SetUnit "Voltage", "V"
      .SetUnit "Current", "A"
@@ -20,7 +20,7 @@
      .SetResultUnit "frequency", "frequency", "" 
 [ENDUNITS]
 [FREQUENCYRANGE]
-Solver.FrequencyRange "10.3", "12.5" 
+Solver.FrequencyRange "8", "14" 
 [ENDFREQUENCYRANGE]
 [BACKGROUND]
      .XminSpace "0.0" 
@@ -36,8 +36,8 @@ Solver.FrequencyRange "10.3", "12.5"
      .Xmax "expanded open"
      .Ymin "electric"
      .Ymax "electric"
-     .Zmin "electric"
-     .Zmax "expanded open"
+     .Zmin "expanded open"
+     .Zmax "electric"
      .Xsymmetry "none"
      .Ysymmetry "none"
      .Zsymmetry "none"
@@ -417,15 +417,15 @@ Solver.FrequencyRange "10.3", "12.5"
      .Create
 [ENDMATERIAL]
 [MATERIAL: air_0]
-     .Rho "1.204"
+     .Rho "0"
      .BuoyancyType "Boussinesq"
      .BackgroundPressure "0.0"
      .MolarMass "0.0"
      .VanDerWaalsA "0.0"
      .VanDerWaalsB "0.0"
      .ThermalType "Normal"
-     .ThermalConductivity "0.026"
-     .SpecificHeat "1005", "J/K/kg"
+     .ThermalConductivity "0"
+     .SpecificHeat "0", "J/K/kg"
      .DynamicViscosity "0"
      .UseEmissivity "True"
      .Emissivity "0"
@@ -825,7 +825,7 @@ Solver.FrequencyRange "10.3", "12.5"
 [ENDMATERIAL]
 [LUMPED: R:R1]
      .SetType "RLCSerial"
-     .SetR "330"
+     .SetR "200"
      .SetL "0"
      .SetC "0"
      .SetGs "0"
@@ -837,8 +837,8 @@ Solver.FrequencyRange "10.3", "12.5"
      .CircuitId "1"
      .UseCopyOnly "True"
      .UseRelativePath "False"
-     .SetP1 "True", "6530.5738585999", "-3394.5500003094", "22.74" 
-     .SetP2 "True", "6530.5738585999", "-3413.4500001582", "22.74" 
+     .SetP1 "True", "165.49395597803", "-77.837029980894", "0" 
+     .SetP2 "True", "165.49395597803", "-77.356969994498", "0" 
      .SetInvert "False" 
      .Wire "" 
      .Position "end1" 
@@ -857,8 +857,8 @@ Solver.FrequencyRange "10.3", "12.5"
      .CircuitId "1"
      .UseCopyOnly "True"
      .UseRelativePath "False"
-     .SetP1 "True", "6440.0000003768", "-3394.5500003094", "22.74" 
-     .SetP2 "True", "6440.0000003768", "-3413.4500001582", "22.74" 
+     .SetP1 "True", "162.48379997814", "-77.837029980894", "0" 
+     .SetP2 "True", "162.48379997814", "-77.356969994498", "0" 
      .SetInvert "False" 
      .Wire "" 
      .Position "end1" 
@@ -876,8 +876,8 @@ Solver.FrequencyRange "10.3", "12.5"
      .Orientation "zmin"
      .PortOnBound "False"
      .ClipPickedPortToBound "False"
-     .Xrange "0", "246.79999945178315"
-     .Yrange "0", "123.77000000000001"
+     .Xrange "0", "8.5953600227048952"
+     .Yrange "0", "4.3070779999999997"
      .Zrange "0", "0"
      .XrangeAdd "0.0", "0.0"
      .YrangeAdd "0.0", "0.0"
@@ -885,8 +885,8 @@ Solver.FrequencyRange "10.3", "12.5"
      .SingleEnded "False"
      .Shield "PEC"
      .WaveguideMonitor "False"
-     .ReferenceWCS "123.39999972589", "61.885", "0", "0", "0", "-1", "0", "1", "0"
-(TRANSFORM) "0", "1", "0", "0", "0", "1", "1", "0", "0"| "5950", "-3527.3999999597", "1.37"(ENDTRANSFORM)
+     .ReferenceWCS "4.2976800113524", "2.153539", "0", "0", "0", "-1", "0", "1", "0"
+(TRANSFORM) "0", "1", "0", "0", "0", "1", "1", "0", "0"| "150", "-81.894679999048", "-3.76428"(ENDTRANSFORM)
 [ENDWAVEGUIDE]
 [WAVEGUIDE: 2]
      .Label ""
@@ -901,8 +901,8 @@ Solver.FrequencyRange "10.3", "12.5"
      .Orientation "zmax"
      .PortOnBound "False"
      .ClipPickedPortToBound "False"
-     .Xrange "0", "246.54397728624917"
-     .Yrange "0", "123.37"
+     .Xrange "0", "8.5953619865136659"
+     .Yrange "0", "4.3070779999999997"
      .Zrange "0", "0"
      .XrangeAdd "0.0", "0.0"
      .YrangeAdd "0.0", "0.0"
@@ -910,8 +910,8 @@ Solver.FrequencyRange "10.3", "12.5"
      .SingleEnded "False"
      .Shield "PEC"
      .WaveguideMonitor "False"
-     .ReferenceWCS "123.27198864312", "61.685", "0", "0", "0", "1", "0", "1", "0"
-(TRANSFORM) "0", "1", "0", "0", "0", "1", "1", "0", "0"| "7000", "-3875.5439768006", "1.37"(ENDTRANSFORM)
+     .ReferenceWCS "4.2976809932568", "2.153539", "0", "0", "0", "1", "0", "1", "0"
+(TRANSFORM) "0", "1", "0", "0", "0", "1", "1", "0", "0"| "182", "-69.927401207056", "-3.76428"(ENDTRANSFORM)
 [ENDWAVEGUIDE]
 [WAVEGUIDE: 3]
      .Label ""
@@ -926,8 +926,8 @@ Solver.FrequencyRange "10.3", "12.5"
      .Orientation "zmax"
      .PortOnBound "False"
      .ClipPickedPortToBound "False"
-     .Xrange "0", "246.55803069433478"
-     .Yrange "0", "123.37"
+     .Xrange "0", "8.5953619865136375"
+     .Yrange "0", "4.3070779999999997"
      .Zrange "0", "0"
      .XrangeAdd "0.0", "0.0"
      .YrangeAdd "0.0", "0.0"
@@ -935,8 +935,8 @@ Solver.FrequencyRange "10.3", "12.5"
      .SingleEnded "False"
      .Shield "PEC"
      .WaveguideMonitor "False"
-     .ReferenceWCS "123.27901534717", "61.685", "0", "0", "0", "1", "0", "1", "0"
-(TRANSFORM) "0", "1", "0", "0", "0", "1", "1", "0", "0"| "7000", "-3179.0140543613", "1.37"(ENDTRANSFORM)
+     .ReferenceWCS "4.2976809932568", "2.153539", "0", "0", "0", "1", "0", "1", "0"
+(TRANSFORM) "0", "1", "0", "0", "0", "1", "1", "0", "0"| "182", "-93.86196075485", "-3.76428"(ENDTRANSFORM)
 [ENDWAVEGUIDE]
 [GROUPS]
 Group.Add "meshgroup1", "mesh"
@@ -1037,10 +1037,56 @@ With MeshSettings
           .SetWithVersion "2026.5|35.0.0|20260618", "VolumeRefinementStep", 0, 0, 0
           .SetWithVersion "2026.5|35.0.0|20260618", "VolumeRefinementType", "NONE"
           .SetWithVersion "2026.5|35.0.0|20260618", "VolumeRefinementValueUseSameXYZ", 0
+          .SetMeshType "CfdNew"
+          .SetWithVersion "", "AbsoluteExtendFar", 0
+          .SetWithVersion "", "AbsoluteExtendNear", 0
+          .SetWithVersion "", "ConsiderGlobalSnapping", 1
+          .SetWithVersion "", "ConsiderMaximumNarrowChannelWidth", 1
+          .SetWithVersion "", "ConsiderMinimumNumNarrowChannelCells", 1
+          .SetWithVersion "", "EnableNarrowChannelRefinement", 0
+          .SetWithVersion "", "ExtendRangePolicy", "RELATIVE"
+          .SetWithVersion "", "MaximumNarrowChannelWidth", 0
+          .SetWithVersion "", "MaximumNumNarrowChannelRefinements", 3
+          .SetWithVersion "", "MinimumNarrowChannelWidth", 0
+          .SetWithVersion "", "MinimumNumNarrowChannelCells", 5
+          .SetWithVersion "", "RefinementLevelFar", 1
+          .SetWithVersion "", "RefinementLevelInside", 0
+          .SetWithVersion "", "RefinementLevelNear", 2
+          .SetWithVersion "", "RelativeExtendFar", 0
+          .SetWithVersion "", "RelativeExtendNear", 0
+          .SetWithVersion "", "SnappingPriority", 0
+          .SetWithVersion "", "SnapToAxialEdges", 1
+          .SetWithVersion "", "SnapToCylinderCenters", 1
+          .SetWithVersion "", "SnapToCylinders", 1
+          .SetWithVersion "", "SnapToEllipseCenters", 1
+          .SetWithVersion "", "SnapToEllipses", 1
+          .SetWithVersion "", "SnapToObjectBoundaries", 0
+          .SetWithVersion "", "SnapToPlanes", 1
+          .SetWithVersion "", "SnapToSpheres", 1
+          .SetWithVersion "", "SnapToTori", 1
+          .SetWithVersion "", "SnapToVertices", 0
+          .SetWithVersion "", "SnapXYZ", 1, 1, 1
+          .SetWithVersion "", "SurfaceRefinementAdjustment", 1
+          .SetWithVersion "", "SurfaceRefinementType", "AUTOMATIC"
+          .SetWithVersion "", "UseExtendSetting", 0
+          .SetWithVersion "", "UseRefinementLevelSetting", 0
+          .SetWithVersion "", "UseSameRefinementLevelForInsideAndNearAndFar", 0
+          .SetWithVersion "", "UseSameRefinementLevelForNearAndFar", 0
+          .SetWithVersion "", "UseSnappingPriority", 0
+          .SetWithVersion "", "VolumeRefinementExtentNumSteps", 0.00193548, 0.00193548, 0.00193548
+          .SetWithVersion "", "VolumeRefinementExtentStep", 0, 0, 0
+          .SetWithVersion "", "VolumeRefinementExtentType", "STEPS_PER_DIM"
+          .SetWithVersion "", "VolumeRefinementExtentValueUseSameXYZ", 1
+          .SetWithVersion "", "VolumeRefinementNumSteps", 0, 0, 0
+          .SetWithVersion "", "VolumeRefinementRatio", 0.00129032, 0.00129032, 0.00129032
+          .SetWithVersion "", "VolumeRefinementScopeType", "INTERIORS"
+          .SetWithVersion "", "VolumeRefinementStep", 0, 0, 0
+          .SetWithVersion "", "VolumeRefinementType", "NONE"
+          .SetWithVersion "", "VolumeRefinementValueUseSameXYZ", 1
      End With
 End With
-Group.AddItem "solid$pcb(PCB1)/Nets/NONE:02_F_CU", "meshgroup1"
-Group.AddItem "solid$pcb(PCB1)/Nets/NONE:04_B_CU", "meshgroup1"
+Group.AddItem "solid$pcb(PCB1)/Nets/NONE:02_B_CU", "meshgroup1"
+Group.AddItem "solid$pcb(PCB1)/Nets/NONE:04_F_CU", "meshgroup1"
 Group.Add "meshgroup2", "mesh"
 With MeshSettings
      With .ItemMeshSettings ("group$meshgroup2")
@@ -1087,7 +1133,7 @@ With MeshSettings
           .SetWithVersion "2026.5|35.0.0|20260618", "VolumeRefinementNumSteps", 0, 0, 0
           .SetWithVersion "2026.5|35.0.0|20260618", "VolumeRefinementRatio", 0, 0, 0
           .SetWithVersion "2026.5|35.0.0|20260618", "VolumeRefinementScopeType", "ALL"
-          .SetWithVersion "2026.5|35.0.0|20260618", "VolumeRefinementStep", 19.685, 19.685, 10
+          .SetWithVersion "2026.5|35.0.0|20260618", "VolumeRefinementStep", 0.5, 0.5, 0.254
           .SetWithVersion "2026.5|35.0.0|20260618", "VolumeRefinementType", "ABS_VALUE"
           .SetWithVersion "2026.5|35.0.0|20260618", "VolumeRefinementValueUseSameXYZ", 0
           .SetMeshType "HexTLM"
@@ -1136,9 +1182,55 @@ With MeshSettings
           .SetWithVersion "2026.5|35.0.0|20260618", "VolumeRefinementNumSteps", 0, 0, 0
           .SetWithVersion "2026.5|35.0.0|20260618", "VolumeRefinementRatio", 0, 0, 0
           .SetWithVersion "2026.5|35.0.0|20260618", "VolumeRefinementScopeType", "ALL"
-          .SetWithVersion "2026.5|35.0.0|20260618", "VolumeRefinementStep", 19.685, 19.685, 10
+          .SetWithVersion "2026.5|35.0.0|20260618", "VolumeRefinementStep", 0.5, 0.5, 0.254
           .SetWithVersion "2026.5|35.0.0|20260618", "VolumeRefinementType", "ABS_VALUE"
           .SetWithVersion "2026.5|35.0.0|20260618", "VolumeRefinementValueUseSameXYZ", 0
+          .SetMeshType "CfdNew"
+          .SetWithVersion "", "AbsoluteExtendFar", 0
+          .SetWithVersion "", "AbsoluteExtendNear", 0
+          .SetWithVersion "", "ConsiderGlobalSnapping", 1
+          .SetWithVersion "", "ConsiderMaximumNarrowChannelWidth", 1
+          .SetWithVersion "", "ConsiderMinimumNumNarrowChannelCells", 1
+          .SetWithVersion "", "EnableNarrowChannelRefinement", 0
+          .SetWithVersion "", "ExtendRangePolicy", "RELATIVE"
+          .SetWithVersion "", "MaximumNarrowChannelWidth", 0
+          .SetWithVersion "", "MaximumNumNarrowChannelRefinements", 3
+          .SetWithVersion "", "MinimumNarrowChannelWidth", 0
+          .SetWithVersion "", "MinimumNumNarrowChannelCells", 5
+          .SetWithVersion "", "RefinementLevelFar", 1
+          .SetWithVersion "", "RefinementLevelInside", 0
+          .SetWithVersion "", "RefinementLevelNear", 2
+          .SetWithVersion "", "RelativeExtendFar", 0
+          .SetWithVersion "", "RelativeExtendNear", 0
+          .SetWithVersion "", "SnappingPriority", 0
+          .SetWithVersion "", "SnapToAxialEdges", 1
+          .SetWithVersion "", "SnapToCylinderCenters", 1
+          .SetWithVersion "", "SnapToCylinders", 1
+          .SetWithVersion "", "SnapToEllipseCenters", 1
+          .SetWithVersion "", "SnapToEllipses", 1
+          .SetWithVersion "", "SnapToObjectBoundaries", 0
+          .SetWithVersion "", "SnapToPlanes", 1
+          .SetWithVersion "", "SnapToSpheres", 1
+          .SetWithVersion "", "SnapToTori", 1
+          .SetWithVersion "", "SnapToVertices", 0
+          .SetWithVersion "", "SnapXYZ", 1, 1, 1
+          .SetWithVersion "", "SurfaceRefinementAdjustment", 1
+          .SetWithVersion "", "SurfaceRefinementType", "AUTOMATIC"
+          .SetWithVersion "", "UseExtendSetting", 0
+          .SetWithVersion "", "UseRefinementLevelSetting", 0
+          .SetWithVersion "", "UseSameRefinementLevelForInsideAndNearAndFar", 0
+          .SetWithVersion "", "UseSameRefinementLevelForNearAndFar", 0
+          .SetWithVersion "", "UseSnappingPriority", 0
+          .SetWithVersion "", "VolumeRefinementExtentNumSteps", 0.00193548, 0.00193548, 0.00193548
+          .SetWithVersion "", "VolumeRefinementExtentStep", 0, 0, 0
+          .SetWithVersion "", "VolumeRefinementExtentType", "STEPS_PER_DIM"
+          .SetWithVersion "", "VolumeRefinementExtentValueUseSameXYZ", 1
+          .SetWithVersion "", "VolumeRefinementNumSteps", 0, 0, 0
+          .SetWithVersion "", "VolumeRefinementRatio", 0.00129032, 0.00129032, 0.00129032
+          .SetWithVersion "", "VolumeRefinementScopeType", "INTERIORS"
+          .SetWithVersion "", "VolumeRefinementStep", 0, 0, 0
+          .SetWithVersion "", "VolumeRefinementType", "NONE"
+          .SetWithVersion "", "VolumeRefinementValueUseSameXYZ", 1
      End With
 End With
 Group.AddItem "solid$pcb(PCB1)/Substrates:03_EDGE_CUTS", "meshgroup2"
