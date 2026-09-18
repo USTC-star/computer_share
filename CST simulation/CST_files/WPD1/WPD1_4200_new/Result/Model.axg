@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CSTAuxiliaryGeometry version="20170928" creator="modeler">
+  <Objects>
+    <Object name="Lumped Elements\R:R1" id="2">
+      <FatArrow position="5496.79102 -3132 0" direction="0 18.9000015 0" dimension="10 10 10" material="$WireMaterial$" text="R:R1" short="R1"/>
+    </Object>
+    <Object name="Lumped Elements\R:R0" id="1">
+      <FatArrow position="5835.30176 -3132 0" direction="0 18.9000015 0" dimension="10 10 10" material="$WireMaterial$" text="R:R0" short="R0"/>
+    </Object>
+    <Object name="Lumped Elements\R:R3" id="3">
+      <FatArrow position="4970 -3132 0" direction="0 18.9000015 0" dimension="10 10 10" material="$WireMaterial$" text="R:R3" short="R3"/>
+    </Object>
+    <Object name="Lumped Elements\R:R2" id="0">
+      <FatArrow position="5237.47363 -3132 0" direction="0 18.9499607 0" dimension="10 10 10" material="$WireMaterial$" text="R:R2" short="R2"/>
+    </Object>
+    <Object name="Ports\port1" id="8">
+      <LineSet points="4550 -3293.6001 -140.600006 4550 -2970.3999 -140.600006 4550 -2970.3999 21.3700008 4550 -3293.6001 21.3700008 4550 -3293.6001 -140.600006" stripped="1" material="$PortMaterial$" text="1" short="1"/>
+    </Object>
+    <Object name="Ports\port2" id="9">
+      <LineSet points="6200 -2997.79785 -140.600006 6200 -2674.5979 -140.600006 6200 -2674.5979 21.3700008 6200 -2997.79785 21.3700008 6200 -2997.79785 -140.600006" stripped="1" material="$PortMaterial$" text="2" short="2"/>
+    </Object>
+    <Object name="Ports\port3" id="10">
+      <LineSet points="6200 -3589.4021 -140.600006 6200 -3266.20215 -140.600006 6200 -3266.20215 21.3700008 6200 -3589.4021 21.3700008 6200 -3589.4021 -140.600006" stripped="1" material="$PortMaterial$" text="3" short="3"/>
+    </Object>
+  </Objects>
+  <Materials/>
+  <Groups/>
+</CSTAuxiliaryGeometry>

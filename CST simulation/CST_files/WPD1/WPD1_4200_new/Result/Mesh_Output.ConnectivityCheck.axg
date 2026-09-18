@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CSTAuxiliaryGeometry version="20170928">
+  <Objects>
+    <Object name="Lumped Elements\R:R0" id="0">
+      <PointSet points="5835.30176 -3122.55005 0 5835.30176 -3141.44995 0" material="$ConnectedMaterial$"/>
+    </Object>
+    <Object name="Lumped Elements\R:R1" id="1">
+      <PointSet points="5496.79102 -3122.55005 0 5496.79102 -3141.44995 0" material="$ConnectedMaterial$"/>
+    </Object>
+    <Object name="Lumped Elements\R:R2" id="2">
+      <PointSet points="5237.47363 -3122.53979 0 5237.47363 -3122.5249 0 5237.47363 -3141.46021 0 5237.47363 -3141.4751 0" material="$ConnectedMaterial$"/>
+    </Object>
+    <Object name="Lumped Elements\R:R3" id="3">
+      <PointSet points="4970 -3122.55005 0 4970 -3141.44995 0" material="$ConnectedMaterial$"/>
+    </Object>
+    <Object name="Components\pcb(PCB1)/Nets/NONE:02_B_CU" id="4"/>
+    <Object name="Components\pcb(PCB1)/Nets/NONE:04_F_CU" id="5">
+      <PointSet points="5835.30176 -3122.55005 0 5496.79102 -3122.55005 0 5237.47363 -3122.53979 0 5237.47363 -3122.5249 0 4970 -3122.55005 0 4970 -3141.44995 0 5237.47363 -3141.46021 0 5237.47363 -3141.4751 0 5496.79102 -3141.44995 0 5835.30176 -3141.44995 0" material="$ConnectedMaterial$"/>
+    </Object>
+    <Object name="Components\pcb(PCB1)/Substrates:03_EDGE_CUTS" id="6"/>
+  </Objects>
+  <Materials/>
+  <Groups>
+    <Group name="Group 0" ID="0">
+      <Item name="Lumped Elements\R:R0" id="0"/>
+      <Item name="Lumped Elements\R:R1" id="1"/>
+      <Item name="Lumped Elements\R:R2" id="2"/>
+      <Item name="Lumped Elements\R:R3" id="3"/>
+      <Item name="Components\pcb(PCB1)/Nets/NONE:04_F_CU" id="5"/>
+    </Group>
+    <Group name="Group 1" ID="1">
+      <Item name="Components\pcb(PCB1)/Nets/NONE:02_B_CU" id="4"/>
+    </Group>
+    <Group name="Isolators" ID="2">
+      <Item name="Components\pcb(PCB1)/Substrates:03_EDGE_CUTS" id="6"/>
+    </Group>
+  </Groups>
+</CSTAuxiliaryGeometry>

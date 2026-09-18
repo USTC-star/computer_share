@@ -1,0 +1,265 @@
+[22:03:53] -------- TetMesher Log --------
+[22:03:53] Build Number: 20260618; ID: 2026.5 Release from 2026-06-18 (change 1767070); Date: 2026-06-18; ACIS version: 35.0.0, SPAresabs & SPAresnor: 1e-06, 1e-10; Problem class: High Frequency
+[22:03:53] Temporary directory: "C:\Users\PinJung\Desktop\computer_share\CST simulation\CST_files\WPD1\WPD1_4200_new\Temp\1-temp.tet"
+[22:03:53] - Reading information
+[22:03:53] - Building single body
+[22:03:53] Choosing Advanced Parallel Boolean Loop...
+[22:03:53] Volume Attributes enabled
+[22:03:53] Volume Attributes enabled
+[22:03:53] Attaching Volume Attributes
+[22:03:53] Sorted out 8 special bodies.
+[22:03:53] Use Own Incremental Booleans.
+[22:03:53] Processing 3 entities.
+[22:03:53] Queue Size: 1
+[22:03:53] Combining solid pcb(PCB1)/Nets/NONE:02_B_CU and solid pcb(PCB1)/Nets/NONE:04_F_CU (Pair #1 out of 1)
+[22:03:53] Processing 2 entities.
+[22:03:53] Queue Size: 1
+[22:03:53] Adding Compound Body to solid pcb(PCB1)/Substrates:03_EDGE_CUTS (Pair #1 out of 1)
+[22:03:53]  Try Boolean: non-reg unite without fuzzy
+[22:03:53] Exiting Boolean Unite Module.
+[22:03:53] Use Own Incremental Booleans.
+[22:03:53] Processing 9 entities in parallel.
+[22:03:53] Queue Size: 1
+[22:03:53] Combining lumped element R:R1 and lumped element R:R2 (Pair #1 out of 4)
+[22:03:53] Combining waveguide port 3 and lumped element R:R0 (Pair #2 out of 4)
+[22:03:53] Combining waveguide port 1 and lumped element R:R3 (Pair #3 out of 4)
+[22:03:53] Adding Compound Body to background material (Pair #4 out of 4)
+[22:03:53] Processing 5 entities.
+[22:03:53] Queue Size: 1
+[22:03:53] Combining Compound Body and waveguide port 2 (Pair #1 out of 2)
+[22:03:53] Combining Compound Body and Compound Body (Pair #2 out of 2)
+[22:03:53] Processing 3 entities.
+[22:03:53] Queue Size: 1
+[22:03:53] Combining Compound Body and Compound Body (Pair #1 out of 1)
+[22:03:53] Processing 2 entities.
+[22:03:53] Queue Size: 1
+[22:03:53] Adding Compound Body to Compound Body (Pair #1 out of 1)
+[22:03:53]  Try Boolean: non-reg unite without fuzzy
+[22:03:53] Exiting Boolean Unite Module.
+[22:03:54] - Storing model cells
+[22:03:54] [CADSurf] MeshGems Version: MeshGems-Core 2025 1.0.0
+[22:03:54] [CADSurf] Setting Triangle as default element type
+[22:03:54] [CADSurf] 	Calculating min. mesh size for CADSurf...
+[22:03:54] [CADSurf] 	Diagonal of model + background box: 3431.07
+[22:03:54] [CADSurf] 	Min. mesh size by diagonal (1e-3 x diagonal): 3.43107
+[22:03:54] [CADSurf] 	Diagonal of model: 2133.78
+[22:03:54] [CADSurf] 	Min. mesh size of model: 165
+[22:03:54] [CADSurf] 	Max. cell defined by user (near to model): 165
+[22:03:54] [CADSurf] 	Min. cell defined by user: 0
+[22:03:54] [CADSurf] 	Min. cell used for calculation: 1.65
+[22:03:54] [CADSurf] 	Note: min. mesh size by diagonal is too large, consider using (0.01 x max. cell = 1.65)
+[22:03:54] [CADSurf] CADSurf "min_size" is set to min. cell: 1.65
+[22:03:54] [CADSurf] 	 Max user size    = 6.1144297393420084e+02
+[22:03:54] [CADSurf] 	 Surface mesh size modification factor  = 1.0000000000000000e+00
+[22:03:54] [CADSurf] 	 Global size near = 1.6500000000000000e+02
+[22:03:54] [CADSurf] 	 Global size far  = 6.1144297393420084e+02
+[22:03:54] [CADSurf] == CADSurf Parameters == 
+[22:03:54] [CADSurf] === Begin: PreCAD-related parameters ===
+[22:03:54] [CADSurf] meshgems_cadsurf_set_param(css, "use_precad",  "yes")
+[22:03:54] [CADSurf] Bounding box diagonal = 3.4310725869372882e+03
+[22:03:54] [CADSurf] meshgems_cadsurf_set_param(css, "remove_nano_edges",  "0")
+[22:03:54] [CADSurf] meshgems_cadsurf_set_param(css, "discard_input_topology",  "0")
+[22:03:54] [CADSurf] meshgems_cadsurf_set_param(css, "process_3d_topology",  "0")
+[22:03:54] [CADSurf] meshgems_cadsurf_set_param(css, "discard_input_2d_topology",  "0")
+[22:03:54] [CADSurf] Default periodic tolerance (1e-4*diag) = 3.4310725869372882e-01
+[22:03:54] [CADSurf] Minimum periodic tolerance = 1.0000000000000001e-05
+[22:03:54] [CADSurf] Setting it to max( 1.0000000000000001e-05, 3.4310725869372882e-01 )
+[22:03:54] [CADSurf] meshgems_cadsurf_set_param(css, "periodic_tolerance",  "0.34310725869372882")
+[22:03:54] [CADSurf] meshgems_cadsurf_set_param(css, "remove_duplicate_cad_faces",  "0")
+[22:03:54] [CADSurf] meshgems_cadsurf_set_param(css, "remove_tiny_uv_edges",  "0")
+[22:03:54] [CADSurf] === End: PreCAD-related parameters ===
+[22:03:54] [CADSurf] meshgems_cadsurf_set_param(css, "verbose",  "3")
+[22:03:54] [CADSurf] meshgems_cadsurf_set_param(css, "geometric_size_mode",  "local")
+[22:03:54] [CADSurf] meshgems_cadsurf_set_param(css, "physical_size_mode",  "local")
+[22:03:54] [CADSurf] 	 Upper size bound = 6.1144297393420084e+02
+[22:03:54] [CADSurf] meshgems_cadsurf_set_param(css, "max_size",  "611.44297393420084")
+[22:03:54] [CADSurf] meshgems_cadsurf_set_param(css, "min_size",  "1.6500000000000001")
+[22:03:54] [CADSurf] meshgems_cadsurf_set_param(css, "max_number_of_points_per_patch",  "0")
+[22:03:54] [CADSurf] meshgems_cadsurf_set_param(css, "element_generation",  "local")
+[22:03:54] [CADSurf] meshgems_cadsurf_set_param(css, "gradation",  "1.5")
+[22:03:54] [CADSurf] meshgems_cadsurf_set_param(css, "volume_gradation",  "2")
+[22:03:54] [CADSurf] meshgems_cadsurf_set_param(css, "patch_independent",  "0")
+[22:03:54] [CADSurf] meshgems_cadsurf_set_param(css, "remove_tiny_edges",  "0")
+[22:03:54] [CADSurf] meshgems_cadsurf_set_param(css, "optimise_tiny_edges",  "0")
+[22:03:54] [CADSurf] meshgems_cadsurf_set_param(css, "tiny_edge_respect_geometry",  "1")
+[22:03:54] [CADSurf] meshgems_cadsurf_set_param(css, "CheckWellDefined",  "8")
+[22:03:54] [CADSurf] meshgems_cadsurf_set_param(css, "anisotropic",  "1")
+[22:03:54] [CADSurf] meshgems_cadsurf_set_param(css, "anisotropic_ratio",  "5")
+[22:03:54] [CADSurf] meshgems_cadsurf_set_param(css, "correct_surface_intersections",  "1")
+[22:03:54] [CADSurf] meshgems_cadsurf_set_param(css, "intersection_processing_max_cost",  "15")
+[22:03:54] [CADSurf] ==
+[22:03:54] [CADSurf] Geometric refinement uses "min_size" setting.
+[22:03:54] [CADSurf] WARNING: A tiny CAD edge on face with id 801 was left in the CAD as a results of the specified options
+
+[22:03:54] [CADSurf] WARNING: A tiny CAD edge on face with id 801 was left in the CAD as a results of the specified options
+
+[22:03:54] [CADSurf] WARNING: A tiny CAD edge on face with id 801 was left in the CAD as a results of the specified options
+
+[22:03:54] [CADSurf] WARNING: A tiny CAD edge on face with id 801 was left in the CAD as a results of the specified options
+
+[22:03:54] [CADSurf] Status: OK
+[22:03:54] [CADSurf] Number of intersecting edges: 0, total edge count: 983
+[22:03:54] [CADSurf] Number of intersecting faces: 0
+[22:03:54] [CADSurf] - Mesh stats: N=1370, E=983, T=3176, Q=0
+[22:03:54] [CADSurf] Testing watertightness
+[22:03:54] [CADSurf] - OK
+[22:03:54] Surface mesh intersection check
+[22:03:54] - surface mesh is free from self-intersections
+[22:03:54] - OK
+[22:03:54] Srf mesh has intersections = false
+[22:03:54] runCVMResilient Flag = false
+[22:03:54] enforceCVMResilient = false
+[22:03:54] runCVMResilient = false
+[22:03:54] Creating volume mesh from surface mesh
+[22:03:54] [SrfToVol] Running CVM
+[22:03:54] [SrfToVol] Surface to volume mesh: verifying input data
+[22:03:54] [SrfToVol] Not meshed regions = 947 950 
+
+[22:03:54] [SrfToVol] Generate volume mesh for 2 subdomains using 4 threads 
+ 
+[22:03:55] [SrfToVol] Assembling volume mesh
+[22:03:55] [SrfToVol] Volume mesh generated - Status = ok
+[22:03:55] [SrfToVol] - Volume mesh stats: Nb nodes = 1824, Nb edges = 983, Nb surface elements = 2803, Nb tets = 8110
+[22:03:55] Creating mesh topology.
+[22:03:55] Using mesh topology.
+[22:03:56] Writing ACIS sat.tet file because UIDs may have changed.
+[22:03:56] Using generalized mesh output routines.
+[22:03:56] Writing Bc file
+[22:03:56] Running model geometry simplification... 
+[22:03:56] Model geometry simplification: 0.009415 s
+[22:03:56] Writing topot.tet...
+[22:03:56] Done (topot.tet)
+[22:03:56] Writing moegeom.tet ...
+[22:03:56] Done (moegeom.tet) 
+[22:03:56] Writing gex file for volume mesh
+[22:03:56] Creating volume mesh from surface mesh - done
+[22:03:56] Mesh curving:
+[22:03:56]     number of threads: 4
+[22:03:56] Curving elements
+[22:03:56]  Curve elements, order = 3
+
+[22:03:56] Running ConnectivityCheck ...
+[22:03:56] Connectivity Check: Mesh I/O took 0.030590 seconds.
+[22:03:56] Connectivity Check: Computation took 0.044229 seconds.
+[22:03:56] Running ConnectivityCheck ... done
+[22:03:56] 
+#### Feedback Report Begins ####
+----------
+Display Group: UNKNOWN [NON-GRAPHICAL] 
+Problem: Issue 1
+Item: Item 1
+Item Label: UNKNOWN
+Descriptor Label: UNKNOWN
+Description: 3008042 A tiny CAD edge on face with id 801 was left in the CAD as a results of the specified options
+
+Cure: 
+Integer Data: 
+Real Data: 
+----------
+
+----------
+Display Group: UNKNOWN [NON-GRAPHICAL] 
+Problem: Issue 1
+Item: Item 2
+Item Label: UNKNOWN
+Descriptor Label: UNKNOWN
+Description: 3008042 A tiny CAD edge on face with id 801 was left in the CAD as a results of the specified options
+
+Cure: 
+Integer Data: 
+Real Data: 
+----------
+
+----------
+Display Group: UNKNOWN [NON-GRAPHICAL] 
+Problem: Issue 1
+Item: Item 3
+Item Label: UNKNOWN
+Descriptor Label: UNKNOWN
+Description: 3008042 A tiny CAD edge on face with id 801 was left in the CAD as a results of the specified options
+
+Cure: 
+Integer Data: 
+Real Data: 
+----------
+
+----------
+Display Group: UNKNOWN [NON-GRAPHICAL] 
+Problem: Issue 1
+Item: Item 4
+Item Label: UNKNOWN
+Descriptor Label: UNKNOWN
+Description: 3008042 A tiny CAD edge on face with id 801 was left in the CAD as a results of the specified options
+
+Cure: 
+Integer Data: 
+Real Data: 
+----------
+
+----------
+Display Group: UNKNOWN [NON-GRAPHICAL] 
+Problem: Issue 1
+Item: Item 5
+Item Label: UNKNOWN
+Descriptor Label: UNKNOWN
+Description: 3008042 A tiny CAD edge on face with id 801 was left in the CAD as a results of the specified options
+
+Cure: 
+Integer Data: 
+Real Data: 
+Problems found during the creation of the item: 
+Incoherent Integer Data: No descriptors available.
+Incoherent data, skipping the creation of graphical Items.
+----------
+
+----------
+Display Group: UNKNOWN [NON-GRAPHICAL] 
+Problem: Issue 1
+Item: Item 6
+Item Label: UNKNOWN
+Descriptor Label: UNKNOWN
+Description: 3008042 A tiny CAD edge on face with id 801 was left in the CAD as a results of the specified options
+
+Cure: 
+Integer Data: 
+Real Data: 
+Problems found during the creation of the item: 
+Incoherent Integer Data: No descriptors available.
+Incoherent data, skipping the creation of graphical Items.
+----------
+
+----------
+Display Group: UNKNOWN [NON-GRAPHICAL] 
+Problem: Issue 1
+Item: Item 7
+Item Label: UNKNOWN
+Descriptor Label: UNKNOWN
+Description: 3008042 A tiny CAD edge on face with id 801 was left in the CAD as a results of the specified options
+
+Cure: 
+Integer Data: 
+Real Data: 
+Problems found during the creation of the item: 
+Incoherent Integer Data: No descriptors available.
+Incoherent data, skipping the creation of graphical Items.
+----------
+
+----------
+Display Group: UNKNOWN [NON-GRAPHICAL] 
+Problem: Issue 1
+Item: Item 8
+Item Label: UNKNOWN
+Descriptor Label: UNKNOWN
+Description: 3008042 A tiny CAD edge on face with id 801 was left in the CAD as a results of the specified options
+
+Cure: 
+Integer Data: 
+Real Data: 
+Problems found during the creation of the item: 
+Incoherent Integer Data: No descriptors available.
+Incoherent data, skipping the creation of graphical Items.
+----------
+
+#### Feedback Report Ends ####
+
+[22:03:56] Done
