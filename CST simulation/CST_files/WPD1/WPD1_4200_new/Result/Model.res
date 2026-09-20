@@ -1,5 +1,5 @@
 MWS Result File Version 20150206
-size=i:406
+size=i:408
 
 type=s:HIDDENITEM
 problemclass=s::8:1000
@@ -4022,4 +4022,26 @@ lifetime=s:persistent
 result=s:0
 treepath=s:1D Results\Materials\pcb(PCB1)\VIAS_MATERIAL\Surface Impedance\Z'' (Theory)
 files=s:pcb(PCB1)\VIAS_MATERIAL_Z_datalist_im.sig
+
+type=s:TABLE
+subtype=s:user
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+treepath=s:Tables\0D Results\Eye-Classical-S3,3\Eye-Height
+files=s:Eye-Classical-S3,3\Eye-Height.rd0
+files=s:Eye-Classical-S3,3\Eye-Height.rd0
+
+type=s:TABLE
+subtype=s:user
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:surviveparchange
+result=s:1
+treepath=s:Tables\0D Results\Eye-Classical-S3,3\Eye-Width
+files=s:Eye-Classical-S3,3\Eye-Width.rd0
+files=s:Eye-Classical-S3,3\Eye-Width.rd0
 

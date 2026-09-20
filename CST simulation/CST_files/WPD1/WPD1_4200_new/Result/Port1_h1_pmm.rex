@@ -19,11 +19,16 @@
   <UnitCell/>
   <SubVolume/>
   <Units/>
-  <ProjectUnits/>
+  <ProjectUnits>
+    <Quantity name="length" unit="&amp;Um:in_i^1"/>
+    <Quantity name="frequency" unit="&amp;UG:Hz^1"/>
+    <Quantity name="time" unit="&amp;Un:s^1"/>
+    <Quantity name="temperature" unit="&amp;U:Cel^1"/>
+  </ProjectUnits>
   <TimeSampling/>
   <LocalAxes/>
   <MeshViewSettings/>
-  <WaveguidePort/>
+  <WaveguidePort points="4550 -3293.6001 -140.600006 4550 -2970.3999 -140.600006 4550 -2970.3999 21.3700008 4550 -3293.6001 21.3700008" normal="1 0 0"/>
   <ResultGroups num_steps="11" transformation="1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1" process_mesh_group="0">
     <SharedDataWith/>
     <Frame index="0" characteristic="7">
