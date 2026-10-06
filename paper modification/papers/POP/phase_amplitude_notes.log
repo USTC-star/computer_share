@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.9.21)  28 SEP 2026 02:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.9.21)  6 OCT 2026 01:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -473,19 +473,21 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 
 
-[4] (./phase_amplitude_notes.aux)
+[4]
+
+[5] (./phase_amplitude_notes.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-09-02>
  ***********
 Package rerunfilecheck Info: File `phase_amplitude_notes.out' has not changed.
-(rerunfilecheck)             Checksum: ED2D4CBCAC52D9526A550E20F036E686;1721.
+(rerunfilecheck)             Checksum: 4182DBB1D92EB32669AF189A35C2ECC5;2045.
  ) 
 Here is how much of TeX's memory you used:
- 10159 strings out of 467796
- 153769 string characters out of 5432835
+ 10170 strings out of 467796
+ 153883 string characters out of 5432835
  580009 words of memory out of 5000000
- 38629 multiletter control sequences out of 15000+600000
+ 38630 multiletter control sequences out of 15000+600000
  702051 words of font info for 100 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,11n,79p,382b,451s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -500,11 +502,12 @@ users/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr12.pfb><e:/users/texlive
 st/fonts/type1/public/lm/lmri10.pfb><e:/users/texlive/2025/texmf-dist/fonts/typ
 e1/public/lm/lmsy10.pfb><e:/users/texlive/2025/texmf-dist/fonts/type1/public/lm
 /lmsy8.pfb><e:/users/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbol
-s/msbm10.pfb>
-Output written on phase_amplitude_notes.pdf (4 pages, 181424 bytes).
+s/msam10.pfb><e:/users/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symb
+ols/msbm10.pfb>
+Output written on phase_amplitude_notes.pdf (5 pages, 198531 bytes).
 PDF statistics:
- 181 PDF objects out of 1000 (max. 8388607)
- 145 compressed objects within 2 object streams
- 49 named destinations out of 1000 (max. 500000)
- 57 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 203 PDF objects out of 1000 (max. 8388607)
+ 164 compressed objects within 2 object streams
+ 59 named destinations out of 1000 (max. 500000)
+ 65 words of extra memory for PDF output out of 10000 (max. 10000000)
 
