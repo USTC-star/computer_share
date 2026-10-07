@@ -14,8 +14,8 @@ xc_pad= 0;# 0402 pad central 0
 d_gap = 7 # The spacing between two neighboring rings
 # %% trace1;
 Width_T0 = 42 ; # microstrap width with 50 ohm impedance 
-Width_T1 = 14.39;# arc1 width with Z1 ohm impedance L1 = 213.23;# arc1 phase shift with 90 degree 
-L1 = 1.5899e+02
+Width_T1 = 10.25;# arc1 width with Z1 ohm impedance L1 = 213.23;# arc1 phase shift with 90 degree 
+L1 = 4.3472e+02
 theta_trace_1 =4*np.pi/4 # define the angle of arc2 
 theta_trace_1_degree = theta_trace_1*180/np.pi
 Width_T=Width_T1
@@ -55,11 +55,11 @@ X_in = X1_left - Width_T0/2+Width_T1/2   #calculate x coordinate on the center o
 # print(f"Xin={X_in:.4f} mil" )
 # print(f"incident angle = {theta_trace_1_degree:.5f} degree")
 # %%trace2;
-Width_T2 = 30.87
-L2 = 1.5527e+02
-theta_trace_2 =2*np.pi/3 # define the angle of arc2 
+Width_T2 = 16.375
+L2 = 4.3013e+02
+theta_trace_2 =3*np.pi/3 # define the angle of arc2 
 theta_trace_2_degree = theta_trace_2*180/np.pi
-X2_left=Width_T1/2+Width_T2/2+d_gap/2+X1_right # calculate the x coordinate on the left side of arc2, with about 6 mil gap between the right edge of arc1 on the right side and the left edge of arc 2 on the left side
+X2_left=Width_T1/2+Width_T2/2+d_gap+X1_right # calculate the x coordinate on the left side of arc2, with about 6 mil gap between the right edge of arc1 on the right side and the left edge of arc 2 on the left side
 Width_T=Width_T2
 X_left = X2_left
 XL_R = xc_pad
@@ -96,11 +96,11 @@ X2_C= X2_left + R_m*np.sin(1/2*theta_trace_2)
 Y2_C= Y2_left -R_m*np.cos(1/2*theta_trace_2)
 X_2R = XR_R
 
-print(f"X2_left={X2_left:.4f} mil,Y2_left={Y2_left:.4f} mil" )
-print(f"X2_right={X2_right:.4f} mil,Y2_right={Y2_right:.4f} mil" )
-print(f"X2_C={X2_C:.4f} mil,Y2_C={Y2_C:.4f} mil" )
-print(f"incident angle = {theta_trace_2_degree:.5f} degree")
-print(f"X_2R = {X_2R:.5f} mil")
+# print(f"X2_left={X2_left:.4f} mil,Y2_left={Y2_left:.4f} mil" )
+# print(f"X2_right={X2_right:.4f} mil,Y2_right={Y2_right:.4f} mil" )
+# print(f"X2_C={X2_C:.4f} mil,Y2_C={Y2_C:.4f} mil" )
+# print(f"incident angle = {theta_trace_2_degree:.5f} degree")
+# print(f"X_2R = {X_2R:.5f} mil")
 
 
 # %%trace3;
@@ -195,9 +195,9 @@ X4_C= X4_left + R_m*np.sin(1/2*theta_trace_4)
 Y4_C= Y4_left -R_m*np.cos(1/2*theta_trace_4)
 X_4R = XR_R
 
-# print(f"X4_left={X4_left:.4f} mil,Y4_left={Y4_left:.4f} mil" )
-# print(f"X4_right={X4_right:.4f} mil,Y4_right={Y4_right:.4f} mil" )
-# print(f"X4_C={X4_C:.4f} mil,Y4_C={Y4_C:.4f} mil" )
-# print(f"X_4R = {X_4R:.5f} mil")
-# print(f"incident angle = {theta_trace_4_degree:.5f} degree")
+print(f"X4_left={X4_left:.4f} mil,Y4_left={Y4_left:.4f} mil" )
+print(f"X4_right={X4_right:.4f} mil,Y4_right={Y4_right:.4f} mil" )
+print(f"X4_C={X4_C:.4f} mil,Y4_C={Y4_C:.4f} mil" )
+print(f"X_4R = {X_4R:.5f} mil")
+print(f"incident angle = {theta_trace_4_degree:.5f} degree")
 
