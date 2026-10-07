@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.1)  28 SEP 2026 14:06
+=======
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.9.21)  6 OCT 2026 01:15
+>>>>>>> 2ebc33fd41ca4dccc921b6d8ed4cbf2c3a09af86
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -506,6 +510,7 @@ Package rerunfilecheck Info: File `phase_amplitude_notes.out' has not changed.
 (rerunfilecheck)             Checksum: 4182DBB1D92EB32669AF189A35C2ECC5;2045.
  ) 
 Here is how much of TeX's memory you used:
+<<<<<<< HEAD
  10213 strings out of 469607
  157003 string characters out of 5464305
  560629 words of memory out of 5000000
@@ -529,6 +534,29 @@ ublic/lm/lmsy10.pfb><d:/Program Files (x86)/texlive/2025/texmf-dist/fonts/type1
 1/public/amsfonts/symbols/msam10.pfb><d:/Program Files (x86)/texlive/2025/texmf
 -dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
 Output written on phase_amplitude_notes.pdf (5 pages, 199507 bytes).
+=======
+ 10170 strings out of 467796
+ 153883 string characters out of 5432835
+ 580009 words of memory out of 5000000
+ 38630 multiletter control sequences out of 15000+600000
+ 702051 words of font info for 100 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 75i,11n,79p,382b,451s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<e:/users/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><e:/users/
+texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb><e:/users/texlive/2025
+/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><e:/users/texlive/2025/texmf-dist/
+fonts/type1/public/lm/lmmi12.pfb><e:/users/texlive/2025/texmf-dist/fonts/type1/
+public/lm/lmmi8.pfb><e:/users/texlive/2025/texmf-dist/fonts/type1/public/lm/lmm
+ib10.pfb><e:/users/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb><e:/
+users/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr12.pfb><e:/users/texlive
+/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb><e:/users/texlive/2025/texmf-di
+st/fonts/type1/public/lm/lmri10.pfb><e:/users/texlive/2025/texmf-dist/fonts/typ
+e1/public/lm/lmsy10.pfb><e:/users/texlive/2025/texmf-dist/fonts/type1/public/lm
+/lmsy8.pfb><e:/users/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbol
+s/msam10.pfb><e:/users/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symb
+ols/msbm10.pfb>
+Output written on phase_amplitude_notes.pdf (5 pages, 198531 bytes).
+>>>>>>> 2ebc33fd41ca4dccc921b6d8ed4cbf2c3a09af86
 PDF statistics:
  203 PDF objects out of 1000 (max. 8388607)
  164 compressed objects within 2 object streams
