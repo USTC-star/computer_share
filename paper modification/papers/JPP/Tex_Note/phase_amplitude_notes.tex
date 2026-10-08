@@ -1,0 +1,335 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=23mm]{geometry}
+\usepackage{amsmath,amssymb,bm}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Phase--amplitude equations}
+\fancyhead[R]{Transcribed notes}
+\fancyfoot[C]{\thepage}
+\setlength{\headheight}{14pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\newcommand{\dd}{\mathrm{d}}
+\newcommand{\er}{\hat{\bm e}_r}
+\newcommand{\ez}{\hat{\bm z}}
+\newcommand{\ex}{\hat{\bm x}}
+\newcommand{\ey}{\hat{\bm y}}
+\begin{document}
+\begin{center}
+{\LARGE\bfseries Phase--Amplitude Equations}\\[5pt]
+{\large Organized transcription of four handwritten pages}
+\end{center}
+
+\textit{Editorial convention.} A dot denotes $\dd/\dd\tau$. Derivative
+primes in the original are replaced by dots; parameter primes, such as $\kappa'$
+and $\gamma'$, are retained. Crossed-out intermediate text is omitted.
+Some symbol readings are provisional; see the transcription notes on page~3.
+
+\section{Angular and radial equations}
+For the first page, write $\bm r=u\ex+v\ey$, with
+$u=r\cos\theta$, $v=r\sin\theta$, and $r^2=u^2+v^2$.
+The angular derivative is
+\begin{equation}
+\dot\theta
+=\frac{\dfrac{\dd}{\dd\tau}(v/u)}{1+(v/u)^2}
+=\frac{u^2\dfrac{\dot v u-\dot u v}{u^2}}{u^2+v^2}
+=\frac{\dot v u-\dot u v}{u^2+v^2}.
+\end{equation}
+The transverse vector equation in the notes reads
+\begin{align}
+\frac{\dd}{\dd\tau}(u\ex+v\ey)
+&=-\left[(u\ex+v\ey)\times\ez
++\kappa'(\chi-1)\ez\times\bm b'\right] \notag\\
+&=-\left[-u\ey+v\ex
++\kappa'\kappa'(\chi-1)(\cos\theta_B\,\ey-\sin\theta_B\,\ex)\right].
+\end{align}
+Thus
+\begin{equation}
+\boxed{\begin{aligned}
+\dot u&=-v+\kappa'(\chi-1)\sin\theta_B,\\
+\dot v&=u-\kappa'(\chi-1)\cos\theta_B.
+\end{aligned}}
+\end{equation}
+With $\delta=\theta_B-\theta$,
+\begin{align}
+\dot v u-\dot u v
+&=v^2+u^2-\kappa'(\chi-1)r
+ (\sin\theta_B\sin\theta+\cos\theta_B\cos\theta)\notag\\
+&=r^2-\kappa'(\chi-1)r\cos\delta,
+\end{align}
+so that
+\begin{equation}
+\boxed{\dot\theta=1-\frac{\kappa'(\chi-1)\cos\delta}{r}.}
+\end{equation}
+The handwritten reference ``from Eq.~(23)'' gives
+\begin{align}
+\dot r
+&=\er\cdot\frac{\dd\bm r}{\dd\tau}
+=-\er\cdot\left[\bm r\times\ez
++\kappa'(\chi-1)\ez\times\bm b'\right]\notag\\
+&=-\kappa'(\chi-1)(\ez\times\bm b')\cdot\er\notag\\
+&=-\kappa'(\chi-1)(\bm b'\times\er)\cdot\ez\notag\\
+&=\kappa'(\chi-1)\sin\delta.
+\end{align}
+
+\newpage
+\section{Relative phase and coupled equations}
+The wave-phase derivative is transcribed as follows. The middle factors
+in this particular line are less clear in the photograph.
+\begin{align}
+\dot\theta_B
+&=\frac{\dd}{\dd\tau}(\kappa'z')
+=-\kappa'\beta_z'\frac{\gamma'}{\Omega}c\notag\\
+&=-\frac{k}{\gamma_T}\beta_z'\frac{\gamma'}{\Omega}c
+=-\frac{\omega}{c}\frac{m\gamma'}{\Omega\gamma_T}c\beta_z'
+\notag\\
+&=-\alpha\gamma'\beta_z'=-(\chi-1).
+\end{align}
+Consequently,
+\begin{align}
+\dot\delta&=\dot\theta_B-\dot\theta\notag\\
+&=-(\chi-1)-1+\frac{\kappa'(\chi-1)\cos\delta}{r}\notag\\
+&=-\chi+\frac{\kappa'(\chi-1)\cos\delta}{r}.
+\end{align}
+The three equations collected at the top of the second page are
+\begin{equation}
+\boxed{\begin{aligned}
+\dot\delta&=-\chi+\frac{\kappa'(\chi-1)\cos\delta}{r},\\
+\dot r&=\kappa'(\chi-1)\sin\delta,\\
+\dot\chi&=-\alpha\gamma'\varepsilon-r\kappa'\sin\delta.
+\end{aligned}}
+\label{eq:system}
+\end{equation}
+
+\section{Eliminating the explicit phase term}
+The stated objective is to cancel the phase term on the right-hand side.
+First,
+\begin{align}
+\dot\chi-r\dot r
+&=-\alpha\gamma'\varepsilon-r\kappa'\sin\delta
+-r\kappa'\chi\sin\delta+r\kappa'\sin\delta\notag\\
+&=-\alpha\gamma'\varepsilon-r\kappa'\chi\sin\delta.
+\end{align}
+The notes propose adding $\dd(\kappa'r\cos\delta)/\dd\tau$.
+Indeed,
+\begin{align}
+\frac{\dd}{\dd\tau}(r\cos\delta)
+&=\dot r\cos\delta-r\sin\delta\,\dot\delta\notag\\
+&=\kappa'(\chi-1)\sin\delta\cos\delta
+-r\sin\delta\left(-\chi+\frac{\kappa'(\chi-1)\cos\delta}{r}\right)
+\notag\\
+&=\kappa'(\chi-1)\sin\delta\cos\delta+r\chi\sin\delta
+-\kappa'(\chi-1)\sin\delta\cos\delta\notag\\
+&=\chi r\sin\delta.
+\end{align}
+For constant $\kappa'$, this yields
+\begin{equation}
+\dot\chi-r\dot r+\frac{\dd}{\dd\tau}(\kappa'r\cos\delta)
+=-\alpha\gamma'\varepsilon,
+\end{equation}
+or equivalently
+\begin{equation}
+\boxed{\frac{\dd}{\dd\tau}
+\left(\chi-\frac{r^2}{2}+\kappa'r\cos\delta\right)
+=-\alpha\gamma'\varepsilon.}
+\end{equation}
+
+\newpage
+\section{Phase-based Cartesian variables and $J$}
+The second page now introduces
+\begin{equation}
+u=r\cos\delta,\qquad v=r\sin\delta.
+\label{eq:phasecoords}
+\end{equation}
+These reuse the letters $u,v$ for components defined by $\delta$, whereas
+Section~1 used components defined by $\theta$.
+Substitution gives
+\begin{equation}
+\frac{\dd}{\dd\tau}
+\left(\chi-\frac{u^2+v^2}{2}+\kappa'u\right)
+=-\alpha\gamma'\varepsilon.
+\end{equation}
+Introduce
+\begin{equation}
+\boxed{J=\chi-\frac{u^2+v^2}{2}+\kappa'u
+=\chi-\frac{(u-\kappa')^2+v^2}{2}+\frac{\kappa'^2}{2}.}
+\end{equation}
+The handwritten integration is
+\begin{equation}
+\frac{\dd J}{\dd\tau}=-\alpha\gamma'\varepsilon
+\quad\Longrightarrow\quad
+\boxed{J=J_0-\alpha\gamma'\varepsilon\tau.}
+\end{equation}
+This displayed linear form presumes constant $\gamma'\varepsilon$ and
+$J_0=J(0)$.
+
+Finally, differentiating the variables in Eq.~\eqref{eq:phasecoords} gives
+\begin{align}
+\frac{\dd u}{\dd\tau}
+&=\dot r\cos\delta-r\sin\delta\,\dot\delta
+=\chi r\sin\delta=\chi v,\\
+\frac{\dd v}{\dd\tau}
+&=\dot r\sin\delta+r\cos\delta\,\dot\delta\notag\\
+&=\kappa'(\chi-1)-u\chi
+=-\chi(u-\kappa')-\kappa'.
+\end{align}
+Hence the final pair on the second page is
+\begin{equation}
+\boxed{\dot u=\chi v,\qquad \dot v=-\chi(u-\kappa')-\kappa'.}
+\end{equation}
+
+\section*{Transcription notes for the first two pages}
+\begin{enumerate}
+\item The handwritten variable resembling $x$ is typeset as $\chi$.
+The primed factor in $-\alpha\gamma'\varepsilon$ is read as $\gamma'$;
+its handwriting also resembles $\nu'$. These are provisional symbol readings.
+\item In the expanded $\dot\theta_B$ line, $\Omega_\lambda$, $m$, and
+$\gamma_T$ are provisional readings of the handwriting. Their definitions
+are not supplied in these photographs. This line is transcribed, not
+independently validated.
+\item Overwritten signs in $\dot v u-\dot u v$ and $\dot\theta$
+are rendered as minus signs, consistent with the immediately preceding
+component equations and the subsequent $\dot\delta$ equation.
+\item The original reference to Eq.~(23) is preserved as a reference in the
+handwritten source; that equation itself was not supplied separately.
+\item The two definitions of $u,v$ are intentionally retained and identified.
+The assumption that $\kappa'$ is constant, and the condition for linear $J(\tau)$,
+are editorial clarifications. No definitions of the physical parameters
+have been added.
+\item Partially visible writing on adjacent pages, crossed-out text, and
+unrelated marginal fragments are excluded.
+\end{enumerate}
+\newpage
+\section{Shifted variables and the complex equation}
+The third handwritten page continues with the shifted variables
+\begin{equation}
+q=u-\kappa',\qquad p=v.
+\end{equation}
+For constant $\kappa'$, the final equations of Section~4 become
+\begin{equation}
+\boxed{\dot q=\chi p,\qquad \dot p=-\chi q-\kappa'.}
+\end{equation}
+Set $z=q+\mathrm{i}p$ and combine the two real equations:
+\begin{align}
+\dot q+\mathrm{i}\dot p
+&=\chi p-\mathrm{i}\chi q-\mathrm{i}\kappa',\notag\\
+\dot z&=-\mathrm{i}\chi(q+\mathrm{i}p)-\mathrm{i}\kappa'
+=-\mathrm{i}\chi z-\mathrm{i}\kappa'.
+\label{eq:complex}
+\end{align}
+
+\section{Introducing the detuning parameter $\Lambda$}
+Using the previous expression for $J$,
+\begin{equation}
+J=\chi-\frac{q^2+p^2}{2}+\frac{\kappa'^2}{2},
+\qquad \Lambda=\frac{q^2+p^2}{2}-\chi.
+\end{equation}
+It follows that
+\begin{align}
+\Lambda
+&=\frac{\kappa'^2}{2}-J
+=\frac{\kappa'^2}{2}-(J_0-\alpha\gamma'\varepsilon\tau)\notag\\
+&=\frac{\kappa'^2}{2}-J_0+\alpha\gamma'\varepsilon\tau
+=\Lambda_0+\alpha\gamma'\varepsilon\tau,
+\qquad \Lambda_0=\frac{\kappa'^2}{2}-J_0.
+\end{align}
+Therefore $\chi=-\Lambda+(q^2+p^2)/2=-\Lambda+|z|^2/2$.
+Substitution into Eq.~\eqref{eq:complex} yields
+\begin{equation}
+\dot z=-\mathrm{i}\left(\frac{|z|^2}{2}-\Lambda\right)z
+-\mathrm{i}\kappa'
+\quad\Longrightarrow\quad
+\boxed{\mathrm{i}\dot z-\left(\frac{|z|^2}{2}-\Lambda\right)z=\kappa'.}
+\end{equation}
+
+\section{Comparison with a nonlinear Schr\"odinger-type equation}
+The reference form written in the notes is
+\begin{equation}
+\mathrm{i}\frac{\dd\Psi}{\dd\tau}+(|\Psi|^2-\tau)\Psi=\mu,
+\qquad \mu\in\mathbb{R}.
+\end{equation}
+Taking the complex conjugate gives
+\begin{equation}
+-\mathrm{i}\frac{\dd\Psi^*}{\dd\tau}
++(|\Psi|^2-\tau)\Psi^*=\mu.
+\end{equation}
+For $z=-\Psi^*$, the last handwritten line reads
+\begin{equation}
+\frac{\dd z}{\dd\tau}+(\tau-|\Psi|^2)z=\mu
+\qquad\text{(as written in the photograph).}
+\end{equation}
+\textit{Editorial correction:} direct substitution retains a factor
+$\mathrm{i}$ in front of the derivative. Thus the corrected line is
+\begin{equation}
+\boxed{\mathrm{i}\frac{\dd z}{\dd\tau}+(\tau-|\Psi|^2)z=\mu,
+\qquad |z|^2=|\Psi|^2.}
+\end{equation}
+\textit{Scope of the comparison:} the two complex equations still have
+different coefficients ($|z|^2/2$ versus $|z|^2$, and $\Lambda(\tau)$ versus
+$\tau$). The additional handwritten page supplies the scaling in
+Section~8 below. As before, linear $\Lambda(\tau)$ assumes
+constant $\kappa'$ and $\gamma'\varepsilon$.
+\newpage
+\section{Normalization and the threshold written in the notes}
+The fourth handwritten page starts from
+\begin{equation}
+\mathrm{i}\frac{\dd z}{\dd\tau}
+-\left(\frac{|z|^2}{2}-\Lambda\right)z=\kappa',
+\qquad \Lambda=\Lambda_0+\alpha\gamma'\varepsilon\tau.
+\end{equation}
+The proposed substitutions are $z=AZ$, $\tau=BT$, and $\Lambda=CT$.
+With constant, real $A$ and $B$, these give
+\begin{equation}
+\mathrm{i}\frac{\dd Z}{\dd T}
+-Z\left(\frac{A^2B}{2}|Z|^2-BCT\right)=\frac{\kappa'B}{A}.
+\end{equation}
+Choose
+\begin{equation}
+\frac{A^2B}{2}=1,\qquad BC=1,
+\qquad a=\alpha\gamma'\varepsilon>0,\qquad C=\sqrt a.
+\end{equation}
+Then the scaling factors in the notes are
+\begin{equation}
+B=\frac{1}{\sqrt a},\qquad
+A=(2\sqrt a)^{1/2}=\sqrt{2}\,a^{1/4},\qquad
+\frac{A}{B}=\sqrt{2}\,a^{3/4}.
+\end{equation}
+The dimensionless forcing and the resulting equation are
+\begin{equation}
+\mu=\frac{\kappa'}{A/B}=\frac{\kappa'}{\sqrt{2}\,a^{3/4}},
+\qquad
+\boxed{\mathrm{i}\frac{\dd Z}{\dd T}-(|Z|^2-T)Z=\mu.}
+\end{equation}
+
+\textit{Time-origin clarification.} The simultaneous choices $\tau=BT$
+and $\Lambda=CT$ require $\Lambda_0=0$. For nonzero $\Lambda_0$, retain
+the constant through a shift of the time origin:
+\begin{equation}
+\boxed{T=\sqrt a\left(\tau+\frac{\Lambda_0}{a}\right),\qquad
+\tau=\frac{T}{\sqrt a}-\frac{\Lambda_0}{a},\qquad
+\Lambda=\sqrt a\,T.}
+\end{equation}
+This shift leaves $\dd T/\dd\tau=\sqrt a$ unchanged, so the amplitude
+scaling and the normalized equation above still apply.
+
+The last two lines of the photograph state the autoresonance threshold as
+\begin{equation}
+\mu>0.41
+\quad\Longrightarrow\quad
+\kappa'>0.41\sqrt{2}\,a^{3/4}\simeq0.58\,a^{3/4}.
+\end{equation}
+Using the additional handwritten identification $a=\zeta E_0/(cB_0)$,
+this is written as
+\begin{equation}
+\boxed{\kappa'\gtrsim0.58\left(\frac{\zeta E_0}{cB_0}\right)^{3/4}.}
+\end{equation}
+\textit{Transcription note.} The numerator in $\xi_E/(cB_0)$ is read
+provisionally as $\xi_E$; its definition is not given on this page.
+The numerical threshold $0.41$ is reproduced from the handwriting.
+The photograph does not specify its initial-condition assumptions or
+provide a derivation of that numerical value.
+\end{document}

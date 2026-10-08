@@ -1,0 +1,12 @@
+\begin{thebibliography}{1}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\def\au#1{#1} \def\ed#1{#1} \def\yr#1{#1}\def\at#1{#1}\def\jt#1{\textit{#1}}
+  \def\bt#1{#1}\def\bvol#1{\textbf{#1}} \def\vol#1{#1} \def\pg#1{#1}
+  \def\publ#1{#1}\def\arxiv#1{#1}\def\org#1{#1}\def\st#1{\textit{#1}}
+
+\bibitem[Fisch \& Boozer(1980)]{RN2131}
+{\sc \au{Fisch, N.} \& \au{Boozer, A.~H.}} \yr{1980}  \at{Creating an
+  asymmetric plasma resistivity with waves}.  \jt{Physical Review Letters}
+  \bvol{45}~(9),  \pg{720}.
+
+\end{thebibliography}

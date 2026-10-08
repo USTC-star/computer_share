@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.1)  7 OCT 2026 16:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.1)  7 OCT 2026 16:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**phase_amplitude_notes.tex
-(./phase_amplitude_notes.tex
+**"discussing control effect with EMW.tex"
+(./discussing control effect with EMW.tex
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-04-14>
 (d:/Program Files (x86)/texlive/2025/texmf-dist/tex/latex/base/article.cls
@@ -348,8 +348,8 @@ File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 dftex.def
 File: l3backend-pdftex.def 2025-04-14 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count307
-) (./phase_amplitude_notes.aux)
-\openout1 = `phase_amplitude_notes.aux'.
+) (./discussing control effect with EMW.aux)
+\openout1 = `"discussing control effect with EMW.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
 LaTeX Font Info:    ... okay on input line 21.
@@ -405,133 +405,43 @@ LaTeX Font Info:    ... okay on input line 21.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package hyperref Info: Link coloring OFF on input line 21.
-(./phase_amplitude_notes.out) (./phase_amplitude_notes.out)
+(./discussing control effect with EMW.out)
+(./discussing control effect with EMW.out)
 \@outlinefile=\write3
-\openout3 = `phase_amplitude_notes.out'.
-
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
-7.
-
-(d:/Program Files (x86)/texlive/2025/texmf-dist/tex/latex/lm/ot1lmr.fd
-File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 2
-7.
-
-(d:/Program Files (x86)/texlive/2025/texmf-dist/tex/latex/lm/omllmm.fd
-File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-27.
-
-(d:/Program Files (x86)/texlive/2025/texmf-dist/tex/latex/lm/omslmsy.fd
-File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-27.
-
-(d:/Program Files (x86)/texlive/2025/texmf-dist/tex/latex/lm/omxlmex.fd
-File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 27.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 27.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 27.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 27.
-
-
-(d:/Program Files (x86)/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 27.
-
-
-(d:/Program Files (x86)/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-
-[1{d:/Program Files (x86)/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex
-.map}{d:/Program Files (x86)/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-ec.e
-nc}
-
-{d:/Program Files (x86)/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{d
-:/Program Files (x86)/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}
-{d:/Program Files (x86)/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.en
-c}{d:/Program Files (x86)/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathex.
-enc}]
-
-[2]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 142.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 142.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 142.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 142.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 142.
+\openout3 = `"discussing control effect with EMW.out"'.
 
 
 
-[3]
+[1
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 225.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\Lambda' on input line 225.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 225.
-
-
-
-[4]
-
-[5] (./phase_amplitude_notes.aux)
+{d:/Program Files (x86)/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.m
+ap}{d:/Program Files (x86)/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc
+}] (./discussing control effect with EMW.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-04-14>
  ***********
-Package rerunfilecheck Info: File `phase_amplitude_notes.out' has not changed.
-(rerunfilecheck)             Checksum: 4182DBB1D92EB32669AF189A35C2ECC5;2045.
+Package rerunfilecheck Info: File `"discussing control effect with EMW".out' ha
+s not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 10213 strings out of 469607
- 157003 string characters out of 5464305
- 560629 words of memory out of 5000000
- 36856 multiletter control sequences out of 15000+600000
- 702051 words of font info for 100 fonts, out of 8000000 for 9000
+ 9966 strings out of 469607
+ 153102 string characters out of 5464305
+ 539401 words of memory out of 5000000
+ 36719 multiletter control sequences out of 15000+600000
+ 639896 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,11n,79p,382b,445s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,11n,79p,283b,441s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <d:/Program Files (x86)/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.
-pfb><d:/Program Files (x86)/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex1
-0.pfb><d:/Program Files (x86)/texlive/2025/texmf-dist/fonts/type1/public/lm/lmm
-i10.pfb><d:/Program Files (x86)/texlive/2025/texmf-dist/fonts/type1/public/lm/l
-mmi12.pfb><d:/Program Files (x86)/texlive/2025/texmf-dist/fonts/type1/public/lm
-/lmmi8.pfb><d:/Program Files (x86)/texlive/2025/texmf-dist/fonts/type1/public/l
-m/lmmib10.pfb><d:/Program Files (x86)/texlive/2025/texmf-dist/fonts/type1/publi
-c/lm/lmr10.pfb><d:/Program Files (x86)/texlive/2025/texmf-dist/fonts/type1/publ
-ic/lm/lmr12.pfb><d:/Program Files (x86)/texlive/2025/texmf-dist/fonts/type1/pub
-lic/lm/lmr8.pfb><d:/Program Files (x86)/texlive/2025/texmf-dist/fonts/type1/pub
-lic/lm/lmri10.pfb><d:/Program Files (x86)/texlive/2025/texmf-dist/fonts/type1/p
-ublic/lm/lmsy10.pfb><d:/Program Files (x86)/texlive/2025/texmf-dist/fonts/type1
-/public/lm/lmsy8.pfb><d:/Program Files (x86)/texlive/2025/texmf-dist/fonts/type
-1/public/amsfonts/symbols/msam10.pfb><d:/Program Files (x86)/texlive/2025/texmf
--dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on phase_amplitude_notes.pdf (5 pages, 199507 bytes).
+pfb><d:/Program Files (x86)/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10
+.pfb><d:/Program Files (x86)/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr1
+2.pfb>
+Output written on "discussing control effect with EMW.pdf" (1 page, 67375 bytes
+).
 PDF statistics:
- 203 PDF objects out of 1000 (max. 8388607)
- 164 compressed objects within 2 object streams
- 59 named destinations out of 1000 (max. 500000)
- 65 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 29 PDF objects out of 1000 (max. 8388607)
+ 19 compressed objects within 1 object stream
+ 2 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
