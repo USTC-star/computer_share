@@ -2,46 +2,48 @@ This is BibTeX, Version 0.99d (TeX Live 2025)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 The style file: jpp.bst
-Database file #1: ustc4.bib
+Database file #1: capture_threshold_references.bib
+Warning--I didn't find a database entry for "RN2131"
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-You've used 1 entry,
+You've used 20 entries,
             3068 wiz_defined-function locations,
-            689 strings with 5295 characters,
-and the built_in function-call counts, 497 in all, are:
-= -- 43
-> -- 18
-< -- 1
-+ -- 7
-- -- 6
-* -- 52
-:= -- 88
-add.period$ -- 2
-call.type$ -- 1
-change.case$ -- 7
-chr.to.int$ -- 1
-cite$ -- 1
-duplicate$ -- 27
-empty$ -- 41
-format.name$ -- 9
-if$ -- 95
-int.to.chr$ -- 1
+            826 strings with 8941 characters,
+and the built_in function-call counts, 11957 in all, are:
+= -- 1023
+> -- 640
+< -- 9
++ -- 252
+- -- 225
+* -- 1349
+:= -- 2012
+add.period$ -- 40
+call.type$ -- 20
+change.case$ -- 175
+chr.to.int$ -- 19
+cite$ -- 20
+duplicate$ -- 586
+empty$ -- 909
+format.name$ -- 257
+if$ -- 2300
+int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 1
-newline$ -- 8
-num.names$ -- 4
-pop$ -- 6
+missing$ -- 20
+newline$ -- 65
+num.names$ -- 80
+pop$ -- 153
 preamble$ -- 1
-purify$ -- 6
+purify$ -- 155
 quote$ -- 0
-skip$ -- 13
+skip$ -- 241
 stack$ -- 0
-substring$ -- 20
-swap$ -- 9
+substring$ -- 681
+swap$ -- 230
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 9
+type$ -- 180
 warning$ -- 0
-while$ -- 4
+while$ -- 88
 width$ -- 0
-write$ -- 15
+write$ -- 224
+(There was 1 warning)

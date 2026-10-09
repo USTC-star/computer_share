@@ -1,12 +1,132 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{20}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \def\au#1{#1} \def\ed#1{#1} \def\yr#1{#1}\def\at#1{#1}\def\jt#1{\textit{#1}}
   \def\bt#1{#1}\def\bvol#1{\textbf{#1}} \def\vol#1{#1} \def\pg#1{#1}
   \def\publ#1{#1}\def\arxiv#1{#1}\def\org#1{#1}\def\st#1{\textit{#1}}
 
-\bibitem[Fisch \& Boozer(1980)]{RN2131}
-{\sc \au{Fisch, N.} \& \au{Boozer, A.~H.}} \yr{1980}  \at{Creating an
-  asymmetric plasma resistivity with waves}.  \jt{Physical Review Letters}
-  \bvol{45}~(9),  \pg{720}.
+\bibitem[Barth {\em et~al.\/}(2009)Barth, Friedland, Sarid \&
+  Shagalov]{Barth2009}
+{\sc \au{Barth, I.}, \au{Friedland, L.}, \au{Sarid, E.} \& \au{Shagalov,
+  A.~G.}} \yr{2009}  \at{Autoresonant transition in the presence of noise and
+  self-fields}.  \jt{Physical Review Letters}  \bvol{103},  \pg{155001}.
+
+\bibitem[Bellan(2013)]{Bellan2013}
+{\sc \au{Bellan, P.~M.}} \yr{2013}  \at{Pitch angle scattering of an energetic
+  magnetized particle by a circularly polarized electromagnetic wave}.
+  \jt{Physics of Plasmas}  \bvol{20},  \pg{042117}.
+
+\bibitem[Choudhury {\em et~al.\/}(2026)Choudhury, Battey, Paz-Soldan, Lestz,
+  Leuthold, Lvovskiy, Marini, Barr, Heidbrink, Spong, Tang, Van~Compernolle,
+  Zhang, Zhang \& Tang]{Choudhury2026}
+{\sc \au{Choudhury, H.}, \au{Battey, A.}, \au{Paz-Soldan, C.}, \au{Lestz, J.},
+  \au{Leuthold, N.}, \au{Lvovskiy, A.}, \au{Marini, C.}, \au{Barr, J.},
+  \au{Heidbrink, W.}, \au{Spong, D.}, \au{Tang, S.}, \au{Van~Compernolle, B.},
+  \au{Zhang, Q.}, \au{Zhang, Y.} \& \au{Tang, X.}} \yr{2026}  \at{First
+  demonstration of resonant pitch-angle scattering of relativistic electrons by
+  externally launched helicon waves}.  \jt{Physical Review Letters}
+  \bvol{136},  \pg{025101}.
+
+\bibitem[Fajans \& Friedland(2001)]{FajansFriedland2001}
+{\sc \au{Fajans, J.} \& \au{Friedland, L.}} \yr{2001}  \at{Autoresonant
+  (nonstationary) excitation of pendulums, {Plutinos}, plasmas, and other
+  nonlinear oscillators}.  \jt{American Journal of Physics}  \bvol{69},
+  \pg{1096--1102}.
+
+\bibitem[Fajans {\em et~al.\/}(1999{\natexlab{{\em a\/}}})Fajans, Gilson \&
+  Friedland]{Fajans1999Collective}
+{\sc \au{Fajans, J.}, \au{Gilson, E.} \& \au{Friedland, L.}}
+  \yr{1999{\natexlab{{\em a\/}}}}  \at{Autoresonant (nonstationary) excitation
+  of a collective nonlinear mode}.  \jt{Physics of Plasmas}  \bvol{6},
+  \pg{4497--4503}.
+
+\bibitem[Fajans {\em et~al.\/}(1999{\natexlab{{\em b\/}}})Fajans, Gilson \&
+  Friedland]{Fajans1999Diocotron}
+{\sc \au{Fajans, J.}, \au{Gilson, E.} \& \au{Friedland, L.}}
+  \yr{1999{\natexlab{{\em b\/}}}}  \at{Autoresonant (nonstationary) excitation
+  of the diocotron mode in non-neutral plasmas}.  \jt{Physical Review Letters}
+  \bvol{82},  \pg{4444--4447}.
+
+\bibitem[Fajans {\em et~al.\/}(2001)Fajans, Gilson \&
+  Friedland]{FajansGilsonFriedland2001}
+{\sc \au{Fajans, J.}, \au{Gilson, E.} \& \au{Friedland, L.}} \yr{2001}  \at{The
+  effect of damping on autoresonant (nonstationary) excitation}.  \jt{Physics
+  of Plasmas}  \bvol{8},  \pg{423--427}.
+
+\bibitem[Friedland(2008)]{Friedland2008}
+{\sc \au{Friedland, L.}} \yr{2008}  \at{Efficient capture of nonlinear
+  oscillations into resonance}.  \jt{Journal of Physics A: Mathematical and
+  Theoretical}  \bvol{41},  \pg{415101}.
+
+\bibitem[Friedland {\em et~al.\/}(2006)Friedland, Khain \&
+  Shagalov]{FriedlandKhainShagalov2006}
+{\sc \au{Friedland, L.}, \au{Khain, P.} \& \au{Shagalov, A.~G.}} \yr{2006}
+  \at{Autoresonant phase-space holes in plasmas}.  \jt{Physical Review Letters}
+   \bvol{96},  \pg{225001}.
+
+\bibitem[Guo {\em et~al.\/}(2018)Guo, McDevitt \& Tang]{Guo2018}
+{\sc \au{Guo, Z.}, \au{McDevitt, C.~J.} \& \au{Tang, X.-Z.}} \yr{2018}
+  \at{Control of runaway electron energy using externally injected whistler
+  waves}.  \jt{Physics of Plasmas}  \bvol{25},  \pg{032504}.
+
+\bibitem[Kang {\em et~al.\/}(2026)Kang, Yoon, Cho \& Yun]{Kang2026}
+{\sc \au{Kang, H.~L.}, \au{Yoon, Y.~D.}, \au{Cho, M.-H.} \& \au{Yun, G.~S.}}
+  \yr{2026}  \at{Firewall effect on electron acceleration by {R}-waves and
+  parallel electric fields}.  \jt{Journal of Plasma Physics}  \bvol{92},
+  \pg{E101}.
+
+\bibitem[Kuramitsu \& Krasnoselskikh(2005)]{KuramitsuKrasnoselskikh2005}
+{\sc \au{Kuramitsu, Y.} \& \au{Krasnoselskikh, V.}} \yr{2005}  \at{Gyroresonant
+  surfing acceleration}.  \jt{Physical Review Letters}  \bvol{94},
+  \pg{031102}.
+
+\bibitem[Lindberg {\em et~al.\/}(2004)Lindberg, Charman, Wurtele \&
+  Friedland]{Lindberg2004}
+{\sc \au{Lindberg, R.~R.}, \au{Charman, A.~E.}, \au{Wurtele, J.~S.} \&
+  \au{Friedland, L.}} \yr{2004}  \at{Robust autoresonant excitation in the
+  plasma beat-wave accelerator}.  \jt{Physical Review Letters}  \bvol{93},
+  \pg{055001}.
+
+\bibitem[McMillan(1945)]{McMillan1945}
+{\sc \au{McMillan, E.~M.}} \yr{1945}  \at{The synchrotron---a proposed high
+  energy particle accelerator}.  \jt{Physical Review}  \bvol{68},
+  \pg{143--144}.
+
+\bibitem[Neishtadt \& Timofeev(1987)]{NeishtadtTimofeev1987}
+{\sc \au{Neishtadt, A.~I.} \& \au{Timofeev, A.~V.}} \yr{1987}
+  \at{Autoresonance in electron cyclotron heating of a plasma}.  \jt{Soviet
+  Physics JETP}  \bvol{66}~(5),  \pg{973--977}.
+
+\bibitem[Roberts \& Buchsbaum(1964)]{RobertsBuchsbaum1964}
+{\sc \au{Roberts, C.~S.} \& \au{Buchsbaum, S.~J.}} \yr{1964}  \at{Motion of a
+  charged particle in a constant magnetic field and a transverse
+  electromagnetic wave propagating along the field}.  \jt{Physical Review}
+  \bvol{135},  \pg{A381--A389}.
+
+\bibitem[Schram \& Beukema(1969)]{SchramBeukema1969}
+{\sc \au{Schram, D.~C.} \& \au{Beukema, G.~P.}} \yr{1969}  \at{The effect of an
+  electrostatic field on particle acceleration at cyclotron resonance}.
+  \jt{Physica}  \bvol{42},  \pg{277--290}.
+
+\bibitem[Spong {\em et~al.\/}(2018)Spong, Heidbrink, Paz-Soldan, Du, Thome,
+  Van~Zeeland, Collins, Lvovskiy, Moyer, Austin, Brennan, Liu, Jaeger \&
+  Lau]{Spong2018}
+{\sc \au{Spong, D.~A.}, \au{Heidbrink, W.~W.}, \au{Paz-Soldan, C.}, \au{Du,
+  X.~D.}, \au{Thome, K.~E.}, \au{Van~Zeeland, M.~A.}, \au{Collins, C.},
+  \au{Lvovskiy, A.}, \au{Moyer, R.~A.}, \au{Austin, M.~E.}, \au{Brennan,
+  D.~P.}, \au{Liu, C.}, \au{Jaeger, E.~F.} \& \au{Lau, C.}} \yr{2018}
+  \at{First direct observation of runaway-electron-driven whistler waves in
+  tokamaks}.  \jt{Physical Review Letters}  \bvol{120},  \pg{155002}.
+
+\bibitem[Xu {\em et~al.\/}(2025)Xu, Xie, Liu \& Liu]{Xu2025}
+{\sc \au{Xu, X.}, \au{Xie, J.}, \au{Liu, J.} \& \au{Liu, W.}} \yr{2025}
+  \at{Analysis of the anomalous {Doppler} effect from quantum theory to
+  classical dynamics simulations}.  \jt{Chinese Physics B}  \bvol{34},
+  \pg{120301}.
+
+\bibitem[Yoon \& Bellan(2020)]{YoonBellan2020}
+{\sc \au{Yoon, Y.~D.} \& \au{Bellan, P.~M.}} \yr{2020}  \at{Nondiffusive
+  pitch-angle scattering of a distribution of energetic particles by coherent
+  whistler waves}.  \jt{Journal of Geophysical Research: Space Physics}
+  \bvol{125},  \pg{e2020JA027796}.
 
 \end{thebibliography}
